@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Manrope:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  color: #17211f;
-  background: #f7f3ea;
+  color: #102321;
+  background: #edf5f4;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,8 +21,9 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at 15% 8%, rgba(116, 183, 201, 0.2), transparent 30rem),
-    linear-gradient(180deg, #f7f3ea 0%, #eef3ee 48%, #f7f3ea 100%);
+    linear-gradient(180deg, rgba(127, 185, 200, 0.34) 0%, rgba(237, 245, 244, 0.96) 26%, rgba(231, 240, 235, 0.98) 62%, rgba(244, 239, 226, 0.88) 100%),
+    linear-gradient(90deg, rgba(31, 127, 163, 0.08), rgba(184, 82, 61, 0.05));
+  font-family: "Manrope", "Aptos", "Segoe UI Variable", ui-sans-serif, system-ui, sans-serif;
 }
 
 svg {

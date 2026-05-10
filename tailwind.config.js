@@ -4,19 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        paper: "#f7f3ea",
-        ink: "#17211f",
-        muted: "#66736f",
-        rain: "#2f7ea8",
-        flood: "#bd4a36",
-        river: "#74b7c9",
+        paper: "#edf5f4",
+        ink: "#102321",
+        muted: "#5f7471",
+        rain: "#1f7fa3",
+        flood: "#b8523d",
+        river: "#7fb9c8",
       },
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        serif: ["Georgia", "ui-serif", "serif"],
+        sans: ["Manrope", "Aptos", "Segoe UI Variable", "ui-sans-serif", "system-ui", "sans-serif"],
+        serif: ["Fraunces", "Georgia", "ui-serif", "serif"],
       },
       boxShadow: {
-        soft: "0 24px 70px rgba(23, 33, 31, 0.12)",
+        soft: "0 24px 70px rgba(16, 35, 33, 0.12)",
       },
     },
   },

@@ -12,40 +12,80 @@ const chartVariant = (chartSpec) => {
 const sections = [
   {
     kicker: "Where risk gathers",
-    title: "Flood losses cluster in particular states, not evenly across the map.",
-    body: "The 2025 loss pattern points to a simple public message: flood impact is regional. The map sets up the national picture before the story moves into rainfall and exposure.",
+    title: "Flood losses are concentrated, not evenly spread.",
+    body: "The 2025 pattern starts the story: several states carry a much larger share of recorded flood losses than others.",
     charts: [
-      ["Flood loss by state", "01_flood_loss_map"],
-      ["Top state losses", "02_top_losses_bar"],
-      ["Loss per person", "09_loss_per_person"],
+      {
+        title: "Flood loss by state",
+        spec: "01_flood_loss_map",
+        caption: "Terengganu and Kelantan sit at the high end of total recorded losses."
+      },
+      {
+        title: "Top state losses",
+        spec: "02_top_losses_bar",
+        caption: "The leading states form a clear east-coast and southern pattern."
+      },
+      {
+        title: "Loss per person",
+        spec: "09_loss_per_person",
+        caption: "Smaller states can look more exposed once loss is viewed per person."
+      },
     ],
   },
   {
     kicker: "Rainfall context",
-    title: "Rainfall is a major trigger, but it does not explain everything alone.",
-    body: "Some high-rainfall areas do show high losses, but exposure, rivers, drainage, terrain, and urbanisation shape what happens after the rain arrives.",
+    title: "Rainfall matters, but it is not the whole explanation.",
+    body: "Heavy rain is the trigger. Impact depends on where it falls, what is exposed, and how water moves through each place.",
     charts: [
-      ["Annual rainfall by selected states", "03_rainfall_lines"],
-      ["Rainfall compared with 2025 flood loss", "04_rainfall_loss_scatter"],
-      ["Average rainfall across states", "10_rainfall_map"],
+      {
+        title: "Annual rainfall by selected states",
+        spec: "03_rainfall_lines",
+        caption: "East-coast states often record high rainfall, especially Terengganu."
+      },
+      {
+        title: "Rainfall compared with 2025 flood loss",
+        spec: "04_rainfall_loss_scatter",
+        caption: "Rainfall and loss move together imperfectly; exposure and geography still matter."
+      },
+      {
+        title: "Average rainfall across states",
+        spec: "10_rainfall_map",
+        caption: "Rainfall is high in several regions, but flood losses remain uneven."
+      },
     ],
   },
   {
     kicker: "Everyday disruption",
-    title: "The cost of floods appears in homes, roads, farms, businesses, and public works.",
-    body: "Breaking losses into categories turns the topic from an abstract disaster figure into familiar parts of daily Malaysian life.",
+    title: "Flood damage shows up in ordinary systems.",
+    body: "The losses are not just abstract totals. They touch homes, farms, businesses, vehicles, and infrastructure.",
     charts: [
-      ["2025 flood losses by category", "05_loss_categories_stacked"],
-      ["Districts with highest 2025 losses", "06_district_losses"],
+      {
+        title: "2025 flood losses by category",
+        spec: "05_loss_categories_stacked",
+        caption: "Infrastructure and household losses dominate in different states."
+      },
+      {
+        title: "Districts with highest 2025 losses",
+        spec: "06_district_losses",
+        caption: "District-level losses show how local the impact can become."
+      },
     ],
   },
   {
     kicker: "Monitoring the rain",
-    title: "Malaysia’s rainfall network shows how widely flood-relevant weather is watched.",
-    body: "Station locations are not flood risk on their own, but they help explain that flood preparedness depends on local monitoring across very different landscapes.",
+    title: "Preparedness starts with local monitoring.",
+    body: "Rainfall stations do not measure flood risk directly, but they show how flood-relevant weather is watched across varied terrain.",
     charts: [
-      ["Rainfall station network", "07_station_map"],
-      ["Rainfall stations by region", "08_station_counts"],
+      {
+        title: "Rainfall station network",
+        spec: "07_station_map",
+        caption: "Stations are spread across Peninsular Malaysia, Sabah, and Sarawak."
+      },
+      {
+        title: "Rainfall stations by region",
+        spec: "08_station_counts",
+        caption: "Station counts reflect monitoring coverage, not flood danger by themselves."
+      },
     ],
   },
 ];
@@ -53,7 +93,7 @@ const sections = [
 function Stat({ value, label }) {
   return (
     <div className="border-t border-ink/20 pt-4">
-      <p className="font-serif text-4xl leading-none text-ink md:text-5xl">{value}</p>
+      <p className="text-4xl font-semibold leading-none text-ink md:text-5xl">{value}</p>
       <p className="mt-2 max-w-44 text-sm leading-snug text-muted">{label}</p>
     </div>
   );
@@ -70,15 +110,16 @@ function Section({ section, index }) {
           <p className="mt-8 text-sm text-muted">Section {index + 1} of {sections.length}</p>
         </div>
         <div className="grid min-w-0 gap-10">
-          {section.charts.map(([title, chartSpec]) => (
-            <div key={chartSpec} className="min-w-0">
+          {section.charts.map((chart) => (
+            <div key={chart.spec} className="min-w-0">
               <div className="mb-3 flex items-baseline justify-between gap-4 border-b border-ink/10 pb-2">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">{title}</h3>
-                <a className="shrink-0 text-xs text-rain underline-offset-4 hover:underline" href={`${base}specs/${chartSpec}.json`}>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">{chart.title}</h3>
+                <a className="shrink-0 text-xs text-rain underline-offset-4 hover:underline" href={`${base}specs/${chart.spec}.json`}>
                   JSON spec
                 </a>
               </div>
-              <VegaChart specUrl={spec(chartSpec)} title={title} variant={chartVariant(chartSpec)} />
+              <VegaChart specUrl={spec(chart.spec)} title={chart.title} variant={chartVariant(chart.spec)} />
+              <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">{chart.caption}</p>
             </div>
           ))}
         </div>
@@ -99,7 +140,7 @@ export default function App() {
               When Rain Becomes Risk
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-muted md:text-xl">
-              A scroll-based visual story about where Malaysia’s 2025 flood losses were concentrated, how rainfall patterns relate to that risk, and why geography and exposure matter.
+              Where Malaysia’s 2025 flood losses concentrated, how rainfall relates to that pattern, and why place matters.
             </p>
           </div>
           <div className="grid content-end gap-5">
@@ -118,9 +159,9 @@ export default function App() {
         <div className="mx-auto max-w-7xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-flood">Takeaways</p>
           <div className="mt-6 grid gap-6 md:grid-cols-3">
-            <p className="text-2xl font-serif leading-tight">Flood risk is uneven because Malaysia’s places are uneven.</p>
-            <p className="text-base leading-7 text-muted">Heavy rain matters, but the final impact also depends on rivers, drainage, settlement patterns, infrastructure, and what lies in the water’s path.</p>
-            <p className="text-base leading-7 text-muted">Data sources: DOSM flood impact report 2025, DOSM population by state, JPS rainfall datasets, and geoBoundaries Malaysia ADM1 boundaries. Authored for FIT2179 Data Visualisation 2, 2026.</p>
+            <p className="text-2xl font-semibold leading-tight text-ink">Flood risk is uneven because Malaysia’s places are uneven.</p>
+            <p className="text-base leading-7 text-muted">Heavy rain matters, but the final impact also depends on rivers, drainage, settlements, and infrastructure.</p>
+            <p className="text-base leading-7 text-muted">Sources: DOSM flood impact report 2025, DOSM population, JPS rainfall data, and geoBoundaries. FIT2179 Data Visualisation 2, 2026.</p>
           </div>
         </div>
       </section>
