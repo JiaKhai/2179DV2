@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
-  "height": 360,
+  "height": 540,
   "data": { "url": "data/processed/flood_losses_state.csv" },
   "transform": [
     { "filter": "datum.year == 2025 && datum.state != 'Malaysia'" },

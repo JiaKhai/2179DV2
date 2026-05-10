@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
-  "height": 340,
+  "height": 500,
   "data": { "url": "data/processed/story_state_summary.csv" },
   "transform": [
     { "filter": "datum.flood_total_loss_2025_rm_million > 0" },

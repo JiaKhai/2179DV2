@@ -3,6 +3,12 @@ import VegaChart from "./components/VegaChart.jsx";
 const base = import.meta.env.BASE_URL;
 const spec = (name) => `${base}specs/${name}.json`;
 
+const chartVariant = (chartSpec) => {
+  if (["01_flood_loss_map", "07_station_map", "10_rainfall_map"].includes(chartSpec)) return "map";
+  if (["05_loss_categories_stacked", "06_district_losses"].includes(chartSpec)) return "large";
+  return "standard";
+};
+
 const sections = [
   {
     kicker: "Where risk gathers",
@@ -55,25 +61,27 @@ function Stat({ value, label }) {
 
 function Section({ section, index }) {
   return (
-    <section className="mx-auto grid max-w-7xl gap-8 px-5 py-16 md:grid-cols-[0.82fr_1.18fr] md:px-8 lg:py-24">
-      <div className="md:sticky md:top-10 md:self-start">
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-flood">{section.kicker}</p>
-        <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight text-ink md:text-5xl">{section.title}</h2>
-        <p className="mt-5 max-w-lg text-base leading-7 text-muted">{section.body}</p>
-        <p className="mt-8 text-sm text-muted">Section {index + 1} of {sections.length}</p>
-      </div>
-      <div className="grid gap-6">
-        {section.charts.map(([title, chartSpec]) => (
-          <div key={chartSpec}>
-            <div className="mb-3 flex items-baseline justify-between gap-4 border-b border-ink/10 pb-2">
-              <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">{title}</h3>
-              <a className="text-xs text-rain underline-offset-4 hover:underline" href={`${base}specs/${chartSpec}.json`}>
-                JSON spec
-              </a>
+    <section className="mx-auto max-w-[1500px] px-4 py-16 md:px-8 lg:py-24">
+      <div className="grid gap-8 lg:grid-cols-[minmax(260px,0.34fr)_minmax(0,1fr)] xl:grid-cols-[360px_minmax(0,1fr)]">
+        <div className="lg:sticky lg:top-8 lg:h-[calc(100svh-4rem)] lg:self-start lg:border-r lg:border-ink/10 lg:pr-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-flood">{section.kicker}</p>
+          <h2 className="mt-4 max-w-2xl font-serif text-3xl leading-tight text-ink md:text-5xl lg:text-4xl xl:text-5xl">{section.title}</h2>
+          <p className="mt-5 max-w-xl text-base leading-7 text-muted">{section.body}</p>
+          <p className="mt-8 text-sm text-muted">Section {index + 1} of {sections.length}</p>
+        </div>
+        <div className="grid min-w-0 gap-10">
+          {section.charts.map(([title, chartSpec]) => (
+            <div key={chartSpec} className="min-w-0">
+              <div className="mb-3 flex items-baseline justify-between gap-4 border-b border-ink/10 pb-2">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">{title}</h3>
+                <a className="shrink-0 text-xs text-rain underline-offset-4 hover:underline" href={`${base}specs/${chartSpec}.json`}>
+                  JSON spec
+                </a>
+              </div>
+              <VegaChart specUrl={spec(chartSpec)} title={title} variant={chartVariant(chartSpec)} />
             </div>
-            <VegaChart specUrl={spec(chartSpec)} title={title} />
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

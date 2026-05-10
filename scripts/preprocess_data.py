@@ -423,6 +423,19 @@ def round_geometry(value: Any, digits: int = 5) -> Any:
     return value
 
 
+def rewind_geometry(geometry: dict[str, Any]) -> None:
+    # Vega/d3 can render some boundary sources as polygon complements when ring
+    # winding is opposite of the expected spherical orientation. Reversing rings
+    # keeps the coordinates intact but makes Malaysia render as land, not world.
+    if geometry.get("type") == "Polygon":
+        geometry["coordinates"] = [list(reversed(ring)) for ring in geometry["coordinates"]]
+    elif geometry.get("type") == "MultiPolygon":
+        geometry["coordinates"] = [
+            [list(reversed(ring)) for ring in polygon]
+            for polygon in geometry["coordinates"]
+        ]
+
+
 def preprocess_geojson() -> dict[str, Any]:
     geo = json.loads(RAW_GEOJSON.read_text(encoding="utf-8"))
     for feature in geo["features"]:
@@ -433,6 +446,7 @@ def preprocess_geojson() -> dict[str, Any]:
             "iso_code": GEO_ISO.get(state, feature["properties"].get("ISO_Code", "")),
             "region": STATE_REGION.get(state, ""),
         }
+        rewind_geometry(feature["geometry"])
         feature["geometry"]["coordinates"] = round_geometry(feature["geometry"]["coordinates"], 5)
     output = OUT_DIR / "malaysia_adm1.geojson"
     output.parent.mkdir(parents=True, exist_ok=True)

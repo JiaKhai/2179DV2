@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
-  "height": 320,
+  "height": 480,
   "data": { "url": "data/processed/rainfall_state_annual.csv" },
   "transform": [
     { "filter": "datum.year != '2013-2017 average'" },
