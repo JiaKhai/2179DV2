@@ -1,0 +1,17 @@
+state,iso_code,region,population_2025,annual_rainfall_avg_2013_2017_mm,flood_total_loss_2025_rm000,flood_total_loss_2025_rm_million,flood_loss_2025_rm_per_person,living_quarters_count_2025
+Johor,MY-01,Southern Peninsula,4205900,1987.2,72059.357,72.059,17.133,1017727
+Kedah,MY-02,Northern Peninsula,2228000,2455.5,36665.527,36.666,16.457,528228
+Kelantan,MY-03,East Coast,1907700,2874.3,88538.011,88.538,46.411,363251
+Melaka,MY-04,Southern Peninsula,1052500,1762.7,14207.999,14.208,13.499,267074
+Negeri Sembilan,MY-05,Central/Southern Peninsula,1244600,1701.9,16435.903,16.436,13.206,315497
+Pahang,MY-06,East Coast,1678200,2024.3,44119.201,44.119,26.29,401534
+Pulau Pinang,MY-07,Northern Peninsula,1803300,2499.6,12254.349,12.254,6.796,495347
+Perak,MY-08,Northern Peninsula,2574900,2227.6,36653.125,36.653,14.235,672855
+Perlis,MY-09,Northern Peninsula,297800,1829.3,30000.795,30.001,100.741,80850
+Selangor,MY-10,Central Peninsula,7406800,2118.1,52863.283,52.863,7.137,1836410
+Terengganu,MY-11,East Coast,1246900,3529.1,89172.391,89.172,71.515,282373
+Sabah,MY-12,Borneo,3759600,2604.4,58417.338,58.417,15.538,594163
+Sarawak,MY-13,Borneo,2529800,3406.3,61233.745,61.234,24.205,618108
+W.P. Kuala Lumpur,MY-14,Central Peninsula,2074100,2793.9,20759.116,20.759,10.009,573529
+W.P. Labuan,MY-15,Borneo,100900,,2254.0,2.254,22.339,0
+W.P. Putrajaya,MY-16,Central Peninsula,120800,,1279.187,1.279,10.589,0

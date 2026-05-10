@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 420,
+  "projection": { "type": "mercator" },
+  "layer": [
+    {
+      "data": {
+        "url": "data/processed/malaysia_adm1.geojson",
+        "format": { "type": "json", "property": "features" }
+      },
+      "mark": { "type": "geoshape", "fill": "#dfe8e1", "stroke": "#f7f3ea", "strokeWidth": 1 }
+    },
+    {
+      "data": { "url": "data/processed/rainfall_stations_mappable.csv" },
+      "mark": { "type": "circle", "size": 9, "opacity": 0.48, "color": "#2f7ea8" },
+      "encoding": {
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
+        "tooltip": [
+          { "field": "station_name", "type": "nominal", "title": "Station" },
+          { "field": "state", "type": "nominal", "title": "State" },
+          { "field": "station_no", "type": "nominal", "title": "Station no." }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": null }
+  }
+}

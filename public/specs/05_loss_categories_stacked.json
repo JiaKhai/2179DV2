@@ -1,0 +1,59 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 360,
+  "data": { "url": "data/processed/flood_losses_state.csv" },
+  "transform": [
+    { "filter": "datum.year == 2025 && datum.state != 'Malaysia'" },
+    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "total_loss_rm000", "order": "descending" }] },
+    { "filter": "datum.rank <= 7" },
+    {
+      "fold": [
+        "living_quarters_loss_rm000",
+        "vehicles_loss_rm000",
+        "business_premises_loss_rm000",
+        "manufacturing_loss_rm000",
+        "agriculture_loss_rm000",
+        "infrastructure_loss_rm000"
+      ],
+      "as": ["category", "loss_rm000"]
+    },
+    {
+      "calculate": "replace(replace(replace(replace(replace(replace(datum.category, '_loss_rm000', ''), 'living_quarters', 'Homes'), 'business_premises', 'Business'), 'vehicles', 'Vehicles'), 'agriculture', 'Agriculture'), 'infrastructure', 'Infrastructure')",
+      "as": "loss_category"
+    },
+    { "calculate": "datum.loss_rm000 / 1000", "as": "loss_rm_million" }
+  ],
+  "mark": { "type": "bar", "cornerRadiusEnd": 2 },
+  "encoding": {
+    "y": { "field": "state", "type": "nominal", "sort": "-x", "title": null },
+    "x": {
+      "field": "loss_rm_million",
+      "type": "quantitative",
+      "stack": "zero",
+      "title": "2025 flood loss (RM million)"
+    },
+    "color": {
+      "field": "loss_category",
+      "type": "nominal",
+      "title": "Loss category",
+      "scale": {
+        "range": ["#bd4a36", "#d87b3f", "#8b6f96", "#796a58", "#6f8f56", "#2f7ea8"]
+      }
+    },
+    "tooltip": [
+      { "field": "state", "type": "nominal", "title": "State" },
+      { "field": "loss_category", "type": "nominal", "title": "Category" },
+      {
+        "field": "loss_rm_million",
+        "type": "quantitative",
+        "title": "Loss (RM million)",
+        "format": ",.1f"
+      }
+    ]
+  },
+  "config": {
+    "view": { "stroke": null },
+    "legend": { "orient": "bottom" }
+  }
+}

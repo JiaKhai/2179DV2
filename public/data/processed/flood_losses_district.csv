@@ -1,0 +1,437 @@
+state,district,place_name,place_type,year,living_quarters_count,total_loss_rm000,total_loss_rm_million
+Malaysia,,Malaysia,state,2024,8046946,444752.573,444.753
+Malaysia,,Malaysia,state,2025,8046946,204172.48,204.172
+Johor,,Johor,state,2024,1017727,26786.58,26.787
+Johor,,Johor,state,2025,1017727,29206.396,29.206
+Johor,Batu Pahat,Batu Pahat,district,2024,116252,202.568,0.203
+Johor,Batu Pahat,Batu Pahat,district,2025,116252,1509.408,1.509
+Johor,Johor Bahru,Johor Bahru,district,2024,460669,5396.44,5.396
+Johor,Johor Bahru,Johor Bahru,district,2025,460669,15948.296,15.948
+Johor,Kluang,Kluang,district,2024,81993,4256.341,4.256
+Johor,Kluang,Kluang,district,2025,81993,2133.835,2.134
+Johor,Kota Tinggi,Kota Tinggi,district,2024,57786,11448.549,11.449
+Johor,Kota Tinggi,Kota Tinggi,district,2025,57786,3045.096,3.045
+Johor,Kulai,Kulai,district,2024,77199,221.084,0.221
+Johor,Kulai,Kulai,district,2025,77199,1349.45,1.349
+Johor,Mersing,Mersing,district,2024,20673,1825.638,1.826
+Johor,Mersing,Mersing,district,2025,20673,546.746,0.547
+Johor,Muar,Muar,district,2024,69603,21.775,0.022
+Johor,Muar,Muar,district,2025,69603,0,0.0
+Johor,Pontian,Pontian,district,2024,42519,476.888,0.477
+Johor,Pontian,Pontian,district,2025,42519,3307.223,3.307
+Johor,Segamat,Segamat,district,2024,52855,2073.39,2.073
+Johor,Segamat,Segamat,district,2025,52855,1366.341,1.366
+Johor,Tangkak,Tangkak,district,2024,38178,863.907,0.864
+Johor,Tangkak,Tangkak,district,2025,38178,0,0.0
+Kedah,,Kedah,state,2024,528228,60399.235,60.399
+Kedah,,Kedah,state,2025,528228,11512.168,11.512
+Kedah,Baling,Baling,district,2024,37438,7907.256,7.907
+Kedah,Baling,Baling,district,2025,37438,666.645,0.667
+Kedah,Bandar Baharu,Bandar Baharu,district,2024,11112,498.99,0.499
+Kedah,Bandar Baharu,Bandar Baharu,district,2025,11112,0,0.0
+Kedah,Kota Setar,Kota Setar,district,2024,95942,25766.101,25.766
+Kedah,Kota Setar,Kota Setar,district,2025,95942,3451.805,3.452
+Kedah,Kuala Muda,Kuala Muda,district,2024,131802,447.94,0.448
+Kedah,Kuala Muda,Kuala Muda,district,2025,131802,296.46,0.296
+Kedah,Kubang Pasu,Kubang Pasu,district,2024,58695,9837.47,9.837
+Kedah,Kubang Pasu,Kubang Pasu,district,2025,58695,3218.641,3.219
+Kedah,Kulim,Kulim,district,2024,80772,418.97,0.419
+Kedah,Kulim,Kulim,district,2025,80772,2090.3,2.09
+Kedah,Langkawi,Langkawi,district,2024,25983,0,0.0
+Kedah,Langkawi,Langkawi,district,2025,25983,0,0.0
+Kedah,Padang Terap,Padang Terap,district,2024,15968,1077.14,1.077
+Kedah,Padang Terap,Padang Terap,district,2025,15968,18.592,0.019
+Kedah,Sik,Sik,district,2024,17421,1992.93,1.993
+Kedah,Sik,Sik,district,2025,17421,152.8,0.153
+Kedah,Yan,Yan,district,2024,16927,0,0.0
+Kedah,Yan,Yan,district,2025,16927,0,0.0
+Kedah,Pendang,Pendang,district,2024,24077,4777.822,4.778
+Kedah,Pendang,Pendang,district,2025,24077,793.04,0.793
+Kedah,Pokok Sena,Pokok Sena,district,2024,12091,7674.616,7.675
+Kedah,Pokok Sena,Pokok Sena,district,2025,12091,823.885,0.824
+Kelantan,,Kelantan,state,2024,363251,171156.465,171.156
+Kelantan,,Kelantan,state,2025,363251,17014.387,17.014
+Kelantan,Bachok,Bachok,district,2024,31355,5384.275,5.384
+Kelantan,Bachok,Bachok,district,2025,31355,2277.176,2.277
+Kelantan,Gua Musang,Gua Musang,district,2024,20324,244.318,0.244
+Kelantan,Gua Musang,Gua Musang,district,2025,20324,269.851,0.27
+Kelantan,Jeli,Jeli,district,2024,11620,1335.712,1.336
+Kelantan,Jeli,Jeli,district,2025,11620,0,0.0
+Kelantan,Kecil Lojing,Kecil Lojing,district,2024,2123,0,0.0
+Kelantan,Kecil Lojing,Kecil Lojing,district,2025,2123,0,0.0
+Kelantan,Kota Bharu,Kota Bharu,district,2024,115485,29396.769,29.397
+Kelantan,Kota Bharu,Kota Bharu,district,2025,115485,6576.247,6.576
+Kelantan,Kuala Krai,Kuala Krai,district,2024,23862,8908.918,8.909
+Kelantan,Kuala Krai,Kuala Krai,district,2025,23862,137.846,0.138
+Kelantan,Machang,Machang,district,2024,21963,6033.066,6.033
+Kelantan,Machang,Machang,district,2025,21963,1583.169,1.583
+Kelantan,Pasir Mas,Pasir Mas,district,2024,45128,57990.251,57.99
+Kelantan,Pasir Mas,Pasir Mas,district,2025,45128,2003.862,2.004
+Kelantan,Pasir Puteh,Pasir Puteh,district,2024,26440,16516.994,16.517
+Kelantan,Pasir Puteh,Pasir Puteh,district,2025,26440,71.4,0.071
+Kelantan,Tanah Merah,Tanah Merah,district,2024,30134,6753.39,6.753
+Kelantan,Tanah Merah,Tanah Merah,district,2025,30134,186.477,0.186
+Kelantan,Tumpat,Tumpat,district,2024,34817,38592.772,38.593
+Kelantan,Tumpat,Tumpat,district,2025,34817,3908.359,3.908
+Kelantan,Nota./ Note.:,Nota./ Note.:,district,2024,,0,0.0
+Kelantan,Nota./ Note.:,Nota./ Note.:,district,2025,,0,0.0
+Kelantan,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,district,2024,,0,0.0
+Kelantan,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,district,2025,,0,0.0
+Kelantan,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,district,2024,,0,0.0
+Kelantan,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,district,2025,,0,0.0
+Kelantan,"2. ""-""  Tidak terkesan banjir","2. ""-""  Tidak terkesan banjir",district,2024,,0,0.0
+Kelantan,"2. ""-""  Tidak terkesan banjir","2. ""-""  Tidak terkesan banjir",district,2025,,0,0.0
+Kelantan,"""-"" Not affected by the flood","""-"" Not affected by the flood",district,2024,,0,0.0
+Kelantan,"""-"" Not affected by the flood","""-"" Not affected by the flood",district,2025,,0,0.0
+Kelantan,"Negeri/Daerah
+State/District","Negeri/Daerah
+State/District",district,2024,,0,0.0
+Kelantan,"Negeri/Daerah
+State/District","Negeri/Daerah
+State/District",district,2025,,0,0.0
+Melaka,,Melaka,state,2024,267074,1192.501,1.193
+Melaka,,Melaka,state,2025,267074,794.884,0.795
+Melaka,Alor Gajah,Alor Gajah,district,2024,67558,306.835,0.307
+Melaka,Alor Gajah,Alor Gajah,district,2025,67558,157.8,0.158
+Melaka,Jasin,Jasin,district,2024,39361,558.878,0.559
+Melaka,Jasin,Jasin,district,2025,39361,553.352,0.553
+Melaka,Melaka Tengah,Melaka Tengah,district,2024,160155,326.788,0.327
+Melaka,Melaka Tengah,Melaka Tengah,district,2025,160155,83.732,0.084
+Negeri Sembilan,,Negeri Sembilan,state,2024,315497,3060.538,3.061
+Negeri Sembilan,,Negeri Sembilan,state,2025,315497,910.497,0.91
+Negeri Sembilan,Jelebu,Jelebu,district,2024,11129,0,0.0
+Negeri Sembilan,Jelebu,Jelebu,district,2025,11129,212.517,0.213
+Negeri Sembilan,Kuala Pilah,Kuala Pilah,district,2024,18715,337.45,0.337
+Negeri Sembilan,Kuala Pilah,Kuala Pilah,district,2025,18715,23.7,0.024
+Negeri Sembilan,Port Dickson,Port Dickson,district,2024,32697,362.81,0.363
+Negeri Sembilan,Port Dickson,Port Dickson,district,2025,32697,508.47,0.508
+Negeri Sembilan,Rembau,Rembau,district,2024,12722,43.75,0.044
+Negeri Sembilan,Rembau,Rembau,district,2025,12722,15.0,0.015
+Negeri Sembilan,Seremban,Seremban,district,2024,185707,0,0.0
+Negeri Sembilan,Seremban,Seremban,district,2025,185707,115.81,0.116
+Negeri Sembilan,Tampin,Tampin,district,2024,22233,1940.862,1.941
+Negeri Sembilan,Tampin,Tampin,district,2025,22233,33.0,0.033
+Negeri Sembilan,Jempol,Jempol,district,2024,32294,375.667,0.376
+Negeri Sembilan,Jempol,Jempol,district,2025,32294,2.0,0.002
+Pahang,,Pahang,state,2024,401534,12246.047,12.246
+Pahang,,Pahang,state,2025,401534,20784.893,20.785
+Pahang,Bentong,Bentong,district,2024,30223,34.116,0.034
+Pahang,Bentong,Bentong,district,2025,30223,220.5,0.221
+Pahang,Cameron Highlands,Cameron Highlands,district,2024,9798,0,0.0
+Pahang,Cameron Highlands,Cameron Highlands,district,2025,9798,186.25,0.186
+Pahang,Jerantut,Jerantut,district,2024,22278,135.621,0.136
+Pahang,Jerantut,Jerantut,district,2025,22278,158.343,0.158
+Pahang,Kuantan,Kuantan,district,2024,145270,742.172,0.742
+Pahang,Kuantan,Kuantan,district,2025,145270,15644.605,15.645
+Pahang,Lipis,Lipis,district,2024,21013,1339.569,1.34
+Pahang,Lipis,Lipis,district,2025,21013,969.848,0.97
+Pahang,Pekan,Pekan,district,2024,32130,602.6,0.603
+Pahang,Pekan,Pekan,district,2025,32130,527.796,0.528
+Pahang,Raub,Raub,district,2024,22918,5449.115,5.449
+Pahang,Raub,Raub,district,2025,22918,1255.185,1.255
+Pahang,Temerloh,Temerloh,district,2024,42269,2501.915,2.502
+Pahang,Temerloh,Temerloh,district,2025,42269,361.591,0.362
+Pahang,Rompin,Rompin,district,2024,27110,602.351,0.602
+Pahang,Rompin,Rompin,district,2025,27110,226.797,0.227
+Pahang,Maran,Maran,district,2024,25147,738.349,0.738
+Pahang,Maran,Maran,district,2025,25147,1092.331,1.092
+Pahang,Bera,Bera,district,2024,23378,100.239,0.1
+Pahang,Bera,Bera,district,2025,23378,141.647,0.142
+Pulau Pinang,,Pulau Pinang,state,2024,495347,994.141,0.994
+Pulau Pinang,,Pulau Pinang,state,2025,495347,919.647,0.92
+Pulau Pinang,Seberang Perai Tengah,Seberang Perai Tengah,district,2024,106330,241.47,0.241
+Pulau Pinang,Seberang Perai Tengah,Seberang Perai Tengah,district,2025,106330,223.562,0.224
+Pulau Pinang,Seberang Perai Utara,Seberang Perai Utara,district,2024,86971,635.471,0.635
+Pulau Pinang,Seberang Perai Utara,Seberang Perai Utara,district,2025,86971,686.635,0.687
+Pulau Pinang,Seberang Perai Selatan,Seberang Perai Selatan,district,2024,54648,117.2,0.117
+Pulau Pinang,Seberang Perai Selatan,Seberang Perai Selatan,district,2025,54648,0,0.0
+Pulau Pinang,Timur Laut,Timur Laut,district,2024,177231,0,0.0
+Pulau Pinang,Timur Laut,Timur Laut,district,2025,177231,0,0.0
+Pulau Pinang,Barat Daya,Barat Daya,district,2024,70167,0,0.0
+Pulau Pinang,Barat Daya,Barat Daya,district,2025,70167,9.45,0.009
+Perak,,Perak,state,2024,672855,13529.078,13.529
+Perak,,Perak,state,2025,672855,16796.416,16.796
+Perak,Batang Padang,Batang Padang,district,2024,33666,28.904,0.029
+Perak,Batang Padang,Batang Padang,district,2025,33666,27.75,0.028
+Perak,Manjung,Manjung,district,2024,62890,95.824,0.096
+Perak,Manjung,Manjung,district,2025,62890,6300.356,6.3
+Perak,Kinta,Kinta,district,2024,244648,9242.004,9.242
+Perak,Kinta,Kinta,district,2025,244648,20.2,0.02
+Perak,Kerian,Kerian,district,2024,40251,240.808,0.241
+Perak,Kerian,Kerian,district,2025,40251,337.84,0.338
+Perak,Kuala Kangsar,Kuala Kangsar,district,2024,49186,1087.498,1.087
+Perak,Kuala Kangsar,Kuala Kangsar,district,2025,49186,49.346,0.049
+Perak,Nota./ Note.:,Nota./ Note.:,district,2024,,0,0.0
+Perak,Nota./ Note.:,Nota./ Note.:,district,2025,,0,0.0
+Perak,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,district,2024,,0,0.0
+Perak,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,district,2025,,0,0.0
+Perak,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,district,2024,,0,0.0
+Perak,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,district,2025,,0,0.0
+Perak,"2. ""-""  Tidak terkesan banjir","2. ""-""  Tidak terkesan banjir",district,2024,,0,0.0
+Perak,"2. ""-""  Tidak terkesan banjir","2. ""-""  Tidak terkesan banjir",district,2025,,0,0.0
+Perak,"""-"" Not affected by the flood","""-"" Not affected by the flood",district,2024,,0,0.0
+Perak,"""-"" Not affected by the flood","""-"" Not affected by the flood",district,2025,,0,0.0
+Perak,"Negeri/Daerah
+State/District","Negeri/Daerah
+State/District",district,2024,,0,0.0
+Perak,"Negeri/Daerah
+State/District","Negeri/Daerah
+State/District",district,2025,,0,0.0
+Perak,Larut Dan Matang,Larut Dan Matang,district,2024,70995,654.66,0.655
+Perak,Larut Dan Matang,Larut Dan Matang,district,2025,70995,2429.016,2.429
+Perak,Hilir Perak3,Hilir Perak3,district,2024,34663,416.663,0.417
+Perak,Hilir Perak3,Hilir Perak3,district,2025,34663,1976.11,1.976
+Perak,Hulu Perak,Hulu Perak,district,2024,24679,271.149,0.271
+Perak,Hulu Perak,Hulu Perak,district,2025,24679,0,0.0
+Perak,Perak Tengah,Perak Tengah,district,2024,28763,286.715,0.287
+Perak,Perak Tengah,Perak Tengah,district,2025,28763,2344.83,2.345
+Perak,Kampar,Kampar,district,2024,28809,87.336,0.087
+Perak,Kampar,Kampar,district,2025,28809,0,0.0
+Perak,Muallim,Muallim,district,2024,21282,1085.738,1.086
+Perak,Muallim,Muallim,district,2025,21282,635.594,0.636
+Perak,Bagan Datuk,Bagan Datuk,district,2024,23534,0,0.0
+Perak,Bagan Datuk,Bagan Datuk,district,2025,23534,2670.824,2.671
+Perak,Selama,Selama,district,2024,9489,31.779,0.032
+Perak,Selama,Selama,district,2025,9489,4.55,0.005
+Perlis,,Perlis,state,2024,80850,980.23,0.98
+Perlis,,Perlis,state,2025,80850,5783.79,5.784
+Perlis,Kangar,Kangar,district,2024,,510.055,0.51
+Perlis,Kangar,Kangar,district,2025,,3779.79,3.78
+Perlis,Arau,Arau,district,2024,,436.725,0.437
+Perlis,Arau,Arau,district,2025,,926.7,0.927
+Perlis,Padang Besar,Padang Besar,district,2024,80850,33.45,0.033
+Perlis,Padang Besar,Padang Besar,district,2025,80850,1077.3,1.077
+Selangor,,Selangor,state,2024,1836410,6900.379,6.9
+Selangor,,Selangor,state,2025,1836410,16695.963,16.696
+Selangor,Gombak,Gombak,district,2024,222549,296.052,0.296
+Selangor,Gombak,Gombak,district,2025,222549,89.21,0.089
+Selangor,Klang,Klang,district,2024,263449,1396.391,1.396
+Selangor,Klang,Klang,district,2025,263449,2387.422,2.387
+Selangor,Kuala Langat,Kuala Langat,district,2024,79890,113.05,0.113
+Selangor,Kuala Langat,Kuala Langat,district,2025,79890,308.464,0.308
+Selangor,Kuala Selangor,Kuala Selangor,district,2024,76447,2231.746,2.232
+Selangor,Kuala Selangor,Kuala Selangor,district,2025,76447,8515.482,8.515
+Selangor,Petaling,Petaling,district,2024,617686,1343.83,1.344
+Selangor,Petaling,Petaling,district,2025,617686,3055.844,3.056
+Selangor,Sabak Bernam,Sabak Bernam,district,2024,28398,244.273,0.244
+Selangor,Sabak Bernam,Sabak Bernam,district,2025,28398,361.17,0.361
+Selangor,Sepang,Sepang,district,2024,99778,582.611,0.583
+Selangor,Sepang,Sepang,district,2025,99778,1250.151,1.25
+Selangor,Ulu Langat,Ulu Langat,district,2024,387547,184.081,0.184
+Selangor,Ulu Langat,Ulu Langat,district,2025,387547,627.78,0.628
+Selangor,Ulu Selangor,Ulu Selangor,district,2024,60666,508.345,0.508
+Selangor,Ulu Selangor,Ulu Selangor,district,2025,60666,100.44,0.1
+Terengganu,,Terengganu,state,2024,282373,125440.872,125.441
+Terengganu,,Terengganu,state,2025,282373,16310.65,16.311
+Terengganu,Dungun,Dungun,district,2024,39597,13191.143,13.191
+Terengganu,Dungun,Dungun,district,2025,39597,469.855,0.47
+Terengganu,Kemaman,Kemaman,district,2024,52932,15285.131,15.285
+Terengganu,Kemaman,Kemaman,district,2025,52932,3694.956,3.695
+Terengganu,Setiu,Setiu,district,2024,13763,19196.302,19.196
+Terengganu,Setiu,Setiu,district,2025,13763,3628.879,3.629
+Terengganu,Besut,Besut,district,2024,36345,46158.506,46.159
+Terengganu,Besut,Besut,district,2025,36345,63.468,0.063
+Terengganu,Kuala Nerus,Kuala Nerus,district,2024,35392,8969.481,8.969
+Terengganu,Kuala Nerus,Kuala Nerus,district,2025,35392,1332.845,1.333
+Terengganu,Kuala Terengganu,Kuala Terengganu,district,2024,59678,7600.432,7.6
+Terengganu,Kuala Terengganu,Kuala Terengganu,district,2025,59678,2006.962,2.007
+Terengganu,Hulu Terengganu,Hulu Terengganu,district,2024,16907,12952.996,12.953
+Terengganu,Hulu Terengganu,Hulu Terengganu,district,2025,16907,592.666,0.593
+Terengganu,Marang,Marang,district,2024,27759,2086.88,2.087
+Terengganu,Marang,Marang,district,2025,27759,4521.02,4.521
+Sabah,,Sabah,state,2024,728201,19242.937,19.243
+Sabah,,Sabah,state,2025,728201,30786.1,30.786
+Sabah,Tawau,Tawau,district,2024,74388,0,0.0
+Sabah,Tawau,Tawau,district,2025,74388,285.425,0.285
+Sabah,Lahad Datu,Lahad Datu,district,2024,49147,0,0.0
+Sabah,Lahad Datu,Lahad Datu,district,2025,49147,218.532,0.219
+Sabah,Semporna,Semporna,district,2024,29042,0,0.0
+Sabah,Semporna,Semporna,district,2025,29042,0,0.0
+Sabah,Nota./ Note.:,Nota./ Note.:,district,2024,,0,0.0
+Sabah,Nota./ Note.:,Nota./ Note.:,district,2025,,0,0.0
+Sabah,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,district,2024,,0,0.0
+Sabah,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,district,2025,,0,0.0
+Sabah,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,district,2024,,0,0.0
+Sabah,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,district,2025,,0,0.0
+Sabah,"2. ""-""  Tidak terkesan banjir","2. ""-""  Tidak terkesan banjir",district,2024,,0,0.0
+Sabah,"2. ""-""  Tidak terkesan banjir","2. ""-""  Tidak terkesan banjir",district,2025,,0,0.0
+Sabah,"""-"" Not affected by the flood","""-"" Not affected by the flood",district,2024,,0,0.0
+Sabah,"""-"" Not affected by the flood","""-"" Not affected by the flood",district,2025,,0,0.0
+Sabah,3. Termasuk daerah Bagan Datuk,3. Termasuk daerah Bagan Datuk,district,2024,,0,0.0
+Sabah,3. Termasuk daerah Bagan Datuk,3. Termasuk daerah Bagan Datuk,district,2025,,0,0.0
+Sabah,Includes district of Bagan Datuk,Includes district of Bagan Datuk,district,2024,,0,0.0
+Sabah,Includes district of Bagan Datuk,Includes district of Bagan Datuk,district,2025,,0,0.0
+Sabah,"Negeri/Daerah
+State/District","Negeri/Daerah
+State/District",district,2024,,0,0.0
+Sabah,"Negeri/Daerah
+State/District","Negeri/Daerah
+State/District",district,2025,,0,0.0
+Sabah,Sandakan,Sandakan,district,2024,82064,129.1,0.129
+Sabah,Sandakan,Sandakan,district,2025,82064,244.595,0.245
+Sabah,Kinabatangan,Kinabatangan,district,2024,32021,0,0.0
+Sabah,Kinabatangan,Kinabatangan,district,2025,32021,335.175,0.335
+Sabah,Beluran,Beluran,district,2024,19953,132.836,0.133
+Sabah,Beluran,Beluran,district,2025,19953,370.837,0.371
+Sabah,Kota Kinabalu,Kota Kinabalu,district,2024,113507,0,0.0
+Sabah,Kota Kinabalu,Kota Kinabalu,district,2025,113507,384.903,0.385
+Sabah,Ranau,Ranau,district,2024,16441,0,0.0
+Sabah,Ranau,Ranau,district,2025,16441,0,0.0
+Sabah,Kota Belud,Kota Belud,district,2024,20823,0,0.0
+Sabah,Kota Belud,Kota Belud,district,2025,20823,89.686,0.09
+Sabah,Tuaran,Tuaran,district,2024,29281,734.9,0.735
+Sabah,Tuaran,Tuaran,district,2025,29281,0,0.0
+Sabah,Penampang,Penampang,district,2024,41400,18193.223,18.193
+Sabah,Penampang,Penampang,district,2025,41400,88.75,0.089
+Sabah,Papar,Papar,district,2024,31066,0,0.0
+Sabah,Papar,Papar,district,2025,31066,0,0.0
+Sabah,Kudat,Kudat,district,2024,18023,0,0.0
+Sabah,Kudat,Kudat,district,2025,18023,6.224,0.006
+Sabah,Kota Marudu,Kota Marudu,district,2024,16299,0,0.0
+Sabah,Kota Marudu,Kota Marudu,district,2025,16299,5763.641,5.764
+Sabah,Pitas,Pitas,district,2024,8715,0,0.0
+Sabah,Pitas,Pitas,district,2025,8715,433.245,0.433
+Sabah,Beaufort3,Beaufort3,district,2024,16504,27.253,0.027
+Sabah,Beaufort3,Beaufort3,district,2025,16504,8401.346,8.401
+Sabah,Kuala Penyu,Kuala Penyu,district,2024,5333,0,0.0
+Sabah,Kuala Penyu,Kuala Penyu,district,2025,5333,0,0.0
+Sabah,Sipitang,Sipitang,district,2024,8226,0,0.0
+Sabah,Sipitang,Sipitang,district,2025,8226,39.454,0.039
+Sabah,Tenom,Tenom,district,2024,10917,0,0.0
+Sabah,Tenom,Tenom,district,2025,10917,568.386,0.568
+Sabah,Nabawan,Nabawan,district,2024,5310,0,0.0
+Sabah,Nabawan,Nabawan,district,2025,5310,436.108,0.436
+Sabah,Keningau,Keningau,district,2024,34540,0,0.0
+Sabah,Keningau,Keningau,district,2025,34540,12734.742,12.735
+Sabah,Tambunan,Tambunan,district,2024,7215,0,0.0
+Sabah,Tambunan,Tambunan,district,2025,7215,2.692,0.003
+Sabah,Kunak,Kunak,district,2024,11885,0,0.0
+Sabah,Kunak,Kunak,district,2025,11885,0,0.0
+Sabah,Tongod,Tongod,district,2024,10380,0,0.0
+Sabah,Tongod,Tongod,district,2025,10380,64.652,0.065
+Sabah,Putatan,Putatan,district,2024,15870,25.625,0.026
+Sabah,Putatan,Putatan,district,2025,15870,46.353,0.046
+Sabah,Telupid,Telupid,district,2024,7827,0,0.0
+Sabah,Telupid,Telupid,district,2025,7827,271.354,0.271
+Sabah,Kalabakan,Kalabakan,district,2024,12024,0,0.0
+Sabah,Kalabakan,Kalabakan,district,2025,12024,0,0.0
+Sarawak,,Sarawak,state,2024,618108,2558.789,2.559
+Sarawak,,Sarawak,state,2025,618108,36045.188,36.045
+Sarawak,Kuching,Kuching,district,2024,142732,1712.572,1.713
+Sarawak,Kuching,Kuching,district,2025,142732,868.669,0.869
+Sarawak,Bau,Bau,district,2024,11279,21.3,0.021
+Sarawak,Bau,Bau,district,2025,11279,5.1,0.005
+Sarawak,Lundu,Lundu,district,2024,8791,274.75,0.275
+Sarawak,Lundu,Lundu,district,2025,8791,0,0.0
+Sarawak,Samarahan4,Samarahan4,district,2024,37080,0,0.0
+Sarawak,Samarahan4,Samarahan4,district,2025,37080,846.58,0.847
+Sarawak,Serian5,Serian5,district,2024,21663,0,0.0
+Sarawak,Serian5,Serian5,district,2025,21663,4734.912,4.735
+Sarawak,Simunjan,Simunjan,district,2024,8972,0,0.0
+Sarawak,Simunjan,Simunjan,district,2025,8972,92.91,0.093
+Sarawak,Sri Aman6,Sri Aman6,district,2024,13306,28.0,0.028
+Sarawak,Sri Aman6,Sri Aman6,district,2025,13306,0,0.0
+Sarawak,Lubok Antu,Lubok Antu,district,2024,6478,0,0.0
+Sarawak,Lubok Antu,Lubok Antu,district,2025,6478,0,0.0
+Sarawak,Betong,Betong,district,2024,8873,20.007,0.02
+Sarawak,Betong,Betong,district,2025,8873,0,0.0
+Sarawak,Nota./ Note.:,Nota./ Note.:,district,2024,,0,0.0
+Sarawak,Nota./ Note.:,Nota./ Note.:,district,2025,,0,0.0
+Sarawak,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,district,2024,,0,0.0
+Sarawak,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,district,2025,,0,0.0
+Sarawak,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,district,2024,,0,0.0
+Sarawak,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,district,2025,,0,0.0
+Sarawak,"2. ""-""  Tidak terkesan banjir","2. ""-""  Tidak terkesan banjir",district,2024,,0,0.0
+Sarawak,"2. ""-""  Tidak terkesan banjir","2. ""-""  Tidak terkesan banjir",district,2025,,0,0.0
+Sarawak,"""-"" Not affected by the flood","""-"" Not affected by the flood",district,2024,,0,0.0
+Sarawak,"""-"" Not affected by the flood","""-"" Not affected by the flood",district,2025,,0,0.0
+Sarawak,"Negeri/Daerah
+State/District","Negeri/Daerah
+State/District",district,2024,,0,0.0
+Sarawak,"Negeri/Daerah
+State/District","Negeri/Daerah
+State/District",district,2025,,0,0.0
+Sarawak,Saratok,Saratok,district,2024,5478,0,0.0
+Sarawak,Saratok,Saratok,district,2025,5478,98.807,0.099
+Sarawak,Sarikei,Sarikei,district,2024,11825,52.0,0.052
+Sarawak,Sarikei,Sarikei,district,2025,11825,5.25,0.005
+Sarawak,Maradong,Maradong,district,2024,5138,0,0.0
+Sarawak,Maradong,Maradong,district,2025,5138,0,0.0
+Sarawak,Daro,Daro,district,2024,5236,0,0.0
+Sarawak,Daro,Daro,district,2025,5236,0,0.0
+Sarawak,Julau,Julau,district,2024,3855,0,0.0
+Sarawak,Julau,Julau,district,2025,3855,0,0.0
+Sarawak,Sibu,Sibu,district,2024,66409,10.0,0.01
+Sarawak,Sibu,Sibu,district,2025,66409,3066.47,3.066
+Sarawak,Dalat,Dalat,district,2024,5551,0,0.0
+Sarawak,Dalat,Dalat,district,2025,5551,253.6,0.254
+Sarawak,Mukah,Mukah,district,2024,11938,0,0.0
+Sarawak,Mukah,Mukah,district,2025,11938,187.013,0.187
+Sarawak,Kanowit,Kanowit,district,2024,6720,12.0,0.012
+Sarawak,Kanowit,Kanowit,district,2025,6720,981.071,0.981
+Sarawak,Bintulu,Bintulu,district,2024,42791,0,0.0
+Sarawak,Bintulu,Bintulu,district,2025,42791,13491.565,13.492
+Sarawak,Tatau,Tatau,district,2024,7381,0,0.0
+Sarawak,Tatau,Tatau,district,2025,7381,1571.22,1.571
+Sarawak,Kapit,Kapit,district,2024,8959,205.0,0.205
+Sarawak,Kapit,Kapit,district,2025,8959,581.7,0.582
+Sarawak,Song,Song,district,2024,2942,0,0.0
+Sarawak,Song,Song,district,2025,2942,153.6,0.154
+Sarawak,Belaga,Belaga,district,2024,6808,209.76,0.21
+Sarawak,Belaga,Belaga,district,2025,6808,0,0.0
+Sarawak,Miri,Miri,district,2024,62093,8.0,0.008
+Sarawak,Miri,Miri,district,2025,62093,1563.792,1.564
+Sarawak,Marudi,Marudi,district,2024,5408,0,0.0
+Sarawak,Marudi,Marudi,district,2025,5408,200.746,0.201
+Sarawak,Limbang,Limbang,district,2024,11069,5.4,0.005
+Sarawak,Limbang,Limbang,district,2025,11069,0,0.0
+Sarawak,Lawas,Lawas,district,2024,8632,0,0.0
+Sarawak,Lawas,Lawas,district,2025,8632,111.21,0.111
+Sarawak,Matu,Matu,district,2024,5536,0,0.0
+Sarawak,Matu,Matu,district,2025,5536,2.4,0.002
+Sarawak,Asajaya,Asajaya,district,2024,8065,0,0.0
+Sarawak,Asajaya,Asajaya,district,2025,8065,1106.99,1.107
+Sarawak,Pakan,Pakan,district,2024,3377,0,0.0
+Sarawak,Pakan,Pakan,district,2025,3377,0,0.0
+Sarawak,Selangau,Selangau,district,2024,5746,0,0.0
+Sarawak,Selangau,Selangau,district,2025,5746,4249.157,4.249
+Sarawak,Tebedu,Tebedu,district,2024,5649,0,0.0
+Sarawak,Tebedu,Tebedu,district,2025,5649,0,0.0
+Sarawak,Pusa,Pusa,district,2024,4605,0,0.0
+Sarawak,Pusa,Pusa,district,2025,4605,0,0.0
+Sarawak,Kabong,Kabong,district,2024,4234,0,0.0
+Sarawak,Kabong,Kabong,district,2025,4234,0,0.0
+Sarawak,Tanjung Manis,Tanjung Manis,district,2024,2539,0,0.0
+Sarawak,Tanjung Manis,Tanjung Manis,district,2025,2539,0,0.0
+Sarawak,Sebauh,Sebauh,district,2024,9363,0,0.0
+Sarawak,Sebauh,Sebauh,district,2025,9363,90.46,0.09
+Sarawak,Bukit Mabong,Bukit Mabong,district,2024,3677,0,0.0
+Sarawak,Bukit Mabong,Bukit Mabong,district,2025,3677,0,0.0
+Sarawak,Subis,Subis,district,2024,16490,0,0.0
+Sarawak,Subis,Subis,district,2025,16490,1586.044,1.586
+Sarawak,Beluru,Beluru,district,2024,7284,0,0.0
+Sarawak,Beluru,Beluru,district,2025,7284,155.692,0.156
+Sarawak,Telang Usan,Telang Usan,district,2024,4136,0,0.0
+Sarawak,Telang Usan,Telang Usan,district,2025,4136,40.23,0.04
+W.P. Kuala Lumpur,,W.P. Kuala Lumpur,state,2024,573529,185.915,0.186
+W.P. Kuala Lumpur,,W.P. Kuala Lumpur,state,2025,573529,611.5,0.612
+W.P. Kuala Lumpur,,W.P. Kuala Lumpur,state,2024,573529,185.915,0.186
+W.P. Kuala Lumpur,,W.P. Kuala Lumpur,state,2025,573529,611.5,0.612
+W.P. Labuan,,W.P. Labuan,state,2024,,68.866,0.069
+W.P. Labuan,,W.P. Labuan,state,2025,,0,0.0
+W.P. Labuan,,W.P. Labuan,state,2024,,68.866,0.069
+W.P. Labuan,,W.P. Labuan,state,2025,,0,0.0
+W.P. Putrajaya,,W.P. Putrajaya,state,2024,,10.0,0.01
+W.P. Putrajaya,,W.P. Putrajaya,state,2025,,0,0.0
+W.P. Putrajaya,,W.P. Putrajaya,state,2024,,10.0,0.01
+W.P. Putrajaya,,W.P. Putrajaya,state,2025,,0,0.0
+W.P. Putrajaya,Nota./ Note.:,Nota./ Note.:,district,2024,,0,0.0
+W.P. Putrajaya,Nota./ Note.:,Nota./ Note.:,district,2025,,0,0.0
+W.P. Putrajaya,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,district,2024,,0,0.0
+W.P. Putrajaya,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,1. *Bilangan Tempat Kediaman merujuk kepada data Banci Penduduk dan Perumahan Malaysia 2020,district,2025,,0,0.0
+W.P. Putrajaya,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,district,2024,,0,0.0
+W.P. Putrajaya,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,Number of Living Quarters refers to the data of Population and Housing Census Malaysia 2020,district,2025,,0,0.0
+W.P. Putrajaya,"2. ""-""  Tidak terkesan banjir","2. ""-""  Tidak terkesan banjir",district,2024,,0,0.0
+W.P. Putrajaya,"2. ""-""  Tidak terkesan banjir","2. ""-""  Tidak terkesan banjir",district,2025,,0,0.0
+W.P. Putrajaya,"""-"" Not affected by the flood","""-"" Not affected by the flood",district,2024,,0,0.0
+W.P. Putrajaya,"""-"" Not affected by the flood","""-"" Not affected by the flood",district,2025,,0,0.0

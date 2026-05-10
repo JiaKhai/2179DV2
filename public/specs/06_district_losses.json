@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 360,
+  "data": { "url": "data/processed/flood_losses_district.csv" },
+  "transform": [
+    { "filter": "datum.year == 2025 && datum.place_type == 'district'" },
+    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "total_loss_rm_million", "order": "descending" }] },
+    { "filter": "datum.rank <= 12" }
+  ],
+  "mark": { "type": "bar", "cornerRadiusEnd": 3, "color": "#bd4a36" },
+  "encoding": {
+    "y": {
+      "field": "place_name",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null,
+      "axis": { "labelLimit": 170 }
+    },
+    "x": {
+      "field": "total_loss_rm_million",
+      "type": "quantitative",
+      "title": "2025 flood loss (RM million)"
+    },
+    "tooltip": [
+      { "field": "place_name", "type": "nominal", "title": "District" },
+      { "field": "state", "type": "nominal", "title": "State" },
+      {
+        "field": "total_loss_rm_million",
+        "type": "quantitative",
+        "title": "Loss (RM million)",
+        "format": ",.1f"
+      }
+    ]
+  },
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "grid": false }
+  }
+}

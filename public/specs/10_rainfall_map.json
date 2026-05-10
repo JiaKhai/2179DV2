@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 420,
+  "data": {
+    "url": "data/processed/malaysia_adm1.geojson",
+    "format": { "type": "json", "property": "features" }
+  },
+  "transform": [
+    {
+      "lookup": "properties.state",
+      "from": {
+        "data": { "url": "data/processed/story_state_summary.csv" },
+        "key": "state",
+        "fields": ["annual_rainfall_avg_2013_2017_mm", "flood_total_loss_2025_rm_million"]
+      }
+    }
+  ],
+  "projection": { "type": "mercator" },
+  "mark": { "type": "geoshape", "stroke": "#f7f3ea", "strokeWidth": 1 },
+  "encoding": {
+    "color": {
+      "field": "annual_rainfall_avg_2013_2017_mm",
+      "type": "quantitative",
+      "title": "Avg annual rainfall, 2013-2017 (mm)",
+      "scale": { "scheme": "blues" }
+    },
+    "tooltip": [
+      { "field": "properties.state", "type": "nominal", "title": "State / territory" },
+      {
+        "field": "annual_rainfall_avg_2013_2017_mm",
+        "type": "quantitative",
+        "title": "Avg rainfall (mm)",
+        "format": ",.0f"
+      },
+      {
+        "field": "flood_total_loss_2025_rm_million",
+        "type": "quantitative",
+        "title": "2025 loss (RM million)",
+        "format": ",.1f"
+      }
+    ]
+  },
+  "config": {
+    "view": { "stroke": null },
+    "legend": { "orient": "bottom", "direction": "horizontal" }
+  }
+}

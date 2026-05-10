@@ -5,6 +5,7 @@ import datetime as dt
 import json
 import math
 import re
+import shutil
 from pathlib import Path
 from typing import Any
 
@@ -14,6 +15,7 @@ import openpyxl
 ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = ROOT / "data" / "raw"
 OUT_DIR = ROOT / "data" / "processed"
+PUBLIC_OUT_DIR = ROOT / "public" / "data" / "processed"
 
 
 RAW_FLOOD = RAW_DIR / "SPECIAL REPORT ON IMPACT OF FLOODS IN MALAYSIA, 2025.xlsx"
@@ -484,6 +486,13 @@ def preprocess_story_state_summary(
     return rows
 
 
+def mirror_processed_for_vite() -> None:
+    PUBLIC_OUT_DIR.mkdir(parents=True, exist_ok=True)
+    for source in OUT_DIR.iterdir():
+        if source.is_file() and source.suffix.lower() in {".csv", ".json", ".geojson"}:
+            shutil.copy2(source, PUBLIC_OUT_DIR / source.name)
+
+
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     preprocess_state_lookup()
@@ -494,7 +503,9 @@ def main() -> None:
     preprocess_stations()
     preprocess_geojson()
     preprocess_story_state_summary(flood_state, population, rainfall)
+    mirror_processed_for_vite()
     print(f"Processed data written to {OUT_DIR}")
+    print(f"Public data mirrored to {PUBLIC_OUT_DIR}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #17211f;
+  background: #f7f3ea;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 15% 8%, rgba(116, 183, 201, 0.2), transparent 30rem),
+    linear-gradient(180deg, #f7f3ea 0%, #eef3ee 48%, #f7f3ea 100%);
+}
+
+svg {
+  max-width: 100%;
+}
+
+.chart-shell details summary {
+  cursor: pointer;
+}
+
+.vega-actions {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-up {
+    animation: fade-up 680ms ease both;
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

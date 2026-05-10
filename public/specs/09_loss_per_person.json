@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 320,
+  "data": { "url": "data/processed/story_state_summary.csv" },
+  "transform": [
+    { "filter": "datum.flood_loss_2025_rm_per_person != null && datum.flood_loss_2025_rm_per_person != ''" },
+    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "flood_loss_2025_rm_per_person", "order": "descending" }] },
+    { "filter": "datum.rank <= 10" }
+  ],
+  "mark": { "type": "bar", "cornerRadiusEnd": 3 },
+  "encoding": {
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null,
+      "axis": { "labelLimit": 160 }
+    },
+    "x": {
+      "field": "flood_loss_2025_rm_per_person",
+      "type": "quantitative",
+      "title": "2025 flood loss per person (RM)"
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Region",
+      "scale": {
+        "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96"]
+      }
+    },
+    "tooltip": [
+      { "field": "state", "type": "nominal", "title": "State / territory" },
+      {
+        "field": "flood_loss_2025_rm_per_person",
+        "type": "quantitative",
+        "title": "Loss per person (RM)",
+        "format": ",.2f"
+      },
+      {
+        "field": "flood_total_loss_2025_rm_million",
+        "type": "quantitative",
+        "title": "Total loss (RM million)",
+        "format": ",.1f"
+      }
+    ]
+  },
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "grid": false },
+    "legend": { "orient": "bottom" }
+  }
+}

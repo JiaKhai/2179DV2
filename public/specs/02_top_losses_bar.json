@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 340,
+  "data": { "url": "data/processed/story_state_summary.csv" },
+  "transform": [
+    { "filter": "datum.flood_total_loss_2025_rm_million > 0" },
+    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "flood_total_loss_2025_rm_million", "order": "descending" }] },
+    { "filter": "datum.rank <= 10" }
+  ],
+  "mark": { "type": "bar", "cornerRadiusEnd": 3 },
+  "encoding": {
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null,
+      "axis": { "labelLimit": 160 }
+    },
+    "x": {
+      "field": "flood_total_loss_2025_rm_million",
+      "type": "quantitative",
+      "title": "2025 flood loss (RM million)"
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Region",
+      "scale": {
+        "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96"]
+      }
+    },
+    "tooltip": [
+      { "field": "state", "type": "nominal", "title": "State / territory" },
+      { "field": "region", "type": "nominal", "title": "Region" },
+      {
+        "field": "flood_total_loss_2025_rm_million",
+        "type": "quantitative",
+        "title": "Loss (RM million)",
+        "format": ",.1f"
+      }
+    ]
+  },
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "grid": false },
+    "legend": { "orient": "bottom" }
+  }
+}

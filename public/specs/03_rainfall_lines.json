@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 320,
+  "data": { "url": "data/processed/rainfall_state_annual.csv" },
+  "transform": [
+    { "filter": "datum.year != '2013-2017 average'" },
+    { "filter": "indexof(['Terengganu','Kelantan','Sarawak','Johor','Selangor','Pahang'], datum.state) >= 0" }
+  ],
+  "mark": { "type": "line", "point": true, "strokeWidth": 2.5 },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "annual_rainfall_mm",
+      "type": "quantitative",
+      "title": "Annual rainfall (mm)",
+      "scale": { "zero": false }
+    },
+    "color": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State",
+      "scale": {
+        "range": ["#bd4a36", "#d87b3f", "#2f7ea8", "#6f8f56", "#8b6f96", "#5f7f92"]
+      }
+    },
+    "tooltip": [
+      { "field": "state", "type": "nominal", "title": "State" },
+      { "field": "year", "type": "ordinal", "title": "Year" },
+      {
+        "field": "annual_rainfall_mm",
+        "type": "quantitative",
+        "title": "Rainfall (mm)",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "gridColor": "#d8ded9" },
+    "legend": { "orient": "bottom" }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 340,
+  "data": { "url": "data/processed/story_state_summary.csv" },
+  "transform": [
+    { "filter": "datum.annual_rainfall_avg_2013_2017_mm != null && datum.annual_rainfall_avg_2013_2017_mm != ''" }
+  ],
+  "mark": { "type": "circle", "opacity": 0.82, "stroke": "#17211f", "strokeWidth": 0.7 },
+  "encoding": {
+    "x": {
+      "field": "annual_rainfall_avg_2013_2017_mm",
+      "type": "quantitative",
+      "title": "Average annual rainfall, 2013-2017 (mm)",
+      "scale": { "zero": false }
+    },
+    "y": {
+      "field": "flood_total_loss_2025_rm_million",
+      "type": "quantitative",
+      "title": "2025 flood loss (RM million)"
+    },
+    "size": {
+      "field": "population_2025",
+      "type": "quantitative",
+      "title": "Population, 2025",
+      "scale": { "range": [80, 1100] }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "title": "Region",
+      "scale": {
+        "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96"]
+      }
+    },
+    "tooltip": [
+      { "field": "state", "type": "nominal", "title": "State / territory" },
+      {
+        "field": "annual_rainfall_avg_2013_2017_mm",
+        "type": "quantitative",
+        "title": "Avg rainfall (mm)",
+        "format": ",.0f"
+      },
+      {
+        "field": "flood_total_loss_2025_rm_million",
+        "type": "quantitative",
+        "title": "Loss (RM million)",
+        "format": ",.1f"
+      },
+      {
+        "field": "population_2025",
+        "type": "quantitative",
+        "title": "Population",
+        "format": ","
+      }
+    ]
+  },
+  "config": {
+    "view": { "stroke": null },
+    "legend": { "orient": "bottom" }
+  }
+}

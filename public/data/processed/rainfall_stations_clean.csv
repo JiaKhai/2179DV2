@@ -1,0 +1,1710 @@
+station_no,station_name,function,state_raw,state,latitude,longitude,coord_status,lat_parse_method,lon_parse_method
+1334108,"Ldg. Getah Kukup, Pontian",RF,Johor,Johor,1.348611,103.458333,ok,parsed_excel_date,parsed_dms
+1433105,"Hospital Umum, Pontian",RF,Johor,Johor,1.498611,103.388889,ok,parsed_excel_date,parsed_dms
+1437116,Stor JPS Johor Bahru,RF,Johor,Johor,1.470833,103.752778,ok,parsed_excel_date,parsed_dms
+1438001,Sedc Pasir Gudang,RF,Johor,Johor,1.444444,103.898611,ok,parsed_excel_date,parsed_dms
+1438118,"Ldg. Sg. Buloh, Johor Bahru",RF,Johor,Johor,1.458333,103.893056,ok,parsed_excel_date,parsed_dms
+1439118,"Ldg. Sg. Buloh, Johor Bahru",RF,Johor,Johor,1.476389,103.9,ok,parsed_excel_date,parsed_dms
+1442001,"Desaru, Penggarang",RF,Johor,Johor,1.484722,104.269444,ok,parsed_excel_date,parsed_dms
+1534001,Komplek Perumahan Pontian,RF,Johor,Johor,1.501389,103.419444,ok,parsed_excel_date,parsed_dms
+1534002,Pusat Kemajuan Per. Pekan Nanas,RF,Johor,Johor,1.515278,103.494444,ok,parsed_excel_date,parsed_dms
+1534103,Stn.Penyelidikan Nenas Pontian,RF,Johor,Johor,1.590278,103.465278,ok,parsed_dms,parsed_dms
+1534104,Ibu Bekalan JKR Pontian Besar,RF,Johor,Johor,1.597222,103.415278,ok,parsed_dms,parsed_dms
+1535106,Ldg. Gunung Pulai di Johor Bahru,RF,Johor,Johor,1.563889,103.579167,ok,parsed_dms,parsed_dms
+1535107,"Balai Bomba, Pekan Nenas",RF,Johor,Johor,1.506944,103.516667,ok,parsed_excel_date,parsed_dms
+1536110,Ldg. Senai di Senai,RF,Johor,Johor,1.584722,103.654167,ok,parsed_dms,parsed_dms
+1536111,"Ldg. Buan Heng, Skudai",RF,Johor,Johor,1.536111,103.625,ok,parsed_dms,parsed_dms
+1537113,Ldg. Tebrau di Johor Bahru,RF,Johor,Johor,1.55,103.743056,ok,parsed_dms,parsed_dms
+1537114,"Ldg. Mount Austin, Johor Bahru",RF,Johor,Johor,1.55,103.776389,ok,parsed_dms,parsed_dms
+1537115,Kolam Air Johor Bahru,RF,Johor,Johor,1.501389,103.731944,ok,parsed_excel_date,parsed_dms
+1538001,Sg. Plentong,RF,Johor,Johor,1.534722,103.844444,ok,parsed_dms,parsed_dms
+1538117,"Ldg. Sg. Plentong, Johor Bahru",RF,Johor,Johor,1.534722,103.844444,ok,parsed_dms,parsed_dms
+1539001,Loji Air Sg.Layang,RF,Johor,Johor,1.556944,103.925,ok,parsed_dms,parsed_dms
+1539001,Kg. Oren,RF,Johor,Johor,1.5875,103.918056,ok,parsed_dms,parsed_dms
+1539134,Ldg. Sg. Tiram di Johor Bahru,RF,Johor,Johor,1.5875,103.918056,ok,parsed_dms,parsed_dms
+1539136,"Ldg. Lim Lim Bhd., Masai",RF,Johor,Johor,1.520833,103.991667,ok,parsed_excel_date,parsed_dms
+1540135,Ldg. Telok Sengat di Kota Tinggi,RF,Johor,Johor,1.568056,104.038889,ok,parsed_dms,parsed_dms
+1541001,Kangar Chemara,RF,Johor,Johor,1.576389,104.198611,ok,parsed_dms,parsed_dms
+1541137,Ldg. Sg. Papan di Kota Tinggi,RF,Johor,Johor,1.5,104.105556,ok,parsed_excel_date,parsed_dms
+1541138,"Ldg. Kg. Bahru, Sg. Papan",RF,Johor,Johor,1.547222,104.156944,ok,parsed_dms,parsed_dms
+1541139,Johor Silica,RF,Johor,Johor,1.526389,104.184722,ok,parsed_excel_date,parsed_dms
+1631001,Pintu Pasang Surut Kg.Sg.Rengit,RF,Johor,Johor,1.666667,103.148611,ok,parsed_dms,parsed_dms
+1631084,Pintu Pasang Surut Rengit,RF,Johor,Johor,1.680556,103.148611,ok,parsed_dms,parsed_dms
+1632001,"Benut, Johor Barat",RF,Johor,Johor,1.65,103.263889,ok,parsed_dms,parsed_dms
+1632095,"Parit Batang Duku, Batu Pahat",RF,Johor,Johor,1.672222,103.25,ok,parsed_dms,parsed_dms
+1632096,Pintu Kawalan Tampok di Batu Pahat,RF,Johor,Johor,1.626389,103.202778,ok,parsed_dms,parsed_dms
+1635102,Ldg. Kulai Young di Kulai,RF,Johor,Johor,1.629167,103.531944,ok,parsed_dms,parsed_dms
+1636001,Balai Polis Kg.Seelong,RF,Johor,Johor,1.630556,103.697222,ok,parsed_dms,parsed_dms
+1636002,Kg. Separa,RF,Johor,Johor,1.651944,103.628611,ok,parsed_dms,parsed_dms
+1636109,Ldg. Kelan di Kulai,RF,Johor,Johor,1.681944,103.629167,ok,parsed_dms,parsed_dms
+1637001,Felda Ulu Tiram/Ulu Tebrau,RF,Johor,Johor,1.629167,103.779167,ok,parsed_dms,parsed_dms
+1637133,Ldg. Ulu Tiram,RF,Johor,Johor,1.629167,103.779167,ok,parsed_dms,parsed_dms
+1639132,Ldg. Nam Heng di Kota Tinggi,RF,Johor,Johor,1.654167,103.926389,ok,parsed_dms,parsed_dms
+1640141,Felda Air Tawar 1,RF,Johor,Johor,1.620833,104.044444,ok,parsed_dms,parsed_dms
+1730081,"Stn. Pam Koris, Batu Pahat",RF,Johor,Johor,1.761111,103.0,ok,parsed_dms,parsed_dms
+1730082,Pintu Pasang Surut Senggarang,RF,Johor,Johor,1.745833,103.056944,ok,parsed_dms,parsed_dms
+1730085,Ldg. Bkt. Batu Senggarang,RF,Johor,Johor,1.788889,103.016667,ok,parsed_dms,parsed_dms
+1731001,Pintu Kawalan  Parit Saidi Barat,RF,Johor,Johor,1.7375,103.108333,ok,parsed_dms,parsed_dms
+1731083,"Parit Perpat, Batu Pahat",RF,Johor,Johor,1.722222,103.127778,ok,parsed_dms,parsed_dms
+1731094,Sek. Keb. Merlong Darat,RF,Johor,Johor,1.731944,103.1875,ok,parsed_dms,parsed_dms
+1732001,"Parit Madirono, Site 1",RF,Johor,Johor,1.713889,103.279167,ok,parsed_dms,parsed_dms
+1732002,"Parit Madirono, Site 2",RF,Johor,Johor,1.711111,103.288889,ok,parsed_dms,parsed_dms
+1732003,"Parit Madirono, Site 3",RF,Johor,Johor,1.706944,103.281944,ok,parsed_dms,parsed_dms
+1732004,"Parit Madirono, Site 4",RF,Johor,Johor,1.708333,103.273611,ok,parsed_dms,parsed_dms
+1734001,Loji Pembersih Bkt. Batu,RF,Johor,Johor,1.727778,103.443056,ok,parsed_dms,parsed_dms
+1735125,Ldg. Sedenak di Sedenak,RF,Johor,Johor,1.713889,103.527778,ok,parsed_dms,parsed_dms
+1735142,Felda Kg. Teck Wah Heng,RF,Johor,Johor,1.769444,103.519444,ok,parsed_dms,parsed_dms
+1736126,"Ldg. Sayong, Kulai",RF,Johor,Johor,1.7625,103.6,ok,parsed_dms,parsed_dms
+1737001,Sek. Men. Bkt. Besar di Kota Tinggi,RF,Johor,Johor,1.763889,103.719444,ok,parsed_dms,parsed_dms
+1737127,Bkt. Besar Felda di Kota Tinggi,RF,Johor,Johor,1.770833,103.704167,ok,parsed_dms,parsed_dms
+1737128,S.R.J.K. Kg. Rantau Panjang,RF,Johor,Johor,1.781944,103.744444,ok,parsed_dms,parsed_dms
+1738129,"Rumah Tapis Air, Kota Tinggi",RF,Johor,Johor,1.751389,103.893056,ok,parsed_dms,parsed_dms
+1738131,Ldg. Getah Malaya di Kota Tinggi,RF,Johor,Johor,1.702778,103.886111,ok,parsed_dms,parsed_dms
+1739001,Bt. 27 Jln. Johor Bahru/Mersing,RF,Johor,Johor,1.748611,103.923611,ok,parsed_dms,parsed_dms
+1739003,Ldg. Permatang di  Kota Tinggi,RF,Johor,Johor,1.776389,103.926389,ok,parsed_dms,parsed_dms
+1739130,"Ldg. Permatang, Kota Tinggi",RF,Johor,Johor,1.779167,103.923611,ok,parsed_dms,parsed_dms
+1739195,Ulu Mupor,RF,Johor,Johor,1.775,103.984722,ok,parsed_dms,parsed_dms
+1740001,Felda Bkt. Wah Ha/Aping Selatan,RF,Johor,Johor,1.769444,104.030556,ok,parsed_dms,parsed_dms
+1829001,Sek Men Munshi Sulaiman,RF,Johor,Johor,1.866667,102.981944,ok,parsed_dms,parsed_dms
+1829002,Stor Daerah JPS Batu Pahat,RF,Johor,Johor,1.840278,102.925,ok,parsed_dms,parsed_dms
+1829002,Bukit Besar,RF,Johor,Johor,1.763889,103.719444,ok,parsed_dms,parsed_dms
+1829003,Pintu Kawalan Parit Bintang,RF,Johor,Johor,1.857056,102.921444,ok,parsed_dms,parsed_dms
+1829077,"Kurai JKR, Batu Pahat",RF,Johor,Johor,1.855556,102.975,ok,parsed_dms,parsed_dms
+1829078,Stor JPS Batu Pahat,RF,Johor,Johor,1.852778,102.926389,ok,parsed_dms,parsed_dms
+1829078,Batu Pahat,RF,Johor,Johor,1.852778,102.926389,ok,parsed_dms,parsed_dms
+1829079,"Kolam Air Bkt. Banang, Batu Pahat",RF,Johor,Johor,1.833333,102.944444,ok,parsed_dms,parsed_dms
+1829080,"Ldg. Banang, Batu Pahat",RF,Johor,Johor,1.809722,102.961111,ok,parsed_dms,parsed_dms
+1830075,Pintu Kawalan Sembrong,RF,Johor,Johor,1.875,103.054167,ok,parsed_dms,parsed_dms
+1830076,Ldg. Sri Gading di  Batu Pahat,RF,Johor,Johor,1.840278,103.020833,ok,parsed_dms,parsed_dms
+1831074,Rumah Pengawas Parit Raja,RF,Johor,Johor,1.869444,103.1125,ok,parsed_dms,parsed_dms
+1832001,Empangan Sg. Machap,RF,Johor,Johor,1.886111,103.272222,ok,parsed_dms,parsed_dms
+1833092,Ldg. Simpang Rengam di Simpang Rengam,RF,Johor,Johor,1.856944,103.336111,ok,parsed_dms,parsed_dms
+1833093,Pusat Perbekalan Air di Spg. Rengam,RF,Johor,Johor,1.826389,103.3,ok,parsed_dms,parsed_dms
+1833123,Ldg. Benut di Rengam,RF,Johor,Johor,1.838889,103.352778,ok,parsed_dms,parsed_dms
+1834001,Stesen Tele. Ulu Remis,RF,Johor,Johor,1.845833,103.475,ok,parsed_dms,parsed_dms
+1834122,Ldg. Rengam di Rengam,RF,Johor,Johor,1.888889,103.415278,ok,parsed_dms,parsed_dms
+1834124,"Ldg. Ulu Remis, Layang Layang",RF,Johor,Johor,1.848611,103.468056,ok,parsed_dms,parsed_dms
+1835001,Ldg. Pekan Layang Layang,RF,Johor,Johor,1.855556,103.5875,ok,parsed_dms,parsed_dms
+1836001,Rancangan Ulu Sebol,RF,Johor,Johor,1.875,103.6375,ok,parsed_dms,parsed_dms
+1836002,Kluang Ulu Sebol,RF,Johor,Johor,1.884722,103.633333,ok,parsed_dms,parsed_dms
+1836145,Jam. Jln. Pengelli,RF,Johor,Johor,1.813889,103.630556,ok,parsed_dms,parsed_dms
+1838148,Kerja Air Kota Tinggi,RF,Johor,Johor,1.831944,103.833333,ok,parsed_dms,parsed_dms
+1839196,Simpang Mawai-Kuala Sedili,RF,Johor,Johor,1.85,103.965278,ok,parsed_dms,parsed_dms
+1840001,Loji Pembersih Sg. Gembut,RF,Johor,Johor,1.891667,104.05,ok,parsed_dms,parsed_dms
+1841199,Pengkalan Kg. Sedili Kecil,RF,Johor,Johor,1.841667,104.148611,ok,parsed_dms,parsed_dms
+1926001,Pintu Kawalan Parit Jawa di Muar,RF,Johor,Johor,1.952778,102.634722,ok,parsed_dms,parsed_dms
+1926051,Ldg. Air Manis di Muar,RF,Johor,Johor,2.0,102.691667,ok,parsed_dms,parsed_dms
+1926052,Pintu Kawalan Parit Jamil di Muar,RF,Johor,Johor,1.943056,102.645833,ok,parsed_dms,parsed_dms
+1927053,Ibu Bekalan Sg. Sarang Buaya,RF,Johor,Johor,1.954167,102.773611,ok,parsed_dms,parsed_dms
+1928065,Pintu Kawalan Separap di Pesarai,RF,Johor,Johor,1.920833,102.877778,ok,parsed_dms,parsed_dms
+1929064,Kerja Air Parit Sulong di  Batu  Pahat,RF,Johor,Johor,1.981944,102.925,ok,parsed_dms,parsed_dms
+1929065,Sri Medan,RF,Johor,Johor,1.993056,102.966667,ok,parsed_dms,parsed_dms
+1931001,"Bt. 2 Jam. Brizay, Yong Peng",RF,Johor,Johor,1.938889,103.1625,ok,parsed_dms,parsed_dms
+1931002,Majuternak Air Hitam,RF,Johor,Johor,1.981944,103.197222,ok,parsed_dms,parsed_dms
+1931003,Empangan Sg. Sembrong di Air Hitam,RF,Johor,Johor,1.973611,103.179167,ok,parsed_dms,parsed_dms
+1931072,Pusat Pertanian Air Itam,RF,Johor,Johor,1.934722,103.186111,ok,parsed_dms,parsed_dms
+1931073,Rumah Pengawas Assam Bubok,RF,Johor,Johor,1.908333,103.130556,ok,parsed_dms,parsed_dms
+1932001,LKTP (Felda) Air Hitam,RF,Johor,Johor,1.958333,103.231944,ok,parsed_dms,parsed_dms
+1932001,Felda Air Hitam,RF,Johor,Johor,1.958333,103.231944,ok,parsed_dms,parsed_dms
+1932091,"Ldg. Nyanyo, Kluang",RF,Johor,Johor,1.940278,103.279167,ok,parsed_dms,parsed_dms
+1933121,Ldg. Getah See Sun di Rengam,RF,Johor,Johor,1.902778,103.397222,ok,parsed_dms,parsed_dms
+1933151,Ldg. Lambak di  Kluang,RF,Johor,Johor,1.968056,103.326389,ok,parsed_dms,parsed_dms
+1937149,"Lombong Sin Seng, Kota Tinggi",RF,Johor,Johor,1.925,103.709722,ok,parsed_dms,parsed_dms
+1938194,Jabatan Perhutanan di Ulu Sedili,RF,Johor,Johor,1.959722,103.873611,ok,parsed_dms,parsed_dms
+1941198,S.R.J.K. Kg. Tg. Lembu,RF,Johor,Johor,1.927778,104.108333,ok,parsed_dms,parsed_dms
+2025001,Pintu Kawalan Tg. Agas di Muar,RF,Johor,Johor,2.051389,102.577778,ok,parsed_excel_date,parsed_dms
+2025029,Kolam Air Bkt. Treh di Muar,RF,Johor,Johor,2.088889,102.579167,ok,parsed_excel_date,parsed_dms
+2025030,"Hospital Kerajaan, Muar",RF,Johor,Johor,2.056944,102.577778,ok,parsed_excel_date,parsed_dms
+2025031,JPS Muar,RF,Johor,Johor,2.063889,102.575,ok,parsed_excel_date,parsed_dms
+2030001,Sek. Men. Inggeris Yong Peng,RF,Johor,Johor,2.022222,103.061111,ok,parsed_excel_date,parsed_dms
+2030002,Loji Air Bahru di  Yong Peng,RF,Johor,Johor,2.0125,103.05,ok,parsed_dms,parsed_dms
+2030070,Kerja Air Jkr. Yong Peng,RF,Johor,Johor,2.016667,103.056944,ok,parsed_excel_date,parsed_dms
+2030071,Empangan Bekok,RF,Johor,Johor,2.098611,103.063889,ok,parsed_excel_date,parsed_dms
+2031067,Ldg. Yong Peng,RF,Johor,Johor,2.041667,103.119444,ok,parsed_excel_date,parsed_dms
+2031069,Ldg. Yong Peng di Batu Pahat,RF,Johor,Johor,2.070833,103.152778,ok,parsed_excel_date,parsed_dms
+2031069,Ladang Yong Peng,RF,Johor,Johor,2.071667,103.156389,ok,parsed_excel_date,parsed_dms
+2032071,Ldg. Kian Hoe di Kluang,RF,Johor,Johor,2.026389,103.270833,ok,parsed_excel_date,parsed_dms
+2033001,Stor Baru JPS  Kluang,RF,Johor,Johor,2.019444,103.325,ok,parsed_excel_date,parsed_dms
+2033002,Stesen Bandar Kluang,RF,Johor,Johor,2.038333,103.3225,ok,parsed_excel_date,parsed_dms
+2033152,Ldg. Mengkibol di Kluang,RF,Johor,Johor,2.006944,103.3,ok,parsed_dms,parsed_dms
+2033153,Stor Jps. Kluang,RF,Johor,Johor,2.022222,103.319444,ok,parsed_excel_date,parsed_dms
+2033155,"Ldg. Rengo Malay, Kluang",RF,Johor,Johor,2.076389,103.383333,ok,parsed_excel_date,parsed_dms
+2034001,Felda Kahang Barat,RF,Johor,Johor,2.034722,103.419444,ok,parsed_excel_date,parsed_dms
+2037001,Bkt. Panjang,RF,Johor,Johor,2.038889,103.75,ok,parsed_excel_date,parsed_dms
+2037191,Bkt. Panjang,RF,Johor,Johor,2.026389,103.752778,ok,parsed_excel_date,parsed_dms
+2038001,Rancangan Belia Sg. Ara,RF,Johor,Johor,2.004167,103.872222,ok,parsed_dms,parsed_dms
+2038001,Sg. Sedeli Bt. 52,RF,Johor,Johor,2.0025,103.879167,ok,parsed_dms,parsed_dms
+2038002,Felda Tenggaroh 1,RF,Johor,Johor,2.0875,103.893056,ok,parsed_excel_date,parsed_dms
+2125001,Pintu Kawalan Sg.Kesang,RF,Johor,Johor,2.125,102.505556,ok,parsed_excel_date,parsed_dms
+2125028,"Rumah Pam Pulau Penarek, Muar",RF,Johor,Johor,2.145833,102.566667,ok,parsed_excel_date,parsed_dms
+2125041,Rumah Pam Telok Rimba di Muar,RF,Johor,Johor,2.175,102.506944,ok,parsed_excel_date,parsed_dms
+2125042,Rumah Pam Kesang Tasek,RF,Johor,Johor,2.151389,102.538889,ok,parsed_excel_date,parsed_dms
+2126024,"Ldg. Tanjung Olak, Muar",RF,Johor,Johor,2.154167,102.656944,ok,parsed_excel_date,parsed_dms
+2127017,Ldg. Temiang Renchong di Muar,RF,Johor,Johor,2.170833,102.788889,ok,parsed_excel_date,parsed_dms
+2127018,Ldg. Temiang Renchong (Pagoh),RF,Johor,Johor,2.147222,102.793056,ok,parsed_excel_date,parsed_dms
+2127025,Kolam Air Pengkalan Bukit,RF,Johor,Johor,2.122222,102.7,ok,parsed_excel_date,parsed_dms
+2130001,Chaah Estate di Chaah,RF,Johor,Johor,2.197222,103.004167,ok,parsed_excel_date,parsed_dms
+2130001,Ladang Chaah,RF,Johor,Johor,2.173333,103.010278,ok,parsed_excel_date,parsed_dms
+2130002,Kangkar Chaah,RF,Johor,Johor,2.1875,103.015278,ok,parsed_excel_date,parsed_dms
+2130068,Ldg. Union di Yong Peng,RF,Johor,Johor,2.130556,103.05,ok,parsed_excel_date,parsed_dms
+2130070,Sg. Bekok Bt. 77,RF,Johor,Johor,2.120833,103.041667,ok,parsed_excel_date,parsed_dms
+2131156,"Ldg. Bkt. Paloh, Paloh",RF,Johor,Johor,2.141667,103.179167,ok,parsed_excel_date,parsed_dms
+2132154,Ldg. Ulu Paloh di Kluang/CEP Nyior,RF,Johor,Johor,2.105556,103.258333,ok,parsed_excel_date,parsed_dms
+2132159,"Ldg. Tiong Kiat, Paloh, Kluang",RF,Johor,Johor,2.169444,103.205556,ok,parsed_excel_date,parsed_dms
+2133157,"Ldg. Pamol, Kluang",RF,Johor,Johor,2.111111,103.344444,ok,parsed_excel_date,parsed_dms
+2138001,Rancangan Risda Sg.Ambat,RF,Johor,Johor,2.180556,103.868056,ok,parsed_excel_date,parsed_dms
+2225026,Ldg. Eng Kee di Tangkak,RF,Johor,Johor,2.251389,102.573611,ok,parsed_excel_date,parsed_dms
+2225027,"Ldg. Serom, Tangkak",RF,Johor,Johor,2.227778,102.541667,ok,parsed_excel_date,parsed_dms
+2225043,"Hospital Kerajaan, Tangkak",RF,Johor,Johor,2.272222,102.55,ok,parsed_excel_date,parsed_dms
+2226019,Rumah Pengawas Sawah Sg. Ring,RF,Johor,Johor,2.222222,102.669444,ok,parsed_excel_date,parsed_dms
+2228016,"Ldg. Ban Heng, Muar",RF,Johor,Johor,2.220833,102.819444,ok,parsed_excel_date,parsed_dms
+2230001,"Kompleks Penghulu Chaah,",RF,Johor,Johor,2.258333,103.040278,ok,parsed_excel_date,parsed_dms
+2230062,"Ldg. Johor Labis, Labis",RF,Johor,Johor,2.280556,103.063889,ok,parsed_excel_date,parsed_dms
+2231001,Ldg. Chan Wing di Pagoh,RF,Johor,Johor,2.25,103.147222,ok,parsed_excel_date,parsed_dms
+2231001,Ladang Chan Wing,RF,Johor,Johor,2.25,103.133333,ok,parsed_excel_date,parsed_dms
+2232001,Ldg. Kekayaan,RF,Johor,Johor,2.251389,103.297222,ok,parsed_excel_date,parsed_dms
+2232158,Ldg. Paloh di  Paloh,RF,Johor,Johor,2.202778,103.2,ok,parsed_excel_date,parsed_dms
+2233001,Ldg.Sungai Tawing,RF,Johor,Johor,2.269444,103.348611,ok,parsed_excel_date,parsed_dms
+2235001,Sek. Men. Kahang,RF,Johor,Johor,2.227778,103.556944,ok,parsed_excel_date,parsed_dms
+2235162,"Bt. 94 Kahang, Kluang",RF,Johor,Johor,2.213889,103.547222,ok,parsed_excel_date,parsed_dms
+2235163,Ibu Bekalan Kahang di Kluang,RF,Johor,Johor,2.229167,103.598611,ok,parsed_excel_date,parsed_dms
+2237164,Bt. 42 Jln. Kluang/Mersing,RF,Johor,Johor,2.256944,103.736111,ok,parsed_excel_date,parsed_dms
+2238188,Bt. 67 Jln. Kota Tinggi/Mersing,RF,Johor,Johor,2.245833,103.875,ok,parsed_excel_date,parsed_dms
+2238189,Kerja Air Jemaluang,RF,Johor,Johor,2.276389,103.855556,ok,parsed_excel_date,parsed_dms
+2325021,Pemasokan Mount Ophir di Muar,RF,Johor,Johor,2.329167,102.580556,ok,parsed_excel_date,parsed_dms
+2326020,"Ldg. Tangkak, Daerah Air Panas",RF,Johor,Johor,2.345833,102.638889,ok,parsed_excel_date,parsed_dms
+2326022,"Ldg. Sagil, Bkt. Pasir di Tangkak",RF,Johor,Johor,2.316667,102.680556,ok,parsed_excel_date,parsed_dms
+2326023,Ldg. Bkt. Serampang di Tangkak,RF,Johor,Johor,2.325,102.690278,ok,parsed_excel_date,parsed_dms
+2326024,Kolam Puteri,RF,Johor,Johor,2.367222,102.604167,ok,parsed_excel_date,parsed_dms
+2326025,Gunung Ledang,RF,Johor,Johor,2.367222,102.604167,ok,parsed_excel_date,parsed_dms
+2330009,Ldg. Sg. Labis di  Labis,RF,Johor,Johor,2.384722,103.016667,ok,parsed_excel_date,parsed_dms
+2334002,Kahang Oil Palm Mill/Ldg. Bukit Cantik,RF,Johor,Johor,2.35,103.445833,ok,parsed_excel_date,parsed_dms
+2334003,Kuala Sg. Mas,RF,Johor,Johor,2.390278,103.456944,ok,parsed_excel_date,parsed_dms
+2336001,Felda Nitar,RF,Johor,Johor,2.24,103.723333,ok,parsed_excel_date,parsed_dms
+2426005,Stn. Pertanian Jementah,RF,Johor,Johor,2.451389,102.686111,ok,parsed_excel_date,parsed_dms
+2427001,Felcra Tebing Tinggi di Segamat,RF,Johor,Johor,2.416667,102.779167,ok,parsed_excel_date,parsed_dms
+2428011,Ldg. Segamat di Segamat,RF,Johor,Johor,2.491667,102.883333,ok,parsed_dms,parsed_dms
+2428013,Ldg. Getah Labis Bharu di  Segamat,RF,Johor,Johor,2.427778,102.875,ok,parsed_excel_date,parsed_dms
+2429010,Ldg. Chuang Moh San di Segamat,RF,Johor,Johor,2.470833,102.925,ok,parsed_excel_date,parsed_dms
+2430001,Sawah Tenang Labis,RF,Johor,Johor,2.476389,103.072222,ok,parsed_excel_date,parsed_dms
+2430008,"Kg. Tenang, Segamat",RF,Johor,Johor,2.475,103.052778,ok,parsed_excel_date,parsed_dms
+2430009,Air Panas,RF,Johor,Johor,2.475,103.066667,ok,parsed_excel_date,parsed_dms
+2438001,Stor Jps.Batu Tiga di Mersing,RF,Johor,Johor,2.473611,103.813889,ok,parsed_excel_date,parsed_dms
+2438184,Stn. Pertanian Tenglu,RF,Johor,Johor,2.469444,103.819444,ok,parsed_excel_date,parsed_dms
+2438185,Stn. Kajicuaca Mersing,RF,Johor,Johor,2.445833,103.831944,ok,parsed_excel_date,parsed_dms
+2526001,Ldg. Sungai  Gemas,RF,Johor,Johor,2.580556,102.648611,ok,parsed_dms,parsed_dms
+2526003,Perumahan Ldg. Gemas,RF,Johor,Johor,2.581944,102.640278,ok,parsed_dms,parsed_dms
+2526004,Buloh Kasap,RF,Johor,Johor,2.555556,102.626389,ok,parsed_dms,parsed_dms
+2527004,"Ldg. Paya Lang, Segamat",RF,Johor,Johor,2.586111,102.719444,ok,parsed_dms,parsed_dms
+2527007,Perumahan Ldg. Buloh Kesap,RF,Johor,Johor,2.552778,102.786111,ok,parsed_dms,parsed_dms
+2528001,Felcra Pauh Manis,RF,Johor,Johor,2.584722,102.848611,ok,parsed_dms,parsed_dms
+2528002,Stesen Bandar Segamat,RF,Johor,Johor,2.508333,102.818056,ok,parsed_dms,parsed_dms
+2528012,Rumah Tapis Segamat,RF,Johor,Johor,2.516667,102.813889,ok,parsed_dms,parsed_dms
+2528014,"Felda Medoi, Segamat",RF,Johor,Johor,2.526389,102.8875,ok,parsed_dms,parsed_dms
+2529001,Kemelah,RF,Johor,Johor,2.5,102.948056,ok,parsed_dms,parsed_dms
+2534160,Kg. Peta Ulu Sg. Endau,RF,Johor,Johor,2.538889,103.419444,ok,parsed_dms,parsed_dms
+2536168,"Empangan Labong, Endau",RF,Johor,Johor,2.586111,103.669444,ok,parsed_dms,parsed_dms
+2537183,"Kerja Air Jkr. Tenglu, Mersing",RF,Johor,Johor,2.5,103.798611,ok,parsed_dms,parsed_dms
+2626002,Ldg. Gomali di Batu Enam,RF,Johor,Johor,2.611111,102.647222,ok,parsed_dms,parsed_dms
+2626003,Kg. Awat,RF,Johor,Johor,2.631944,102.626389,ok,parsed_dms,parsed_dms
+2628001,Ldg. Mados Sermin,RF,Johor,Johor,2.641667,102.890278,ok,parsed_dms,parsed_dms
+2636169,Pusat Pertanian Endau,RF,Johor,Johor,2.609722,103.630556,ok,parsed_dms,parsed_dms
+2636170,Stor JPS Endau,RF,Johor,Johor,2.65,103.620833,ok,parsed_dms,parsed_dms
+2636181,Sek. Keb. Air Tawar,RF,Johor,Johor,2.636111,103.661111,ok,parsed_dms,parsed_dms
+5105105,Kerja Air Bkt. Panchor ( Tutup ),RF,Kedah,Kedah,5.125,100.531944,ok,parsed_excel_date,parsed_dms
+5105106,Rumah Penjaga JPS Parit Nibong,RF,Kedah,Kedah,5.127778,100.506944,ok,parsed_excel_date,parsed_dms
+5106104,Ldg. Inchong  ( Tutup ),RF,Kedah,Kedah,5.158333,100.629167,ok,parsed_excel_date,parsed_dms
+5206102,Terap,RF,Kedah,Kedah,5.281944,100.629167,ok,parsed_excel_date,parsed_dms
+5206103,"Ldg. Selama, Serdang",RF,Kedah,Kedah,5.225,100.658333,ok,parsed_excel_date,parsed_dms
+5305001,Kg. Dusun,RF,Kedah,Kedah,5.384722,100.559722,ok,parsed_excel_date,parsed_dms
+5305091,JPS Kulim,RF,Kedah,Kedah,5.369444,100.558333,ok,parsed_excel_date,parsed_dms
+5305092,"Bkt. Besar, Kulim  (Tutup )",RF,Kedah,Kedah,5.3375,100.555556,ok,parsed_excel_date,parsed_dms
+5307101,Sekolah Menengah Mahang,RF,Kedah,Kedah,5.325,100.733333,ok,parsed_excel_date,parsed_dms
+5406081,Ldg. Bagan Sena,RF,Kedah,Kedah,5.458333,100.673611,ok,parsed_excel_date,parsed_dms
+5406083,klang Bahru,RF,Kedah,Kedah,5.429167,100.605556,ok,parsed_excel_date,parsed_dms
+5407080,Ldg. Dublin,RF,Kedah,Kedah,5.401389,100.736111,ok,parsed_excel_date,parsed_dms
+5504085,Rantau Panjang,RF,Kedah,Kedah,5.577778,100.406944,ok,parsed_dms,parsed_dms
+5505084,Ldg. Henrietta,RF,Kedah,Kedah,5.515278,100.5375,ok,parsed_excel_date,parsed_dms
+5506078,Merbau Pulas,RF,Kedah,Kedah,5.568056,100.620833,ok,parsed_dms,parsed_dms
+5506082,Ldg. Bkt. Karangan,RF,Kedah,Kedah,5.533333,100.623611,ok,parsed_dms,parsed_dms
+5507076,Bt. 27 Jln. Baling,RF,Kedah,Kedah,5.583333,100.736111,ok,parsed_dms,parsed_dms
+5507079,Ldg. Pelam,RF,Kedah,Kedah,5.508333,100.7375,ok,parsed_excel_date,parsed_dms
+5604001,Stor Jps. Sg. Petani   (Tutup ),RF,Kedah,Kedah,5.641667,100.484722,ok,parsed_dms,parsed_dms
+5604002,"Jab. Penjara Sg. Petani / Workshop
+JPS Sg. Petani",RF,Kedah,Kedah,5.629167,100.494444,ok,parsed_dms,parsed_dms
+5604059,Hospital Sg. Petani  (Tutup ),RF,Kedah,Kedah,5.65,100.498611,ok,parsed_dms,parsed_dms
+5606076,Jambatan Syed Omar,RF,Kedah,Kedah,5.609278,100.625361,ok,parsed_dms,parsed_dms
+5606077,Ldg. Lubok Segintah,RF,Kedah,Kedah,5.641667,100.648611,ok,parsed_dms,parsed_dms
+5608073,Kuala Pegang,RF,Kedah,Kedah,5.638183,100.810333,ok,parsed_dms,parsed_dms
+5608074,Pulai,RF,Kedah,Kedah,5.656944,100.898611,ok,parsed_dms,parsed_dms
+5609072,Hospital Baling,RF,Kedah,Kedah,5.680556,100.916667,ok,parsed_dms,parsed_dms
+5609073,Kolam Air Baling  (Tutup ),RF,Kedah,Kedah,5.673611,100.922222,ok,parsed_dms,parsed_dms
+5609074,Pulai,RF,Kedah,Kedah,5.675028,100.915,ok,parsed_dms,parsed_dms
+5704054,Ibu Bekalan Yen  (Tutup ),RF,Kedah,Kedah,5.793056,100.413889,ok,parsed_dms,parsed_dms
+5704055,Kedah Peak,RF,Kedah,Kedah,5.795833,100.438889,ok,parsed_dms,parsed_dms
+5704056,Loji Air Gurun,RF,Kedah,Kedah,5.795833,100.477778,ok,parsed_dms,parsed_dms
+5704057,Ibu Bekalan Tupah,RF,Kedah,Kedah,5.751389,100.443056,ok,parsed_dms,parsed_dms
+5704058,Semeling,RF,Kedah,Kedah,5.706944,100.473611,ok,parsed_dms,parsed_dms
+5708001,Kampung Baru,RF,Kedah,Kedah,5.7876,100.896278,ok,parsed_dms,parsed_dms
+5708071,Kg. Terabak,RF,Kedah,Kedah,5.751389,100.893056,ok,parsed_dms,parsed_dms
+5803052,Sg. Limau,RF,Kedah,Kedah,5.9,100.377778,ok,parsed_dms,parsed_dms
+5804053,Guar Chempadak  (Tutup ),RF,Kedah,Kedah,5.875,100.451389,ok,parsed_dms,parsed_dms
+5804056,Lombong Batu Gurun  (Tutup ),RF,Kedah,Kedah,5.797222,100.473611,ok,parsed_dms,parsed_dms
+5806065,Kg. Gajah Puteh,RF,Kedah,Kedah,5.898611,100.645833,ok,parsed_dms,parsed_dms
+5806066,Jeniang Klinik,RF,Kedah,Kedah,5.813889,100.631944,ok,parsed_dms,parsed_dms
+5807067,Sik,RF,Kedah,Kedah,5.813889,100.729167,ok,parsed_dms,parsed_dms
+5808001,Bt. 61 Jln. Baling,RF,Kedah,Kedah,5.880556,100.894444,ok,parsed_dms,parsed_dms
+5808069,Bt. 62 Jln. Baling  (Tutup ),RF,Kedah,Kedah,5.895833,100.895833,ok,parsed_dms,parsed_dms
+5808070,Kg. Lubok Badak,RF,Kedah,Kedah,5.8375,100.895833,ok,parsed_dms,parsed_dms
+5903151,Pintu Kawalan P/S Kuala Sala,RF,Kedah,Kedah,5.970833,100.358333,ok,parsed_dms,parsed_dms
+5904043,Pendang,RF,Kedah,Kedah,5.994444,100.480556,ok,parsed_dms,parsed_dms
+5904051,Kota Sarang Semut,RF,Kedah,Kedah,5.969444,100.401389,ok,parsed_dms,parsed_dms
+5904152,"Simpang Tiga, Sg. Limau  (Tutup )",RF,Kedah,Kedah,5.916667,100.427778,ok,parsed_dms,parsed_dms
+6003049,Telok Chengai,RF,Kedah,Kedah,6.095833,100.333333,ok,parsed_excel_date,parsed_dms
+6004045,Stesen Keretapi Tokai,RF,Kedah,Kedah,6.029167,100.411111,ok,parsed_excel_date,parsed_dms
+6005001,Kg.Bendang Bukit,RF,Kedah,Kedah,6.036111,100.566667,ok,parsed_excel_date,parsed_dms
+6005044,Kg. Jelutong,RF,Kedah,Kedah,6.045833,100.504167,ok,parsed_excel_date,parsed_dms
+6007063,Nami  (Tutup ),RF,Kedah,Kedah,6.055556,100.765278,ok,parsed_excel_date,parsed_dms
+6103047,Stor JPS Alor Setar,RF,Kedah,Kedah,6.105556,100.391667,ok,parsed_excel_date,parsed_dms
+6103048,Kuala Sungai (Alor Janggus),RF,Kedah,Kedah,6.15,100.322222,ok,parsed_excel_date,parsed_dms
+6105037,Gajah Mati,RF,Kedah,Kedah,6.168056,100.5375,ok,parsed_excel_date,parsed_dms
+6105038,Pokok Sena  (Tutup ),RF,Kedah,Kedah,6.168056,100.518056,ok,parsed_excel_date,parsed_dms
+6106034,Naka,RF,Kedah,Kedah,6.141667,100.670833,ok,parsed_excel_date,parsed_dms
+6108001,Komplek Rumah Muda,RF,Kedah,Kedah,6.105556,100.847222,ok,parsed_excel_date,parsed_dms
+6108062,Ampang Muda,RF,Kedah,Kedah,6.115278,100.856944,ok,parsed_excel_date,parsed_dms
+6202001,"Pintu Kawalan P/S Kuala Sanglang
+(Tutup )",RF,Kedah,Kedah,6.261111,100.204167,ok,parsed_excel_date,parsed_dms
+6202011,Kg. Sanglang (Tutup ),RF,Kedah,Kedah,6.281944,100.218056,ok,parsed_excel_date,parsed_dms
+6203022,Stn. Keretapi Tunjang,RF,Kedah,Kedah,6.270833,100.35,ok,parsed_excel_date,parsed_dms
+6204004,Kepala Batas,RF,Kedah,Kedah,6.203167,100.4135,ok,parsed_dms,parsed_dms
+6204023,Stn. Petak Ujian Jitra,RF,Kedah,Kedah,6.2625,100.4125,ok,parsed_excel_date,parsed_dms
+6204028,Ldg. Tanjung Pauh,RF,Kedah,Kedah,6.243056,100.433333,ok,parsed_excel_date,parsed_dms
+6204039,Stn. Kajicuaca Kepala Batas,RF,Kedah,Kedah,6.201389,100.4125,ok,parsed_excel_date,parsed_dms
+6205036,Kg. Paya,RF,Kedah,Kedah,6.256944,100.530556,ok,parsed_excel_date,parsed_dms
+6206035,Kuala Nerang,RF,Kedah,Kedah,6.254167,100.6125,ok,parsed_excel_date,parsed_dms
+6207032,Ampang Pedu,RF,Kedah,Kedah,6.240278,100.772222,ok,parsed_excel_date,parsed_dms
+6207033,Tong Pelu di Kg. Pinang,RF,Kedah,Kedah,6.227778,100.7125,ok,parsed_excel_date,parsed_dms
+6297101,Sg. Tasek di Kg. Tengah,RF,Kedah,Kedah,6.276944,99.733056,ok,parsed_excel_date,parsed_dms
+6302021,Kodiang,RF,Kedah,Kedah,6.370833,100.3,ok,parsed_excel_date,parsed_dms
+6304026,Kerja Air Bkt. Wang   (Tutup ),RF,Kedah,Kedah,6.334722,100.481944,ok,parsed_excel_date,parsed_dms
+6304027,Ldg. Paya di Kamunting,RF,Kedah,Kedah,6.304167,100.420833,ok,parsed_excel_date,parsed_dms
+6304050,Kampung Jeragan,RF,Kedah,Kedah,6.395,100.443733,ok,parsed_dms,parsed_dms
+6305029,Kg. Tengah,RF,Kedah,Kedah,6.338889,100.569444,ok,parsed_excel_date,parsed_dms
+6306031,Padang Sanai,RF,Kedah,Kedah,6.343056,100.690278,ok,parsed_excel_date,parsed_dms
+6306035,Durian Burung,RF,Kedah,Kedah,6.376556,100.697778,ok,parsed_dms,parsed_dms
+6397101,Sg. Perangin Tg. Burau   (Tutup ),RF,Kedah,Kedah,6.369722,99.6725,ok,parsed_excel_date,parsed_dms
+6397111,Rumah Jps. Padang Mat Sirat,RF,Kedah,Kedah,6.355783,99.731717,ok,parsed_decimal_minutes,parsed_decimal_minutes
+6397112,Empangan Padang Saga,RF,Kedah,Kedah,6.372222,99.772222,ok,parsed_excel_date,parsed_dms
+6397113,Bukit Kemboja,RF,Kedah,Kedah,6.354289,99.754686,ok,parsed_dms,parsed_dms
+6397114,Rubber Dam,RF,Kedah,Kedah,6.351994,99.722139,ok,parsed_dms,parsed_dms
+6397115,Kampung Mawar,RF,Kedah,Kedah,6.339083,99.786611,ok,parsed_dms,parsed_dms
+6397116,Hulu Emp. Saga,RF,Kedah,Kedah,6.393189,99.791653,ok,parsed_dms,parsed_dms
+6398121,"Sek. Men. Vokasional,Langkawi
+(Tutup )",RF,Kedah,Kedah,6.338889,99.821944,ok,parsed_excel_date,parsed_dms
+6398131,Ldg. Sg. Raya,RF,Kedah,Kedah,6.367778,99.864167,ok,parsed_excel_date,parsed_dms
+6398141,Gunung Raya (Puncak C)   (Tutup ),RF,Kedah,Kedah,6.37,99.820556,ok,parsed_excel_date,parsed_dms
+6398141,Gunung Raya,RF,Kedah,Kedah,6.371328,99.8173,ok,parsed_dms,parsed_dms
+6398151,Kg. Penarak   (Tutup ),RF,Kedah,Kedah,6.308889,99.863333,ok,parsed_excel_date,parsed_dms
+6403025,Bt. 8 Changlun   (Tutup ),RF,Kedah,Kedah,6.415278,100.3875,ok,parsed_excel_date,parsed_dms
+6404001,Changlun,RF,Kedah,Kedah,6.416667,100.429167,ok,parsed_excel_date,parsed_dms
+6404010,Kampung Padang Pasir,RF,Kedah,Kedah,6.432111,100.420917,ok,parsed_dms,parsed_dms
+6405024,UUM Sintok,RF,Kedah,Kedah,6.472056,100.50325,ok,parsed_dms,parsed_dms
+4614001,Brook,RF,Kelantan,Kelantan,4.676389,101.484722,ok,parsed_dms,parsed_dms
+4614002,Lojing,RF,Kelantan,Kelantan,4.6,101.4,ok,parsed_dms,parsed_dms
+4717001,Blau,RF,Kelantan,Kelantan,4.766667,101.756944,ok,parsed_dms,parsed_dms
+4720026,Ldg. Mentara,RF,Kelantan,Kelantan,4.755556,102.016667,ok,parsed_dms,parsed_dms
+4721001,Upper Chiku,RF,Kelantan,Kelantan,4.765278,102.173611,ok,parsed_dms,parsed_dms
+4726001,Gunung Gagau,RF,Kelantan,Kelantan,4.756944,102.655556,ok,parsed_dms,parsed_dms
+4815001,Hau (Replace with REDIP)),RF,Kelantan,Kelantan,4.811111,101.566667,ok,parsed_dms,parsed_dms
+4815001,Redip,RF,Kelantan,Kelantan,4.811111,101.566667,ok,parsed_dms,parsed_dms
+4816101,Redip,RF,Kelantan,Kelantan,4.816667,101.983333,ok,parsed_dms,parsed_dms
+4819027,Gua Musang,RF,Kelantan,Kelantan,4.879167,101.969444,ok,parsed_dms,parsed_dms
+4915001,Chabai,RF,Kelantan,Kelantan,5.0,101.579167,ok,parsed_dms,parsed_dms
+4922001,"Kg. Lebir, paloh",RF,Kelantan,Kelantan,5.2125,102.304167,ok,parsed_excel_date,parsed_dms
+4923001,Kg. Aring,RF,Kelantan,Kelantan,4.9375,102.352778,ok,parsed_dms,parsed_dms
+5017001,Gemala,RF,Kelantan,Kelantan,5.098611,101.7625,ok,parsed_excel_date,parsed_dms
+5020030,Kg. Limau Kasturi,RF,Kelantan,Kelantan,5.083333,102.069444,ok,parsed_excel_date,parsed_dms
+5120001,Bertam,RF,Kelantan,Kelantan,5.148611,102.045833,ok,parsed_excel_date,parsed_dms
+5120025,Balai Polis Bertam,RF,Kelantan,Kelantan,5.145833,102.048611,ok,parsed_excel_date,parsed_dms
+5216001,Gob,RF,Kelantan,Kelantan,5.251389,101.6625,ok,parsed_excel_date,parsed_dms
+5217001,Pasik,RF,Kelantan,Kelantan,5.213889,101.759722,ok,parsed_excel_date,parsed_dms
+5220031,Stn. Keretapi Kemubu,RF,Kelantan,Kelantan,5.3,102.019444,ok,parsed_excel_date,parsed_dms
+5222052,Tualang,RF,Kelantan,Kelantan,5.266667,102.266667,ok,parsed_excel_date,parsed_dms
+5320001,Stn. Pertanian Dabong,RF,Kelantan,Kelantan,5.394444,102.009722,ok,parsed_excel_date,parsed_dms
+5320002,Stn. Keretapi Bukit Abu,RF,Kelantan,Kelantan,5.372222,102.083333,ok,parsed_excel_date,parsed_dms
+5320037,Ldg. Kuala Pergau,RF,Kelantan,Kelantan,5.388889,102.011111,ok,parsed_excel_date,parsed_dms
+5320038,Dabong,RF,Kelantan,Kelantan,5.377778,102.015278,ok,parsed_excel_date,parsed_dms
+5320039,Ldg. Kuala Gris,RF,Kelantan,Kelantan,5.375,102.081944,ok,parsed_excel_date,parsed_dms
+5322044,Kg. Laloh,RF,Kelantan,Kelantan,5.308333,102.275,ok,parsed_excel_date,parsed_dms
+5322045,Stn. Keretapi Manek Urai,RF,Kelantan,Kelantan,5.397222,102.233333,ok,parsed_excel_date,parsed_dms
+5419001,Pergau,RF,Kelantan,Kelantan,5.418056,101.945833,ok,parsed_excel_date,parsed_dms
+5419002,Sg.Balah,RF,Kelantan,Kelantan,5.437994,101.9077,ok,parsed_dms,parsed_dms
+5419036,Ldg. Kuala Balah (Kg. Tg. Ab. Rahman),RF,Kelantan,Kelantan,5.45,101.913889,ok,parsed_excel_date,parsed_dms
+5422046,Ldg. Lepan Kabu,RF,Kelantan,Kelantan,5.459722,102.230556,ok,parsed_excel_date,parsed_dms
+5518035,Sek.Keb.Lubok Bungor,RF,Kelantan,Kelantan,5.561111,101.888889,ok,parsed_dms,parsed_dms
+5520001,Ulu Sekor (Ulu Sokor),RF,Kelantan,Kelantan,5.563889,102.008333,ok,parsed_dms,parsed_dms
+5521044,Kuala Krai,RF,Kelantan,Kelantan,5.533333,102.166667,ok,parsed_dms,parsed_dms
+5521049,Stn. Keretapi Sg. Nal,RF,Kelantan,Kelantan,5.590278,102.180556,ok,parsed_dms,parsed_dms
+5521050,Ldg. Kuala Nal,RF,Kelantan,Kelantan,5.570833,102.163889,ok,parsed_dms,parsed_dms
+5522047,Sek. Men. Teknik Kuala Krai,RF,Kelantan,Kelantan,5.531944,102.202778,ok,parsed_excel_date,parsed_dms
+5618033,"Stn. Pemereksaan Hutan, Jeli",RF,Kelantan,Kelantan,5.698611,101.836111,ok,parsed_dms,parsed_dms
+5621051,Ldg. Kenneth,RF,Kelantan,Kelantan,5.626389,102.116667,ok,parsed_dms,parsed_dms
+5621052,Ldg. Kerilla,RF,Kelantan,Kelantan,5.684722,102.106944,ok,parsed_dms,parsed_dms
+5621053,Stn. Janakuasa Temangan,RF,Kelantan,Kelantan,5.670833,102.141667,ok,parsed_dms,parsed_dms
+5621054,Sokor Tegawan,RF,Kelantan,Kelantan,5.629167,102.101389,ok,parsed_dms,parsed_dms
+5621071,Bt.13. Jeli,RF,Kelantan,Kelantan,5.604056,101.710056,ok,parsed_dms,parsed_dms
+5622048,Ldg. Kuala Pertang,RF,Kelantan,Kelantan,5.616667,102.233333,ok,parsed_dms,parsed_dms
+5623001,Chenulang,RF,Kelantan,Kelantan,5.601933,102.288483,ok,parsed_decimal_minutes,parsed_decimal_minutes
+5717032,Kem Lln. Batu Melintang,RF,Kelantan,Kelantan,5.701389,101.730556,ok,parsed_dms,parsed_dms
+5718001,Kg. Gemang Bahru (Sek. Men. Teknik Jeli),RF,Kelantan,Kelantan,5.761111,101.866667,ok,parsed_dms,parsed_dms
+5718002,Air Lanas,RF,Kelantan,Kelantan,5.775,101.888889,ok,parsed_dms,parsed_dms
+5718033,Kg. Jeli,RF,Kelantan,Kelantan,5.701389,101.838889,ok,parsed_dms,parsed_dms
+5719001,Kg. Durian Daun (Lawang),RF,Kelantan,Kelantan,5.780556,101.968056,ok,parsed_dms,parsed_dms
+5719002,Ulu Bertam,RF,Kelantan,Kelantan,5.700639,101.984583,ok,parsed_dms,parsed_dms
+5720055,"Gual Ipoh, Ulu Kusial",RF,Kelantan,Kelantan,5.748611,102.058333,ok,parsed_dms,parsed_dms
+5721001,Majlis Tempatan Temangan,RF,Kelantan,Kelantan,5.702778,102.152778,ok,parsed_dms,parsed_dms
+5721002,Ldg Tebing Tinggi,RF,Kelantan,Kelantan,5.7625,102.143611,ok,parsed_dms,parsed_dms
+5721042,Kusial,RF,Kelantan,Kelantan,5.75,102.15,ok,parsed_dms,parsed_dms
+5721054,Stn. Keretapi Temangan,RF,Kelantan,Kelantan,5.702778,102.152778,ok,parsed_dms,parsed_dms
+5721058,Stn. Keretapi Tanah Merah,RF,Kelantan,Kelantan,5.808333,102.147222,ok,parsed_dms,parsed_dms
+5722057,Jps Machang,RF,Kelantan,Kelantan,5.7875,102.219444,ok,parsed_dms,parsed_dms
+5723056,Telusan (Rumah Pam Telusan),RF,Kelantan,Kelantan,5.758333,102.322222,ok,parsed_dms,parsed_dms
+5724002,Kg. Wakaf Raja (Ibu Bekalan Bkt. Yong),RF,Kelantan,Kelantan,5.766667,102.431944,ok,parsed_dms,parsed_dms
+5724078,Balai Polis Bukit Yong,RF,Kelantan,Kelantan,5.730278,101.904192,ok,parsed_dms,parsed_dms
+5818001,Jenob,RF,Kelantan,Kelantan,5.832778,101.883056,ok,parsed_dms,parsed_dms
+5820005,Pej. Pertanian Batang Merbau,RF,Kelantan,Kelantan,5.8125,102.020833,ok,parsed_dms,parsed_dms
+5820006,Bendang Nyior,RF,Kelantan,Kelantan,5.844444,102.073611,ok,parsed_dms,parsed_dms
+5821007,"Stn. Keretapi Bkt. Panau (Sek. Keb. Bkt.
+Panau)",RF,Kelantan,Kelantan,5.891667,102.158333,ok,parsed_dms,parsed_dms
+5823001,Ibu Bekalan Tiga Daerah,RF,Kelantan,Kelantan,5.863889,102.344444,ok,parsed_dms,parsed_dms
+5823076,Rumah Pengawas Bkt. Abal,RF,Kelantan,Kelantan,5.861111,102.316667,ok,parsed_dms,parsed_dms
+5823077,Ldg. Cherang Tuli (LTN Pdg. Pak Amat),RF,Kelantan,Kelantan,5.818056,102.363889,ok,parsed_dms,parsed_dms
+5824079,Sg. Petai,RF,Kelantan,Kelantan,5.830556,102.415278,ok,parsed_dms,parsed_dms
+5824080,Sek. Men. Cherang Ruku,RF,Kelantan,Kelantan,5.859722,102.494444,ok,parsed_dms,parsed_dms
+5824081,Sg. Petai Pasir Puteh,RF,Kelantan,Kelantan,5.830556,102.415278,ok,parsed_dms,parsed_dms
+5919003,Bkt. Kwong (Ampangan Bkt. Kwong),RF,Kelantan,Kelantan,5.926389,101.958333,ok,parsed_dms,parsed_dms
+5920008,Kg. Batu Karang,RF,Kelantan,Kelantan,5.956806,102.082114,ok,parsed_dms,parsed_dms
+5920011,Bkt Tandak,RF,Kelantan,Kelantan,5.920381,102.027044,ok,parsed_dms,parsed_dms
+5920012,Kg. Tandak (Kg. Bkt. Pak Junus),RF,Kelantan,Kelantan,5.916667,102.0375,ok,parsed_dms,parsed_dms
+5921009,Ibu Bekalan To' Uban,RF,Kelantan,Kelantan,5.969444,102.1375,ok,parsed_dms,parsed_dms
+5922001,Stn. Pertanian Melor,RF,Kelantan,Kelantan,5.963889,102.291667,ok,parsed_dms,parsed_dms
+5922075,Pej. Pertanian Melor Pengawas,RF,Kelantan,Kelantan,5.966667,102.298611,ok,parsed_dms,parsed_dms
+5923001,"Serdang, Gunong Barat Bachok",RF,Kelantan,Kelantan,5.941667,102.341667,ok,parsed_dms,parsed_dms
+5923081,Tok Ajam (Bkt. Gedombak P. Puteh),RF,Kelantan,Kelantan,5.904167,102.381944,ok,parsed_dms,parsed_dms
+6019004,Rumah Kastam Rantau Panjang,RF,Kelantan,Kelantan,6.023611,101.979167,ok,parsed_excel_date,parsed_dms
+6020012,Stn. Keretapi Gual Periok,RF,Kelantan,Kelantan,6.029167,102.022222,ok,parsed_excel_date,parsed_dms
+6021001,Lemal Pasir Mas,RF,Kelantan,Kelantan,6.025136,102.146644,ok,parsed_dms,parsed_dms
+6021010,Rumah Pam Repek (Kg. Pdg. Ragut Repek),RF,Kelantan,Kelantan,6.0125,102.102778,ok,parsed_dms,parsed_dms
+6021013,"Rumah Kerajaan Jps, Meranti",RF,Kelantan,Kelantan,6.1,102.108333,ok,parsed_excel_date,parsed_dms
+6021060,Rumah Pam Salor di Pengkalan Kubor,RF,Kelantan,Kelantan,6.018056,102.177778,ok,parsed_excel_date,parsed_dms
+6022001,Kg. Peringat,RF,Kelantan,Kelantan,6.020833,102.2875,ok,parsed_excel_date,parsed_dms
+6022062,Chabang Tiga Pendek (Kg. Lubuk Jambu),RF,Kelantan,Kelantan,6.040278,102.219444,ok,parsed_excel_date,parsed_dms
+6023001,Kg. Binjai,RF,Kelantan,Kelantan,6.075,102.301389,ok,parsed_excel_date,parsed_dms
+6023071,Balai Polis Binjai,RF,Kelantan,Kelantan,6.076389,102.301389,ok,parsed_excel_date,parsed_dms
+6023072,Teratak Pulai,RF,Kelantan,Kelantan,6.005556,102.358333,ok,parsed_dms,parsed_dms
+6023073,Kg. Tangkok,RF,Kelantan,Kelantan,6.013889,102.391667,ok,parsed_dms,parsed_dms
+6024074,Pejabat JPS Bachok,RF,Kelantan,Kelantan,6.055556,102.401389,ok,parsed_excel_date,parsed_dms
+6120014,Kuala Jambu,RF,Kelantan,Kelantan,6.15,102.095833,ok,parsed_excel_date,parsed_dms
+6121001,Kg. Kebakat,RF,Kelantan,Kelantan,6.15,102.205556,ok,parsed_excel_date,parsed_dms
+6121015,Chabang Ampat,RF,Kelantan,Kelantan,6.155556,102.156944,ok,parsed_excel_date,parsed_dms
+6121063,Balai Polis Wakaf Bharu,RF,Kelantan,Kelantan,6.119444,102.195833,ok,parsed_excel_date,parsed_dms
+6121066,Stn. Keretapi Kg. Berangan,RF,Kelantan,Kelantan,6.168056,102.198611,ok,parsed_excel_date,parsed_dms
+6121067,"Stn. Keretapi Tumpat (Pengkalan Nangka
+Tumpat)",RF,Kelantan,Kelantan,6.198611,102.169444,ok,parsed_excel_date,parsed_dms
+6122001,Jeti Kastam,RF,Kelantan,Kelantan,6.133333,102.233333,ok,parsed_excel_date,parsed_dms
+6122064,Stor JPS Kota Bharu,RF,Kelantan,Kelantan,6.108333,102.256944,ok,parsed_excel_date,parsed_dms
+6122065,Stn. Keretapi Pelekbang,RF,Kelantan,Kelantan,6.148611,102.227778,ok,parsed_excel_date,parsed_dms
+6122068,Stn. Kajicuaca Pengkalan Chepa,RF,Kelantan,Kelantan,6.168056,102.294444,ok,parsed_excel_date,parsed_dms
+2123024,Pulau Besar,RF,Melaka,Melaka,2.1125,102.333333,ok,parsed_excel_date,parsed_dms
+2124037,Pekan Merlimau,RF,Melaka,Melaka,2.148611,102.430556,ok,parsed_excel_date,parsed_dms
+2125002,Ranc. Taliair Telok Rimba,RF,Melaka,Melaka,2.175,102.501389,ok,parsed_excel_date,parsed_dms
+2221008,Pusat Pertanian Sg. Udang,RF,Melaka,Melaka,2.291667,102.133333,ok,parsed_excel_date,parsed_dms
+2221009,Ldg. Rembia,RF,Melaka,Melaka,2.293056,102.181944,ok,parsed_excel_date,parsed_dms
+2221039,Empangan Bertam Hulu,RF,Melaka,Melaka,2.281944,102.203333,ok,parsed_excel_date,parsed_dms
+2222001,Bkt. Sebukur,RF,Melaka,Melaka,2.231944,102.268056,ok,parsed_excel_date,parsed_dms
+2222002,Duriang Tunggal (U/S),RF,Melaka,Melaka,2.299444,102.265278,ok,parsed_excel_date,parsed_dms
+2222003,Klebang Besar (U/S),RF,Melaka,Melaka,2.232778,102.202778,ok,parsed_excel_date,parsed_dms
+2222004,Setor JPS Bukit Baru,RF,Melaka,Melaka,2.213556,102.270306,ok,parsed_dms,parsed_dms
+2222010,Lapangan Terbang Melaka,RF,Melaka,Melaka,2.266667,102.263889,ok,parsed_excel_date,parsed_dms
+2222011,"Hospital Umum, Melaka",RF,Melaka,Melaka,2.218056,102.263889,ok,parsed_excel_date,parsed_dms
+2222032,"Sg. Putat, Batu Berendam",RF,Melaka,Melaka,2.257222,102.271667,ok,parsed_excel_date,parsed_dms
+2223022,Ldg. Bkt. Kajang,RF,Melaka,Melaka,2.241667,102.375,ok,parsed_excel_date,parsed_dms
+2223023,Pintu Pasang Surut Duyong,RF,Melaka,Melaka,2.2,102.3,ok,parsed_excel_date,parsed_dms
+2224036,Ldg. Jasin Lalang,RF,Melaka,Melaka,2.256944,102.422222,ok,parsed_excel_date,parsed_dms
+2224038,Chin Chin (Tepi Jalan),RF,Melaka,Melaka,2.288889,102.491667,ok,parsed_excel_date,parsed_dms
+2320005,Ldg. Sg. Bharu,RF,Melaka,Melaka,2.388889,102.098611,ok,parsed_excel_date,parsed_dms
+2321006,Ldg. Lendu,RF,Melaka,Melaka,2.363889,102.193056,ok,parsed_excel_date,parsed_dms
+2321007,Solok Duku,RF,Melaka,Melaka,2.343092,102.113183,ok,parsed_dms,parsed_dms
+2322001,Setor JPS Bukit Baru,RF,Melaka,Melaka,2.213478,102.270283,ok,parsed_dms,parsed_dms
+2322004,Jkr. Alor Gajah,RF,Melaka,Melaka,2.377778,102.211111,ok,parsed_excel_date,parsed_dms
+2322006,Melaka Pindah,RF,Melaka,Melaka,2.373333,102.221111,ok,parsed_excel_date,parsed_dms
+2323007,Ldg. Sing Lian di Bhg. Garing,RF,Melaka,Melaka,2.333333,102.327778,ok,parsed_excel_date,parsed_dms
+2323008,Pekan Selandar,RF,Melaka,Melaka,2.390694,102.381278,ok,parsed_dms,parsed_dms
+2324032,Ldg. Sing Lian di Bkt. Senggeh,RF,Melaka,Melaka,2.391667,102.427778,ok,parsed_excel_date,parsed_dms
+2324033,Hospital Jasin,RF,Melaka,Melaka,2.308333,102.431944,ok,parsed_excel_date,parsed_dms
+2324035,Ldg. Diamond Jubilee di Jasin,RF,Melaka,Melaka,2.330556,102.488889,ok,parsed_excel_date,parsed_dms
+2325034,Ldg. Bkt. Asahan,RF,Melaka,Melaka,2.394444,102.547222,ok,parsed_excel_date,parsed_dms
+2421003,Jam. Sg. Simpang Jln. Empat,RF,Melaka,Melaka,2.438889,102.186111,ok,parsed_excel_date,parsed_dms
+2421004,"Sg. Siput, Lubuk China",RF,Melaka,Melaka,2.443611,102.114417,ok,parsed_excel_date,parsed_dms
+2422002,"Ldg. Pegoh, Alor Gajah",RF,Melaka,Melaka,2.426389,102.206944,ok,parsed_excel_date,parsed_dms
+2422004,Tg. Rimau di Alor Gajah,RF,Melaka,Melaka,2.441361,102.241028,ok,parsed_dms,parsed_dms
+2423001,Ldg. Tebolang di Tebong,RF,Melaka,Melaka,2.441667,102.327778,ok,parsed_excel_date,parsed_dms
+2424031,Datoh Kramat di Nyalas,RF,Melaka,Melaka,2.430556,102.476389,ok,parsed_excel_date,parsed_dms
+2418034,Politeknik Port Dickson,RF,Negeri Sembilan,Negeri Sembilan,2.427778,101.870833,ok,parsed_excel_date,parsed_dms
+2419054,Ldg. Sengkang,RF,Negeri Sembilan,Negeri Sembilan,2.434722,101.9625,ok,parsed_excel_date,parsed_dms
+2420052,Ldg. Sg. Bahru,RF,Negeri Sembilan,Negeri Sembilan,2.477778,102.083333,ok,parsed_excel_date,parsed_dms
+2420053,Ldg. Bkt. Bertam,RF,Negeri Sembilan,Negeri Sembilan,2.477778,102.048611,ok,parsed_excel_date,parsed_dms
+2421001,Titi Bintagor,RF,Negeri Sembilan,Negeri Sembilan,2.473028,102.100014,ok,parsed_dms,parsed_dms
+2422062,JPS Tampin,RF,Negeri Sembilan,Negeri Sembilan,2.473611,102.230556,ok,parsed_excel_date,parsed_dms
+2424087,Ldg. Air Tengah,RF,Negeri Sembilan,Negeri Sembilan,2.465278,102.483333,ok,parsed_excel_date,parsed_dms
+2517033,Hospital Port Dickson,RF,Negeri Sembilan,Negeri Sembilan,2.530556,101.797222,ok,parsed_dms,parsed_dms
+2519046,Ldg. Sua Betong,RF,Negeri Sembilan,Negeri Sembilan,2.508333,101.902778,ok,parsed_dms,parsed_dms
+2519047,Sua Betong,RF,Negeri Sembilan,Negeri Sembilan,2.507556,101.9645,ok,parsed_dms,parsed_dms
+2520049,Kg. Solok Air Murai,RF,Negeri Sembilan,Negeri Sembilan,2.555556,102.040278,ok,parsed_dms,parsed_dms
+2521001,Pulau Mampat di Rembau,RF,Negeri Sembilan,Negeri Sembilan,2.55,102.120833,ok,parsed_dms,parsed_dms
+2521050,Chengkau,RF,Negeri Sembilan,Negeri Sembilan,2.651667,102.026111,ok,parsed_dms,parsed_dms
+2522061,Ldg. Repah,RF,Negeri Sembilan,Negeri Sembilan,2.474167,102.223056,ok,parsed_excel_date,parsed_dms
+2524001,Ldg. Gan Kee,RF,Negeri Sembilan,Negeri Sembilan,2.537778,102.394444,ok,parsed_dms,parsed_dms
+2524003,Sg. Gemencheh di Ampang Sg. Dua,RF,Negeri Sembilan,Negeri Sembilan,2.565222,102.447111,ok,parsed_dms,parsed_dms
+2524086,Ldg. Gan Kee,RF,Negeri Sembilan,Negeri Sembilan,2.533333,102.402778,ok,parsed_dms,parsed_dms
+2617032,Rumah Pemereksa di Chuah,RF,Negeri Sembilan,Negeri Sembilan,2.609722,101.756944,ok,parsed_dms,parsed_dms
+2618001,Pusat Komoditi Sendayan,RF,Negeri Sembilan,Negeri Sembilan,2.635,101.888611,ok,parsed_dms,parsed_dms
+2618044,Ldg. Mambau,RF,Negeri Sembilan,Negeri Sembilan,2.641667,101.898611,ok,parsed_dms,parsed_dms
+2619001,Sg. Linggi,RF,Negeri Sembilan,Negeri Sembilan,2.681139,101.927639,ok,parsed_dms,parsed_dms
+2620048,Ldg. Perhentian Tinggi,RF,Negeri Sembilan,Negeri Sembilan,2.651389,102.018056,ok,parsed_dms,parsed_dms
+2622078,Sg. Mongku di Senaling,RF,Negeri Sembilan,Negeri Sembilan,2.697222,102.230556,ok,parsed_dms,parsed_dms
+2622079,Ibu Bekalan Kuala Pilah,RF,Negeri Sembilan,Negeri Sembilan,2.675,102.216667,ok,parsed_dms,parsed_dms
+2623085,Ldg. Johol,RF,Negeri Sembilan,Negeri Sembilan,2.602778,102.319444,ok,parsed_dms,parsed_dms
+2625084,"Londah, Kg. Kubang",RF,Negeri Sembilan,Negeri Sembilan,2.638889,102.594444,ok,parsed_dms,parsed_dms
+2718005,Ldg. Labu,RF,Negeri Sembilan,Negeri Sembilan,2.751389,101.820833,ok,parsed_dms,parsed_dms
+2719001,Setor JPS Sikamat Seremban,RF,Negeri Sembilan,Negeri Sembilan,2.7375,101.955556,ok,parsed_dms,parsed_dms
+2719043,Astana Hinggap di Seremban,RF,Negeri Sembilan,Negeri Sembilan,2.730556,101.947222,ok,parsed_dms,parsed_dms
+2720041,Kg. Bahru Pantai,RF,Negeri Sembilan,Negeri Sembilan,2.785,101.995,ok,parsed_dms,parsed_dms
+2721073,Kg. Tg. Limau (Ulu Bendol),RF,Negeri Sembilan,Negeri Sembilan,2.738889,102.126389,ok,parsed_dms,parsed_dms
+2722002,Kg. Sawah Lebar,RF,Negeri Sembilan,Negeri Sembilan,2.755556,102.263889,ok,parsed_dms,parsed_dms
+2722003,Sg.Kepis di Pejabat Felcra Site 1,RF,Negeri Sembilan,Negeri Sembilan,2.7125,102.288889,ok,parsed_dms,parsed_dms
+2722074,Hospital Kuala Pilah,RF,Negeri Sembilan,Negeri Sembilan,2.733333,102.25,ok,parsed_dms,parsed_dms
+2723001,Sg.Kepis At Ulu Sg.Lonek Site 4,RF,Negeri Sembilan,Negeri Sembilan,2.715278,102.330556,ok,parsed_dms,parsed_dms
+2723002,Sg.Kepis di Masjid Site 2,RF,Negeri Sembilan,Negeri Sembilan,2.701389,102.315278,ok,parsed_dms,parsed_dms
+2723003,Sg.Kepis di Taliair Jps.Site 3,RF,Negeri Sembilan,Negeri Sembilan,2.7,102.331944,ok,parsed_dms,parsed_dms
+2723004,Sg.Kepis di Kg Lonek Site 4,RF,Negeri Sembilan,Negeri Sembilan,2.710278,102.333333,ok,parsed_dms,parsed_dms
+2723075,Ldg. Juasseh,RF,Negeri Sembilan,Negeri Sembilan,2.8,102.305556,ok,parsed_dms,parsed_dms
+2724076,Ldg. Kuala Jelai,RF,Negeri Sembilan,Negeri Sembilan,2.755556,102.405556,ok,parsed_dms,parsed_dms
+2724082,Ldg. Jeram Padang,RF,Negeri Sembilan,Negeri Sembilan,2.720833,102.405556,ok,parsed_dms,parsed_dms
+2725083,Ldg. New Rompin,RF,Negeri Sembilan,Negeri Sembilan,2.719444,102.5125,ok,parsed_dms,parsed_dms
+2725094,Ldg. Kelpin,RF,Negeri Sembilan,Negeri Sembilan,2.779167,102.522222,ok,parsed_dms,parsed_dms
+2818003,Ldg. Cairo,RF,Negeri Sembilan,Negeri Sembilan,2.855556,101.8,ok,parsed_dms,parsed_dms
+2818004,Ldg. Sg. Mahang,RF,Negeri Sembilan,Negeri Sembilan,2.811111,101.802778,ok,parsed_dms,parsed_dms
+2819001,Ldg. Lenggeng,RF,Negeri Sembilan,Negeri Sembilan,2.879167,101.916667,ok,parsed_dms,parsed_dms
+2819002,"Bt. 8, Jalan Setul di Mantin",RF,Negeri Sembilan,Negeri Sembilan,2.798611,101.920833,ok,parsed_dms,parsed_dms
+2820011,Kg. Ulu Klawang,RF,Negeri Sembilan,Negeri Sembilan,2.912222,102.019444,ok,parsed_dms,parsed_dms
+2820041,Kerja Air Seremban,RF,Negeri Sembilan,Negeri Sembilan,2.788889,102.001389,ok,parsed_dms,parsed_dms
+2822001,Kg. Birah,RF,Negeri Sembilan,Negeri Sembilan,2.869444,102.258333,ok,parsed_dms,parsed_dms
+2823091,Kg. Ulu Serting,RF,Negeri Sembilan,Negeri Sembilan,2.895,102.320556,ok,parsed_dms,parsed_dms
+2824093,Ldg. Bahau,RF,Negeri Sembilan,Negeri Sembilan,2.816667,102.45,ok,parsed_dms,parsed_dms
+2824095,Ldg. Sg. Sabaling,RF,Negeri Sembilan,Negeri Sembilan,2.848611,102.486111,ok,parsed_dms,parsed_dms
+2920012,Petaling di Kuala Klawang,RF,Negeri Sembilan,Negeri Sembilan,2.944444,102.065278,ok,parsed_dms,parsed_dms
+2921013,Kg. Relai di Kg. Baharu,RF,Negeri Sembilan,Negeri Sembilan,2.966667,102.125,ok,parsed_dms,parsed_dms
+2922017,Kg. Baharu Pertang,RF,Negeri Sembilan,Negeri Sembilan,2.956944,102.202778,ok,parsed_dms,parsed_dms
+2922018,Ldg. Pertang,RF,Negeri Sembilan,Negeri Sembilan,2.973611,102.254167,ok,parsed_dms,parsed_dms
+2923001,Serting Ulu,RF,Negeri Sembilan,Negeri Sembilan,2.902,102.313722,ok,parsed_dms,parsed_dms
+3020016,Kg. Chennah,RF,Negeri Sembilan,Negeri Sembilan,3.093056,102.073611,ok,parsed_excel_date,parsed_dms
+3021001,Felcra Purun,RF,Negeri Sembilan,Negeri Sembilan,3.059722,102.116667,ok,parsed_excel_date,parsed_dms
+3022001,MARDI Jelebu / MARDI Station,RF,Negeri Sembilan,Negeri Sembilan,3.049722,102.227778,ok,parsed_excel_date,parsed_dms
+3023098,Sg. Lui Halt,RF,Negeri Sembilan,Negeri Sembilan,3.084722,102.369444,ok,parsed_excel_date,parsed_dms
+3122001,Simpang Durian Triang Ilir,RF,Negeri Sembilan,Negeri Sembilan,3.113889,102.216667,ok,parsed_excel_date,parsed_dms
+3122020,Ldg. Simpang Durian,RF,Negeri Sembilan,Negeri Sembilan,3.102778,102.223611,ok,parsed_excel_date,parsed_dms
+3122021,Kg. Sg. Buloh,RF,Negeri Sembilan,Negeri Sembilan,3.105556,102.244444,ok,parsed_excel_date,parsed_dms
+2630001,Sg. Pukim,RF,Pahang,Pahang,2.602778,103.056944,ok,parsed_dms,parsed_dms
+2633001,Ulu Sg.Anak Endau,RF,Pahang,Pahang,2.626389,103.381944,ok,parsed_dms,parsed_dms
+2634193,Sg. Anak Endau Kg. Mok,RF,Pahang,Pahang,2.616667,103.458333,ok,parsed_dms,parsed_dms
+2734183,Paya Sepayang,RF,Pahang,Pahang,2.748611,103.456944,ok,parsed_dms,parsed_dms
+2735184,Kastam Kuala Pontian,RF,Pahang,Pahang,2.765278,103.523611,ok,parsed_dms,parsed_dms
+2828173,Kg. Gambir,RF,Pahang,Pahang,2.85,102.855556,ok,parsed_dms,parsed_dms
+2829001,Ulu Sg.Chanis,RF,Pahang,Pahang,2.8125,102.9375,ok,parsed_dms,parsed_dms
+2831179,Kg. Kedaik,RF,Pahang,Pahang,2.888889,103.186111,ok,parsed_dms,parsed_dms
+2834001,Stn. Pertanian Rompin-Endau,RF,Pahang,Pahang,2.8125,103.45,ok,parsed_dms,parsed_dms
+2834180,S.K. Leban Chondong,RF,Pahang,Pahang,2.886111,103.430556,ok,parsed_dms,parsed_dms
+2834181,Rumah Rehat Lama Rompin,RF,Pahang,Pahang,2.811111,103.494444,ok,parsed_dms,parsed_dms
+2841001,"Takek,Pulau Tioman",RF,Pahang,Pahang,2.818056,104.165278,ok,parsed_dms,parsed_dms
+2841005,Mukut,RF,Pahang,Pahang,2.813889,104.19895,ok,parsed_dms,parsed_dms
+2841005,Kg.Mukut,RF,Pahang,Pahang,2.72,104.171667,ok,parsed_dms,parsed_dms
+2841191,Dispensari Pulau Tioman,RF,Pahang,Pahang,2.818056,104.161111,ok,parsed_dms,parsed_dms
+2924096,LDG.GLENDALE,RF,Pahang,Pahang,2.9375,102.418889,ok,parsed_dms,parsed_dms
+2929001,Ldg. Tabong Haji di Sg. Mengah,RF,Pahang,Pahang,2.983333,102.930556,ok,parsed_dms,parsed_dms
+3026156,Pos Iskandar,RF,Pahang,Pahang,3.027778,102.658333,ok,parsed_excel_date,parsed_dms
+3028001,Sg. Kepasing,RF,Pahang,Pahang,3.020833,102.831944,ok,parsed_excel_date,parsed_dms
+3030178,Pecah Batu Bkt. Raidan,RF,Pahang,Pahang,3.065278,103.080556,ok,parsed_excel_date,parsed_dms
+3032167,Temeris,RF,Pahang,Pahang,3.016667,103.198611,ok,parsed_excel_date,parsed_dms
+3034168,Sek. Keb. Kg. Bebar,RF,Pahang,Pahang,3.0375,103.420833,ok,parsed_excel_date,parsed_dms
+3121143,Simpang Pelangai,RF,Pahang,Pahang,3.175,102.197222,ok,parsed_excel_date,parsed_dms
+3122142,Pelangi Kg. Jawi 2,RF,Pahang,Pahang,3.173611,102.241667,ok,parsed_excel_date,parsed_dms
+3123151,Ldg. Kemayan,RF,Pahang,Pahang,3.158333,102.373611,ok,parsed_excel_date,parsed_dms
+3125158,Stn. Hutan Kemayan,RF,Pahang,Pahang,3.198611,102.573611,ok,parsed_excel_date,parsed_dms
+3129177,Bkt. Ibam,RF,Pahang,Pahang,3.168056,102.976389,ok,parsed_excel_date,parsed_dms
+3134165,Dispensari Nenasi di Pekan,RF,Pahang,Pahang,3.1375,103.441667,ok,parsed_excel_date,parsed_dms
+3220001,Telemong,RF,Pahang,Pahang,3.29,102.08,ok,parsed_excel_date,parsed_dms
+3221001,JKR Kg. Manchis,RF,Pahang,Pahang,3.202778,102.1625,ok,parsed_excel_date,parsed_dms
+3221141,JKR Kg. Ponsoon,RF,Pahang,Pahang,3.202778,102.1625,ok,parsed_excel_date,parsed_dms
+3223084,Ldg. Kemasul di Mengkarak,RF,Pahang,Pahang,3.297222,102.397222,ok,parsed_excel_date,parsed_dms
+3223152,Ldg. Triang,RF,Pahang,Pahang,3.247222,102.394444,ok,parsed_excel_date,parsed_dms
+3224033,Triang,RF,Pahang,Pahang,3.23,102.4,ok,parsed_excel_date,parsed_dms
+3228174,Sg. Cabang Kanan,RF,Pahang,Pahang,3.298611,102.822222,ok,parsed_excel_date,parsed_dms
+3230164,Kg. Bangkong (Tutup),RF,Pahang,Pahang,3.286111,103.068056,ok,parsed_excel_date,parsed_dms
+3231163,Kg. Unchang,RF,Pahang,Pahang,3.2875,103.188889,ok,parsed_excel_date,parsed_dms
+3234162,Kg. Tering di Tanjung Batu,RF,Pahang,Pahang,3.205556,103.444444,ok,parsed_excel_date,parsed_dms
+3318126,"Jabatan Perikanan, Bkt. Tinggi",RF,Pahang,Pahang,3.352778,101.825,ok,parsed_excel_date,parsed_dms
+3318127,Janda Baik,RF,Pahang,Pahang,3.326389,101.8625,ok,parsed_excel_date,parsed_dms
+3320130,"Ldg. Sabai, Bentong",RF,Pahang,Pahang,3.344444,102.077778,ok,parsed_excel_date,parsed_dms
+3324082,Kg. Tebing Tinggi di Lebak,RF,Pahang,Pahang,3.391667,102.430556,ok,parsed_excel_date,parsed_dms
+3324083,Ladang Karmen,RF,Pahang,Pahang,3.338889,102.413889,ok,parsed_excel_date,parsed_dms
+3325085,Kg. Batu Cek Mek,RF,Pahang,Pahang,3.327778,102.506944,ok,parsed_excel_date,parsed_dms
+3325086,Kg. Kuala Bera,RF,Pahang,Pahang,3.390278,102.533333,ok,parsed_excel_date,parsed_dms
+3330109,Kampong Batu Gong,RF,Pahang,Pahang,3.390278,103.026389,ok,parsed_excel_date,parsed_dms
+3334161,"Kg. Bahru, Bt.9, Jln. Nenasi",RF,Pahang,Pahang,3.3875,103.423611,ok,parsed_excel_date,parsed_dms
+3420131,Ldg. Bukit Dinding di Bentong,RF,Pahang,Pahang,3.416667,102.058333,ok,parsed_excel_date,parsed_dms
+3420132,Kg. Lengkong,RF,Pahang,Pahang,3.47,102.08,ok,parsed_excel_date,parsed_dms
+3421134,Ldg. Sg. Kawang,RF,Pahang,Pahang,3.466667,102.143056,ok,parsed_excel_date,parsed_dms
+3421135,JKR Lanchang,RF,Pahang,Pahang,3.497222,102.191667,ok,parsed_excel_date,parsed_dms
+3423138,JKR Mentakab,RF,Pahang,Pahang,3.483333,102.351389,ok,parsed_excel_date,parsed_dms
+3424081,JPS Temerloh,RF,Pahang,Pahang,3.438889,102.426389,ok,parsed_excel_date,parsed_dms
+3424081,Temerloh (Lubuk Pasu),RF,Pahang,Pahang,3.43,102.42,ok,parsed_excel_date,parsed_dms
+3425087,Est. Kg. Awah,RF,Pahang,Pahang,3.5,102.540278,ok,parsed_excel_date,parsed_dms
+3425088,Kg. Chenor S.M.R.K.,RF,Pahang,Pahang,3.483333,102.586111,ok,parsed_excel_date,parsed_dms
+3429096,Kg. Salong,RF,Pahang,Pahang,3.486111,102.933333,ok,parsed_excel_date,parsed_dms
+3430097,Paya Membang,RF,Pahang,Pahang,3.454167,103.040278,ok,parsed_excel_date,parsed_dms
+3431099,Kg. Serambi,RF,Pahang,Pahang,3.497222,103.138889,ok,parsed_excel_date,parsed_dms
+3431099,Paloh Inai (Serambi),RF,Pahang,Pahang,3.48,103.13,ok,parsed_excel_date,parsed_dms
+3433105,Permatang Pauh,RF,Pahang,Pahang,3.469444,103.383333,ok,parsed_excel_date,parsed_dms
+3434001,Pekan,RF,Pahang,Pahang,3.49,103.41,ok,parsed_excel_date,parsed_dms
+3518001,Empangan Repas,RF,Pahang,Pahang,3.56,101.88,ok,parsed_dms,parsed_dms
+3519125,Kuala Marong di Bentong,RF,Pahang,Pahang,3.5125,101.915278,ok,parsed_excel_date,parsed_dms
+3522136,"Kem Batu Lima, Mentakab (Tutup)",RF,Pahang,Pahang,3.501389,102.288889,ok,parsed_excel_date,parsed_dms
+3523079,Petak Ujian Padi di Kerdau,RF,Pahang,Pahang,3.573611,102.376389,ok,parsed_dms,parsed_dms
+3523137,Ldg. Mentakab,RF,Pahang,Pahang,3.508333,102.336111,ok,parsed_excel_date,parsed_dms
+3524080,"Kg. Tebing Tinggi, Sanggang",RF,Pahang,Pahang,3.518056,102.430556,ok,parsed_excel_date,parsed_dms
+3527092,Lubok Paku,RF,Pahang,Pahang,3.519444,102.777778,ok,parsed_excel_date,parsed_dms
+3527094,Jkr. Maran,RF,Pahang,Pahang,3.580556,102.770833,ok,parsed_dms,parsed_dms
+3532101,Kg. Temai Hilir,RF,Pahang,Pahang,3.536111,103.247222,ok,parsed_dms,parsed_dms
+3533102,Rumah Pam Pahang Tua di Pekan,RF,Pahang,Pahang,3.561111,103.356944,ok,parsed_dms,parsed_dms
+3534103,Kastam Kuala Pahang,RF,Pahang,Pahang,3.533333,103.465278,ok,parsed_dms,parsed_dms
+3618123,Balai Polis Sang Lee (Tutup),RF,Pahang,Pahang,3.654167,101.85,ok,parsed_dms,parsed_dms
+3623078,Ldg. Sg. Tekal,RF,Pahang,Pahang,3.655556,102.366667,ok,parsed_dms,parsed_dms
+3626090,Sek. Keb. Kuala Sentul,RF,Pahang,Pahang,3.655556,102.693056,ok,parsed_dms,parsed_dms
+3628001,Pintu Kawalan Paya Kertam,RF,Pahang,Pahang,3.633333,102.855556,ok,parsed_dms,parsed_dms
+3628093,JKR Sg. Kertam (Tutup),RF,Pahang,Pahang,3.659722,102.866667,ok,parsed_dms,parsed_dms
+3628095,Kg. New Zealand (Tutup),RF,Pahang,Pahang,3.630556,102.844444,ok,parsed_dms,parsed_dms
+3629098,Paya Bungor,RF,Pahang,Pahang,3.691667,102.933333,ok,parsed_dms,parsed_dms
+3631001,Kg. Pulau Manis,RF,Pahang,Pahang,3.652778,103.119444,ok,parsed_dms,parsed_dms
+3631100,Ldg. Tavy (Tutup),RF,Pahang,Pahang,3.658333,103.120833,ok,parsed_dms,parsed_dms
+3633104,"Kg. Bahru, Penor",RF,Pahang,Pahang,3.630556,103.315278,ok,parsed_dms,parsed_dms
+3717001,Bukit Peninjau,RF,Pahang,Pahang,3.718056,101.752778,ok,parsed_dms,parsed_dms
+3717051,Bkt. Fraser (Tutup),RF,Pahang,Pahang,3.713889,101.734722,ok,parsed_dms,parsed_dms
+3717052,LLN Sempan,RF,Pahang,Pahang,3.776389,101.780556,ok,parsed_dms,parsed_dms
+3718122,JKR Tranum,RF,Pahang,Pahang,3.729167,101.8,ok,parsed_dms,parsed_dms
+3723077,Kuala Krau,RF,Pahang,Pahang,3.711111,102.368056,ok,parsed_dms,parsed_dms
+3726073,Sg. Jerik,RF,Pahang,Pahang,3.780556,102.643056,ok,parsed_dms,parsed_dms
+3726089,JKR Jempol,RF,Pahang,Pahang,3.727778,102.644444,ok,parsed_dms,parsed_dms
+3731018,JKR Gambang,RF,Pahang,Pahang,3.705556,103.116667,ok,parsed_dms,parsed_dms
+3732019,Stn. Kajicuaca Kuantan (Tutup),RF,Pahang,Pahang,3.766667,103.208333,ok,parsed_dms,parsed_dms
+3732020,Paya Besar di Kuantan,RF,Pahang,Pahang,3.772222,103.280556,ok,parsed_dms,parsed_dms
+3732021,Kg. Sg. Soi,RF,Pahang,Pahang,3.730556,103.3,ok,parsed_dms,parsed_dms
+3818054,Stor JPS Raub,RF,Pahang,Pahang,3.805556,101.847222,ok,parsed_dms,parsed_dms
+3818055,"Lombong Emas Australia, Bkt. Koman",RF,Pahang,Pahang,3.818056,101.854167,ok,parsed_dms,parsed_dms
+3818057,Kg. Sg. Pasu,RF,Pahang,Pahang,3.876389,101.890278,ok,parsed_dms,parsed_dms
+3819056,"Ulu Gali, Raub",RF,Pahang,Pahang,3.822222,101.936111,ok,parsed_dms,parsed_dms
+3823075,Ldg. Sg. Mei,RF,Pahang,Pahang,3.809722,102.358333,ok,parsed_dms,parsed_dms
+3824001,Paya Gintong di Jerantut,RF,Pahang,Pahang,3.858333,102.444444,ok,parsed_dms,parsed_dms
+3824074,Sek. Keb. Kelola,RF,Pahang,Pahang,3.85,102.438889,ok,parsed_dms,parsed_dms
+3825001,Lembangan Ujian Sg. Tekam 1,RF,Pahang,Pahang,3.897222,102.534722,ok,parsed_dms,parsed_dms
+3828091,Ldg. Ulu Lepar,RF,Pahang,Pahang,3.840278,102.8,ok,parsed_dms,parsed_dms
+3831001,Pasir Kemudi,RF,Pahang,Pahang,3.87,103.19,ok,parsed_dms,parsed_dms
+3832015,Rancangan Pam Paya Pinang,RF,Pahang,Pahang,3.841667,103.258333,ok,parsed_dms,parsed_dms
+3832016,Atabara Sg. Talam di Kuantan,RF,Pahang,Pahang,3.841667,103.295833,ok,parsed_dms,parsed_dms
+3833002,Pejabat JPS Negeri Pahang,RF,Pahang,Pahang,3.808333,103.329167,ok,parsed_dms,parsed_dms
+3833002,Kuantan (KOMTUR),RF,Pahang,Pahang,3.8,103.32,ok,parsed_dms,parsed_dms
+3833004,Ldg. Jeram di Kuantan,RF,Pahang,Pahang,3.894444,103.383333,ok,parsed_dms,parsed_dms
+3833017,Ldg. Lian Hup (Tutup),RF,Pahang,Pahang,3.830556,103.302778,ok,parsed_dms,parsed_dms
+3833022,Hospital Umum Kuantan,RF,Pahang,Pahang,3.815278,103.327778,ok,parsed_dms,parsed_dms
+3917050,Batu Talam di Raub,RF,Pahang,Pahang,3.966667,101.780556,ok,parsed_dms,parsed_dms
+3918053,Kg. Cheroh,RF,Pahang,Pahang,3.904167,101.816667,ok,parsed_dms,parsed_dms
+3918059,Kg. Dong di Raub,RF,Pahang,Pahang,3.905556,101.894444,ok,parsed_dms,parsed_dms
+3918060,JKR Jeruas,RF,Pahang,Pahang,3.970833,101.9,ok,parsed_dms,parsed_dms
+3920058,Ulu Dong di Raub,RF,Pahang,Pahang,3.941667,102.016667,ok,parsed_dms,parsed_dms
+3921068,JKR Batu Balai,RF,Pahang,Pahang,3.977778,102.173611,ok,parsed_dms,parsed_dms
+3922069,Kg. Bharu di Jerantut,RF,Pahang,Pahang,3.915278,102.277778,ok,parsed_dms,parsed_dms
+3923070,JKR Jerantut,RF,Pahang,Pahang,3.929167,102.358333,ok,parsed_dms,parsed_dms
+3924071,Peri Jerantut,RF,Pahang,Pahang,3.9625,102.427778,ok,parsed_dms,parsed_dms
+3924072,Rumah Pam Paya Kangsar,RF,Pahang,Pahang,3.904167,102.433333,ok,parsed_dms,parsed_dms
+3925001,Lembangan Ujian Sg. Tekam 2,RF,Pahang,Pahang,3.906944,102.543056,ok,parsed_dms,parsed_dms
+3925002,Lembangan Ujian Sg. Tekam 3,RF,Pahang,Pahang,3.901389,102.530556,ok,parsed_dms,parsed_dms
+3925003,Lembangan Ujian Sg. Tekam 4,RF,Pahang,Pahang,3.911111,102.534722,ok,parsed_dms,parsed_dms
+3925004,Lembangan Ujian Sg. Tekam 5,RF,Pahang,Pahang,3.918056,102.530556,ok,parsed_dms,parsed_dms
+3930012,Sg. Lembing P.C.C.L Mill,RF,Pahang,Pahang,3.916667,103.036111,ok,parsed_dms,parsed_dms
+3930013,Bukit Kenau,RF,Pahang,Pahang,3.92,103.05,ok,parsed_dms,parsed_dms
+3931013,Ldg. Nada,RF,Pahang,Pahang,3.908333,103.105556,ok,parsed_dms,parsed_dms
+3931014,Ldg. Kuala Reman,RF,Pahang,Pahang,3.9,103.133333,ok,parsed_dms,parsed_dms
+3933003,Balok di Kuantan,RF,Pahang,Pahang,3.944444,103.383333,ok,parsed_dms,parsed_dms
+4019001,JKR Benta,RF,Pahang,Pahang,4.033333,101.966667,ok,parsed_excel_date,parsed_dms
+4019044,Ulu Atok,RF,Pahang,Pahang,4.059722,101.936111,ok,parsed_excel_date,parsed_dms
+4019061,JKR Benta,RF,Pahang,Pahang,4.016667,101.963889,ok,parsed_excel_date,parsed_dms
+4019063,Ldg. Benta,RF,Pahang,Pahang,4.051389,101.9875,ok,parsed_excel_date,parsed_dms
+4020001,Paya Tampin,RF,Pahang,Pahang,4.038889,102.0375,ok,parsed_excel_date,parsed_dms
+4020062,"Ldg. Budu, Raub",RF,Pahang,Pahang,4.041667,102.0,ok,parsed_excel_date,parsed_dms
+4020065,Bt. 12 Jln. Benta-Kuantan,RF,Pahang,Pahang,4.0,102.125,ok,parsed_dms,parsed_dms
+4023001,Kg. Sg. Yap,RF,Pahang,Pahang,4.031944,102.325,ok,parsed_excel_date,parsed_dms
+4023117,Sek. Keb. Kg.Tembeling,RF,Pahang,Pahang,4.069444,102.319444,ok,parsed_excel_date,parsed_dms
+4033001,Kg. Cherating,RF,Pahang,Pahang,4.093056,103.380556,ok,parsed_excel_date,parsed_dms
+4033002,Kg. Sg. Ular,RF,Pahang,Pahang,4.05,103.394444,ok,parsed_excel_date,parsed_dms
+4120064,Hospital Kuala Lipis,RF,Pahang,Pahang,4.186111,102.043056,ok,parsed_excel_date,parsed_dms
+4122067,Stn. Keretapi Krambit,RF,Pahang,Pahang,4.119444,102.2,ok,parsed_excel_date,parsed_dms
+4123116,Kg. Chebong,RF,Pahang,Pahang,4.122222,102.345833,ok,parsed_excel_date,parsed_dms
+4127001,Kawasan (B) Ulu Tekai,RF,Pahang,Pahang,4.105556,102.753056,ok,parsed_excel_date,parsed_dms
+4128001,Kawasan 'C' Ulu Tekai,RF,Pahang,Pahang,4.194444,102.879167,ok,parsed_excel_date,parsed_dms
+4218042,Kuala Medang,RF,Pahang,Pahang,4.297222,101.811111,ok,parsed_excel_date,parsed_dms
+4218043,Paya Tepuai,RF,Pahang,Pahang,4.216667,101.9,ok,parsed_excel_date,parsed_dms
+4219001,Bukit Betong,RF,Pahang,Pahang,4.233333,101.940278,ok,parsed_excel_date,parsed_dms
+4219049,Kg. Telang,RF,Pahang,Pahang,4.248611,101.963889,ok,parsed_excel_date,parsed_dms
+4223115,Kg. Merting,RF,Pahang,Pahang,4.243056,102.383333,ok,parsed_excel_date,parsed_dms
+4227001,Ulu Tekai (A),RF,Pahang,Pahang,4.233333,102.733333,ok,parsed_excel_date,parsed_dms
+4319048,Sek. Keb. Kg. Aur Gading,RF,Pahang,Pahang,4.351389,101.919444,ok,parsed_excel_date,parsed_dms
+4320066,Kg. Bandar di Ulu Kechau,RF,Pahang,Pahang,4.358333,102.066667,ok,parsed_excel_date,parsed_dms
+4324001,Kuala Tahan,RF,Pahang,Pahang,4.386111,102.402778,ok,parsed_excel_date,parsed_dms
+4324113,Kuala Tahan di Taman Negara,RF,Pahang,Pahang,4.386111,102.404167,ok,parsed_excel_date,parsed_dms
+4413033,"Jalan Quarry, Brinching",RF,Pahang,Pahang,4.495833,101.390278,ok,parsed_excel_date,parsed_dms
+4413034,Stn. Kajicuaca C.Highlands,RF,Pahang,Pahang,4.473611,101.377778,ok,parsed_excel_date,parsed_dms
+4413035,"Ldg. Folly Ringlet, Cameron Highlands",RF,Pahang,Pahang,4.415278,101.384722,ok,parsed_excel_date,parsed_dms
+4414036,Ldg. Boh (Kawasan Kilang),RF,Pahang,Pahang,4.451389,101.425,ok,parsed_excel_date,parsed_dms
+4414037,Ldg. Boh (Bhg. Boh),RF,Pahang,Pahang,4.441667,101.444444,ok,parsed_excel_date,parsed_dms
+4414038,Ldg. Boh (Bhg. Selatan),RF,Pahang,Pahang,4.448611,101.452778,ok,parsed_excel_date,parsed_dms
+4414040,Mardi C Highlands,RF,Pahang,Pahang,4.45,101.42,ok,parsed_excel_date,parsed_dms
+4419047,Stn. Keretapi Chegar Perah,RF,Pahang,Pahang,4.425,101.933333,ok,parsed_excel_date,parsed_dms
+4424112,Sek. Keb. Kg. Pagi,RF,Pahang,Pahang,4.461111,102.483333,ok,parsed_excel_date,parsed_dms
+4426111,"Ulu Tembeling, Balai Penghulu",RF,Pahang,Pahang,4.498611,102.651389,ok,parsed_excel_date,parsed_dms
+4513033,Gunung Brinchang di C.Highlands,RF,Pahang,Pahang,4.516667,101.383333,ok,parsed_dms,parsed_dms
+4514031,Ldg. Teh Blue Valley,RF,Pahang,Pahang,4.586111,101.419444,ok,parsed_dms,parsed_dms
+4514032,Ldg .Teh Sg. Palas di Cameron Highlands,RF,Pahang,Pahang,4.516667,101.416667,ok,parsed_dms,parsed_dms
+4514035,"Sungai Ikan, C Highlands",RF,Pahang,Pahang,4.57,101.41,ok,parsed_dms,parsed_dms
+4620045,Paya Paloh,RF,Pahang,Pahang,4.677778,102.008333,ok,parsed_dms,parsed_dms
+4620046,Merapoh,RF,Pahang,Pahang,4.694444,102.005,ok,parsed_dms,parsed_dms
+3615003,Pekan Tanjung Malim,RF,Perak,Perak,3.683333,101.523611,ok,parsed_dms,parsed_dms
+3615151,Hospital Tg. Malim,RF,Perak,Perak,3.672222,101.543056,ok,parsed_dms,parsed_dms
+3711160,Ldg. Ulu Bernam di Tg. Malim,RF,Perak,Perak,3.745833,101.147222,ok,parsed_dms,parsed_dms
+3714152,Ldg. Katoyang di Tg. Malim,RF,Perak,Perak,3.719444,101.488889,ok,parsed_dms,parsed_dms
+3714153,Ldg. Sg. Behrang,RF,Perak,Perak,3.754167,101.475,ok,parsed_dms,parsed_dms
+3808163,Ldg. Bagan Pasir,RF,Perak,Perak,3.891667,100.820833,ok,parsed_dms,parsed_dms
+3813158,Ldg. Trolak di Trolak,RF,Perak,Perak,3.897222,101.379167,ok,parsed_dms,parsed_dms
+3814156,"Ldg. Bedford, Slim River",RF,Perak,Perak,3.861111,101.444444,ok,parsed_dms,parsed_dms
+3814157,Ldg. Baba Bakala,RF,Perak,Perak,3.831944,101.408333,ok,parsed_dms,parsed_dms
+3814158,Sg. Bil,RF,Perak,Perak,3.835331,101.4941,ok,parsed_dms,parsed_dms
+3814159,Sg. Slim,RF,Perak,Perak,3.825669,101.408094,ok,parsed_dms,parsed_dms
+3814160,Ulu Slim,RF,Perak,Perak,3.865642,101.448064,ok,parsed_dms,parsed_dms
+3901001,Changkat Jong,RF,Perak,Perak,3.99,101.1,ok,already_decimal,already_decimal
+3907103,JPS. Bagan Datoh,RF,Perak,Perak,3.981944,100.791667,ok,parsed_dms,parsed_dms
+3907104,Kampung Pasang Api di Bagan Datoh,RF,Perak,Perak,3.988158,100.765469,ok,parsed_dms,parsed_dms
+3908101,Ldg. New Coconut di Bagan Datoh,RF,Perak,Perak,3.941667,100.868056,ok,parsed_dms,parsed_dms
+3909100,Bt. 5 Ldg. nova Scotia,RF,Perak,Perak,3.9625,100.986111,ok,parsed_dms,parsed_dms
+3909104,Ldg. Jendarata Telok Intan,RF,Perak,Perak,3.911111,100.963889,ok,parsed_dms,parsed_dms
+3910099,Ldg. nova Scotia,RF,Perak,Perak,3.986111,101.0125,ok,parsed_dms,parsed_dms
+3911149,Ldg. Sussex,RF,Perak,Perak,3.994444,101.127778,ok,parsed_dms,parsed_dms
+3913145,Felda Sg. Klah,RF,Perak,Perak,3.995833,101.384722,ok,parsed_dms,parsed_dms
+3913146,Ldg. Sg. Klah,RF,Perak,Perak,3.9625,101.322222,ok,parsed_dms,parsed_dms
+3913147,Ldg. Sg. Sungkai,RF,Perak,Perak,3.970833,101.3,ok,parsed_dms,parsed_dms
+4008102,Ldg. Arcadia,RF,Perak,Perak,4.054167,100.8,ok,parsed_excel_date,parsed_dms
+4009096,JPS. Sg. Dedap,RF,Perak,Perak,4.075,100.927778,ok,parsed_excel_date,parsed_dms
+4010001,JPS. Telok Intan (Stor),RF,Perak,Perak,4.016667,101.036111,ok,parsed_excel_date,parsed_dms
+4010097,Ldg. Sabrang,RF,Perak,Perak,4.009722,101.006944,ok,parsed_dms,parsed_dms
+4010098,Hospital Telok Intan,RF,Perak,Perak,4.030556,101.020833,ok,parsed_excel_date,parsed_dms
+4010138,Peringkat 1 Sg. Manik,RF,Perak,Perak,4.058333,101.077778,ok,parsed_excel_date,parsed_dms
+4010150,"Ldg. Cicely, Telok Intan",RF,Perak,Perak,4.0,101.047222,ok,parsed_dms,parsed_dms
+4011139,"Rumah JPS., Sg. Mengkuang",RF,Perak,Perak,4.005556,101.136111,ok,parsed_dms,parsed_dms
+4011144,"Rumah Kerajaan JPS., Chui Chak",RF,Perak,Perak,4.047222,101.172222,ok,parsed_excel_date,parsed_dms
+4012142,"Ldg. Bidor Bahru (Bidor Tahan), Bidor",RF,Perak,Perak,4.0875,101.286111,ok,parsed_excel_date,parsed_dms
+4012143,"Ldg. Bikam, Sungkai",RF,Perak,Perak,4.048611,101.3,ok,parsed_excel_date,parsed_dms
+4106047,Ldg. Pundut,RF,Perak,Perak,4.181944,100.633333,ok,parsed_excel_date,parsed_dms
+4109094,Kg. Gajah,RF,Perak,Perak,4.179608,100.929925,ok,parsed_dms,parsed_dms
+4109095,Kg. Pulau Besar,RF,Perak,Perak,4.141667,100.988889,ok,parsed_excel_date,parsed_dms
+4110129,Peringkat IV Sg. Manik,RF,Perak,Perak,4.109722,101.026389,ok,parsed_excel_date,parsed_dms
+4110136,Rumah JPS. di Labu Kubong,RF,Perak,Perak,4.134722,101.098611,ok,parsed_excel_date,parsed_dms
+4111134,Ldg. Tapah,RF,Perak,Perak,4.158333,101.170833,ok,parsed_excel_date,parsed_dms
+4111135,Ldg. Tai Seng,RF,Perak,Perak,4.159722,101.148611,ok,parsed_excel_date,parsed_dms
+4111137,Ibu Bekalan Sg. Manik,RF,Perak,Perak,4.118056,101.134722,ok,parsed_excel_date,parsed_dms
+4112141,"Ldg. Gedong, Bidor",RF,Perak,Perak,4.119444,101.295833,ok,parsed_excel_date,parsed_dms
+4205101,Pulau Pangkor,RF,Perak,Perak,4.212592,100.575147,ok,parsed_dms,parsed_dms
+4205102,Lapangan Terbang di Pulau Pangkor,RF,Perak,Perak,4.246306,100.55425,ok,parsed_dms,parsed_dms
+4206045,Pengkalan TLDM. Lumut,RF,Perak,Perak,4.226389,100.608333,ok,parsed_excel_date,parsed_dms
+4206046,Ldg. Sitiawan,RF,Perak,Perak,4.225,100.686111,ok,parsed_excel_date,parsed_dms
+4207044,Ldg. Walbrook,RF,Perak,Perak,4.266667,100.709722,ok,parsed_excel_date,parsed_dms
+4207048,Pejabat JPS Sitiawan,RF,Perak,Perak,4.218056,100.7,ok,parsed_excel_date,parsed_dms
+4209001,Rumah Pam Teluk Sareh,RF,Perak,Perak,4.255556,100.9125,ok,parsed_excel_date,parsed_dms
+4209093,JPS. Telok Sena,RF,Perak,Perak,4.255556,100.9,ok,parsed_excel_date,parsed_dms
+4212128,"SRK Sri Kinjang, Chenderiang",RF,Perak,Perak,4.266667,101.238889,ok,parsed_excel_date,parsed_dms
+4212133,Hospital Tapah,RF,Perak,Perak,4.2,101.259722,ok,parsed_excel_date,parsed_dms
+4306039,Ldg. Sogomana di Lumut,RF,Perak,Perak,4.391667,100.695833,ok,parsed_excel_date,parsed_dms
+4306040,"Ldg. Segari, Lumut",RF,Perak,Perak,4.369444,100.629167,ok,parsed_excel_date,parsed_dms
+4306042,"Ldg. Lumut, Sg. Segari",RF,Perak,Perak,4.319444,100.629167,ok,parsed_excel_date,parsed_dms
+4307041,"Ldg. Bilham, Sitiawan",RF,Perak,Perak,4.347222,100.793056,ok,parsed_excel_date,parsed_dms
+4307043,"Ldg. Willingdon, Air Tawar",RF,Perak,Perak,4.338889,100.7875,ok,parsed_excel_date,parsed_dms
+4309092,Rumah Pam Bota,RF,Perak,Perak,4.377778,100.902778,ok,parsed_excel_date,parsed_dms
+4310001,Tanjung Tualang,RF,Perak,Perak,4.32305,101.071036,ok,parsed_dms,parsed_dms
+4311001,Pejabat Daerah Kampar,RF,Perak,Perak,4.305556,101.155556,ok,parsed_excel_date,parsed_dms
+4311126,"Ldg. Wah Fatt, Malim Nawar",RF,Perak,Perak,4.397222,101.113889,ok,parsed_excel_date,parsed_dms
+4311127,Hospital Kampar,RF,Perak,Perak,4.313889,101.155556,ok,parsed_excel_date,parsed_dms
+4312001,Kg Sahom,RF,Perak,Perak,4.385847,101.214581,ok,parsed_dms,parsed_dms
+4406049,Ldg. Huntley di Lumut,RF,Perak,Perak,4.431944,100.7,ok,parsed_excel_date,parsed_dms
+4407038,Ldg. Sg. Bruas,RF,Perak,Perak,4.493056,100.7625,ok,parsed_excel_date,parsed_dms
+4409090,Ldg. Glenealy,RF,Perak,Perak,4.458333,100.930556,ok,parsed_excel_date,parsed_dms
+4409091,Rumah Pam Kubang Haji,RF,Perak,Perak,4.461111,100.901389,ok,parsed_excel_date,parsed_dms
+4409092,Sg. Perak di parit,RF,Perak,Perak,4.472172,100.9049,ok,parsed_dms,parsed_dms
+4409121,Ldg. Nalla di Tronoh,RF,Perak,Perak,4.413889,100.956944,ok,parsed_excel_date,parsed_dms
+4410120,Hospital Batu Gajah,RF,Perak,Perak,4.469444,101.033333,ok,parsed_excel_date,parsed_dms
+4410122,"Ldg. Hill Rise, Batu Gajah",RF,Perak,Perak,4.427778,101.036111,ok,parsed_excel_date,parsed_dms
+4410123,Ldg. Kinta Valley,RF,Perak,Perak,4.402778,101.030556,ok,parsed_excel_date,parsed_dms
+4411001,Kolam Takongan Air Gopeng,RF,Perak,Perak,4.479167,101.170833,ok,parsed_excel_date,parsed_dms
+4411119,Hospital Gopeng,RF,Perak,Perak,4.473611,101.1625,ok,parsed_excel_date,parsed_dms
+4411120,Gua Tempurung di Gopeng,RF,Perak,Perak,4.434278,101.190831,ok,parsed_dms,parsed_dms
+4507036,Ldg. Allagor di Trong,RF,Perak,Perak,4.6,100.736111,ok,parsed_dms,parsed_dms
+4507037,Ldg. Hidden Stream di Beruas,RF,Perak,Perak,4.551389,100.716667,ok,parsed_dms,parsed_dms
+4508086,"Rumah Kerajaan JKR., Manong",RF,Perak,Perak,4.594444,100.877778,ok,parsed_dms,parsed_dms
+4508087,Ldg. Sadang,RF,Perak,Perak,4.522222,100.870833,ok,parsed_dms,parsed_dms
+4509088,Ldg. Parit,RF,Perak,Perak,4.526389,100.908333,ok,parsed_dms,parsed_dms
+4510116,"JPS. Kinta, Ipoh",RF,Perak,Perak,4.597222,101.083333,ok,parsed_dms,parsed_dms
+4510117,Ldg. Pinji,RF,Perak,Perak,4.530556,101.072222,ok,parsed_dms,parsed_dms
+4510118,Sg. Kinta di Kuala Pari,RF,Perak,Perak,4.578061,101.068903,ok,parsed_dms,parsed_dms
+4511111,Politeknik Ungku Omar,RF,Perak,Perak,4.588889,101.125,ok,parsed_dms,parsed_dms
+4511118,Kramat Pulai Berhad,RF,Perak,Perak,4.536111,101.15,ok,parsed_dms,parsed_dms
+4608001,Pusat Latihan Pertanian Manong,RF,Perak,Perak,4.619444,100.869444,ok,parsed_dms,parsed_dms
+4609001,Empang Lempor,RF,Perak,Perak,4.651389,100.901389,ok,parsed_dms,parsed_dms
+4609085,Ldg. Senggang,RF,Perak,Perak,4.619444,100.905556,ok,parsed_dms,parsed_dms
+4610112,Bandar Baru (Meru Raya),RF,Perak,Perak,4.680556,101.080556,ok,parsed_dms,parsed_dms
+4610116,Hospital Ipoh,RF,Perak,Perak,4.602778,101.088889,ok,parsed_dms,parsed_dms
+4611001,Ldg. Kuda Keb. Ulu Kinta.,RF,Perak,Perak,4.680556,101.169444,ok,parsed_dms,parsed_dms
+4611002,Sg. Kinta di Tanjung Rambutan,RF,Perak,Perak,4.668042,101.157006,ok,parsed_dms,parsed_dms
+4611114,"Kerja Air Kinta, Tg. Rambutan",RF,Perak,Perak,4.654167,101.175,ok,parsed_dms,parsed_dms
+4611115,"Taman Bahagia, Tg. Rambutan",RF,Perak,Perak,4.675,101.154167,ok,parsed_dms,parsed_dms
+4707033,Bkt. Gantang di Kg. Kubu,RF,Perak,Perak,4.776389,100.766667,ok,parsed_dms,parsed_dms
+4707034,Ldg. Temerloh di Trong,RF,Perak,Perak,4.715278,100.719444,ok,parsed_dms,parsed_dms
+4707035,Ldg. Taiping,RF,Perak,Perak,4.702778,100.709722,ok,parsed_dms,parsed_dms
+4708082,Ldg. Bkt. Berapit,RF,Perak,Perak,4.7625,100.825,ok,parsed_dms,parsed_dms
+4708083,Ldg. Perak River Valley,RF,Perak,Perak,4.780556,100.884722,ok,parsed_dms,parsed_dms
+4708084,Ibu Bekalan Talang di Kuala Kangsar,RF,Perak,Perak,4.775,100.894444,ok,parsed_dms,parsed_dms
+4709001,JPS. Kuala Kangsar,RF,Perak,Perak,4.775,100.943056,ok,parsed_dms,parsed_dms
+4709084,Hospital Kuala Kangsar,RF,Perak,Perak,4.775,100.938889,ok,parsed_dms,parsed_dms
+4710081,Kolam Air JKR. di Sg. Siput,RF,Perak,Perak,4.797222,101.069444,ok,parsed_dms,parsed_dms
+4711113,Ldg. Chemor,RF,Perak,Perak,4.736111,101.130556,ok,parsed_dms,parsed_dms
+4806032,Sekolah Kebangsaan Matang,RF,Perak,Perak,4.815278,100.677778,ok,parsed_dms,parsed_dms
+4807014,Lapangan Terbang Taiping,RF,Perak,Perak,4.861111,100.720833,ok,parsed_dms,parsed_dms
+4807015,Ibu Bekalan JKR. Taiping,RF,Perak,Perak,4.866667,100.759722,ok,parsed_dms,parsed_dms
+4807016,Bkt. Larut di Taiping,RF,Perak,Perak,4.8625,100.793056,ok,parsed_dms,parsed_dms
+4807031,Hospital Taiping,RF,Perak,Perak,4.851389,100.734722,ok,parsed_dms,parsed_dms
+4809001,Jambatan Iskandar,RF,Perak,Perak,4.817378,100.964736,ok,parsed_dms,parsed_dms
+4810076,"Kg. Pulau Mentimum, Sg. Siput",RF,Perak,Perak,4.9,101.036111,ok,parsed_dms,parsed_dms
+4810079,Ldg. Changkat Salak,RF,Perak,Perak,4.855556,101.004167,ok,parsed_dms,parsed_dms
+4810080,Ldg. Kemuning di Sg. Siput,RF,Perak,Perak,4.827778,101.059722,ok,parsed_dms,parsed_dms
+4811075,"Belia Perlop 1, Sg. Siput",RF,Perak,Perak,4.893056,101.175,ok,parsed_dms,parsed_dms
+4811078,Ldg. Elphill di Sg. Siput,RF,Perak,Perak,4.888889,101.104167,ok,parsed_dms,parsed_dms
+4904026,Ldg. Gula di Kuala Kurau,RF,Perak,Perak,4.958333,100.470833,ok,parsed_dms,parsed_dms
+4905023,Ldg. Gedong di Kerian,RF,Perak,Perak,4.968056,100.597222,ok,parsed_dms,parsed_dms
+4906022,Stn. Petak Ujian Selinsing,RF,Perak,Perak,4.952778,100.630556,ok,parsed_dms,parsed_dms
+4907013,"Ldg. Lingerwood, Kerian",RF,Perak,Perak,4.941667,100.705556,ok,parsed_dms,parsed_dms
+4907017,Ldg. Windsor di Ulu Sepetang,RF,Perak,Perak,4.943056,100.731944,ok,parsed_dms,parsed_dms
+4907019,Ldg.norseman,RF,Perak,Perak,4.965278,100.763889,ok,parsed_dms,parsed_dms
+4907020,Batu 14 Batu Kurau,RF,Perak,Perak,4.977639,100.779222,ok,parsed_dms,parsed_dms
+4908013,Ibu Bekalan Sempeneh di Batu Kurau,RF,Perak,Perak,4.934722,100.827778,ok,parsed_dms,parsed_dms
+4908018,Pusat Kesihatan Kecil di Bt. Kurau,RF,Perak,Perak,4.979167,100.804167,ok,parsed_dms,parsed_dms
+4909072,Kolam Takongan Air Chenderoh,RF,Perak,Perak,4.961111,100.979167,ok,parsed_dms,parsed_dms
+4909073,Ldg. Kati di  Kuala Kangsar,RF,Perak,Perak,4.920833,100.919444,ok,parsed_dms,parsed_dms
+4910077,Ldg. Sg. Krudda di Sg. Siput,RF,Perak,Perak,4.911111,101.091667,ok,parsed_dms,parsed_dms
+4911076,Balai Polis Kg. Lintang,RF,Perak,Perak,4.9375,101.102778,ok,parsed_dms,parsed_dms
+4911077,Sungai Plus di Kampung Lintang,RF,Perak,Perak,4.938814,101.102561,ok,parsed_dms,parsed_dms
+5003028,Stn. Petak Ujian Tg. Piandang,RF,Perak,Perak,5.077778,100.386111,ok,parsed_excel_date,parsed_dms
+5004027,Rumah Buroh Kuala Kurau,RF,Perak,Perak,5.019444,100.436111,ok,parsed_excel_date,parsed_dms
+5005001,JPS. Bagan Serai,RF,Perak,Perak,5.008333,100.541667,ok,parsed_dms,parsed_dms
+5005002,Rumah JPS. di Alor Pongsu,RF,Perak,Perak,5.045833,100.591667,ok,parsed_excel_date,parsed_dms
+5005003,Jln. Matang Buloh di Bagan Serai,RF,Perak,Perak,5.013889,100.545833,ok,parsed_dms,parsed_dms
+5005004,Bagan Serai,RF,Perak,Perak,5.047222,100.504167,ok,parsed_excel_date,parsed_dms
+5005010,Ldg. Sg. Kerian,RF,Perak,Perak,5.072222,100.569444,ok,parsed_excel_date,parsed_dms
+5005013,Ldg. Sg. Kerian di Parit Buntar,RF,Perak,Perak,5.072222,100.547222,ok,parsed_excel_date,parsed_dms
+5005025,"Kerja Air JKR, Bagan Serai",RF,Perak,Perak,5.011111,100.536111,ok,parsed_dms,parsed_dms
+5006009,"Ldg. Hock, Alor Pongsu",RF,Perak,Perak,5.076389,100.6,ok,parsed_excel_date,parsed_dms
+5006021,Kolam Air Bkt. Merah,RF,Perak,Perak,5.018275,100.653,ok,parsed_dms,parsed_dms
+5007020,Ldg. Pondoland di Pondok Tanjung,RF,Perak,Perak,5.009722,100.730556,ok,parsed_dms,parsed_dms
+5007020,Sg. Kurau di Pondok Tanjong,RF,Perak,Perak,5.01185,100.731161,ok,parsed_dms,parsed_dms
+5007029,Ibu Bekalan Jelai,RF,Perak,Perak,5.022222,100.8,ok,parsed_excel_date,parsed_dms
+5009071,Ldg. Kota Lima,RF,Perak,Perak,5.061111,100.973611,ok,parsed_excel_date,parsed_dms
+5104011,Hospital Parit Buntar,RF,Perak,Perak,5.130556,100.486111,ok,parsed_excel_date,parsed_dms
+5104012,Stn. Petak Ujian Titi Serong,RF,Perak,Perak,5.102778,100.456944,ok,parsed_excel_date,parsed_dms
+5104052,Kawasan Sg. Acheh,RF,Perak,Perak,5.147222,100.4375,ok,parsed_excel_date,parsed_dms
+5106003,Rantangan Kabel Dusun Limau,RF,Perak,Perak,5.194444,100.666667,ok,parsed_excel_date,parsed_dms
+5106004,Ldg. Lumboh Kluang di Selama,RF,Perak,Perak,5.1625,100.652778,ok,parsed_excel_date,parsed_dms
+5106008,"Ldg. Hibernia, Selama",RF,Perak,Perak,5.1375,100.697222,ok,parsed_excel_date,parsed_dms
+5107006,Ldg. Stoughton di Batu Kurau,RF,Perak,Perak,5.106944,100.772222,ok,parsed_excel_date,parsed_dms
+5107007,Ldg. Holyrood di Selama,RF,Perak,Perak,5.129167,100.711111,ok,parsed_excel_date,parsed_dms
+5108005,Ibu Bekalan Ulu Ijok,RF,Perak,Perak,5.122222,100.805556,ok,parsed_excel_date,parsed_dms
+5109070,Pekan Lenggong,RF,Perak,Perak,5.119444,100.983333,ok,parsed_excel_date,parsed_dms
+5206003,"Dispensari Selama, Selama",RF,Perak,Perak,5.219444,100.691667,ok,parsed_excel_date,parsed_dms
+5206032,Sg. Kerian di Selama,RF,Perak,Perak,5.229167,100.688889,ok,parsed_excel_date,parsed_dms
+5207001,Kolam Air JKR di Selama,RF,Perak,Perak,5.216667,100.701389,ok,parsed_excel_date,parsed_dms
+5207002,Ldg. Seldings di Selama,RF,Perak,Perak,5.251389,100.727778,ok,parsed_excel_date,parsed_dms
+5210069,Stn. Pemeriksaan Hutan Lawin,RF,Perak,Perak,5.298611,101.058333,ok,parsed_excel_date,parsed_dms
+5411066,Kuala Kenderong,RF,Perak,Perak,5.416667,101.154167,ok,parsed_excel_date,parsed_dms
+5411068,Hospital Grik,RF,Perak,Perak,5.430556,101.130556,ok,parsed_excel_date,parsed_dms
+5412067,Felda Kg. Bersia,RF,Perak,Perak,5.472222,101.2,ok,parsed_excel_date,parsed_dms
+5513001,Tasik Banding,RF,Perak,Perak,5.550586,101.352733,ok,parsed_dms,parsed_dms
+5610062,Dispensari Klian Intan,RF,Perak,Perak,5.636111,101.025,ok,parsed_dms,parsed_dms
+5610063,Kg. Lalang di Grik,RF,Perak,Perak,5.604167,101.080556,ok,parsed_dms,parsed_dms
+5710061,Dispensari Kroh,RF,Perak,Perak,5.708333,101.0,ok,parsed_dms,parsed_dms
+6201001,Kuala Sanglang,RF,Perlis,Perlis,6.258778,100.196028,ok,parsed_dms,parsed_dms
+6301001,Kg. Behor Lateh,RF,Perlis,Perlis,6.394444,100.183611,ok,parsed_excel_date,parsed_dms
+6301009,Seriap   ( Tutup ),RF,Perlis,Perlis,6.398611,100.1875,ok,parsed_excel_date,parsed_dms
+6301010,Simpang Empat,RF,Perlis,Perlis,6.333333,100.183333,ok,parsed_excel_date,parsed_dms
+6302022,Changkat Jawi,RF,Perlis,Perlis,6.366667,100.266667,ok,parsed_excel_date,parsed_dms
+6401000,Kuala Perlis,RF,Perlis,Perlis,6.4,100.133333,ok,parsed_excel_date,parsed_dms
+6401001,"Kg. Behor, Kangar  ( Tutup )",RF,Perlis,Perlis,6.447222,100.193056,ok,parsed_excel_date,parsed_dms
+6401002,Padang Katong di Kangar,RF,Perlis,Perlis,6.445833,100.1875,ok,parsed_excel_date,parsed_dms
+6401008,Stor Jps. Kangar   ( Tutup ),RF,Perlis,Perlis,6.441667,100.188889,ok,parsed_excel_date,parsed_dms
+6402006,Guar Nangka,RF,Perlis,Perlis,6.475,100.283333,ok,parsed_excel_date,parsed_dms
+6402007,Arau,RF,Perlis,Perlis,6.430556,100.270833,ok,parsed_excel_date,parsed_dms
+6402008,Ngolang,RF,Perlis,Perlis,6.475,100.247222,ok,parsed_excel_date,parsed_dms
+6402009,Kuala Tunggang,RF,Perlis,Perlis,6.452556,100.296667,ok,parsed_dms,parsed_dms
+6403001,Ulu Pauh,RF,Perlis,Perlis,6.458333,100.352778,ok,parsed_excel_date,parsed_dms
+6501004,Abi   ( Tutup ),RF,Perlis,Perlis,6.548611,100.168056,ok,parsed_dms,parsed_dms
+6501005,Abi Kg. Bahru,RF,Perlis,Perlis,6.505556,100.181944,ok,parsed_excel_date,parsed_dms
+6502001,Ldg. Perlis Utara   ( Tutup ),RF,Perlis,Perlis,6.580556,100.294444,ok,parsed_dms,parsed_dms
+6502003,Tasoh,RF,Perlis,Perlis,6.591667,100.222222,ok,parsed_dms,parsed_dms
+6502010,Bukit Temiang,RF,Perlis,Perlis,6.538889,100.231944,ok,parsed_dms,parsed_dms
+6502011,Timah Tasoh Dam,RF,Perlis,Perlis,6.570833,100.245833,ok,parsed_dms,parsed_dms
+6503001,Ldg. Perlis Selatan,RF,Perlis,Perlis,6.536111,100.3375,ok,parsed_dms,parsed_dms
+6601001,Wang Kelian,RF,Perlis,Perlis,6.671111,100.186944,ok,parsed_dms,parsed_dms
+6602002,Kaki Bukit,RF,Perlis,Perlis,6.644444,100.2125,ok,parsed_dms,parsed_dms
+6602002,Sg.Pelarit dI Kaki Bukit,RF,Perlis,Perlis,6.644444,100.2125,ok,parsed_dms,parsed_dms
+6602003,Tasoh,RF,Perlis,Perlis,6.618333,100.233611,ok,parsed_dms,parsed_dms
+6602004,Sg.Jarum di Kg. Masjid,RF,Perlis,Perlis,6.543583,100.229167,ok,parsed_dms,parsed_dms
+6602005,Lubok Sireh,RF,Perlis,Perlis,6.649722,100.224167,ok,parsed_dms,parsed_dms
+6603001,Padang Besar  ( Tutup ),RF,Perlis,Perlis,6.665278,100.325,ok,parsed_dms,parsed_dms
+6603002,Padang Besar di Titi Keretapi,RF,Perlis,Perlis,6.656944,100.309722,ok,parsed_dms,parsed_dms
+5105051,Kolam Takongan Bkt. Panchor,RF,Pulau Pinang,Pulau Pinang,5.161111,100.536111,ok,parsed_excel_date,parsed_dms
+5202021,Stn. Kajicuaca Bayan Lepas,RF,Pulau Pinang,Pulau Pinang,5.297222,100.272222,ok,parsed_excel_date,parsed_dms
+5204048,Sg. Simpang Ampat,RF,Pulau Pinang,Pulau Pinang,5.293889,100.480556,ok,parsed_excel_date,parsed_dms
+5204049,Ldg. Batu Kawan,RF,Pulau Pinang,Pulau Pinang,5.256944,100.430556,ok,parsed_excel_date,parsed_dms
+5205050,Sekolah Kebangsaan Sg. Bakap,RF,Pulau Pinang,Pulau Pinang,5.215833,100.496667,ok,parsed_excel_date,parsed_dms
+5205052,Bagan Buaya,RF,Pulau Pinang,Pulau Pinang,5.215833,100.496667,ok,parsed_excel_date,parsed_dms
+5302001,Taliair Besar Sg. Pinang,RF,Pulau Pinang,Pulau Pinang,5.391667,100.2125,ok,parsed_excel_date,parsed_dms
+5302002,Pintu Air Bagan di Air Itam,RF,Pulau Pinang,Pulau Pinang,5.354167,100.2,ok,parsed_excel_date,parsed_dms
+5302003,Kolam Takongan Air Itam,RF,Pulau Pinang,Pulau Pinang,5.395833,100.265278,ok,parsed_excel_date,parsed_dms
+5302004,Kolam Takungan Sg. Dondang,RF,Pulau Pinang,Pulau Pinang,5.380833,100.2775,ok,parsed_dms,parsed_dms
+5303001,Rumah Kebajikan,RF,Pulau Pinang,Pulau Pinang,5.391667,100.304167,ok,parsed_excel_date,parsed_dms
+5303053,Komplek Prai,RF,Pulau Pinang,Pulau Pinang,5.381944,100.391667,ok,parsed_excel_date,parsed_dms
+5304044,Juru Dam,RF,Pulau Pinang,Pulau Pinang,5.333333,100.447778,ok,parsed_dms,parsed_dms
+5304045,Kolam Air Bkt. Berapit / Pusat Kesihatan Bukit Berapit,RF,Pulau Pinang,Pulau Pinang,5.375556,100.475556,ok,parsed_excel_date,parsed_dms
+5304046,Permatang Rawa,RF,Pulau Pinang,Pulau Pinang,5.3625,100.459722,ok,parsed_excel_date,parsed_dms
+5304047,Pusat Pertanian Cherok To' Kun,RF,Pulau Pinang,Pulau Pinang,5.349722,100.474167,ok,parsed_excel_date,parsed_dms
+5402001,Klinik Bkt. Bendera,RF,Pulau Pinang,Pulau Pinang,5.423611,100.270833,ok,parsed_excel_date,parsed_dms
+5402002,Kolam Bersih Pulau Pinang,RF,Pulau Pinang,Pulau Pinang,5.440278,100.286111,ok,parsed_excel_date,parsed_dms
+5402011,Stn. Pertanian Air Itam,RF,Pulau Pinang,Pulau Pinang,5.4,100.283333,ok,parsed_excel_date,parsed_dms
+5403001,Lorong Batu Lanchang,RF,Pulau Pinang,Pulau Pinang,5.4025,100.299444,ok,parsed_excel_date,parsed_dms
+5403042,Stn. Kajicuaca Butterworth,RF,Pulau Pinang,Pulau Pinang,5.4625,100.388889,ok,parsed_excel_date,parsed_dms
+5403043,Sungai Pinang,RF,Pulau Pinang,Pulau Pinang,5.410222,100.316278,ok,parsed_dms,parsed_dms
+5404041,Ldg. Malakoff,RF,Pulau Pinang,Pulau Pinang,5.488889,100.465278,ok,parsed_excel_date,parsed_dms
+5404043,Ibu Bekalan Sg. Kulim,RF,Pulau Pinang,Pulau Pinang,5.433333,100.480556,ok,parsed_excel_date,parsed_dms
+5404044,Stn. Petak Ujian Bukit Merah,RF,Pulau Pinang,Pulau Pinang,5.413889,100.430556,ok,parsed_excel_date,parsed_dms
+5405001,Sungai Kulim @ Ara Kuda,RF,Pulau Pinang,Pulau Pinang,5.435278,100.513333,ok,parsed_dms,parsed_dms
+5503031,Permatang Bendahari,RF,Pulau Pinang,Pulau Pinang,5.413889,100.391667,ok,parsed_excel_date,parsed_dms
+5503034,Permatang Binjai,RF,Pulau Pinang,Pulau Pinang,5.502778,100.394444,ok,parsed_excel_date,parsed_dms
+5504032,Rumah Pam Bumbong Lima,RF,Pulau Pinang,Pulau Pinang,5.558889,100.436389,ok,parsed_dms,parsed_dms
+5504034,Permatang Sintok,RF,Pulau Pinang,Pulau Pinang,5.513889,100.405556,ok,parsed_excel_date,parsed_dms
+5504035,Lahar Ikan Mati di Kepala Batas,RF,Pulau Pinang,Pulau Pinang,5.534722,100.430556,ok,parsed_dms,parsed_dms
+5504036,Rumah Pam Bumbung Lima,RF,Pulau Pinang,Pulau Pinang,5.559444,100.436111,ok,parsed_dms,parsed_dms
+5505032,Sg. Muda @ Ladang Victoria,RF,Pulau Pinang,Pulau Pinang,5.531111,100.573333,ok,parsed_dms,parsed_dms
+5505033,Rumah Pam Pinang Tunggal,RF,Pulau Pinang,Pulau Pinang,5.557222,100.506944,ok,parsed_dms,parsed_dms
+5505052,Bagan Buaya,RF,Pulau Pinang,Pulau Pinang,5.213889,100.4775,ok,parsed_dms,parsed_dms
+2615131,Ldg. Batu Untong,RF,Selangor,Selangor,2.694444,101.506944,ok,parsed_dms,parsed_dms
+2615132,Ldg. Sg. Gappin,RF,Selangor,Selangor,2.668056,101.548611,ok,parsed_dms,parsed_dms
+2615133,Tadika Kemas Kg. Tg. Sepat,RF,Selangor,Selangor,2.681389,101.563333,ok,parsed_dms,parsed_dms
+2616135,Ldg. Telok Merbau,RF,Selangor,Selangor,2.863889,101.684722,ok,parsed_dms,parsed_dms
+2616136,Pintu Air Tanjung Rhu,RF,Selangor,Selangor,2.632778,101.623889,ok,parsed_dms,parsed_dms
+2616137,Agrotek Sepang,RF,Selangor,Selangor,2.691611,101.682639,ok,parsed_dms,parsed_dms
+2616138,P/A Sg. Pelek Sepang,RF,Selangor,Selangor,2.633028,101.623944,ok,parsed_dms,parsed_dms
+2617134,Ldg. Sepang,RF,Selangor,Selangor,2.670833,101.729167,ok,parsed_dms,parsed_dms
+2714001,P/A Kg. Tali Air Morib,RF,Selangor,Selangor,2.744167,101.450556,ok,parsed_dms,parsed_dms
+2717114,Ldg. Bute,RF,Selangor,Selangor,2.754167,101.748611,ok,parsed_dms,parsed_dms
+2717133,Kolam Takongan Sepang,RF,Selangor,Selangor,2.706944,101.740278,ok,parsed_dms,parsed_dms
+2717134,Kg. Salak Tinggi,RF,Selangor,Selangor,2.788667,101.741972,ok,parsed_dms,parsed_dms
+2814117,Ldg. Jugra,RF,Selangor,Selangor,2.818056,101.459722,ok,parsed_dms,parsed_dms
+2814118,Ldg. Kelanang Bahru,RF,Selangor,Selangor,2.8,101.463889,ok,parsed_dms,parsed_dms
+2814119,P/A Kelanang,RF,Selangor,Selangor,2.812222,101.418333,ok,parsed_dms,parsed_dms
+2815001,Pejabat JPS Sg. Manggis,RF,Selangor,Selangor,2.826389,101.541667,ok,parsed_dms,parsed_dms
+2815115,Ldg. Brooklands,RF,Selangor,Selangor,2.827778,101.554167,ok,parsed_dms,parsed_dms
+2815116,P/A Pekan Banting,RF,Selangor,Selangor,2.810556,101.508333,ok,parsed_dms,parsed_dms
+2815117,P/A Sg. Sedu,RF,Selangor,Selangor,2.855861,101.514722,ok,parsed_dms,parsed_dms
+2816041,Dengkil,RF,Selangor,Selangor,2.855778,101.681417,ok,parsed_dms,parsed_dms
+2816112,Ldg. Galloway,RF,Selangor,Selangor,2.895833,101.663889,ok,parsed_dms,parsed_dms
+2816113,KLIA,RF,Selangor,Selangor,2.804861,101.691806,ok,parsed_dms,parsed_dms
+2816114,RTB Bukit Changgang,RF,Selangor,Selangor,2.811389,101.654167,ok,parsed_dms,parsed_dms
+2816138,Bukit Changgang,RF,Selangor,Selangor,2.813472,101.641917,ok,parsed_dms,parsed_dms
+2816139,Paya Indah,RF,Selangor,Selangor,2.878889,101.619167,ok,parsed_dms,parsed_dms
+2817003,Kg Jenderam Hilir,RF,Selangor,Selangor,2.861389,101.735278,ok,parsed_dms,parsed_dms
+2818110,Sek. Men. Bandar Tasik Kesuma,RF,Selangor,Selangor,2.898742,101.870361,ok,parsed_dms,parsed_dms
+2818110,Ibu Bekalan Kg. Jln. Enam Kaki,RF,Selangor,Selangor,2.873611,101.851389,ok,parsed_dms,parsed_dms
+2913001,Pintu Kawalan P/S Telok Gong,RF,Selangor,Selangor,2.930556,101.393056,ok,parsed_dms,parsed_dms
+2913121,"Ldg. West, Pulau Carey",RF,Selangor,Selangor,2.911111,101.358333,ok,parsed_dms,parsed_dms
+2913122,JPS Pulau Lumut,RF,Selangor,Selangor,2.941667,101.322222,ok,parsed_dms,parsed_dms
+2913123,Kg. Sg. Kembong,RF,Selangor,Selangor,2.938056,101.338056,ok,parsed_dms,parsed_dms
+2914120,Ldg. Golden Hope,RF,Selangor,Selangor,2.981944,101.423611,ok,parsed_dms,parsed_dms
+2914122,P/A Bt. 9 Sijangkang,RF,Selangor,Selangor,2.956389,101.434167,ok,parsed_dms,parsed_dms
+2914123,P/A Bt 7 Sijangkang,RF,Selangor,Selangor,2.956389,101.434167,ok,parsed_dms,parsed_dms
+2915116,Ldg. Bkt. Cheeding,RF,Selangor,Selangor,2.911111,101.576389,ok,parsed_dms,parsed_dms
+2915117,Sek. Men. Jalan Kebun,RF,Selangor,Selangor,2.637694,101.725556,ok,parsed_dms,parsed_dms
+2915117,Air Itam Puchong,RF,Selangor,Selangor,2.979611,101.580417,ok,parsed_dms,parsed_dms
+2916001,Puncak Niaga Putrajaya,RF,Selangor,Selangor,2.911111,101.697222,ok,parsed_dms,parsed_dms
+2916077,Ldg. Bkt. Hitam,RF,Selangor,Selangor,2.983333,101.618056,ok,parsed_dms,parsed_dms
+2917001,RTM Kajang,RF,Selangor,Selangor,2.996111,101.785806,ok,parsed_dms,parsed_dms
+2917002,Kolam Takungan Sg. Merab,RF,Selangor,Selangor,2.945278,101.75,ok,parsed_dms,parsed_dms
+2917003,Stor JPS Hulu Langat,RF,Selangor,Selangor,2.936111,101.763611,ok,parsed_dms,parsed_dms
+2917105,Hospital Kajang,RF,Selangor,Selangor,2.993056,101.795833,ok,parsed_dms,parsed_dms
+2917106,Ldg. West Country Bhg. Barat,RF,Selangor,Selangor,2.976389,101.727778,ok,parsed_dms,parsed_dms
+2917111,Ldg. Sedgeley,RF,Selangor,Selangor,2.951389,101.730556,ok,parsed_dms,parsed_dms
+2917112,Kajang,RF,Selangor,Selangor,2.992694,101.7855,ok,parsed_dms,parsed_dms
+2918106,Sg. Rinching,RF,Selangor,Selangor,2.915194,101.821917,ok,parsed_dms,parsed_dms
+2918109,Ldg. Sg. Rinching,RF,Selangor,Selangor,2.919444,101.865278,ok,parsed_dms,parsed_dms
+3010001,Tmn Ehsan Kg. Melayu Subang,RF,Selangor,Selangor,3.158056,101.534444,ok,parsed_excel_date,parsed_dms
+3013001,Rumah Pam Rantau Panjang,RF,Selangor,Selangor,3.130833,101.533056,ok,parsed_excel_date,parsed_dms
+3013002,Jln. Sg. Kapar Besar (Jln Benteng),RF,Selangor,Selangor,3.141111,101.361111,ok,parsed_excel_date,parsed_dms
+3013003,Selat Muara,RF,Selangor,Selangor,3.017611,101.377778,ok,parsed_dms,parsed_dms
+3014080,Bandar Klang,RF,Selangor,Selangor,3.048056,101.444806,ok,parsed_dms,parsed_dms
+3014081,Ldg. Midlands,RF,Selangor,Selangor,3.063889,101.490278,ok,parsed_excel_date,parsed_dms
+3014083,Ldg. Highlands,RF,Selangor,Selangor,2.996389,101.444444,ok,parsed_dms,parsed_dms
+3014084,Pejabat JPS Klang,RF,Selangor,Selangor,3.038889,101.877778,ok,parsed_excel_date,parsed_dms
+3014089,Ldg. Bkt. Rajah Bahagian Barat,RF,Selangor,Selangor,3.090278,101.438889,ok,parsed_excel_date,parsed_dms
+3014090,Pusat Balai Bomba,RF,Selangor,Selangor,3.013889,101.409722,ok,parsed_dms,parsed_dms
+3014091,UiTM Shah Alam,RF,Selangor,Selangor,3.047778,101.448333,ok,parsed_excel_date,parsed_dms
+3014092,Sek.Men. Raja Lumu,RF,Selangor,Selangor,2.990556,101.412778,ok,parsed_dms,parsed_dms
+3014093,Kg. Sg. Udang Klang,RF,Selangor,Selangor,3.060278,101.429722,ok,parsed_excel_date,parsed_dms
+3014094,Bt.4 Kg. Jawa ( Sg. Kandis ),RF,Selangor,Selangor,3.021667,101.504722,ok,parsed_excel_date,parsed_dms
+3015001,Puchong Drop (W.P),RF,Selangor,Selangor,3.019444,101.597222,ok,parsed_excel_date,parsed_dms
+3015001,Puchong Drop,RF,Selangor,Selangor,3.019528,101.597417,ok,parsed_dms,parsed_dms
+3015074,Ldg. Sg. Way,RF,Selangor,Selangor,3.080556,101.591667,ok,parsed_excel_date,parsed_dms
+3015078,Ldg. Bkt. Kemuning,RF,Selangor,Selangor,3.0,101.541667,ok,parsed_dms,parsed_dms
+3015080,Ldg. Sg. Renggam,RF,Selangor,Selangor,3.058333,101.540278,ok,parsed_excel_date,parsed_dms
+3015082,Ldg. Haron,RF,Selangor,Selangor,3.013889,101.501389,ok,parsed_dms,parsed_dms
+3015083,TTDI Shah Alam,RF,Selangor,Selangor,3.096944,101.554167,ok,parsed_dms,parsed_dms
+3015084,Taman Sri Muda 1,RF,Selangor,Selangor,3.037722,101.5345,ok,parsed_dms,parsed_dms
+3015085,Tugu Keris Klang,RF,Selangor,Selangor,3.058056,101.516389,ok,parsed_excel_date,parsed_dms
+3015087,Batu 3,RF,Selangor,Selangor,3.075611,101.553889,ok,parsed_dms,parsed_dms
+3016001,Puchong Drop,RF,Selangor,Selangor,3.019444,101.601389,ok,parsed_excel_date,parsed_dms
+3016075,Ldg. Bkt. Jalil,RF,Selangor,Selangor,3.058333,101.6625,ok,parsed_excel_date,parsed_dms
+3016076,Ldg. Kinrara,RF,Selangor,Selangor,3.051389,101.65,ok,parsed_excel_date,parsed_dms
+3016077,Jalan 222,RF,Selangor,Selangor,3.096528,101.634389,ok,parsed_dms,parsed_dms
+3016080,Kg. Ghandi,RF,Selangor,Selangor,3.076444,101.621389,ok,parsed_dms,parsed_dms
+3017104,Kolam Takongan Kg. Cheras,RF,Selangor,Selangor,3.097222,101.7875,ok,parsed_excel_date,parsed_dms
+3017105,Sg. Raya Bt.9 Hulu Langat,RF,Selangor,Selangor,3.067778,101.771944,ok,parsed_excel_date,parsed_dms
+3017106,Sg. Serai Bt.12 Hulu Langat,RF,Selangor,Selangor,3.099444,101.7975,ok,parsed_excel_date,parsed_dms
+3017107,Seri Kembangan,RF,Selangor,Selangor,3.0145,101.718667,ok,parsed_dms,parsed_dms
+3017108,Sungai Balak Hulu Langat,RF,Selangor,Selangor,3.016389,101.763611,ok,parsed_dms,parsed_dms
+3018101,Empangan Semenyih,RF,Selangor,Selangor,3.078611,101.880556,ok,parsed_excel_date,parsed_dms
+3018103,Kg. Pasir,RF,Selangor,Selangor,3.013444,101.866056,ok,parsed_dms,parsed_dms
+3018107,Ldg. Dominion,RF,Selangor,Selangor,3.003611,101.881944,ok,parsed_dms,parsed_dms
+3110001,Sek. Men.(P) Sri Aman,RF,Selangor,Selangor,3.103167,101.629361,ok,parsed_dms,parsed_dms
+3110002,Sek. Men. Sri Permata,RF,Selangor,Selangor,3.101944,101.614083,ok,parsed_dms,parsed_dms
+3110003,Kompleks Sukan FAS,RF,Selangor,Selangor,3.109139,101.635472,ok,parsed_dms,parsed_dms
+3110004,Balai Polis Sea Park,RF,Selangor,Selangor,3.122194,101.635472,ok,parsed_dms,parsed_dms
+3110005,Sek. Men. Sea Park,RF,Selangor,Selangor,3.110556,101.617444,ok,parsed_excel_date,parsed_dms
+3110006,Tmn. Bkt. Mayang Emas,RF,Selangor,Selangor,3.125194,101.598083,ok,parsed_dms,parsed_dms
+3110007,Sek. Ren. Yuk Chai,RF,Selangor,Selangor,3.115139,101.607667,ok,parsed_dms,parsed_dms
+3110008,Sek. Ren. Dsara Utama,RF,Selangor,Selangor,3.149,101.624444,ok,parsed_dms,parsed_dms
+3110009,Tropicana Golf Resort,RF,Selangor,Selangor,3.136944,101.592111,ok,parsed_excel_date,parsed_dms
+3110010,Balai Polis TTDI,RF,Selangor,Selangor,3.152389,101.625833,ok,parsed_dms,parsed_dms
+3110011,Sungai Penchala Upstream,RF,Selangor,Selangor,3.175667,101.633,ok,parsed_dms,parsed_dms
+3110012,Masjid Jamek Sg. Penchala,RF,Selangor,Selangor,3.162722,101.6275,ok,parsed_dms,parsed_dms
+3110013,Surau AL-Syakirin,RF,Selangor,Selangor,3.144944,101.612361,ok,parsed_dms,parsed_dms
+3110014,Sek.Men. Dsara Jaya,RF,Selangor,Selangor,3.130333,101.617889,ok,parsed_dms,parsed_dms
+3110015,Sek.Ren. Sri Damansara 3,RF,Selangor,Selangor,3.183056,101.62,ok,parsed_excel_date,parsed_dms
+3110016,Bukit Kiara Golf Resort,RF,Selangor,Selangor,3.13375,101.639833,ok,parsed_dms,parsed_dms
+3111404,Sg. Kayu Ara,RF,Selangor,Selangor,3.112722,101.598028,ok,parsed_dms,parsed_dms
+3113059,Ldg. Bukit Kerayong,RF,Selangor,Selangor,3.176389,101.344444,ok,parsed_excel_date,parsed_dms
+3113087,Ldg. Sg. Kapar,RF,Selangor,Selangor,3.122222,101.383333,ok,parsed_excel_date,parsed_dms
+3114085,Setia Alam,RF,Selangor,Selangor,3.102778,101.455556,ok,parsed_excel_date,parsed_dms
+3114086,Ldg. Harpendent,RF,Selangor,Selangor,3.134722,101.401389,ok,parsed_excel_date,parsed_dms
+3114087,Epm. Tasik Subang Meru,RF,Selangor,Selangor,3.166972,101.479444,ok,parsed_dms,parsed_dms
+3115001,Lapangan Terbang Subang,RF,Selangor,Selangor,3.1625,101.5,ok,parsed_excel_date,parsed_dms
+3115053,Ldg. Elmina A,RF,Selangor,Selangor,3.20275,101.50425,ok,parsed_dms,parsed_dms
+3115079,Pusat Penyelidikan Getah Sg.Buloh,RF,Selangor,Selangor,3.167222,101.559722,ok,parsed_excel_date,parsed_dms
+3115080,Paya Jaras,RF,Selangor,Selangor,3.196528,101.548778,ok,parsed_dms,parsed_dms
+3115081,TTDI Jaya Fasa 2,RF,Selangor,Selangor,3.105,101.563611,ok,parsed_excel_date,parsed_dms
+3115081,Kg. Melayu Subang,RF,Selangor,Selangor,3.150056,101.540944,ok,parsed_dms,parsed_dms
+3115082,Kota Damansara,RF,Selangor,Selangor,3.160833,101.583056,ok,parsed_excel_date,parsed_dms
+3115082,Taman Mayang,RF,Selangor,Selangor,3.112278,101.596444,ok,parsed_dms,parsed_dms
+3116001,Ibu Pejabat Kajicuaca Malaysia,RF,Selangor,Selangor,3.101389,101.644444,ok,parsed_excel_date,parsed_dms
+3117001,Empangan Ampang (Ab),RF,Selangor,Selangor,3.166667,101.779167,ok,parsed_excel_date,parsed_dms
+3117080,Bukit Antarabangsa,RF,Selangor,Selangor,3.183694,101.772694,ok,parsed_dms,parsed_dms
+3118069,Pemasokan Ampang,RF,Selangor,Selangor,3.158333,101.801389,ok,parsed_excel_date,parsed_dms
+3118101,Stn. Jenaletrik Lln. Ponsoon,RF,Selangor,Selangor,3.227778,101.883333,ok,parsed_excel_date,parsed_dms
+3118102,Sek.Keb.Kg.Sg. Lui,RF,Selangor,Selangor,3.173611,101.872222,ok,parsed_excel_date,parsed_dms
+3118103,Kg. Sg. Lui,RF,Selangor,Selangor,3.173472,101.870361,ok,parsed_dms,parsed_dms
+3118103,Sg. Gabai di Kg. Lui,RF,Selangor,Selangor,3.157389,101.8965,ok,parsed_dms,parsed_dms
+3118105,"Batu 14, Hulu Langat(Balai Polis)",RF,Selangor,Selangor,3.111389,101.816389,ok,parsed_dms,parsed_dms
+3119001,Sawah Sg. Lui,RF,Selangor,Selangor,3.172222,101.905556,ok,parsed_excel_date,parsed_dms
+3119002,Lalang Sg. Lui,RF,Selangor,Selangor,3.136111,101.905556,ok,parsed_excel_date,parsed_dms
+3119003,Bkt. Lawing Sg. Lui,RF,Selangor,Selangor,3.159722,101.9375,ok,parsed_excel_date,parsed_dms
+3119104,"Bt.30, Jalan Genting Peres",RF,Selangor,Selangor,3.140278,101.929722,ok,parsed_excel_date,parsed_dms
+3211001,Taman Templer,RF,Selangor,Selangor,3.296944,101.632806,ok,parsed_excel_date,parsed_dms
+3213057,Ldg. Braunston,RF,Selangor,Selangor,3.249583,101.318361,ok,parsed_dms,parsed_dms
+3213058,Ldg. Bkt. Cherakah,RF,Selangor,Selangor,3.226389,101.363889,ok,parsed_excel_date,parsed_dms
+3214054,Ldg. Tuan Mee,RF,Selangor,Selangor,3.269194,101.457111,ok,parsed_dms,parsed_dms
+3214055,Ldg. Bkt. Ijok,RF,Selangor,Selangor,3.258333,101.402778,ok,parsed_excel_date,parsed_dms
+3214056,Sri Aman,RF,Selangor,Selangor,3.246139,101.469694,ok,parsed_dms,parsed_dms
+3214057,Bandar Tasik Puteri,RF,Selangor,Selangor,3.299722,101.488333,ok,parsed_excel_date,parsed_dms
+3215001,Rumah JKR Paya Jaras di Sg.Buluh,RF,Selangor,Selangor,3.208333,101.519444,ok,parsed_excel_date,parsed_dms
+3215035,"Ldg. Elmina, Bhg. 'C'",RF,Selangor,Selangor,3.233333,101.520833,ok,parsed_excel_date,parsed_dms
+3215051,Pusat Mengawal Kusta Negara,RF,Selangor,Selangor,3.223611,101.591667,ok,parsed_excel_date,parsed_dms
+3215053,Kg. Setia Kuang,RF,Selangor,Selangor,3.250833,101.529167,ok,parsed_excel_date,parsed_dms
+3215054,Kg. Melayu Sg. Buloh,RF,Selangor,Selangor,3.216111,101.576111,ok,parsed_excel_date,parsed_dms
+3215055,Kg. Merbau Sempak,RF,Selangor,Selangor,3.216389,101.524444,ok,parsed_excel_date,parsed_dms
+3216002,"Pph, Kepong (Semaian)",RF,Selangor,Selangor,3.230556,101.636111,ok,parsed_excel_date,parsed_dms
+3216052,Ldg. Edinburgh,RF,Selangor,Selangor,3.2,101.6375,ok,parsed_excel_date,parsed_dms
+3216061,"Pph, Kepong",RF,Selangor,Selangor,3.234722,101.638889,ok,parsed_excel_date,parsed_dms
+3216062,Ldg. Batu Caves,RF,Selangor,Selangor,3.2375,101.698611,ok,parsed_excel_date,parsed_dms
+3217064,"Jabatan Orang Asli, Ulu Gombak",RF,Selangor,Selangor,3.293056,101.731944,ok,parsed_excel_date,parsed_dms
+3217065,Ldg. Wardieburn,RF,Selangor,Selangor,3.216667,101.738889,ok,parsed_excel_date,parsed_dms
+3217067,Empangan Genting Klang,RF,Selangor,Selangor,3.236111,101.758333,ok,parsed_excel_date,parsed_dms
+3218101,TNB Pansun,RF,Selangor,Selangor,3.209639,101.875861,ok,parsed_dms,parsed_dms
+3312042,Ldg. Bkt. Belimbing,RF,Selangor,Selangor,3.395833,101.274667,ok,parsed_excel_date,parsed_dms
+3312044,Ldg. Telok Piah,RF,Selangor,Selangor,3.35,101.268056,ok,parsed_excel_date,parsed_dms
+3312045,Km. 45.5 Jln. klang/K.Selangor,RF,Selangor,Selangor,3.336278,101.256194,ok,parsed_dms,parsed_dms
+3312046,Teluk Penyamun,RF,Selangor,Selangor,3.342528,101.269111,ok,parsed_dms,parsed_dms
+3313039,Ldg. St. Andrew,RF,Selangor,Selangor,3.348611,101.390278,ok,parsed_excel_date,parsed_dms
+3313040,"Ldg. Bkt. Talang, Bhg. Kg. Baru",RF,Selangor,Selangor,3.395278,101.311778,ok,parsed_excel_date,parsed_dms
+3313043,Ldg. Kuala Selangor,RF,Selangor,Selangor,3.307778,101.304972,ok,parsed_excel_date,parsed_dms
+3313045,Kuala Badong,RF,Selangor,Selangor,3.371917,101.3705,ok,parsed_dms,parsed_dms
+3313056,Ldg. Rajaghiri,RF,Selangor,Selangor,3.308333,101.369444,ok,parsed_excel_date,parsed_dms
+3313060,Ldg. Sg. Buloh,RF,Selangor,Selangor,3.308722,101.321,ok,parsed_dms,parsed_dms
+3313070,Parit Mahang,RF,Selangor,Selangor,3.306722,101.386444,ok,parsed_dms,parsed_dms
+3314001,Rumah Pam JPS Jaya Setia,RF,Selangor,Selangor,3.368889,101.412194,ok,parsed_excel_date,parsed_dms
+3314037,Ldg. Strathmore,RF,Selangor,Selangor,3.383333,101.425,ok,parsed_excel_date,parsed_dms
+3314038,Ldg. Tennamaram,RF,Selangor,Selangor,3.398611,101.415278,ok,parsed_excel_date,parsed_dms
+3314039,Batu Arang,RF,Selangor,Selangor,3.3075,101.481389,ok,parsed_excel_date,parsed_dms
+3314040,Sempadan.Gombak/K. Selangor,RF,Selangor,Selangor,3.366861,101.482444,ok,parsed_dms,parsed_dms
+3315024,Ldg. Ulu Yam,RF,Selangor,Selangor,3.4,101.555556,ok,parsed_excel_date,parsed_dms
+3315032,Ldg. Serendah,RF,Selangor,Selangor,3.370833,101.591667,ok,parsed_excel_date,parsed_dms
+3315033,Stor JBA,RF,Selangor,Selangor,3.325,101.579167,ok,parsed_excel_date,parsed_dms
+3315034,Ldg. Waterfall,RF,Selangor,Selangor,3.352778,101.525,ok,parsed_excel_date,parsed_dms
+3315036,Ldg. Kundang,RF,Selangor,Selangor,3.3,101.5125,ok,parsed_excel_date,parsed_dms
+3315037,Taman Bukit Rawang,RF,Selangor,Selangor,3.331944,101.586944,ok,parsed_excel_date,parsed_dms
+3315038,Country Homes,RF,Selangor,Selangor,3.327222,101.531944,ok,parsed_excel_date,parsed_dms
+3315039,Taman Tun Teja,RF,Selangor,Selangor,3.304694,101.591944,ok,parsed_dms,parsed_dms
+3315039,Taman Garing Utama,RF,Selangor,Selangor,3.3425,101.566111,ok,parsed_excel_date,parsed_dms
+3315040,Kg. Sungai Buaya,RF,Selangor,Selangor,3.398889,101.533889,ok,parsed_excel_date,parsed_dms
+3315041,Taman Desa Kundang,RF,Selangor,Selangor,3.308333,101.523611,ok,parsed_excel_date,parsed_dms
+3316028,Ldg. Sg. Gapi,RF,Selangor,Selangor,3.400278,101.6225,ok,parsed_excel_date,parsed_dms
+3316029,Serendah,RF,Selangor,Selangor,3.368389,101.606806,ok,parsed_dms,parsed_dms
+3317002,Km. 21 (JPS) Ulu Gombak (Ab),RF,Selangor,Selangor,3.308333,101.736111,ok,parsed_excel_date,parsed_dms
+3317063,"Km. 25.4 Ulu Gombak, JPS",RF,Selangor,Selangor,3.326389,101.754167,ok,parsed_excel_date,parsed_dms
+3411001,"T/A 1, Sg. Burong ( Pengairan )",RF,Selangor,Selangor,3.505361,101.191111,ok,parsed_dms,parsed_dms
+3411016,"Parit 1, Sg. Burong",RF,Selangor,Selangor,3.455972,101.147361,ok,parsed_dms,parsed_dms
+3411017,Stor JPS Tg.Karang,RF,Selangor,Selangor,3.423611,101.173306,ok,parsed_excel_date,parsed_dms
+3412001,Ibu Bekalan Sg. Tengi,RF,Selangor,Selangor,3.483056,101.220306,ok,parsed_excel_date,parsed_dms
+3412041,Ldg. Raja Musa,RF,Selangor,Selangor,3.410278,101.283889,ok,parsed_excel_date,parsed_dms
+3414029,"Ldg. Sg. Tinggi, Bhg. Mary",RF,Selangor,Selangor,3.474444,101.488694,ok,parsed_excel_date,parsed_dms
+3414030,Ldg. Hopeful,RF,Selangor,Selangor,3.449722,101.460083,ok,parsed_excel_date,parsed_dms
+3414031,Pengorekan Bijih Berjuntai Bhd.,RF,Selangor,Selangor,3.422222,101.456944,ok,parsed_excel_date,parsed_dms
+3414032,Rantau Panjang,RF,Selangor,Selangor,3.402,101.441667,ok,parsed_dms,parsed_dms
+3415001,Kg. Timah,RF,Selangor,Selangor,3.485556,101.539167,ok,parsed_excel_date,parsed_dms
+3416001,Ulu Yam,RF,Selangor,Selangor,3.460667,101.637333,ok,parsed_dms,parsed_dms
+3416002,Kg. Kalong Tengah,RF,Selangor,Selangor,3.438333,101.661389,ok,parsed_excel_date,parsed_dms
+3416025,Ldg. Batang Kali,RF,Selangor,Selangor,3.466667,101.654167,ok,parsed_excel_date,parsed_dms
+3416026,Ldg. Rasa,RF,Selangor,Selangor,3.494444,101.602778,ok,parsed_excel_date,parsed_dms
+3416027,Batang Kali,RF,Selangor,Selangor,3.469917,101.639806,ok,parsed_dms,parsed_dms
+3416029,Taman Desa Kelisa,RF,Selangor,Selangor,3.422222,101.666389,ok,parsed_excel_date,parsed_dms
+3510001,Fdc. Sekinchan,RF,Selangor,Selangor,3.517833,101.098306,ok,parsed_dms,parsed_dms
+3510015,"Parit 10, Pasir Panjang",RF,Selangor,Selangor,3.568056,101.079167,ok,parsed_dms,parsed_dms
+3511001,Tg.Karang,RF,Selangor,Selangor,3.5,101.111111,ok,parsed_excel_date,parsed_dms
+3511002,Tali Air 9 Pasir Panjang,RF,Selangor,Selangor,3.574444,101.117778,ok,parsed_dms,parsed_dms
+3511201,T/A 2 Sg. Burong,RF,Selangor,Selangor,3.466667,101.137583,ok,parsed_excel_date,parsed_dms
+3515027,Ldg. Sg. Belata,RF,Selangor,Selangor,3.566667,101.538889,ok,parsed_dms,parsed_dms
+3515028,Lembah Beringin,RF,Selangor,Selangor,3.565278,101.541389,ok,parsed_dms,parsed_dms
+3516022,Loji Air Kuala Kubu Bahru,RF,Selangor,Selangor,3.575833,101.665556,ok,parsed_dms,parsed_dms
+3516023,Hospital Kuala Kubu Bahru,RF,Selangor,Selangor,3.568056,101.655556,ok,parsed_dms,parsed_dms
+3516025,Ampang Pecah,RF,Selangor,Selangor,3.540389,101.663417,ok,parsed_dms,parsed_dms
+3516026,Kerling,RF,Selangor,Selangor,3.588361,101.606333,ok,parsed_dms,parsed_dms
+3516027,Taman Rasa,RF,Selangor,Selangor,3.500278,101.628611,ok,parsed_excel_date,parsed_dms
+3517022,Kg. Pertak,RF,Selangor,Selangor,3.581667,101.728056,ok,parsed_dms,parsed_dms
+3609012,"Parit 1, Sg. Besar",RF,Selangor,Selangor,3.681667,100.992028,ok,parsed_dms,parsed_dms
+3609013,Pejabat JPS Sg. Besar,RF,Selangor,Selangor,3.673611,100.9875,ok,parsed_dms,parsed_dms
+3609014,Sg. Burung di Sg. Besar,RF,Selangor,Selangor,3.696278,100.940833,ok,parsed_dms,parsed_dms
+3610001,"S.R.K Parit 4, Sg. Haji Dorani",RF,Selangor,Selangor,3.6625,101.0505,ok,parsed_dms,parsed_dms
+3610014,Pintu Kawalan P/S Sg. Nipah,RF,Selangor,Selangor,3.62125,101.04125,ok,parsed_dms,parsed_dms
+3612001,Ladang PKPS Sg.Panjang,RF,Selangor,Selangor,3.655278,101.280833,ok,parsed_dms,parsed_dms
+3613004,Ibu Bekalan Sg. Bernam,RF,Selangor,Selangor,3.698056,101.35,ok,parsed_dms,parsed_dms
+3613005,Rancangan Felda. Suharto,RF,Selangor,Selangor,3.680556,101.388889,ok,parsed_dms,parsed_dms
+3613006,Felda Soeharto,RF,Selangor,Selangor,3.689167,101.386667,ok,parsed_dms,parsed_dms
+3615001,Ldg. Escot,RF,Selangor,Selangor,3.670833,101.543056,ok,parsed_dms,parsed_dms
+3615002,Ldg. Sg. Gumut,RF,Selangor,Selangor,3.631389,101.556111,ok,parsed_dms,parsed_dms
+3615003,Tanjung Malim,RF,Selangor,Selangor,3.677917,101.520667,ok,parsed_dms,parsed_dms
+3615003,Kompleks Penghulu Hulu Bernam,RF,Selangor,Selangor,3.679444,101.528611,ok,parsed_dms,parsed_dms
+3708001,Bagan Nakhoda Omar,RF,Selangor,Selangor,3.775,100.881306,ok,parsed_dms,parsed_dms
+3709008,Ldg. Raja Hitam,RF,Selangor,Selangor,3.8,100.945833,ok,parsed_dms,parsed_dms
+3709009,Pekan Sabak Bernam,RF,Selangor,Selangor,3.775,100.988083,ok,parsed_dms,parsed_dms
+3710006,Rumah Pam JPS Bagan Terap,RF,Selangor,Selangor,3.728611,101.083139,ok,parsed_dms,parsed_dms
+3710011,Parit 6. Sg. Besar,RF,Selangor,Selangor,3.708333,101.014444,ok,parsed_dms,parsed_dms
+3711001,Kg. Belia Dua Sg. Panjang,RF,Selangor,Selangor,3.710278,101.180861,ok,parsed_dms,parsed_dms
+3713003,Rancangan Felda. Gedangsa,RF,Selangor,Selangor,3.7375,101.384722,ok,parsed_dms,parsed_dms
+3713004,Dewan Serbaguna Felda Gedangsa,RF,Selangor,Selangor,3.740278,101.384167,ok,parsed_dms,parsed_dms
+3717101,Bukit Fraser,RF,Selangor,Selangor,3.711944,101.738333,ok,parsed_dms,parsed_dms
+3808001,Parit Saliran Sg. Air Tawar,RF,Selangor,Selangor,3.847222,100.895889,ok,parsed_dms,parsed_dms
+3808002,Ins. Latihan Dakwah Selangor,RF,Selangor,Selangor,3.819889,100.821944,ok,parsed_dms,parsed_dms
+3809009,"Ldg. Sg. Bernam, Bhg. William",RF,Selangor,Selangor,3.837833,100.937,ok,parsed_dms,parsed_dms
+3813001,Jambatan SKC,RF,Selangor,Selangor,3.804417,101.361611,ok,parsed_dms,parsed_dms
+3933001,Hulu Jabor di Kemaman,RF,Terengganu,Terengganu,3.918056,103.308333,ok,parsed_dms,parsed_dms
+4131001,Kg. Ban Ho,RF,Terengganu,Terengganu,4.133333,103.175,ok,parsed_excel_date,parsed_dms
+4231103,Ibu Bekalan Air Putih,RF,Terengganu,Terengganu,4.244444,103.198611,ok,parsed_excel_date,parsed_dms
+4232001,Pekan Air Putih,RF,Terengganu,Terengganu,4.270833,103.213889,ok,parsed_excel_date,parsed_dms
+4232002,Jambatan Air Putih,RF,Terengganu,Terengganu,4.270833,103.198611,ok,parsed_excel_date,parsed_dms
+4232104,Sek. Keb. Pasir Gajah,RF,Terengganu,Terengganu,4.238889,103.297222,ok,parsed_excel_date,parsed_dms
+4234109,JPS Kemaman,RF,Terengganu,Terengganu,4.231944,103.422222,ok,parsed_excel_date,parsed_dms
+4332001,Jambatan Tebak,RF,Terengganu,Terengganu,4.377778,103.2625,ok,parsed_excel_date,parsed_dms
+4333001,Seri Bandi,RF,Terengganu,Terengganu,4.3625,103.347222,ok,parsed_excel_date,parsed_dms
+4333096,Klinik Bidan di Kg. Ibok,RF,Terengganu,Terengganu,4.327778,103.368056,ok,parsed_excel_date,parsed_dms
+4334094,Sek. Keb. Kijal,RF,Terengganu,Terengganu,4.331944,103.4875,ok,parsed_excel_date,parsed_dms
+4434093,Sek. Men. Keb. Badrul Alam Shah,RF,Terengganu,Terengganu,4.427778,103.451389,ok,parsed_excel_date,parsed_dms
+4529001,"Rumah Pam Paya Kempian, Pasir Raja",RF,Terengganu,Terengganu,4.568056,102.979167,ok,parsed_dms,parsed_dms
+4529071,Sek. Keb. Pasir Raja Hulu Dungun  ( Tutup ),RF,Terengganu,Terengganu,4.563889,102.973611,ok,parsed_dms,parsed_dms
+4533001,Rasau Kerteh       ( Tutup ),RF,Terengganu,Terengganu,4.573611,103.319444,ok,parsed_dms,parsed_dms
+4534092,"Sek. Keb. Kerteh di Kemaman / Paya Labuhan, Kemaman",RF,Terengganu,Terengganu,4.508333,103.444444,ok,parsed_excel_date,parsed_dms
+4628001,Jambatan Penarik,RF,Terengganu,Terengganu,4.603333,102.818611,ok,parsed_dms,parsed_dms
+4631001,Bandar Al Muktafi Billah Shah,RF,Terengganu,Terengganu,4.613889,103.198611,ok,parsed_dms,parsed_dms
+4634085,Pusat Kesihatan Paka,RF,Terengganu,Terengganu,4.636111,103.4375,ok,parsed_dms,parsed_dms
+4730002,Kg. Surau di Kuala Jengai,RF,Terengganu,Terengganu,4.734722,103.0875,ok,parsed_dms,parsed_dms
+4731083,"Sek. Keb. Bkt. Besi, Ulu Dungun",RF,Terengganu,Terengganu,4.758333,103.191667,ok,parsed_dms,parsed_dms
+4733084,"Kg. Lubok Che Long, Ulu Paka",RF,Terengganu,Terengganu,4.726389,103.308333,ok,parsed_dms,parsed_dms
+4734079,Sek. Men. Sultan Omar di  Dungun,RF,Terengganu,Terengganu,4.7625,103.419444,ok,parsed_dms,parsed_dms
+4832011,Jambatan Jerangau,RF,Terengganu,Terengganu,4.843056,103.204167,ok,parsed_dms,parsed_dms
+4832077,Sek. Kebangsan Jerangau,RF,Terengganu,Terengganu,4.844444,103.2,ok,parsed_dms,parsed_dms
+4833078,"Rumah Pam Delong, Dungun",RF,Terengganu,Terengganu,4.816667,103.309722,ok,parsed_dms,parsed_dms
+4834001,Klinik Bidan di Kuala Abang,RF,Terengganu,Terengganu,4.827778,103.416667,ok,parsed_dms,parsed_dms
+4834070,Sek. Keb. Kuala Abang,RF,Terengganu,Terengganu,4.827778,103.416667,ok,parsed_dms,parsed_dms
+4929001,Kg.Embong Sekayu di Ulu Terengganu,RF,Terengganu,Terengganu,4.952778,102.966667,ok,parsed_dms,parsed_dms
+4930001,Klinik Kg. Menerong,RF,Terengganu,Terengganu,4.938889,103.061111,ok,parsed_dms,parsed_dms
+4930038,Kg. Menerong,RF,Terengganu,Terengganu,4.938889,103.061111,ok,parsed_dms,parsed_dms
+4931061,Ldg. Koko Jerangau,RF,Terengganu,Terengganu,4.977778,103.158333,ok,parsed_dms,parsed_dms
+4931067,Stn. Penyelidikan Jerangau,RF,Terengganu,Terengganu,4.956944,103.169444,ok,parsed_dms,parsed_dms
+4931076,Felda Jerangau,RF,Terengganu,Terengganu,4.906944,103.193056,ok,parsed_dms,parsed_dms
+4933001,Klinik Bidan di Jambu Bongkok pindah ke Sek Men Keb Jambu Bongkok,RF,Terengganu,Terengganu,4.943056,103.348611,ok,parsed_dms,parsed_dms
+4933068,Sek. Keb. Jambu Bongkok,RF,Terengganu,Terengganu,4.940278,103.351389,ok,parsed_dms,parsed_dms
+5028001,Sg. Galong   ( Tutup ),RF,Terengganu,Terengganu,5.065278,102.826389,ok,parsed_excel_date,parsed_dms
+5028033,"Pasir Berching, Ulu Terengganu",RF,Terengganu,Terengganu,5.019444,102.8375,ok,parsed_excel_date,parsed_dms
+5029034,Kg. Dura,RF,Terengganu,Terengganu,5.066667,102.941667,ok,parsed_excel_date,parsed_dms
+5029035,Sek. Keb. Kg. Dusun di K. Brang,RF,Terengganu,Terengganu,5.073611,102.951389,ok,parsed_excel_date,parsed_dms
+5029036,Rumah Pam Paya Kemat,RF,Terengganu,Terengganu,5.008333,102.969444,ok,parsed_dms,parsed_dms
+5030039,Hospital K. Brang / JBA Kuala Brang (Dipindahkan ke JPS.Hulu Trg.),RF,Terengganu,Terengganu,5.070833,103.013889,ok,parsed_excel_date,parsed_dms
+5031001,Jamb. Pengkalan Berangan,RF,Terengganu,Terengganu,5.098056,103.147222,ok,parsed_excel_date,parsed_dms
+5031062,Kg. Bkt.Diman Ulu Terengganu,RF,Terengganu,Terengganu,5.041667,103.111111,ok,parsed_excel_date,parsed_dms
+5033069,"Alor Temesu, Tok Fakil, Merchang",RF,Terengganu,Terengganu,5.019444,103.301389,ok,parsed_excel_date,parsed_dms
+5128001,Sg. Gawi,RF,Terengganu,Terengganu,5.143056,102.844444,ok,parsed_excel_date,parsed_dms
+5129040,Rumah Pam Paya Rapat,RF,Terengganu,Terengganu,5.172222,102.901389,ok,parsed_excel_date,parsed_dms
+5130005,Sek. Keb. Tanggol,RF,Terengganu,Terengganu,,,missing,missing,missing
+5130007,Empangan Kenyir,RF,Terengganu,Terengganu,5.1,103.0,ok,parsed_excel_date,parsed_dms
+5130063,Stn. Pertanian Ajil,RF,Terengganu,Terengganu,5.102778,103.090278,ok,parsed_excel_date,parsed_dms
+5131064,Sek. Men. Bkt. Sawa,RF,Terengganu,Terengganu,5.191667,103.1,ok,parsed_excel_date,parsed_dms
+5132001,Cheneh     ( Tutup ),RF,Terengganu,Terengganu,5.1125,103.238889,ok,parsed_excel_date,parsed_dms
+5226001,Sg. Petuang Ulu Sg. Terengganu,RF,Terengganu,Terengganu,5.202778,102.6625,ok,parsed_excel_date,parsed_dms
+5230041,Sek. Keb. Kuala Telemong,RF,Terengganu,Terengganu,5.202778,103.031944,ok,parsed_excel_date,parsed_dms
+5230042,Rumah Pam Pulau Musang,RF,Terengganu,Terengganu,5.294444,103.095833,ok,parsed_excel_date,parsed_dms
+5232065,Sek. Keb. Marang (pindah ke Sek. Men. Tg. Lela Segara)  Pindah ke Star Kanan,RF,Terengganu,Terengganu,5.208333,103.206944,ok,parsed_excel_date,parsed_dms
+5328001,Sek. Keb. Kg. Sg. Tong,RF,Terengganu,Terengganu,5.355556,102.886111,ok,parsed_excel_date,parsed_dms
+5328002,Bkt. Durian di Chalok-Site 3,RF,Terengganu,Terengganu,5.390278,102.823611,ok,parsed_excel_date,parsed_dms
+5328043,Kg. Bkt. Berangan di Setiu,RF,Terengganu,Terengganu,5.316667,102.838889,ok,parsed_excel_date,parsed_dms
+5328044,Kg. Sg. Tong,RF,Terengganu,Terengganu,5.355556,102.886111,ok,parsed_excel_date,parsed_dms
+5330046,Sek. Keb. Kg. Gemuroh,RF,Terengganu,Terengganu,5.35,103.013889,ok,parsed_excel_date,parsed_dms
+5331047,Stn. Kajicuaca Kuala Terengganu,RF,Terengganu,Terengganu,5.318056,103.136111,ok,parsed_excel_date,parsed_dms
+5331048,Setor JPS Kuala Terengganu,RF,Terengganu,Terengganu,5.318056,103.133333,ok,parsed_excel_date,parsed_dms
+5354001,Pulai A        ( Tutup ),RF,Terengganu,Terengganu,5.329167,105.493056,ok,parsed_excel_date,parsed_dms
+5424001,Kg. Keruak di Ulu Besut (Sek. Keb. Keruak),RF,Terengganu,Terengganu,5.483333,102.491667,ok,parsed_excel_date,parsed_dms
+5426001,"Kg.Hulu Seladang, Setiu",RF,Terengganu,Terengganu,5.476389,102.675,ok,parsed_excel_date,parsed_dms
+5426003,Kampung Besut,RF,Terengganu,Terengganu,5.486944,102.686111,ok,parsed_excel_date,parsed_dms
+5428001,Kg. Batu Hampar di Chalok Site 1,RF,Terengganu,Terengganu,5.447222,102.815278,ok,parsed_excel_date,parsed_dms
+5428002,Klinik Chalok Barat Site 2,RF,Terengganu,Terengganu,5.411111,102.823611,ok,parsed_excel_date,parsed_dms
+5428003,Jambatan Chalok,RF,Terengganu,Terengganu,5.441667,102.834722,ok,parsed_excel_date,parsed_dms
+5428025,Sek. Keb. Kg. Rahmat,RF,Terengganu,Terengganu,5.465278,102.805556,ok,parsed_excel_date,parsed_dms
+5430049,Kg. Padang Maras di Kuala Terengganu,RF,Terengganu,Terengganu,5.429167,103.040278,ok,parsed_excel_date,parsed_dms
+5524001,Kg. La,RF,Terengganu,Terengganu,5.530556,102.483333,ok,parsed_excel_date,parsed_dms
+5524002,Sek. Keb. Panchor,RF,Terengganu,Terengganu,5.540278,102.488889,ok,parsed_dms,parsed_dms
+5524003,"Sek. Keb. Panchor, Ulu Besut",RF,Terengganu,Terengganu,5.540278,102.488889,ok,parsed_dms,parsed_dms
+5527001,Dekat Sek. Keb. Guntong Luar,RF,Terengganu,Terengganu,5.533128,102.231644,ok,parsed_dms,parsed_dms
+5527021,Guntong Gong Serai Bt. 46,RF,Terengganu,Terengganu,5.5875,102.706944,ok,parsed_dms,parsed_dms
+5527023,Dekat Sek. Keb. Kg. Buloh,RF,Terengganu,Terengganu,5.522222,102.744444,ok,parsed_excel_date,parsed_dms
+5527024,Ibu Bekalan Setiu- digantikan Stesen Kg Banggol,RF,Terengganu,Terengganu,5.561111,102.772222,ok,parsed_dms,parsed_dms
+5529027,Kg. Merang,RF,Terengganu,Terengganu,5.531944,102.951389,ok,parsed_excel_date,parsed_dms
+5549001,Tapis D           ( Tutup ),RF,Terengganu,Terengganu,5.534722,104.955556,ok,parsed_dms,parsed_dms
+5550001,Tapis A         ( Tutup ),RF,Terengganu,Terengganu,5.534722,105.026389,ok,parsed_dms,parsed_dms
+5624001,Empangan Jajar,RF,Terengganu,Terengganu,5.674833,102.489972,ok,parsed_dms,parsed_dms
+5624002,Pasir Raja,RF,Terengganu,Terengganu,5.695833,102.479167,ok,parsed_dms,parsed_dms
+5625003,"Ibu Bekalan Sg. Angga, Ulu Besut",RF,Terengganu,Terengganu,5.6,102.515278,ok,parsed_dms,parsed_dms
+5625004,Sek. Keb. Pasir Akar,RF,Terengganu,Terengganu,5.640278,102.504167,ok,parsed_dms,parsed_dms
+5625011,Sek. Keb. Kg. Jabi,RF,Terengganu,Terengganu,5.679167,102.563889,ok,parsed_dms,parsed_dms
+5626001,Institut Pertanian Besut,RF,Terengganu,Terengganu,5.643056,102.622222,ok,parsed_dms,parsed_dms
+5626012,Sek. Keb. Tok Dor di Besut,RF,Terengganu,Terengganu,5.654167,102.627778,ok,parsed_dms,parsed_dms
+5724003,Jambatan Jertih,RF,Terengganu,Terengganu,5.739722,102.493056,ok,parsed_dms,parsed_dms
+5725005,Rumah Merinyu Taliair Jerteh,RF,Terengganu,Terengganu,5.7375,102.504167,ok,parsed_dms,parsed_dms
+5725006,Klinik Kg. Raja di Besut / Sek. Men. Keb. Pengkalan Nyireh,RF,Terengganu,Terengganu,5.797222,102.565278,ok,parsed_dms,parsed_dms
+5726013,Sek. Keb. Kg. Tembila di Besut,RF,Terengganu,Terengganu,5.740278,102.608333,ok,parsed_dms,parsed_dms
+5730002,Pulau Redang,RF,Terengganu,Terengganu,,,missing,missing,missing
+3016002,Jambatan Petaling,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.080917,101.665194,ok,parsed_dms,parsed_dms
+3016102,Tmn Sg. Besi (SMART),RF,Wilayah Persekutuan,Wilayah Persekutuan,3.098414,101.698314,ok,parsed_dms,parsed_dms
+3016103,Taman Desa (SMART),RF,Wilayah Persekutuan,Wilayah Persekutuan,3.096303,101.676372,ok,parsed_dms,parsed_dms
+3114005,km10 Ulu Kelang di UK Height,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.18245,101.761183,ok,parsed_decimal_minutes,parsed_decimal_minutes
+3114113,Jln Sg. Udang di segambut,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.193806,101.659361,ok,parsed_dms,parsed_dms
+3114114,Kg. Berembang di Keramat,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.166028,101.741306,ok,parsed_dms,parsed_dms
+3116002,"Pej. JPS, Jln. Tugu",RF,Wilayah Persekutuan,Wilayah Persekutuan,3.144444,101.697222,ok,parsed_excel_date,parsed_dms
+3116003,JPS Wilayah Persekutuan,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.151389,101.684722,ok,parsed_excel_date,parsed_dms
+3116004,JPS Wilayah KL,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.147222,101.6875,ok,parsed_excel_date,parsed_dms
+3116004,JPS. Wilayah Persekutuan(Station closed in 06/93 restarted 2002),RF,Wilayah Persekutuan,Wilayah Persekutuan,3.155556,101.681944,ok,parsed_excel_date,parsed_dms
+3116005,Sek. Ren. Taman Maluri,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.197222,101.636111,ok,parsed_excel_date,parsed_dms
+3116006,Ldg. Edinburgh Site 2,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.183333,101.633333,ok,parsed_excel_date,parsed_dms
+3116007,Sek. M.G.S. Jln. Cenderasari,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.141667,101.694444,ok,parsed_excel_date,parsed_dms
+3116072,"Hospital Tanglin, K. Lumpur",RF,Wilayah Persekutuan,Wilayah Persekutuan,3.144444,101.691667,ok,parsed_excel_date,parsed_dms
+3116073,Ldg. Bangsar,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.140278,101.658333,ok,parsed_excel_date,parsed_dms
+3116074,Leboh Pasar,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.112583,101.696583,ok,parsed_dms,parsed_dms
+3116100,Taman Desa,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.095917,101.679194,ok,parsed_dms,parsed_dms
+3117003,Pandan Indah,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.127361,101.752639,ok,parsed_dms,parsed_dms
+3117005,Air Panas,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.188667,101.722361,ok,parsed_dms,parsed_dms
+3117006,Klm T. Banjir Batu PO di Empat Tin,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.218667,101.683333,ok,parsed_decimal_minutes,parsed_dms
+3117066,Hospital Besar Wilayah Persekutuan,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.173611,101.701389,ok,parsed_excel_date,parsed_dms
+3117070,JPS Ampang,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.153056,101.748889,ok,parsed_excel_date,parsed_dms
+3117071,"Loji Air Bkt., Weld, K. Lumpur",RF,Wilayah Persekutuan,Wilayah Persekutuan,3.151389,101.706944,ok,parsed_excel_date,parsed_dms
+3117101,Sg. Kerayong di Cheras Baru (SMART),RF,Wilayah Persekutuan,Wilayah Persekutuan,3.109872,101.745728,ok,parsed_dms,parsed_dms
+3117102,Taman Miharja (SMART),RF,Wilayah Persekutuan,Wilayah Persekutuan,3.119617,101.722383,ok,parsed_decimal_minutes,parsed_decimal_minutes
+3117104,Sg. Kerayong di Pandan Indah,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.127361,101.752639,ok,parsed_dms,parsed_dms
+3117111,Sg. Ampang @ Bukit Belacan,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.143,101.787,ok,parsed_dms,parsed_dms
+3117113,Sg. Ampang di Kg. Melayu Ampang,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.1533,101.761064,ok,parsed_dms,parsed_dms
+3117120,Kg Cheras Baru,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.110111,101.747361,ok,parsed_dms,parsed_dms
+3117130,Jalan Cheras,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.122528,101.729917,ok,parsed_dms,parsed_dms
+3216001,Kg. Sg. Tua,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.272222,101.686111,ok,parsed_excel_date,parsed_dms
+3216002,PPH di Kepong,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.230556,101.636111,ok,parsed_excel_date,parsed_dms
+3216003,Pph. Kepong,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.230556,101.6375,ok,parsed_excel_date,parsed_dms
+3216004,SMJK Kepong (Pindah ke Taman Sri Murni),RF,Wilayah Persekutuan,Wilayah Persekutuan,3.234444,101.660556,ok,parsed_excel_date,parsed_dms
+3216005,Empangan Batu,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.263889,101.681944,ok,parsed_excel_date,parsed_dms
+3216007,Taman Ehsan di Kepong,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.2185,101.632833,ok,parsed_decimal_minutes,parsed_decimal_minutes
+3216064,Jinjang,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.235111,101.661611,ok,parsed_dms,parsed_dms
+3217001,"Ibu Bekalan Km. 16, Gombak",RF,Wilayah Persekutuan,Wilayah Persekutuan,3.268056,101.729167,ok,parsed_excel_date,parsed_dms
+3217002,Empangan Genting Klang,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.236111,101.752778,ok,parsed_excel_date,parsed_dms
+3217003,"Ibu Bekalan Km. 11, Gombak",RF,Wilayah Persekutuan,Wilayah Persekutuan,3.236111,101.713889,ok,parsed_excel_date,parsed_dms
+3217004,Kg.Kuala Seleh,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.258333,101.768056,ok,parsed_excel_date,parsed_dms
+3217005,Kg. Kerdas(This station shifted from Gombak Damsite)(SMART),RF,Wilayah Persekutuan,Wilayah Persekutuan,3.245833,101.715278,ok,parsed_excel_date,parsed_dms
+3217008,Jam. Petaling di Jln Klang Lama,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.080917,101.665194,ok,parsed_dms,parsed_dms
+3217068,Gombak Simpang Tiga,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.245278,101.715278,ok,parsed_excel_date,parsed_dms
+3317001,Air Terjun Sg.Batu,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.334722,101.704167,ok,parsed_excel_date,parsed_dms
+3317004,Genting Sempah,RF,Wilayah Persekutuan,Wilayah Persekutuan,3.368056,101.770833,ok,parsed_excel_date,parsed_dms
+5252101,Kinabenuwa,RF,Labuan,W.P. Labuan,4.287611,114.211778,ok,parsed_dms,parsed_dms
+5252102,Waterfront,RF,Labuan,W.P. Labuan,6.273889,116.249889,ok,parsed_dms,parsed_dms
+5352101,Bukit Kuda,RF,Labuan,W.P. Labuan,4.339889,114.217861,ok,parsed_dms,parsed_dms
+5352102,SMK Pantai,RF,Labuan,W.P. Labuan,4.321,114.230417,ok,parsed_dms,parsed_dms
+905039,Bunan Gega,RF,Sarawak,Sarawak,0.916667,110.538889,ok,parsed_dms,parsed_dms
+907001,Kerang Trusan,RF,Sarawak,Sarawak,1.001389,110.726389,ok,parsed_dms,parsed_dms
+1003031,Tebedu,RF,Sarawak,Sarawak,1.025,110.359722,ok,parsed_dms,parsed_dms
+1004001,Krusen,RF,Sarawak,Sarawak,1.069444,110.431944,ok,parsed_dms,parsed_dms
+1005079,Bukit Matuh,RF,Sarawak,Sarawak,1.063889,110.593056,ok,parsed_dms,parsed_dms
+1005080,"Busit, Sg.",RF,Sarawak,Sarawak,1.090278,110.577778,ok,parsed_dms,parsed_dms
+1006028,"Bedup, Sg.",RF,Sarawak,Sarawak,1.086111,110.630556,ok,parsed_dms,parsed_dms
+1006033,"Merang, Sg.",RF,Sarawak,Sarawak,1.094444,110.606944,ok,parsed_dms,parsed_dms
+1006037,"Teb, Sg.",RF,Sarawak,Sarawak,1.054167,110.616667,ok,parsed_dms,parsed_dms
+1007040,Balai Ringin,RF,Sarawak,Sarawak,1.051389,110.751389,ok,parsed_dms,parsed_dms
+1008032,"Pinang, Sg.",RF,Sarawak,Sarawak,1.084722,110.855556,ok,parsed_dms,parsed_dms
+1014001,Klauh,RF,Sarawak,Sarawak,1.0375,110.426667,ok,parsed_dms,parsed_dms
+1015001,Batu Lintang,RF,Sarawak,Sarawak,1.019444,111.554167,ok,parsed_dms,parsed_dms
+1018002,Lubok Antu,RF,Sarawak,Sarawak,1.041667,111.829167,ok,parsed_dms,parsed_dms
+1102019,Padawan,RF,Sarawak,Sarawak,1.1625,110.255556,ok,parsed_dms,parsed_dms
+1105027,Serian,RF,Sarawak,Sarawak,1.159722,110.566667,ok,parsed_dms,parsed_dms
+1105035,Semuja nonok,RF,Sarawak,Sarawak,1.106944,110.597222,ok,parsed_dms,parsed_dms
+1105050,Tebakang,RF,Sarawak,Sarawak,1.101389,110.502778,ok,parsed_dms,parsed_dms
+1111008,Pantu,RF,Sarawak,Sarawak,1.1375,111.113889,ok,parsed_dms,parsed_dms
+1114019,Temudok,RF,Sarawak,Sarawak,1.158333,111.459722,ok,parsed_dms,parsed_dms
+1114028,Melugu,RF,Sarawak,Sarawak,1.119444,111.420833,ok,parsed_dms,parsed_dms
+1116001,Engkilili,RF,Sarawak,Sarawak,1.131944,111.634722,ok,parsed_dms,parsed_dms
+1118002,Bekatan,RF,Sarawak,Sarawak,1.184722,111.819444,ok,parsed_dms,parsed_dms
+1200001,Pang Tebang,RF,Sarawak,Sarawak,1.277222,110.08,ok,parsed_dms,parsed_dms
+1201076,Embahn,RF,Sarawak,Sarawak,1.231111,110.179722,ok,parsed_dms,parsed_dms
+1203002,"Gayu, Kpg.",RF,Sarawak,Sarawak,1.218056,110.344444,ok,parsed_dms,parsed_dms
+1204001,Plaman Nyabet,RF,Sarawak,Sarawak,1.208333,110.4375,ok,parsed_dms,parsed_dms
+1204024,Dragon School,RF,Sarawak,Sarawak,1.276389,110.416667,ok,parsed_dms,parsed_dms
+1205006,Tarat,RF,Sarawak,Sarawak,1.205556,110.522222,ok,parsed_dms,parsed_dms
+1206089,Gedong,RF,Sarawak,Sarawak,1.247222,110.690278,ok,parsed_dms,parsed_dms
+1208001,"Sangkalan Pasir, Kpg.",RF,Sarawak,Sarawak,1.261111,110.884722,ok,parsed_dms,parsed_dms
+1212032,Banting,RF,Sarawak,Sarawak,1.290278,111.2,ok,parsed_dms,parsed_dms
+1214001,Sri Aman,RF,Sarawak,Sarawak,1.244444,111.455556,ok,parsed_dms,parsed_dms
+1217011,Riddan,RF,Sarawak,Sarawak,1.220833,111.704167,ok,parsed_dms,parsed_dms
+1219024,"Tutong 2, Nanga",RF,Sarawak,Sarawak,1.234722,111.925,ok,parsed_dms,parsed_dms
+1220025,"Delok, Nanga",RF,Sarawak,Sarawak,1.240278,112.0375,ok,parsed_dms,parsed_dms
+1301001,Buan Bidi,RF,Sarawak,Sarawak,1.398333,110.112778,ok,parsed_dms,parsed_dms
+1301001,"Monggak, Kpg.",RF,Sarawak,Sarawak,1.333333,110.111111,ok,parsed_dms,parsed_dms
+1301074,Krokong,RF,Sarawak,Sarawak,1.366667,110.113889,ok,parsed_dms,parsed_dms
+1302001,Upper Sg. Staat,RF,Sarawak,Sarawak,1.378056,110.201944,ok,parsed_dms,parsed_dms
+1302078,"Git, Kpg.",RF,Sarawak,Sarawak,1.355556,110.263889,ok,parsed_dms,parsed_dms
+1303014,Semongok,RF,Sarawak,Sarawak,1.390278,110.323611,ok,parsed_dms,parsed_dms
+1305038,Samarahan Estate,RF,Sarawak,Sarawak,1.338889,110.547222,ok,parsed_dms,parsed_dms
+1306055,Lubok Ipoi,RF,Sarawak,Sarawak,1.311111,110.673611,ok,parsed_dms,parsed_dms
+1307018,Simunjan,RF,Sarawak,Sarawak,1.397222,110.745833,ok,parsed_dms,parsed_dms
+1311003,Lingga,RF,Sarawak,Sarawak,1.355556,111.166667,ok,parsed_dms,parsed_dms
+1313006,Stumbin,RF,Sarawak,Sarawak,1.301389,111.388889,ok,parsed_dms,parsed_dms
+1321001,"Mujan, Nanga",RF,Sarawak,Sarawak,1.345833,112.115278,ok,parsed_dms,parsed_dms
+1400001,"Opar, Kpg.",RF,Sarawak,Sarawak,1.438889,110.069444,ok,parsed_dms,parsed_dms
+1401005,Bau,RF,Sarawak,Sarawak,1.416667,110.151389,ok,parsed_dms,parsed_dms
+1402001,Siniawan Water Works,RF,Sarawak,Sarawak,1.444444,110.211111,ok,parsed_dms,parsed_dms
+1402002,Siniawan,RF,Sarawak,Sarawak,1.447222,110.215278,ok,parsed_dms,parsed_dms
+1402047,Batu Kitang,RF,Sarawak,Sarawak,1.448611,110.280556,ok,parsed_dms,parsed_dms
+1403001,Kuching Airport,RF,Sarawak,Sarawak,1.481944,110.3375,ok,parsed_dms,parsed_dms
+1404049,Paya Paloh,RF,Sarawak,Sarawak,1.441667,110.491667,ok,parsed_dms,parsed_dms
+1404091,Kota Samarahan,RF,Sarawak,Sarawak,1.455556,110.488889,ok,parsed_dms,parsed_dms
+1405001,"Baru, Kpg.",RF,Sarawak,Sarawak,1.491667,110.502778,ok,parsed_dms,parsed_dms
+1415001,"Lubau, Nanga",RF,Sarawak,Sarawak,1.497222,111.5875,ok,parsed_dms,parsed_dms
+1415004,Betong,RF,Sarawak,Sarawak,1.415278,111.523611,ok,parsed_dms,parsed_dms
+1417001,"Entalau, Nanga",RF,Sarawak,Sarawak,1.455556,111.7875,ok,parsed_dms,parsed_dms
+1499051,Stungkor,RF,Sarawak,Sarawak,1.481944,109.948611,ok,parsed_dms,parsed_dms
+1502001,Sebubut,RF,Sarawak,Sarawak,1.583333,110.216667,ok,parsed_dms,parsed_dms
+1502002,Batu Kawa,RF,Sarawak,Sarawak,1.511111,110.268056,ok,parsed_dms,parsed_dms
+1502003,"Sagah, Kpg.",RF,Sarawak,Sarawak,1.532778,110.2075,ok,parsed_dms,parsed_dms
+1502026,Matang,RF,Sarawak,Sarawak,1.580556,110.206944,ok,parsed_dms,parsed_dms
+1503001,Bako Causeway,RF,Sarawak,Sarawak,1.583333,110.398611,ok,parsed_dms,parsed_dms
+1503004,Kuching Saberkas,RF,Sarawak,Sarawak,1.5375,110.336111,ok,parsed_dms,parsed_dms
+1503006,Ulu Maong,RF,Sarawak,Sarawak,1.545833,110.347222,ok,parsed_dms,parsed_dms
+1503008,Satok,RF,Sarawak,Sarawak,1.554167,110.320833,ok,parsed_dms,parsed_dms
+1503009,"Astana, Kpg.",RF,Sarawak,Sarawak,1.566111,110.346667,ok,parsed_dms,parsed_dms
+1503010,Kuching City South,RF,Sarawak,Sarawak,1.553056,110.358333,ok,parsed_dms,parsed_dms
+1503012,"Nelayan, Kpg.",RF,Sarawak,Sarawak,1.544444,110.391111,ok,parsed_dms,parsed_dms
+1503083,Kuching Third Mile,RF,Sarawak,Sarawak,1.523611,110.336111,ok,parsed_dms,parsed_dms
+1505081,Ketup,RF,Sarawak,Sarawak,1.548611,110.527778,ok,parsed_dms,parsed_dms
+1506001,Semera,RF,Sarawak,Sarawak,1.552778,110.668056,ok,parsed_dms,parsed_dms
+1506034,Asa Jaya,RF,Sarawak,Sarawak,1.545833,110.608333,ok,parsed_dms,parsed_dms
+1507093,Sadong Jaya,RF,Sarawak,Sarawak,1.515278,110.736111,ok,parsed_dms,parsed_dms
+1509009,Sebuyau,RF,Sarawak,Sarawak,1.520833,110.923611,ok,parsed_dms,parsed_dms
+1514001,Debak,RF,Sarawak,Sarawak,1.575,111.416667,ok,parsed_dms,parsed_dms
+1519001,Bau Sungai,RF,Sarawak,Sarawak,1.554444,111.823333,ok,parsed_dms,parsed_dms
+1538001,"Melatai,  Nanga",RF,Sarawak,Sarawak,1.589444,113.797778,ok,parsed_dms,parsed_dms
+1544001,"Singut, Long",RF,Sarawak,Sarawak,1.572222,114.433333,ok,parsed_dms,parsed_dms
+1600001,Sampadi Laut,RF,Sarawak,Sarawak,1.689167,110.012222,ok,parsed_dms,parsed_dms
+1601001,"Rayu, Sg.",RF,Sarawak,Sarawak,1.613889,110.145833,ok,parsed_dms,parsed_dms
+1601003,China Sg.,RF,Sarawak,Sarawak,1.6125,110.194444,ok,parsed_dms,parsed_dms
+1602001,Sibu Laut,RF,Sarawak,Sarawak,1.68,110.201667,ok,parsed_dms,parsed_dms
+1603001,Semairang Fisheries,RF,Sarawak,Sarawak,1.605556,110.323611,ok,parsed_dms,parsed_dms
+1603002,Siol JPS,RF,Sarawak,Sarawak,1.601389,110.352778,ok,parsed_dms,parsed_dms
+1603058,Rampangi,RF,Sarawak,Sarawak,1.677778,110.333333,ok,parsed_dms,parsed_dms
+1605001,"Similang, Kpg.",RF,Sarawak,Sarawak,1.606944,110.501389,ok,parsed_dms,parsed_dms
+1610001,Maludam,RF,Sarawak,Sarawak,1.661667,110.037778,ok,parsed_dms,parsed_dms
+1611001,Beladin JPS,RF,Sarawak,Sarawak,1.638889,111.201389,ok,parsed_dms,parsed_dms
+1612030,Pusa,RF,Sarawak,Sarawak,1.611111,111.286111,ok,parsed_dms,parsed_dms
+1615023,Batu Danau,RF,Sarawak,Sarawak,1.601389,111.555556,ok,parsed_dms,parsed_dms
+1616021,"Tiga, Nanga",RF,Sarawak,Sarawak,1.608333,111.698611,ok,parsed_dms,parsed_dms
+1622001,Sg. Nawang,RF,Sarawak,Sarawak,1.646944,112.2775,ok,parsed_dms,parsed_dms
+1624001,Andau,RF,Sarawak,Sarawak,1.721944,112.6625,ok,parsed_dms,parsed_dms
+1628001,Upper Sg. Ayat,RF,Sarawak,Sarawak,1.610278,112.813333,ok,parsed_dms,parsed_dms
+1698007,Lundu,RF,Sarawak,Sarawak,1.672222,109.858333,ok,parsed_dms,parsed_dms
+1703001,Buntal DID,RF,Sarawak,Sarawak,1.702778,110.355556,ok,parsed_dms,parsed_dms
+1704013,Telok Assam,RF,Sarawak,Sarawak,1.716667,110.440278,ok,parsed_dms,parsed_dms
+1713005,Saratok DID,RF,Sarawak,Sarawak,1.744444,111.334722,ok,parsed_dms,parsed_dms
+1719001,Banyi,RF,Sarawak,Sarawak,1.8625,111.5125,ok,parsed_dms,parsed_dms
+1726041,"Bangkit, Nanga",RF,Sarawak,Sarawak,1.769444,112.634722,ok,parsed_dms,parsed_dms
+1731001,"Balang, Nanga",RF,Sarawak,Sarawak,1.761111,113.165278,ok,parsed_dms,parsed_dms
+1811007,Kabong,RF,Sarawak,Sarawak,1.8,111.115278,ok,parsed_dms,parsed_dms
+1811010,Sessang,RF,Sarawak,Sarawak,1.888889,111.186111,ok,parsed_dms,parsed_dms
+1812001,Roban,RF,Sarawak,Sarawak,1.879167,111.294444,ok,parsed_dms,parsed_dms
+1813001,Saratok W/W,RF,Sarawak,Sarawak,1.806944,111.325,ok,parsed_dms,parsed_dms
+1816029,Pakan,RF,Sarawak,Sarawak,1.897222,111.529167,ok,parsed_dms,parsed_dms
+1821001,Uka,RF,Sarawak,Sarawak,2.033333,112.260278,ok,parsed_dms,parsed_dms
+1823001,"Jagau, Nanga",RF,Sarawak,Sarawak,1.881944,112.306944,ok,parsed_dms,parsed_dms
+1827001,"Gual, Rh.",RF,Sarawak,Sarawak,1.877778,112.746944,ok,parsed_dms,parsed_dms
+1834001,Ga'at Balleh,RF,Sarawak,Sarawak,1.893056,113.429167,ok,parsed_dms,parsed_dms
+1836042,"Entawau, Nanga",RF,Sarawak,Sarawak,1.822222,113.676389,ok,parsed_dms,parsed_dms
+1843001,"Busang, Long",RF,Sarawak,Sarawak,1.870833,114.316667,ok,parsed_dms,parsed_dms
+1897016,Sematan,RF,Sarawak,Sarawak,1.808333,109.773611,ok,parsed_dms,parsed_dms
+1911001,Sessang 2 (Alit),RF,Sarawak,Sarawak,1.930556,111.155556,ok,parsed_dms,parsed_dms
+1914001,Assun SRK,RF,Sarawak,Sarawak,1.923611,111.297222,ok,parsed_dms,parsed_dms
+1915001,Bayong,RF,Sarawak,Sarawak,1.975,111.494444,ok,parsed_dms,parsed_dms
+1947001,"Unai, Long",RF,Sarawak,Sarawak,1.956944,114.7125,ok,parsed_dms,parsed_dms
+1996090,Samunsam,RF,Sarawak,Sarawak,1.952778,109.640278,ok,parsed_dms,parsed_dms
+2013001,Selalang,RF,Sarawak,Sarawak,2.013889,111.526389,ok,parsed_dms,parsed_dms
+2019024,Julau,RF,Sarawak,Sarawak,2.022222,111.631944,ok,parsed_dms,parsed_dms
+2020001,Machan,RF,Sarawak,Sarawak,2.020833,112.020833,ok,parsed_dms,parsed_dms
+2021001,Renan Kemiding,RF,Sarawak,Sarawak,2.063889,112.148611,ok,parsed_dms,parsed_dms
+2021036,Kanowit Water Works,RF,Sarawak,Sarawak,2.097222,112.147222,ok,parsed_dms,parsed_dms
+2024001,"Ngemah, Ng.",RF,Sarawak,Sarawak,2.025,112.404167,ok,parsed_dms,parsed_dms
+2025012,Song,RF,Sarawak,Sarawak,2.011111,112.547222,ok,parsed_dms,parsed_dms
+2029002,Kapit NHW,RF,Sarawak,Sarawak,2.016667,112.947222,ok,parsed_dms,parsed_dms
+2031034,"Mujong, Nanga",RF,Sarawak,Sarawak,2.025,113.169444,ok,parsed_dms,parsed_dms
+2036001,Tunoh Scheme,RF,Sarawak,Sarawak,2.055556,113.644444,ok,parsed_dms,parsed_dms
+2112027,Rejang,RF,Sarawak,Sarawak,2.155556,111.252778,ok,parsed_dms,parsed_dms
+2115008,Sarikei DID,RF,Sarawak,Sarawak,2.127778,111.251389,ok,parsed_dms,parsed_dms
+2116030,Bintangor,RF,Sarawak,Sarawak,2.159722,111.209722,ok,parsed_dms,parsed_dms
+2119001,Durin W/Works,RF,Sarawak,Sarawak,2.133333,111.970833,ok,parsed_dms,parsed_dms
+2134001,"Tiau, Nanga",RF,Sarawak,Sarawak,2.115278,113.443056,ok,parsed_dms,parsed_dms
+2141048,"Jawe, Long",RF,Sarawak,Sarawak,2.118056,114.184722,ok,parsed_dms,parsed_dms
+2212001,Belawai,RF,Sarawak,Sarawak,2.229167,111.929167,ok,parsed_dms,parsed_dms
+2218001,Bukit Lima RTM (TX),RF,Sarawak,Sarawak,2.297222,111.863611,ok,parsed_dms,parsed_dms
+2218002,"Sunga, Sg.",RF,Sarawak,Sarawak,2.2275,111.870278,ok,parsed_dms,parsed_dms
+2218003,"Salim, Sg.",RF,Sarawak,Sarawak,2.236389,111.891389,ok,parsed_dms,parsed_dms
+2218017,Sibu JKR W/W,RF,Sarawak,Sarawak,2.258333,111.843056,ok,parsed_dms,parsed_dms
+2219001,Sibu New Airport,RF,Sarawak,Sarawak,2.261111,111.980833,ok,parsed_dms,parsed_dms
+2219016,Forest Nursery,RF,Sarawak,Sarawak,2.291667,111.956389,ok,parsed_dms,parsed_dms
+2230143,"Merit, Nanga",RF,Sarawak,Sarawak,2.269444,113.090278,ok,parsed_dms,parsed_dms
+2314001,"Maleng, Sg.",RF,Sarawak,Sarawak,2.359722,111.422222,ok,parsed_dms,parsed_dms
+2315001,"Semah, Nanga",RF,Sarawak,Sarawak,2.356944,111.3625,ok,parsed_dms,parsed_dms
+2316001,Bawang Assan,RF,Sarawak,Sarawak,2.316667,111.675,ok,parsed_dms,parsed_dms
+2318001,SBS Nursing Home,RF,Sarawak,Sarawak,2.336111,111.836944,ok,parsed_dms,parsed_dms
+2318002,Ting Sing School,RF,Sarawak,Sarawak,2.326944,111.806944,ok,parsed_dms,parsed_dms
+2318003,Teku Bazaar,RF,Sarawak,Sarawak,2.355556,111.872222,ok,parsed_dms,parsed_dms
+2319001,"Ejau, Rh.",RF,Sarawak,Sarawak,2.311389,111.920556,ok,parsed_dms,parsed_dms
+2320026,Oya Road 21 Mile,RF,Sarawak,Sarawak,2.308333,112.063889,ok,parsed_dms,parsed_dms
+2320059,Sibintek,RF,Sarawak,Sarawak,2.338889,112.084722,ok,parsed_dms,parsed_dms
+2321001,Stapang,RF,Sarawak,Sarawak,2.398611,112.134722,ok,parsed_dms,parsed_dms
+2321066,Sekuau,RF,Sarawak,Sarawak,2.353611,112.133333,ok,parsed_dms,parsed_dms
+2323001,Tusut,RF,Sarawak,Sarawak,2.301667,112.345556,ok,parsed_dms,parsed_dms
+2323002,"Jugah, Rh.",RF,Sarawak,Sarawak,2.386389,112.384167,ok,parsed_dms,parsed_dms
+2325039,"Arau, Sg.",RF,Sarawak,Sarawak,2.308333,112.566667,ok,parsed_dms,parsed_dms
+2333001,Punan Bah,RF,Sarawak,Sarawak,2.384722,113.344444,ok,parsed_dms,parsed_dms
+2334001,"Ibon, Nanga",RF,Sarawak,Sarawak,2.307222,113.320556,ok,parsed_dms,parsed_dms
+2346001,"Lidam, Long",RF,Sarawak,Sarawak,2.3375,114.647222,ok,parsed_dms,parsed_dms
+2412001,Paloh Bangau,RF,Sarawak,Sarawak,2.420833,111.673611,ok,parsed_dms,parsed_dms
+2418013,Rantau Panjang,RF,Sarawak,Sarawak,2.422222,111.841667,ok,parsed_dms,parsed_dms
+2435001,"Telawan, Nanga",RF,Sarawak,Sarawak,2.484722,113.558333,ok,parsed_dms,parsed_dms
+2442001,"Laku, Long",RF,Sarawak,Sarawak,2.472222,114.236111,ok,parsed_dms,parsed_dms
+2514004,Daro,RF,Sarawak,Sarawak,2.513889,111.420833,ok,parsed_dms,parsed_dms
+2516001,"Dausan, Sg.",RF,Sarawak,Sarawak,2.498611,111.703056,ok,parsed_dms,parsed_dms
+2518001,Tanjong Kabang,RF,Sarawak,Sarawak,2.580556,110.821944,ok,parsed_dms,parsed_dms
+2520052,Tamin,RF,Sarawak,Sarawak,2.508333,112.070833,ok,parsed_dms,parsed_dms
+2522038,Bukit Engkerbai,RF,Sarawak,Sarawak,2.597222,112.288889,ok,parsed_dms,parsed_dms
+2526001,Ulu Sg. Pelagau,RF,Sarawak,Sarawak,2.575,112.648333,ok,parsed_dms,parsed_dms
+2529001,"Gerina, Rh.",RF,Sarawak,Sarawak,2.525,112.911389,ok,parsed_dms,parsed_dms
+2530001,Maja Rh.,RF,Sarawak,Sarawak,2.543056,113.029167,ok,parsed_dms,parsed_dms
+2614004,"Besar, Nanga",RF,Sarawak,Sarawak,2.630556,111.5125,ok,parsed_dms,parsed_dms
+2615001,"Tian, Kpg",RF,Sarawak,Sarawak,2.633333,111.411944,ok,parsed_dms,parsed_dms
+2615009,Matu,RF,Sarawak,Sarawak,2.677778,111.908333,ok,parsed_dms,parsed_dms
+2623001,Mukah-Balingian OPS1,RF,Sarawak,Sarawak,2.618056,112.320833,ok,parsed_dms,parsed_dms
+2623002,Mukah-Balingian ROC,RF,Sarawak,Sarawak,2.65,112.326389,ok,parsed_dms,parsed_dms
+2625051,"Lemai, Nanga",RF,Sarawak,Sarawak,2.688889,112.502778,ok,parsed_dms,parsed_dms
+2632001,"Ta'a, Rh.",RF,Sarawak,Sarawak,2.652222,113.294722,ok,parsed_dms,parsed_dms
+2645001,"Luar, Long",RF,Sarawak,Sarawak,2.690278,114.5175,ok,parsed_dms,parsed_dms
+2712001,Tekajong,RF,Sarawak,Sarawak,2.740278,111.5125,ok,parsed_dms,parsed_dms
+2718022,"Kut, Sg.",RF,Sarawak,Sarawak,2.718056,111.833333,ok,parsed_dms,parsed_dms
+2719001,Dalat W/W,RF,Sarawak,Sarawak,2.745833,111.9375,ok,parsed_dms,parsed_dms
+2721001,"Suting, Kpg.",RF,Sarawak,Sarawak,2.774722,112.188056,ok,parsed_dms,parsed_dms
+2723001,Mukah-Balingian OPS3,RF,Sarawak,Sarawak,2.701389,112.361111,ok,parsed_dms,parsed_dms
+2723002,Mukah-Balingian OPS4,RF,Sarawak,Sarawak,2.711111,112.398611,ok,parsed_dms,parsed_dms
+2727001,Upper Sg. Muang,RF,Sarawak,Sarawak,2.773611,112.706944,ok,parsed_dms,parsed_dms
+2729055,Sangan,RF,Sarawak,Sarawak,2.766667,112.972222,ok,parsed_dms,parsed_dms
+2730001,"Keseng, Rh.",RF,Sarawak,Sarawak,2.731944,113.084722,ok,parsed_dms,parsed_dms
+2737103,Belaga,RF,Sarawak,Sarawak,2.707778,113.779444,ok,parsed_dms,parsed_dms
+2817001,Igan,RF,Sarawak,Sarawak,2.819444,111.713889,ok,parsed_dms,parsed_dms
+2818001,Oya W/W,RF,Sarawak,Sarawak,2.860556,111.870278,ok,parsed_dms,parsed_dms
+2818002,Dalat Sago Plantation,RF,Sarawak,Sarawak,2.831389,111.8325,ok,parsed_dms,parsed_dms
+2818003,Tanjong Lupeh,RF,Sarawak,Sarawak,2.838056,111.89,ok,parsed_dms,parsed_dms
+2819001,"Talau, Sg.",RF,Sarawak,Sarawak,2.820833,111.905556,ok,parsed_dms,parsed_dms
+2820001,"Tillian, Sg.",RF,Sarawak,Sarawak,2.822222,112.094444,ok,parsed_dms,parsed_dms
+2823001,Dana,RF,Sarawak,Sarawak,2.859444,112.343611,ok,parsed_dms,parsed_dms
+2828025,Tatau,RF,Sarawak,Sarawak,2.876389,112.847222,ok,parsed_dms,parsed_dms
+2828025,Tatau Town,RF,Sarawak,Sarawak,2.876389,112.847222,ok,parsed_dms,parsed_dms
+2834001,Panai Binion,RF,Sarawak,Sarawak,2.882778,113.429722,ok,parsed_dms,parsed_dms
+2836001,Bintulu/Belaga Road,RF,Sarawak,Sarawak,2.855278,113.689722,ok,parsed_dms,parsed_dms
+2843001,"Jek, Long",RF,Sarawak,Sarawak,2.809722,114.318056,ok,parsed_dms,parsed_dms
+2920005,Mukah JKR,RF,Sarawak,Sarawak,2.902778,112.086111,ok,parsed_dms,parsed_dms
+2920037,Mukah Airfield,RF,Sarawak,Sarawak,2.9,112.083333,ok,parsed_dms,parsed_dms
+2925010,Balingian,RF,Sarawak,Sarawak,2.927778,112.540278,ok,parsed_dms,parsed_dms
+2931001,Luang,RF,Sarawak,Sarawak,2.988056,113.180556,ok,parsed_dms,parsed_dms
+2939045,"Sambop, Long",RF,Sarawak,Sarawak,2.918056,113.913889,ok,parsed_dms,parsed_dms
+2949001,"Jee, Long",RF,Sarawak,Sarawak,2.9875,114.958333,ok,parsed_dms,parsed_dms
+3025001,Kuala Balingian,RF,Sarawak,Sarawak,3.025556,112.591389,ok,parsed_dms,parsed_dms
+3034001,Bansa Rh.,RF,Sarawak,Sarawak,3.056944,113.481944,ok,parsed_dms,parsed_dms
+3041002,"Urun, Long",RF,Sarawak,Sarawak,3.016667,114.194444,ok,parsed_dms,parsed_dms
+3048026,"Anap, Long",RF,Sarawak,Sarawak,3.065278,114.816667,ok,parsed_dms,parsed_dms
+3050015,"Moh, Long",RF,Sarawak,Sarawak,3.054167,115.0675,ok,parsed_dms,parsed_dms
+3130002,Bintulu Town,RF,Sarawak,Sarawak,3.172222,113.038889,ok,parsed_dms,parsed_dms
+3130003,Bintulu JPS,RF,Sarawak,Sarawak,3.172222,113.038889,ok,parsed_dms,parsed_dms
+3132023,Sebauh,RF,Sarawak,Sarawak,3.108333,113.2625,ok,parsed_dms,parsed_dms
+3137021,Tubau,RF,Sarawak,Sarawak,3.159722,113.705556,ok,parsed_dms,parsed_dms
+3152011,Lio Matu,RF,Sarawak,Sarawak,3.172778,115.220278,ok,parsed_dms,parsed_dms
+3230001,Kidurong Tanjung,RF,Sarawak,Sarawak,3.255,113.077222,ok,parsed_dms,parsed_dms
+3234022,Labang,RF,Sarawak,Sarawak,3.259722,113.4875,ok,parsed_dms,parsed_dms
+3243071,"Aton, Long",RF,Sarawak,Sarawak,3.252778,114.340278,ok,parsed_dms,parsed_dms
+3334001,Similajau Estate,RF,Sarawak,Sarawak,3.351389,113.448611,ok,parsed_dms,parsed_dms
+3342032,"Subing, Long",RF,Sarawak,Sarawak,3.327778,114.268056,ok,parsed_dms,parsed_dms
+3345029,Naha'ah  Long,RF,Sarawak,Sarawak,3.329167,114.591667,ok,parsed_dms,parsed_dms
+3347003,"Akah, Long",RF,Sarawak,Sarawak,3.319444,114.7875,ok,parsed_dms,parsed_dms
+3437073,"Paroh, Rh.",RF,Sarawak,Sarawak,3.495833,113.704167,ok,parsed_dms,parsed_dms
+3441001,"Batan, Long",RF,Sarawak,Sarawak,3.454167,114.111667,ok,parsed_dms,parsed_dms
+3444018,"Pilah, Long",RF,Sarawak,Sarawak,3.484722,114.426389,ok,parsed_dms,parsed_dms
+3451028,"Lellang, Long",RF,Sarawak,Sarawak,3.463889,115.183333,ok,parsed_dms,parsed_dms
+3533001,Similajau Kuala,RF,Sarawak,Sarawak,3.527778,113.327222,ok,parsed_dms,parsed_dms
+3541033,"Jegan, Long",RF,Sarawak,Sarawak,3.586111,114.113889,ok,parsed_dms,parsed_dms
+3547001,Luteng Long,RF,Sarawak,Sarawak,3.534722,114.747222,ok,parsed_dms,parsed_dms
+3635001,"Gindi, Rh.",RF,Sarawak,Sarawak,3.647222,113.548611,ok,parsed_dms,parsed_dms
+3637001,Suai OPS,RF,Sarawak,Sarawak,3.608333,113.7375,ok,parsed_dms,parsed_dms
+3737045,"Lebai, Sg.",RF,Sarawak,Sarawak,3.7375,113.780556,ok,parsed_dms,parsed_dms
+3738001,Subis 1,RF,Sarawak,Sarawak,3.791667,111.877222,ok,parsed_dms,parsed_dms
+3738002,Subis 2,RF,Sarawak,Sarawak,3.790278,113.873611,ok,parsed_dms,parsed_dms
+3738056,Subis 3,RF,Sarawak,Sarawak,3.797222,113.848611,ok,parsed_dms,parsed_dms
+3744009,"Lama, Long",RF,Sarawak,Sarawak,3.7625,114.404167,ok,parsed_dms,parsed_dms
+3752001,Pa Tik,RF,Sarawak,Sarawak,3.730556,115.261111,ok,parsed_dms,parsed_dms
+3754007,Bario,RF,Sarawak,Sarawak,3.740278,115.463889,ok,parsed_dms,parsed_dms
+3837016,Niah,RF,Sarawak,Sarawak,3.866111,113.721111,ok,parsed_dms,parsed_dms
+3838002,Ladang Koko,RF,Sarawak,Sarawak,3.835556,113.848611,ok,parsed_dms,parsed_dms
+3838052,Ladang 3,RF,Sarawak,Sarawak,3.875,113.879167,ok,parsed_dms,parsed_dms
+3838064,Karabungan,RF,Sarawak,Sarawak,3.875278,113.865278,ok,parsed_dms,parsed_dms
+3842034,"Teru, Long",RF,Sarawak,Sarawak,3.863889,114.240278,ok,parsed_dms,parsed_dms
+3847035,"Atip, Long",RF,Sarawak,Sarawak,3.830556,114.705556,ok,parsed_dms,parsed_dms
+3939046,"Sibuti, Sg.",RF,Sarawak,Sarawak,3.977778,113.944444,ok,parsed_dms,parsed_dms
+3939051,Tangit,RF,Sarawak,Sarawak,3.941667,113.905556,ok,parsed_dms,parsed_dms
+3939065,Ladang 4,RF,Sarawak,Sarawak,3.998611,113.984722,ok,parsed_dms,parsed_dms
+3940036,Beluru,RF,Sarawak,Sarawak,3.978333,114.097222,ok,parsed_dms,parsed_dms
+3945017,"Panai, Long",RF,Sarawak,Sarawak,3.943056,114.534722,ok,parsed_dms,parsed_dms
+3946001,"Terawan, Long",RF,Sarawak,Sarawak,3.991667,114.625,ok,parsed_dms,parsed_dms
+3950020,"Seridan, Long",RF,Sarawak,Sarawak,3.977778,115.063889,ok,parsed_dms,parsed_dms
+3956001,Ba Kelalan,RF,Sarawak,Sarawak,3.980556,115.619444,ok,parsed_dms,parsed_dms
+4038006,Bekenu,RF,Sarawak,Sarawak,4.056111,113.844722,ok,parsed_dms,parsed_dms
+4038054,Paya Selanyau,RF,Sarawak,Sarawak,4.095556,113.859444,ok,parsed_dms,parsed_dms
+4039019,Bukit Peninjau,RF,Sarawak,Sarawak,4.0375,113.883333,ok,parsed_dms,parsed_dms
+4043059,Benawa,RF,Sarawak,Sarawak,4.025,114.348611,ok,parsed_dms,parsed_dms
+4047001,"Pala, Long",RF,Sarawak,Sarawak,4.029722,114.791111,ok,parsed_dms,parsed_dms
+4049001,Mulu,RF,Sarawak,Sarawak,4.063889,114.833333,ok,parsed_dms,parsed_dms
+4053001,Rutoh,RF,Sarawak,Sarawak,4.083333,115.511111,ok,parsed_dms,parsed_dms
+4139064,Kebuloh,RF,Sarawak,Sarawak,4.118333,113.960833,ok,parsed_dms,parsed_dms
+4143004,Marudi,RF,Sarawak,Sarawak,4.18,114.320833,ok,parsed_dms,parsed_dms
+4151017,"Napir, Long",RF,Sarawak,Sarawak,4.176389,115.138889,ok,parsed_dms,parsed_dms
+4239001,Bukit Lambir  Micro,RF,Sarawak,Sarawak,4.214444,114.046667,ok,parsed_dms,parsed_dms
+4241001,Bakong,RF,Sarawak,Sarawak,4.277222,114.227778,ok,parsed_dms,parsed_dms
+4248001,Ulu Medalam,RF,Sarawak,Sarawak,4.325,114.894444,ok,parsed_dms,parsed_dms
+4250001,Setuan,RF,Sarawak,Sarawak,4.247222,115.075,ok,parsed_dms,parsed_dms
+4255006,"Semado, Long",RF,Sarawak,Sarawak,4.219444,115.586111,ok,parsed_dms,parsed_dms
+4339001,Miri MMC,RF,Sarawak,Sarawak,4.392222,113.986944,ok,parsed_dms,parsed_dms
+4339005,Miri Airport,RF,Sarawak,Sarawak,4.330556,113.9875,ok,parsed_dms,parsed_dms
+4351002,Ulu Medamit,RF,Sarawak,Sarawak,4.341667,115.195833,ok,parsed_dms,parsed_dms
+4351033,Merbau,RF,Sarawak,Sarawak,4.35,115.058333,ok,parsed_dms,parsed_dms
+4354001,Merarap Long,RF,Sarawak,Sarawak,4.355278,115.468889,ok,parsed_dms,parsed_dms
+4440001,Lutong,RF,Sarawak,Sarawak,4.475833,114.003889,ok,parsed_dms,parsed_dms
+4440060,Miri DID Barrack,RF,Sarawak,Sarawak,4.431944,114.002222,ok,parsed_dms,parsed_dms
+4442001,Tanjong Jaye,RF,Sarawak,Sarawak,4.565,114.041111,ok,parsed_dms,parsed_dms
+4449012,"Medamit, Nanga",RF,Sarawak,Sarawak,4.481944,114.9125,ok,parsed_dms,parsed_dms
+4450001,Lubok Lalang,RF,Sarawak,Sarawak,4.411111,115.022222,ok,parsed_dms,parsed_dms
+4548004,Ukong,RF,Sarawak,Sarawak,4.55,114.854167,ok,parsed_dms,parsed_dms
+4554001,"Sukang, Long",RF,Sarawak,Sarawak,4.554167,115.4875,ok,parsed_dms,parsed_dms
+4649025,Lubai Tengah,RF,Sarawak,Sarawak,4.609722,114.915278,ok,parsed_dms,parsed_dms
+4650007,Tegarai,RF,Sarawak,Sarawak,4.638889,115.025,ok,parsed_dms,parsed_dms
+4650023,Pandaruan,RF,Sarawak,Sarawak,4.6875,115.019444,ok,parsed_dms,parsed_dms
+4653001,"Tengoa, Long",RF,Sarawak,Sarawak,4.6125,115.336111,ok,parsed_dms,parsed_dms
+4749001,Limbang DID,RF,Sarawak,Sarawak,4.744444,114.997222,ok,parsed_dms,parsed_dms
+4752022,Trusan,RF,Sarawak,Sarawak,4.783333,115.272222,ok,parsed_dms,parsed_dms
+4755001,"Kota, Sungai",RF,Sarawak,Sarawak,4.786389,115.52,ok,parsed_dms,parsed_dms
+4852002,Sundar,RF,Sarawak,Sarawak,4.891667,115.202778,ok,parsed_dms,parsed_dms
+4854001,Kalamuku Intake,RF,Sarawak,Sarawak,4.831944,115.498611,ok,parsed_dms,parsed_dms
+4854003,Samaha Estate,RF,Sarawak,Sarawak,4.8375,115.436111,ok,parsed_dms,parsed_dms
+4854009,Lawas Airfield,RF,Sarawak,Sarawak,4.848611,115.404167,ok,parsed_dms,parsed_dms
+4955021,Merapok,RF,Sarawak,Sarawak,4.956944,115.504167,ok,parsed_dms,parsed_dms
+5664001,S.K Kaingaran,RF,Sabah,Sabah,,,missing,missing,missing
+4961001,Bonor,RF,Sabah,Sabah,4.913889,115.922222,ok,parsed_dms,parsed_dms
+5060001,Kalampun,RF,Sabah,Sabah,5.083333,115.55,ok,parsed_excel_date,parsed_dms
+5156001,Mesapol,RF,Sabah,Sabah,5.128611,115.630556,ok,parsed_excel_date,parsed_dms
+5275001,Balat,RF,Sabah,Sabah,8.309722,117.597222,outside_malaysia_bounds,parsed_excel_date,parsed_dms
+5364002,Tulid,RF,Sabah,Sabah,5.345833,116.161111,ok,parsed_excel_date,parsed_dms
+5364003,Lanas,RF,Sabah,Sabah,5.333611,116.498056,ok,parsed_excel_date,parsed_dms
+5364004,Lanas,RF,Sabah,Sabah,5.333611,116.498056,ok,parsed_excel_date,parsed_dms
+5460001,Ulu Pampang,RF,Sabah,Sabah,5.47,116.058333,ok,parsed_excel_date,parsed_dms
+5578001,Kota Kinabatangan ( Pertanian ),RF,Sabah,Sabah,5.538056,115.850833,ok,parsed_dms,parsed_dms
+5666001,Sinua,RF,Sabah,Sabah,5.685556,116.376111,ok,parsed_dms,parsed_dms
+5760002,Kaiduan,RF,Sabah,Sabah,5.772222,116.091667,ok,parsed_dms,parsed_dms
+5777001,Ulu Dusun Meteorological Stn.,RF,Sabah,Sabah,5.790278,117.7625,ok,parsed_dms,parsed_dms
+5863001,Alab,RF,Sabah,Sabah,5.863889,116.263889,ok,parsed_dms,parsed_dms
+5880002,Sandakan,RF,Sabah,Sabah,5.897222,118.058333,ok,parsed_dms,parsed_dms
+5961005,Babagon Agr.,RF,Sabah,Sabah,5.995833,116.115278,ok,parsed_dms,parsed_dms
+5965003,Kinasaraban Kundasang,RF,Sabah,Sabah,5.947222,116.661111,ok,parsed_dms,parsed_dms
+6367001,Paka,RF,Sabah,Sabah,6.391667,116.525,ok,parsed_excel_date,parsed_dms
+6467001,Patiu,RF,Sabah,Sabah,6.391667,116.525,ok,parsed_excel_date,parsed_dms
+6468001,Trusan Sugut,RF,Sabah,Sabah,6.418889,117.6875,ok,parsed_excel_date,parsed_dms
+6567002,Kota Marudu,RF,Sabah,Sabah,6.506111,116.759167,ok,parsed_excel_date,parsed_dms
+6770001,Pitas,RF,Sabah,Sabah,6.044444,117.035556,ok,parsed_excel_date,parsed_dms
+6868001,Kudat Jps,RF,Sabah,Sabah,6.888889,116.843056,ok,parsed_dms,parsed_dms
+6968001,Penangsoo Kudat,RF,Sabah,Sabah,6.955556,116.823611,ok,parsed_dms,parsed_dms
+4278002,Tiger Estate Tawau,RF,Sabah,Sabah,4.283333,117.833333,ok,parsed_excel_date,parsed_dms
+4278003,Tawau,RF,Sabah,Sabah,4.258333,117.894444,ok,parsed_excel_date,parsed_dms
+4278004,Kuhara,RF,Sabah,Sabah,4.268056,117.888056,ok,parsed_excel_date,parsed_dms
+4358001,Ulu Tomani,RF,Sabah,Sabah,4.383333,115.883333,ok,parsed_excel_date,parsed_dms
+4474002,Kalabakan,RF,Sabah,Sabah,4.416667,117.486111,ok,parsed_excel_date,parsed_dms
+4486001,Semporna Airport,RF,Sabah,Sabah,4.456389,118.602222,ok,parsed_excel_date,parsed_dms
+4563001,Pensiangan,RF,Sabah,Sabah,4.541389,116.308611,ok,parsed_dms,parsed_dms
+4576001,Umas Umas,RF,Sabah,Sabah,4.516667,117.666667,ok,parsed_dms,parsed_dms
+4581001,Kalumpang,RF,Sabah,Sabah,4.597222,118.169444,ok,parsed_dms,parsed_dms
+4658001,Bakuku,RF,Sabah,Sabah,4.691111,115.82,ok,parsed_dms,parsed_dms
+4764002,Sapulut,RF,Sabah,Sabah,4.702778,116.481944,ok,parsed_dms,parsed_dms
+4858001,Tomani,RF,Sabah,Sabah,4.883333,115.883333,ok,parsed_dms,parsed_dms
+4955001,Sindumin,RF,Sabah,Sabah,4.988889,115.570833,ok,parsed_dms,parsed_dms
+4959001,Kemabong,RF,Sabah,Sabah,4.913889,115.922222,ok,parsed_dms,parsed_dms
+5055001,Sipitang,RF,Sabah,Sabah,5.083333,115.55,ok,parsed_excel_date,parsed_dms
+5059001,Batu Bajau,RF,Sabah,Sabah,5.033333,115.95,ok,parsed_excel_date,parsed_dms
+5074001,Ulu Kuamut,RF,Sabah,Sabah,5.081944,117.441667,ok,parsed_excel_date,parsed_dms
+5083002,Lahat Datu Agr.Stn.,RF,Sabah,Sabah,5.05,118.3,ok,parsed_excel_date,parsed_dms
+5088002,Tungku,RF,Sabah,Sabah,5.021667,118.851944,ok,parsed_excel_date,parsed_dms
+5158001,Pangi Dam Site,RF,Sabah,Sabah,5.135556,115.854722,ok,parsed_excel_date,parsed_dms
+5163001,Sook,RF,Sabah,Sabah,5.141667,116.305556,ok,parsed_excel_date,parsed_dms
+5163002,Sook,RF,Sabah,Sabah,5.15,116.305556,ok,parsed_excel_date,parsed_dms
+5181001,Limkabong,RF,Sabah,Sabah,5.126111,118.131944,ok,parsed_excel_date,parsed_dms
+5252002,Labuan Aerodrome,RF,Sabah,Sabah,5.383333,115.25,ok,parsed_excel_date,parsed_dms
+5261001,Biah Scheme,RF,Sabah,Sabah,5.25,116.133333,ok,parsed_excel_date,parsed_dms
+5269001,Tongod,RF,Sabah,Sabah,5.268056,116.968056,ok,parsed_excel_date,parsed_dms
+5274001,Kuamut Met. Stn.,RF,Sabah,Sabah,5.222222,117.486111,ok,parsed_excel_date,parsed_dms
+5353001,Mempakul,RF,Sabah,Sabah,5.296667,115.348333,ok,parsed_excel_date,parsed_dms
+5357001,Beaufort,RF,Sabah,Sabah,5.35,115.738889,ok,parsed_excel_date,parsed_dms
+5357003,Beaufort Jps.,RF,Sabah,Sabah,5.354167,115.723611,ok,parsed_excel_date,parsed_dms
+5357004,Beaufort,RF,Sabah,Sabah,5.35,115.75,ok,parsed_excel_date,parsed_dms
+5361002,Keningau Meterologi Stn.,RF,Sabah,Sabah,5.345833,116.161111,ok,parsed_excel_date,parsed_dms
+5372001,Tangkulap,RF,Sabah,Sabah,5.304167,117.277778,ok,parsed_excel_date,parsed_dms
+5384001,Litang Rubber Estate,RF,Sabah,Sabah,5.316667,118.483333,ok,parsed_excel_date,parsed_dms
+5385001,Litang di Lahad Datu,RF,Sabah,Sabah,5.329444,118.509722,ok,parsed_excel_date,parsed_dms
+5458003,Bongawan Estate,RF,Sabah,Sabah,5.4,115.8,ok,parsed_excel_date,parsed_dms
+5462001,Apin Apin,RF,Sabah,Sabah,5.476389,116.266667,ok,parsed_excel_date,parsed_dms
+5478001,Lamag,RF,Sabah,Sabah,5.477778,117.819444,ok,parsed_excel_date,parsed_dms
+5478002,Bkt. Garam,RF,Sabah,Sabah,5.495833,117.834722,ok,parsed_excel_date,parsed_dms
+5478003,Barik Manis,RF,Sabah,Sabah,5.491111,117.883889,ok,parsed_excel_date,parsed_dms
+5482001,Bilit,RF,Sabah,Sabah,5.485278,118.188611,ok,parsed_excel_date,parsed_dms
+5485001,Kretam Binuang,RF,Sabah,Sabah,5.483333,118.566667,ok,parsed_excel_date,parsed_dms
+5487001,Tomanggong Estate,RF,Sabah,Sabah,5.433333,118.716667,ok,parsed_excel_date,parsed_dms
+5558001,Bongawan,RF,Sabah,Sabah,5.538056,115.850833,ok,parsed_dms,parsed_dms
+5582001,Sukau,RF,Sabah,Sabah,5.534722,118.284722,ok,parsed_dms,parsed_dms
+5659001,Lingan,RF,Sabah,Sabah,5.619444,115.959722,ok,parsed_dms,parsed_dms
+5663001,Tambunan Agr. Stn.,RF,Sabah,Sabah,5.620833,116.326389,ok,parsed_dms,parsed_dms
+5663002,Keranaan,RF,Sabah,Sabah,5.685556,116.376111,ok,parsed_dms,parsed_dms
+5671001,Telupid,RF,Sabah,Sabah,5.558333,117.125,ok,parsed_dms,parsed_dms
+5671002,Telupid,RF,Sabah,Sabah,5.636111,117.119167,ok,parsed_dms,parsed_dms
+5678001,Bode Estate,RF,Sabah,Sabah,5.633333,117.85,ok,parsed_dms,parsed_dms
+5759003,Papar JPS,RF,Sabah,Sabah,5.722778,115.935,ok,parsed_dms,parsed_dms
+5760001,Kaiduan Meteorological Stn.,RF,Sabah,Sabah,5.772222,116.091667,ok,parsed_dms,parsed_dms
+5763001,Sunsuron Agr. Stn.,RF,Sabah,Sabah,5.733333,116.383333,ok,parsed_dms,parsed_dms
+5768001,Tampias,RF,Sabah,Sabah,5.711111,116.859722,ok,parsed_dms,parsed_dms
+5862001,Ulu Moyog,RF,Sabah,Sabah,5.883333,116.263889,ok,parsed_dms,parsed_dms
+5862002,Ulu Moyog,RF,Sabah,Sabah,5.863889,116.263889,ok,parsed_dms,parsed_dms
+5862003,Tonggol Forest Stn.,RF,Sabah,Sabah,5.85,116.2,ok,parsed_dms,parsed_dms
+5864001,Kirokot Agr. Stn.,RF,Sabah,Sabah,5.833333,116.466667,ok,parsed_dms,parsed_dms
+5872001,Porog,RF,Sabah,Sabah,5.839167,117.170833,ok,parsed_dms,parsed_dms
+5873001,Panimbanan Meteorological Stn.,RF,Sabah,Sabah,5.870833,117.384722,ok,parsed_dms,parsed_dms
+5876001,Beluran,RF,Sabah,Sabah,5.889167,117.553056,ok,parsed_dms,parsed_dms
+5880001,Sandakan Meteorological Stn.,RF,Sabah,Sabah,5.897222,118.058333,ok,parsed_dms,parsed_dms
+5960002,Kota Kinabalu Meteorological Stn.,RF,Sabah,Sabah,5.944444,116.05,ok,parsed_dms,parsed_dms
+5961001,Kiansam,RF,Sabah,Sabah,5.984722,116.177778,ok,parsed_dms,parsed_dms
+5961002,Inanam Meteorological Stn.,RF,Sabah,Sabah,5.995833,116.115278,ok,parsed_dms,parsed_dms
+5965001,Bundu Tuhan,RF,Sabah,Sabah,5.966667,116.533333,ok,parsed_dms,parsed_dms
+5965002,Kundasang Agr. Stn.,RF,Sabah,Sabah,5.983333,116.569444,ok,parsed_dms,parsed_dms
+5966001,Ranau Agr. Stn.,RF,Sabah,Sabah,5.947222,116.661111,ok,parsed_dms,parsed_dms
+5973001,Trusan Sapi Met. Stn.,RF,Sabah,Sabah,5.902778,117.373611,ok,parsed_dms,parsed_dms
+5974001,Pamo Estate,RF,Sabah,Sabah,5.983333,117.4,ok,parsed_dms,parsed_dms
+6061001,Daraw Estate,RF,Sabah,Sabah,6.05,116.183333,ok,parsed_excel_date,parsed_dms
+6061002,Tobobon Estate,RF,Sabah,Sabah,6.066667,116.183333,ok,parsed_excel_date,parsed_dms
+6061003,"Labao Estate, Menggatal",RF,Sabah,Sabah,6.083333,116.183333,ok,parsed_excel_date,parsed_dms
+6062001,Kiulu (Tuaran),RF,Sabah,Sabah,6.0625,116.279167,ok,parsed_excel_date,parsed_dms
+6064001,Dalas,RF,Sabah,Sabah,6.033333,116.466667,ok,parsed_excel_date,parsed_dms
+6065002,Kinabalu National Park,RF,Sabah,Sabah,6.033333,116.533333,ok,parsed_excel_date,parsed_dms
+6072001,Basai di Labuk,RF,Sabah,Sabah,,,missing,missing,missing
+6073001,Basai,RF,Sabah,Sabah,6.050833,117.314444,ok,parsed_excel_date,parsed_dms
+6162001,Tuaran Agr. Stn.,RF,Sabah,Sabah,6.166667,116.233333,ok,parsed_excel_date,parsed_dms
+6168001,Merungin,RF,Sabah,Sabah,6.104167,116.841667,ok,parsed_excel_date,parsed_dms
+6172001,Bukit Mondou,RF,Sabah,Sabah,6.195833,117.238889,ok,parsed_excel_date,parsed_dms
+6264001,Tamu Darat Agr. Stn. Kota Belud,RF,Sabah,Sabah,6.263889,116.452778,ok,parsed_excel_date,parsed_dms
+6273001,Sungai Sungai (Bukit Mondou),RF,Sabah,Sabah,6.251389,117.366667,ok,parsed_excel_date,parsed_dms
+6365001,Rosok,RF,Sabah,Sabah,6.391667,116.525,ok,parsed_excel_date,parsed_dms
+6468001,Tandek Pump House,RF,Sabah,Sabah,6.475278,116.832222,ok,parsed_excel_date,parsed_dms
+6565001,Ulu Kukut,RF,Sabah,Sabah,6.516667,116.583333,ok,parsed_dms,parsed_dms
+6568001,Kota Marudu,RF,Sabah,Sabah,6.533333,116.85,ok,parsed_dms,parsed_dms
+6670001,Kobon,RF,Sabah,Sabah,6.605556,117.038611,ok,parsed_dms,parsed_dms
