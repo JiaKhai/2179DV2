@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 520,
+  "data": { "url": "data/processed/flood_losses_state.csv" },
+  "transform": [
+    { "filter": "datum.state != 'Malaysia' && (datum.year == 2024 || datum.year == 2025)" },
+    { "calculate": "toNumber(datum.total_loss_rm_million)", "as": "loss" },
+    { "pivot": "year", "value": "loss", "groupby": ["state"] },
+    { "calculate": "datum['2025'] - datum['2024']", "as": "change" },
+    { "calculate": "abs(datum.change)", "as": "abs_change" },
+    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "abs_change", "order": "descending" }] },
+    { "filter": "datum.rank <= 10" }
+  ],
+  "layer": [
+    {
+      "mark": { "type": "rule", "strokeWidth": 2, "stroke": "#6f817d", "opacity": 0.75 },
+      "encoding": {
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": { "field": "abs_change", "order": "descending" },
+          "title": null,
+          "axis": { "labelLimit": 160 }
+        },
+        "x": {
+          "field": "2024",
+          "type": "quantitative",
+          "title": "Flood loss (RM million)",
+          "scale": { "zero": true }
+        },
+        "x2": { "field": "2025" },
+        "tooltip": [
+          { "field": "state", "type": "nominal", "title": "State / territory" },
+          { "field": "2024", "type": "quantitative", "title": "2024 loss", "format": ",.1f" },
+          { "field": "2025", "type": "quantitative", "title": "2025 loss", "format": ",.1f" },
+          { "field": "change", "type": "quantitative", "title": "Change", "format": "+,.1f" }
+        ]
+      }
+    },
+    {
+      "transform": [
+        { "fold": ["2024", "2025"], "as": ["year", "loss_value"] }
+      ],
+      "mark": { "type": "circle", "filled": true, "size": 145, "stroke": "#102321", "strokeWidth": 0.8 },
+      "encoding": {
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": { "field": "abs_change", "order": "descending" }
+        },
+        "x": { "field": "loss_value", "type": "quantitative" },
+        "color": {
+          "field": "year",
+          "type": "nominal",
+          "title": "Year",
+          "scale": { "range": ["#9aa8a5", "#bd4a36"] }
+        },
+        "tooltip": [
+          { "field": "state", "type": "nominal", "title": "State / territory" },
+          { "field": "year", "type": "nominal", "title": "Year" },
+          { "field": "loss_value", "type": "quantitative", "title": "Loss (RM million)", "format": ",.1f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "gridColor": "#d8ded9" },
+    "legend": { "orient": "bottom" }
+  }
+}

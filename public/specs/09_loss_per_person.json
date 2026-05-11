@@ -4,8 +4,9 @@
   "height": 480,
   "data": { "url": "data/processed/story_state_summary.csv" },
   "transform": [
-    { "filter": "datum.flood_loss_2025_rm_per_person != null && datum.flood_loss_2025_rm_per_person != ''" },
-    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "flood_loss_2025_rm_per_person", "order": "descending" }] },
+    { "calculate": "toNumber(datum.flood_loss_2025_rm_per_person)", "as": "loss_per_person" },
+    { "filter": "isValid(datum.loss_per_person)" },
+    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "loss_per_person", "order": "descending" }] },
     { "filter": "datum.rank <= 10" }
   ],
   "layer": [
@@ -20,7 +21,7 @@
           "axis": { "labelLimit": 160 }
         },
         "x": {
-          "field": "flood_loss_2025_rm_per_person",
+          "field": "loss_per_person",
           "type": "quantitative",
           "title": "2025 flood loss per person (RM)",
           "scale": { "domain": [0, 180] }
@@ -33,7 +34,7 @@
         },
         "tooltip": [
           { "field": "state", "type": "nominal", "title": "State / territory" },
-          { "field": "flood_loss_2025_rm_per_person", "type": "quantitative", "title": "Loss per person (RM)", "format": ",.2f" },
+          { "field": "loss_per_person", "type": "quantitative", "title": "Loss per person (RM)", "format": ",.2f" },
           { "field": "flood_total_loss_2025_rm_million", "type": "quantitative", "title": "Total loss (RM million)", "format": ",.1f" }
         ]
       }

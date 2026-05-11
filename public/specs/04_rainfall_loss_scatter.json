@@ -73,8 +73,8 @@
     {
       "data": {
         "values": [
-          { "box_x1": 2580, "box_x2": 3920, "box_y1": 86, "box_y2": 106 },
-          { "box_x1": 4320, "box_x2": 5260, "box_y1": 27, "box_y2": 47 }
+          { "box_x1": 2580, "box_x2": 4200, "box_y1": 84, "box_y2": 108 },
+          { "box_x1": 4180, "box_x2": 5260, "box_y1": 24, "box_y2": 51 }
         ]
       },
       "mark": { "type": "rect", "fill": "#eef6f4", "stroke": "#102321", "strokeOpacity": 0.55, "cornerRadius": 4 },
@@ -88,11 +88,11 @@
     {
       "data": {
         "values": [
-          { "label_x": 2640, "label_y": 96, "label": "Johor: high losses\ndespite lower rainfall" },
-          { "label_x": 4380, "label_y": 37, "label": "Sarawak: very wet\nand sizeable losses" }
+          { "label_x": 2640, "label_y": 96, "label": "Johor: high losses\neven with lower rainfall\nshow risk is not rain alone" },
+          { "label_x": 4240, "label_y": 37.5, "label": "Sarawak: very wet,\nwith sizeable losses\nshowing exposure matters too" }
         ]
       },
-      "mark": { "type": "text", "align": "left", "baseline": "middle", "fontSize": 11, "fontWeight": "bold", "lineBreak": "\n", "lineHeight": 13, "fill": "#102321" },
+      "mark": { "type": "text", "align": "left", "baseline": "middle", "fontSize": 11, "fontWeight": "bold", "lineBreak": "\n", "lineHeight": 12.5, "fill": "#102321" },
       "encoding": {
         "x": { "field": "label_x", "type": "quantitative", "scale": { "domain": [1450, 5300] } },
         "y": { "field": "label_y", "type": "quantitative", "scale": { "domain": [0, 110] } },

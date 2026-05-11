@@ -5,7 +5,16 @@ const spec = (name) => `${base}specs/${name}.json`;
 
 const chartVariant = (chartSpec) => {
   if (["01_flood_loss_map", "07_station_map", "10_rainfall_map"].includes(chartSpec)) return "map";
-  if (["05_loss_categories_stacked", "06_district_losses"].includes(chartSpec)) return "large";
+  if (
+    [
+      "05_loss_categories_stacked",
+      "06_district_losses",
+      "11_rank_shift_dumbbell",
+      "12_loss_change_lollipop",
+      "13_loss_mix_proportional_heatmap",
+      "14_state_profile_radar",
+    ].includes(chartSpec)
+  ) return "large";
   return "standard";
 };
 
@@ -13,78 +22,98 @@ const sections = [
   {
     kicker: "Where risk gathers",
     title: "Flood losses are concentrated, not evenly spread.",
-    body: "The 2025 pattern starts the story: several states carry a much larger share of recorded flood losses than others.",
+    body: "The story begins with an uneven map. In 2025, flood losses gathered around a few places while much of the country recorded far smaller totals.",
     charts: [
       {
         title: "Flood loss by state",
         spec: "01_flood_loss_map",
-        caption: "Terengganu and Kelantan sit at the high end of total recorded losses."
+        caption: "The map shades each state by recorded 2025 flood loss. Darker areas quickly reveal that flood impact is not spread evenly across Malaysia."
       },
       {
         title: "Top state losses",
         spec: "02_top_losses_bar",
-        caption: "The leading states form a clear east-coast and southern pattern."
+        caption: "The ranking pulls the largest losses out of the map and lines them up for comparison. The gap between the leading states helps show how concentrated the national total is."
       },
       {
         title: "Loss per person",
         spec: "09_loss_per_person",
-        caption: "Smaller states can look more exposed once loss is viewed per person."
+        caption: "Total RM loss does not tell the whole story. By dividing loss by population, smaller places become easier to see when the burden falls across fewer people."
+      },
+      {
+        title: "Exposure compared with loss",
+        spec: "11_rank_shift_dumbbell",
+        caption: "Homes and losses are plotted together, with average lines as a reference point. Places far from the middle suggest that exposure matters, but it is not the only force shaping damage."
       },
     ],
   },
   {
     kicker: "Rainfall context",
     title: "Rainfall matters, but it is not the whole explanation.",
-    body: "Heavy rain is the trigger. Impact depends on where it falls, what is exposed, and how water moves through each place.",
+    body: "Rain is the obvious starting point, but floods become costly only when rain meets exposed homes, roads, rivers, and drainage systems.",
     charts: [
       {
         title: "Annual rainfall by selected states",
         spec: "03_rainfall_lines",
-        caption: "East-coast states often record high rainfall, especially Terengganu."
+        caption: "The lines follow annual rainfall in selected states. Terengganu and other wetter states stand out, but the year-to-year movement shows that rainfall is never a fixed backdrop."
       },
       {
         title: "Rainfall compared with 2025 flood loss",
         spec: "04_rainfall_loss_scatter",
-        caption: "Rainfall and loss move together imperfectly; exposure and geography still matter."
+        caption: "Rainfall and loss are placed on the same plane here. The scattered pattern is the key: wet places are not automatically the most costly, and lower-rainfall places can still suffer serious losses."
       },
       {
-        title: "Average rainfall across states",
+        title: "Selected state signal profile",
+        spec: "14_state_profile_radar",
+        caption: "The profile lines compare several signals at once: rainfall, exposed homes, total loss, and loss per person. Each state traces a different shape, which is the point of the comparison."
+      },
+      {
+        title: "Rainfall area cartogram",
         spec: "10_rainfall_map",
-        caption: "Rainfall is high in several regions, but flood losses remain uneven."
+        caption: "The cartogram keeps Malaysia recognisable while enlarging wetter states. It turns rainfall into map area, so places with heavier average rain physically take up more space in the story."
       },
     ],
   },
   {
     kicker: "Everyday disruption",
     title: "Flood damage shows up in ordinary systems.",
-    body: "The losses are not just abstract totals. They touch homes, farms, businesses, vehicles, and infrastructure.",
+    body: "Behind each RM total are familiar systems: homes, farms, shops, vehicles, roads, bridges, and public infrastructure that daily life depends on.",
     charts: [
       {
-        title: "2025 flood losses by category",
+        title: "Small-multiple damage treemaps",
         spec: "05_loss_categories_stacked",
-        caption: "Infrastructure and household losses dominate in different states."
+        caption: "Each mini treemap opens up a state total into its damage categories. The blocks show whether losses are mostly infrastructure, homes, agriculture, or a more mixed pattern."
       },
       {
-        title: "Districts with highest 2025 losses",
+        title: "District loss points",
         spec: "06_district_losses",
-        caption: "District-level losses show how local the impact can become."
+        caption: "Districts bring the story closer to the ground. Larger points mark the local areas where losses were highest, turning broad state patterns into more specific places."
+      },
+      {
+        title: "Loss change from 2024 to 2025",
+        spec: "12_loss_change_lollipop",
+        caption: "The connected points compare losses from 2024 to 2025. Some states moved down sharply, while others climbed, showing how flood impact can shift from one year to the next."
+      },
+      {
+        title: "National damage shift",
+        spec: "13_loss_mix_proportional_heatmap",
+        caption: "The slope lines follow national damage categories across two years. Infrastructure remains a major part of the bill, while agriculture drops sharply from the previous year."
       },
     ],
   },
   {
     kicker: "Monitoring the rain",
     title: "Preparedness starts with local monitoring.",
-    body: "Rainfall stations do not measure flood risk directly, but they show how flood-relevant weather is watched across varied terrain.",
+    body: "The story ends upstream, with measurement. Rainfall stations do not prevent floods, but they shape what can be watched, compared, and acted on.",
     charts: [
       {
         title: "Rainfall station network",
         spec: "07_station_map",
-        caption: "Stations are spread across Peninsular Malaysia, Sabah, and Sarawak."
+        caption: "Each point marks a rainfall station with usable coordinates. The pattern is about monitoring coverage, not direct flood danger, and it shows where rainfall evidence is being collected."
       },
       {
-        title: "Rainfall stations by region",
+        title: "Rainfall station coverage waffle",
         spec: "08_station_counts",
-        caption: "Station counts reflect monitoring coverage, not flood danger by themselves."
+        caption: "The waffle view turns the station network into 100 small parts. Each square is about 1% of mapped stations, making regional coverage easier to compare at a glance."
       },
     ],
   },
@@ -140,13 +169,13 @@ export default function App() {
               When Rain Becomes Risk
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-muted md:text-xl">
-              Where Malaysia’s 2025 flood losses concentrated, how rainfall relates to that pattern, and why place matters.
+              A scroll through where Malaysia’s 2025 flood losses gathered, how rainfall fits into the pattern, and why place changes the outcome.
             </p>
           </div>
           <div className="grid content-end gap-5">
-            <Stat value="RM636.9m" label="Estimated flood losses recorded nationally in 2025." />
-            <Stat value="16" label="States and federal territories compared in the story." />
-            <Stat value="1,699" label="Rainfall stations with usable coordinates after cleaning." />
+            <Stat value="RM636.9m" label="Recorded flood losses across Malaysia in 2025." />
+            <Stat value="16" label="States and federal territories followed through the story." />
+            <Stat value="1,699" label="Rainfall stations mapped after coordinate cleaning." />
           </div>
         </div>
       </section>
@@ -160,7 +189,7 @@ export default function App() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-flood">Takeaways</p>
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             <p className="text-2xl font-semibold leading-tight text-ink">Flood risk is uneven because Malaysia’s places are uneven.</p>
-            <p className="text-base leading-7 text-muted">Heavy rain matters, but the final impact also depends on rivers, drainage, settlements, and infrastructure.</p>
+            <p className="text-base leading-7 text-muted">Rain starts the hazard, but the damage follows the shape of rivers, drainage, settlements, infrastructure, and exposure.</p>
             <p className="text-base leading-7 text-muted">Sources: DOSM flood impact report 2025, DOSM population, JPS rainfall data, and geoBoundaries. FIT2179 Data Visualisation 2, 2026.</p>
           </div>
         </div>

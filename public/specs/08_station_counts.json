@@ -1,53 +1,56 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
-  "height": 480,
-  "data": { "url": "data/processed/rainfall_stations_mappable.csv" },
+  "height": 360,
+  "data": { "sequence": { "start": 1, "stop": 101, "step": 1, "as": "cell" } },
   "transform": [
+    { "calculate": "(datum.cell - 1) % 10", "as": "column" },
+    { "calculate": "floor((datum.cell - 1) / 10)", "as": "row" },
     {
-      "lookup": "state",
-      "from": {
-        "data": { "url": "data/processed/state_lookup.csv" },
-        "key": "state",
-        "fields": ["region"]
-      }
+      "calculate": "datum.cell <= 23 ? 'Borneo' : datum.cell <= 45 ? 'East Coast' : datum.cell <= 64 ? 'Northern Peninsula' : datum.cell <= 79 ? 'Southern Peninsula' : datum.cell <= 93 ? 'Central Peninsula' : datum.cell <= 97 ? 'Central/Southern Peninsula' : 'Federal Territories'",
+      "as": "region"
     },
     {
-      "aggregate": [{ "op": "count", "as": "station_count" }],
-      "groupby": ["state", "region"]
+      "calculate": "datum.region == 'Borneo' ? 411 : datum.region == 'East Coast' ? 368 : datum.region == 'Northern Peninsula' ? 326 : datum.region == 'Southern Peninsula' ? 247 : datum.region == 'Central Peninsula' ? 236 : datum.region == 'Central/Southern Peninsula' ? 65 : 46",
+      "as": "stations"
+    },
+    { "calculate": "datum.stations / 1699", "as": "share" }
+  ],
+  "layer": [
+    {
+      "mark": { "type": "rect", "cornerRadius": 2, "stroke": "#f7fbf8", "strokeWidth": 2 },
+      "encoding": {
+        "x": {
+          "field": "column",
+          "type": "ordinal",
+          "title": null,
+          "axis": null
+        },
+        "y": {
+          "field": "row",
+          "type": "ordinal",
+          "title": null,
+          "sort": "descending",
+          "axis": null
+        },
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "title": "Region",
+          "scale": {
+            "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96", "#5f7f92", "#7a8a86"]
+          }
+        },
+        "tooltip": [
+          { "field": "region", "type": "nominal", "title": "Region" },
+          { "field": "stations", "type": "quantitative", "title": "Mappable stations" },
+          { "field": "share", "type": "quantitative", "title": "Share of stations", "format": ".1%" }
+        ]
+      }
     }
   ],
-  "mark": { "type": "bar", "cornerRadiusEnd": 3 },
-  "encoding": {
-    "y": {
-      "field": "state",
-      "type": "nominal",
-      "sort": "-x",
-      "title": null,
-      "axis": { "labelLimit": 160 }
-    },
-    "x": {
-      "field": "station_count",
-      "type": "quantitative",
-      "title": "Mappable rainfall stations"
-    },
-    "color": {
-      "field": "region",
-      "type": "nominal",
-      "title": "Region",
-      "scale": {
-        "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96"]
-      }
-    },
-    "tooltip": [
-      { "field": "state", "type": "nominal", "title": "State / territory" },
-      { "field": "region", "type": "nominal", "title": "Region" },
-      { "field": "station_count", "type": "quantitative", "title": "Stations" }
-    ]
-  },
   "config": {
     "view": { "stroke": null },
-    "axis": { "grid": false },
-    "legend": { "orient": "bottom" }
+    "legend": { "orient": "bottom", "direction": "horizontal" }
   }
 }

@@ -3,17 +3,23 @@
   "width": "container",
   "height": 430,
   "data": {
-    "url": "data/processed/malaysia_adm1.geojson",
+    "url": "data/processed/rainfall_area_cartogram.geojson",
     "format": { "type": "json", "property": "features" }
   },
   "transform": [
     { "calculate": "datum.properties.state", "as": "state" },
+    { "calculate": "datum.properties.region", "as": "region" },
+    {
+      "calculate": "toNumber(datum.properties.annual_rainfall_avg_2013_2017_mm)",
+      "as": "rainfall"
+    },
+    { "calculate": "toNumber(datum.properties.area_scale)", "as": "area_scale" },
     {
       "lookup": "state",
       "from": {
         "data": { "url": "data/processed/story_state_summary.csv" },
         "key": "state",
-        "fields": ["annual_rainfall_avg_2013_2017_mm", "flood_total_loss_2025_rm_million"]
+        "fields": ["flood_total_loss_2025_rm_million"]
       }
     }
   ],
@@ -22,22 +28,19 @@
     "center": [109.5, 4.1],
     "scale": 3000
   },
-  "mark": { "type": "geoshape", "stroke": "#f7f3ea", "strokeWidth": 1 },
+  "mark": { "type": "geoshape", "stroke": "#f7f3ea", "strokeWidth": 1.1 },
   "encoding": {
     "color": {
-      "field": "annual_rainfall_avg_2013_2017_mm",
+      "field": "rainfall",
       "type": "quantitative",
       "title": "Avg annual rainfall, 2013-2017 (mm)",
       "scale": { "scheme": "blues" }
     },
     "tooltip": [
       { "field": "state", "type": "nominal", "title": "State / territory" },
-      {
-        "field": "annual_rainfall_avg_2013_2017_mm",
-        "type": "quantitative",
-        "title": "Avg rainfall (mm)",
-        "format": ",.0f"
-      },
+      { "field": "region", "type": "nominal", "title": "Region" },
+      { "field": "rainfall", "type": "quantitative", "title": "Avg rainfall (mm)", "format": ",.0f" },
+      { "field": "area_scale", "type": "quantitative", "title": "Relative area scale", "format": ".2f" },
       {
         "field": "flood_total_loss_2025_rm_million",
         "type": "quantitative",

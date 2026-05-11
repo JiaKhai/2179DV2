@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": 520,
+  "data": { "url": "data/processed/story_state_summary.csv" },
+  "transform": [
+    { "filter": "indexof(['Terengganu','Kelantan','Johor','Sarawak','Perlis'], datum.state) >= 0" },
+    { "calculate": "toNumber(datum.flood_total_loss_2025_rm_million)", "as": "total_loss" },
+    { "calculate": "toNumber(datum.flood_loss_2025_rm_per_person)", "as": "loss_per_person" },
+    { "calculate": "toNumber(datum.annual_rainfall_avg_2013_2017_mm)", "as": "rainfall" },
+    { "calculate": "toNumber(datum.living_quarters_count_2025_for_chart)", "as": "homes" },
+    {
+      "joinaggregate": [
+        { "op": "max", "field": "total_loss", "as": "max_total_loss" },
+        { "op": "max", "field": "loss_per_person", "as": "max_loss_per_person" },
+        { "op": "max", "field": "rainfall", "as": "max_rainfall" },
+        { "op": "max", "field": "homes", "as": "max_homes" }
+      ]
+    },
+    { "calculate": "datum.total_loss / datum.max_total_loss * 100", "as": "total_loss_index" },
+    { "calculate": "datum.loss_per_person / datum.max_loss_per_person * 100", "as": "person_loss_index" },
+    { "calculate": "datum.rainfall / datum.max_rainfall * 100", "as": "rainfall_index" },
+    { "calculate": "datum.homes / datum.max_homes * 100", "as": "homes_index" },
+    {
+      "fold": ["rainfall_index", "homes_index", "total_loss_index", "person_loss_index"],
+      "as": ["metric", "index"]
+    },
+    {
+      "calculate": "datum.metric == 'rainfall_index' ? 'Rainfall' : datum.metric == 'homes_index' ? 'Homes exposed' : datum.metric == 'total_loss_index' ? 'Total loss' : 'Loss per person'",
+      "as": "metric_label"
+    }
+  ],
+  "mark": { "type": "line", "point": true, "strokeWidth": 2.2, "opacity": 0.75 },
+  "encoding": {
+    "x": {
+      "field": "metric_label",
+      "type": "ordinal",
+      "title": null,
+      "sort": ["Rainfall", "Homes exposed", "Total loss", "Loss per person"],
+      "axis": { "labelAngle": 0 }
+    },
+    "y": {
+      "field": "index",
+      "type": "quantitative",
+      "title": "Index within selected states",
+      "scale": { "domain": [0, 100] }
+    },
+    "color": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State",
+      "scale": { "range": ["#bd4a36", "#d87b3f", "#2f7ea8", "#6f8f56", "#8b6f96"] }
+    },
+    "detail": { "field": "state" },
+    "tooltip": [
+      { "field": "state", "type": "nominal", "title": "State" },
+      { "field": "metric_label", "type": "nominal", "title": "Signal" },
+      { "field": "index", "type": "quantitative", "title": "Index", "format": ".0f" }
+    ]
+  },
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "gridColor": "#d8ded9" },
+    "legend": { "orient": "bottom" }
+  }
+}

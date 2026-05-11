@@ -8,33 +8,58 @@
     { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "total_loss_rm_million", "order": "descending" }] },
     { "filter": "datum.rank <= 12" }
   ],
-  "mark": { "type": "bar", "cornerRadiusEnd": 3, "color": "#bd4a36" },
-  "encoding": {
-    "y": {
-      "field": "place_name",
-      "type": "nominal",
-      "sort": "-x",
-      "title": null,
-      "axis": { "labelLimit": 170 }
-    },
-    "x": {
-      "field": "total_loss_rm_million",
-      "type": "quantitative",
-      "title": "2025 flood loss (RM million)"
-    },
-    "tooltip": [
-      { "field": "place_name", "type": "nominal", "title": "District" },
-      { "field": "state", "type": "nominal", "title": "State" },
-      {
-        "field": "total_loss_rm_million",
-        "type": "quantitative",
-        "title": "Loss (RM million)",
-        "format": ",.1f"
+  "layer": [
+    {
+      "mark": { "type": "circle", "filled": true, "opacity": 0.86, "stroke": "#17211f", "strokeWidth": 0.7 },
+      "encoding": {
+        "y": {
+          "field": "place_name",
+          "type": "nominal",
+          "sort": { "field": "total_loss_rm_million", "order": "descending" },
+          "title": null,
+          "axis": { "labelLimit": 170 }
+        },
+        "x": {
+          "field": "total_loss_rm_million",
+          "type": "quantitative",
+          "title": "2025 flood loss (RM million)",
+          "scale": { "zero": true }
+        },
+        "size": {
+          "field": "total_loss_rm_million",
+          "type": "quantitative",
+          "legend": null,
+          "scale": { "range": [90, 900] }
+        },
+        "color": {
+          "field": "state",
+          "type": "nominal",
+          "title": "State",
+          "scale": { "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96", "#5f7f92", "#a06b54"] }
+        },
+        "tooltip": [
+          { "field": "place_name", "type": "nominal", "title": "District" },
+          { "field": "state", "type": "nominal", "title": "State" },
+          { "field": "total_loss_rm_million", "type": "quantitative", "title": "Loss (RM million)", "format": ",.1f" }
+        ]
       }
-    ]
-  },
+    },
+    {
+      "mark": { "type": "text", "align": "left", "baseline": "middle", "dx": 14, "fontSize": 11, "fontWeight": "600", "fill": "#102321" },
+      "encoding": {
+        "y": {
+          "field": "place_name",
+          "type": "nominal",
+          "sort": { "field": "total_loss_rm_million", "order": "descending" }
+        },
+        "x": { "field": "total_loss_rm_million", "type": "quantitative" },
+        "text": { "field": "total_loss_rm_million", "type": "quantitative", "format": ".1f" }
+      }
+    }
+  ],
   "config": {
     "view": { "stroke": null },
-    "axis": { "grid": false }
+    "axis": { "gridColor": "#d8ded9" },
+    "legend": { "orient": "bottom" }
   }
 }

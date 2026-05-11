@@ -1,59 +1,93 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
-  "height": 540,
-  "data": { "url": "data/processed/flood_losses_state.csv" },
-  "transform": [
-    { "filter": "datum.year == 2025 && datum.state != 'Malaysia'" },
-    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "total_loss_rm000", "order": "descending" }] },
-    { "filter": "datum.rank <= 7" },
-    {
-      "fold": [
-        "living_quarters_loss_rm000",
-        "vehicles_loss_rm000",
-        "business_premises_loss_rm000",
-        "manufacturing_loss_rm000",
-        "agriculture_loss_rm000",
-        "infrastructure_loss_rm000"
-      ],
-      "as": ["category", "loss_rm000"]
-    },
-    {
-      "calculate": "replace(replace(replace(replace(replace(replace(datum.category, '_loss_rm000', ''), 'living_quarters', 'Homes'), 'business_premises', 'Business'), 'vehicles', 'Vehicles'), 'agriculture', 'Agriculture'), 'infrastructure', 'Infrastructure')",
-      "as": "loss_category"
-    },
-    { "calculate": "datum.loss_rm000 / 1000", "as": "loss_rm_million" }
-  ],
-  "mark": { "type": "bar", "cornerRadiusEnd": 2 },
-  "encoding": {
-    "y": { "field": "state", "type": "nominal", "sort": "-x", "title": null },
-    "x": {
-      "field": "loss_rm_million",
-      "type": "quantitative",
-      "stack": "zero",
-      "title": "2025 flood loss (RM million)"
-    },
-    "color": {
-      "field": "loss_category",
-      "type": "nominal",
-      "title": "Loss category",
-      "scale": {
-        "range": ["#bd4a36", "#d87b3f", "#8b6f96", "#796a58", "#6f8f56", "#2f7ea8"]
-      }
-    },
-    "tooltip": [
-      { "field": "state", "type": "nominal", "title": "State" },
-      { "field": "loss_category", "type": "nominal", "title": "Category" },
-      {
-        "field": "loss_rm_million",
-        "type": "quantitative",
-        "title": "Loss (RM million)",
-        "format": ",.1f"
-      }
+  "height": 560,
+  "data": {
+    "values": [
+      { "state": "Terengganu", "category": "Infrastructure", "value": 71.85, "x0": 4, "x1": 234, "y0": 24, "y1": 174, "label": "Infrastructure", "label_x": 10, "label_y": 16 },
+      { "state": "Terengganu", "category": "Homes", "value": 14.95, "x0": 235, "x1": 290, "y0": 24, "y1": 153, "label": "Homes", "label_x": 10, "label_y": 16 },
+      { "state": "Terengganu", "category": "Agriculture", "value": 1.01, "x0": 235, "x1": 258, "y0": 154, "y1": 174, "label": "", "label_x": 10, "label_y": 16 },
+      { "state": "Terengganu", "category": "Business", "value": 0.86, "x0": 259, "x1": 278, "y0": 154, "y1": 174, "label": "", "label_x": 10, "label_y": 16 },
+      { "state": "Terengganu", "category": "Vehicles", "value": 0.43, "x0": 279, "x1": 290, "y0": 154, "y1": 171, "label": "", "label_x": 10, "label_y": 16 },
+      { "state": "Terengganu", "category": "Manufacturing", "value": 0.08, "x0": 279, "x1": 290, "y0": 172, "y1": 174, "label": "", "label_x": 10, "label_y": 16 },
+      { "state": "Kelantan", "category": "Infrastructure", "value": 67.14, "x0": 314, "x1": 531, "y0": 24, "y1": 174, "label": "Infrastructure", "label_x": 320, "label_y": 16 },
+      { "state": "Kelantan", "category": "Homes", "value": 15.62, "x0": 532, "x1": 600, "y0": 24, "y1": 133, "label": "Homes", "label_x": 320, "label_y": 16 },
+      { "state": "Kelantan", "category": "Agriculture", "value": 4.38, "x0": 532, "x1": 583, "y0": 134, "y1": 174, "label": "", "label_x": 320, "label_y": 16 },
+      { "state": "Kelantan", "category": "Business", "value": 0.9, "x0": 584, "x1": 600, "y0": 134, "y1": 159, "label": "", "label_x": 320, "label_y": 16 },
+      { "state": "Kelantan", "category": "Vehicles", "value": 0.5, "x0": 584, "x1": 600, "y0": 160, "y1": 174, "label": "", "label_x": 320, "label_y": 16 },
+      { "state": "Johor", "category": "Infrastructure", "value": 29.84, "x0": 624, "x1": 846, "y0": 24, "y1": 103, "label": "Infrastructure", "label_x": 630, "label_y": 16 },
+      { "state": "Johor", "category": "Homes", "value": 26.19, "x0": 624, "x1": 846, "y0": 104, "y1": 174, "label": "Homes", "label_x": 630, "label_y": 16 },
+      { "state": "Johor", "category": "Agriculture", "value": 13.01, "x0": 847, "x1": 910, "y0": 24, "y1": 146, "label": "", "label_x": 630, "label_y": 16 },
+      { "state": "Johor", "category": "Business", "value": 2.14, "x0": 847, "x1": 892, "y0": 147, "y1": 174, "label": "", "label_x": 630, "label_y": 16 },
+      { "state": "Johor", "category": "Vehicles", "value": 0.87, "x0": 893, "x1": 910, "y0": 147, "y1": 174, "label": "", "label_x": 630, "label_y": 16 },
+      { "state": "Sarawak", "category": "Homes", "value": 32.55, "x0": 4, "x1": 156, "y0": 206, "y1": 356, "label": "Homes", "label_x": 10, "label_y": 198 },
+      { "state": "Sarawak", "category": "Infrastructure", "value": 25.02, "x0": 157, "x1": 290, "y0": 206, "y1": 337, "label": "Infrastructure", "label_x": 10, "label_y": 198 },
+      { "state": "Sarawak", "category": "Business", "value": 2.69, "x0": 157, "x1": 254, "y0": 338, "y1": 356, "label": "", "label_x": 10, "label_y": 198 },
+      { "state": "Sarawak", "category": "Vehicles", "value": 0.81, "x0": 255, "x1": 284, "y0": 338, "y1": 356, "label": "", "label_x": 10, "label_y": 198 },
+      { "state": "Sarawak", "category": "Agriculture", "value": 0.16, "x0": 285, "x1": 290, "y0": 338, "y1": 356, "label": "", "label_x": 10, "label_y": 198 },
+      { "state": "Sabah", "category": "Homes", "value": 27.71, "x0": 314, "x1": 449, "y0": 206, "y1": 356, "label": "Homes", "label_x": 320, "label_y": 198 },
+      { "state": "Sabah", "category": "Infrastructure", "value": 23.98, "x0": 450, "x1": 600, "y0": 206, "y1": 323, "label": "Infrastructure", "label_x": 320, "label_y": 198 },
+      { "state": "Sabah", "category": "Agriculture", "value": 3.65, "x0": 450, "x1": 531, "y0": 324, "y1": 356, "label": "", "label_x": 320, "label_y": 198 },
+      { "state": "Sabah", "category": "Business", "value": 1.82, "x0": 532, "x1": 572, "y0": 324, "y1": 356, "label": "", "label_x": 320, "label_y": 198 },
+      { "state": "Sabah", "category": "Vehicles", "value": 1.25, "x0": 573, "x1": 600, "y0": 324, "y1": 356, "label": "", "label_x": 320, "label_y": 198 },
+      { "state": "Selangor", "category": "Infrastructure", "value": 26.59, "x0": 624, "x1": 767, "y0": 206, "y1": 356, "label": "Infrastructure", "label_x": 630, "label_y": 198 },
+      { "state": "Selangor", "category": "Homes", "value": 15.29, "x0": 768, "x1": 855, "y0": 206, "y1": 348, "label": "Homes", "label_x": 630, "label_y": 198 },
+      { "state": "Selangor", "category": "Agriculture", "value": 9.58, "x0": 856, "x1": 910, "y0": 206, "y1": 348, "label": "", "label_x": 630, "label_y": 198 },
+      { "state": "Selangor", "category": "Business", "value": 1.05, "x0": 768, "x1": 874, "y0": 349, "y1": 356, "label": "", "label_x": 630, "label_y": 198 },
+      { "state": "Selangor", "category": "Vehicles", "value": 0.36, "x0": 875, "x1": 910, "y0": 349, "y1": 356, "label": "", "label_x": 630, "label_y": 198 },
+      { "state": "Pahang", "category": "Infrastructure", "value": 19.05, "x0": 4, "x1": 127, "y0": 388, "y1": 538, "label": "Infrastructure", "label_x": 10, "label_y": 380 },
+      { "state": "Pahang", "category": "Homes", "value": 18.78, "x0": 128, "x1": 249, "y0": 388, "y1": 538, "label": "Homes", "label_x": 10, "label_y": 380 },
+      { "state": "Pahang", "category": "Agriculture", "value": 4.29, "x0": 250, "x1": 290, "y0": 388, "y1": 490, "label": "", "label_x": 10, "label_y": 380 },
+      { "state": "Pahang", "category": "Business", "value": 1.31, "x0": 250, "x1": 276, "y0": 491, "y1": 538, "label": "", "label_x": 10, "label_y": 380 },
+      { "state": "Pahang", "category": "Vehicles", "value": 0.7, "x0": 277, "x1": 290, "y0": 491, "y1": 538, "label": "", "label_x": 10, "label_y": 380 }
     ]
   },
+  "layer": [
+    {
+      "mark": { "type": "rect", "stroke": "#f7fbf8", "strokeWidth": 1 },
+      "encoding": {
+        "x": { "field": "x0", "type": "quantitative", "scale": { "domain": [0, 920] }, "axis": null },
+        "x2": { "field": "x1" },
+        "y": { "field": "y0", "type": "quantitative", "scale": { "domain": [0, 550], "reverse": true }, "axis": null },
+        "y2": { "field": "y1" },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "Loss category",
+          "scale": { "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96", "#5f7f92"] }
+        },
+        "tooltip": [
+          { "field": "state", "type": "nominal", "title": "State" },
+          { "field": "category", "type": "nominal", "title": "Category" },
+          { "field": "value", "type": "quantitative", "title": "Loss (RM million)", "format": ",.1f" }
+        ]
+      }
+    },
+    {
+      "transform": [{ "filter": "datum.category == 'Infrastructure'" }],
+      "mark": { "type": "text", "align": "left", "baseline": "bottom", "fontSize": 12, "fontWeight": "700", "fill": "#102321" },
+      "encoding": {
+        "x": { "field": "label_x", "type": "quantitative", "scale": { "domain": [0, 920] }, "axis": null },
+        "y": { "field": "label_y", "type": "quantitative", "scale": { "domain": [0, 550], "reverse": true }, "axis": null },
+        "text": { "field": "state", "type": "nominal" }
+      }
+    },
+    {
+      "transform": [
+        { "filter": "datum.label != ''" },
+        { "calculate": "(datum.x0 + datum.x1) / 2", "as": "label_mid_x" },
+        { "calculate": "(datum.y0 + datum.y1) / 2", "as": "label_mid_y" }
+      ],
+      "mark": { "type": "text", "align": "center", "baseline": "middle", "fontSize": 11, "fontWeight": "700", "fill": "#f7fbf8" },
+      "encoding": {
+        "x": { "field": "label_mid_x", "type": "quantitative", "scale": { "domain": [0, 920] }, "axis": null },
+        "y": { "field": "label_mid_y", "type": "quantitative", "scale": { "domain": [0, 550], "reverse": true }, "axis": null },
+        "text": { "field": "label", "type": "nominal" }
+      }
+    }
+  ],
   "config": {
     "view": { "stroke": null },
-    "legend": { "orient": "bottom" }
+    "legend": { "orient": "bottom", "direction": "horizontal" }
   }
 }

@@ -436,8 +436,59 @@ def rewind_geometry(geometry: dict[str, Any]) -> None:
         ]
 
 
+def iter_positions(value: Any) -> list[tuple[float, float]]:
+    positions: list[tuple[float, float]] = []
+    if (
+        isinstance(value, list)
+        and len(value) >= 2
+        and isinstance(value[0], (int, float))
+        and isinstance(value[1], (int, float))
+    ):
+        return [(float(value[0]), float(value[1]))]
+    if isinstance(value, list):
+        for item in value:
+            positions.extend(iter_positions(item))
+    return positions
+
+
+def geometry_centroid(geometry: dict[str, Any]) -> tuple[float, float]:
+    positions = iter_positions(geometry.get("coordinates", []))
+    if not positions:
+        return 0.0, 0.0
+    lon = sum(position[0] for position in positions) / len(positions)
+    lat = sum(position[1] for position in positions) / len(positions)
+    return lon, lat
+
+
+def transform_coordinates(value: Any, transform) -> Any:
+    if (
+        isinstance(value, list)
+        and len(value) >= 2
+        and isinstance(value[0], (int, float))
+        and isinstance(value[1], (int, float))
+    ):
+        lon, lat = transform(float(value[0]), float(value[1]))
+        return [round(lon, 5), round(lat, 5)]
+    if isinstance(value, list):
+        return [transform_coordinates(item, transform) for item in value]
+    return value
+
+
+def scaled_geometry(geometry: dict[str, Any], centroid: tuple[float, float], scale: float) -> dict[str, Any]:
+    center_lon, center_lat = centroid
+
+    def scale_position(lon: float, lat: float) -> tuple[float, float]:
+        return center_lon + (lon - center_lon) * scale, center_lat + (lat - center_lat) * scale
+
+    return {
+        "type": geometry.get("type"),
+        "coordinates": transform_coordinates(geometry.get("coordinates", []), scale_position),
+    }
+
+
 def preprocess_geojson() -> dict[str, Any]:
     geo = json.loads(RAW_GEOJSON.read_text(encoding="utf-8"))
+    centroids = []
     for feature in geo["features"]:
         raw_name = feature["properties"].get("NAME", "")
         state = canonical_state(raw_name)
@@ -446,12 +497,60 @@ def preprocess_geojson() -> dict[str, Any]:
             "iso_code": GEO_ISO.get(state, feature["properties"].get("ISO_Code", "")),
             "region": STATE_REGION.get(state, ""),
         }
+        lon, lat = geometry_centroid(feature["geometry"])
+        centroids.append(
+            {
+                "state": state,
+                "iso_code": GEO_ISO.get(state, ""),
+                "region": STATE_REGION.get(state, ""),
+                "longitude": round(lon, 5),
+                "latitude": round(lat, 5),
+            }
+        )
         rewind_geometry(feature["geometry"])
         feature["geometry"]["coordinates"] = round_geometry(feature["geometry"]["coordinates"], 5)
     output = OUT_DIR / "malaysia_adm1.geojson"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(geo, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    write_csv(OUT_DIR / "state_centroids.csv", centroids, ["state", "iso_code", "region", "longitude", "latitude"])
     return geo
+
+
+def preprocess_rainfall_cartogram(geo: dict[str, Any], rainfall_rows: list[dict[str, Any]]) -> dict[str, Any]:
+    rainfall_avg = {
+        row["state"]: float(row["annual_rainfall_mm"])
+        for row in rainfall_rows
+        if row["year"] == "2013-2017 average" and row.get("annual_rainfall_mm") not in ("", None)
+    }
+    values = list(rainfall_avg.values())
+    min_rainfall = min(values)
+    max_rainfall = max(values)
+    cartogram = {"type": "FeatureCollection", "features": []}
+
+    for feature in geo["features"]:
+        state = feature["properties"].get("state", "")
+        rainfall = rainfall_avg.get(state)
+        if rainfall is None:
+            continue
+        centroid = geometry_centroid(feature["geometry"])
+        # Area changes with rainfall; linear geometry scaling uses square root.
+        area_scale = 0.55 + ((rainfall - min_rainfall) / (max_rainfall - min_rainfall)) * 1.25
+        geometry_scale = math.sqrt(area_scale)
+        cartogram["features"].append(
+            {
+                "type": "Feature",
+                "properties": {
+                    **feature["properties"],
+                    "annual_rainfall_avg_2013_2017_mm": round(rainfall, 1),
+                    "area_scale": round(area_scale, 3),
+                },
+                "geometry": scaled_geometry(feature["geometry"], centroid, geometry_scale),
+            }
+        )
+
+    output = OUT_DIR / "rainfall_area_cartogram.geojson"
+    output.write_text(json.dumps(cartogram, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    return cartogram
 
 
 def preprocess_story_state_summary(
@@ -462,6 +561,20 @@ def preprocess_story_state_summary(
         row["state"]: row["annual_rainfall_mm"] for row in rainfall_rows if row["year"] == "2013-2017 average"
     }
     flood_2025 = {row["state"]: row for row in flood_rows if row["year"] == 2025}
+    living_quarter_ratios = []
+    for state, population in population_2025.items():
+        flood = flood_2025.get(state, {})
+        pop = int(population.get("population") or 0)
+        living_quarters = int(flood.get("living_quarters_count") or 0)
+        if pop > 0 and living_quarters > 0:
+            living_quarter_ratios.append(pop / living_quarters)
+    living_quarter_ratios.sort()
+    mid = len(living_quarter_ratios) // 2
+    median_persons_per_living_quarter = (
+        (living_quarter_ratios[mid - 1] + living_quarter_ratios[mid]) / 2
+        if len(living_quarter_ratios) % 2 == 0
+        else living_quarter_ratios[mid]
+    )
     rows: list[dict[str, Any]] = []
 
     for state in GEO_ISO:
@@ -469,6 +582,16 @@ def preprocess_story_state_summary(
         population = population_2025.get(state, {})
         total_loss = float(flood.get("total_loss_rm000") or 0)
         pop = int(population.get("population") or 0)
+        observed_living_quarters = int(flood.get("living_quarters_count") or 0)
+        estimated_living_quarters = (
+            int(round(pop / median_persons_per_living_quarter)) if pop and not observed_living_quarters else ""
+        )
+        living_quarters_for_chart = observed_living_quarters or estimated_living_quarters
+        living_quarters_source = (
+            "Observed in flood report"
+            if observed_living_quarters
+            else "Estimated from population using median persons per living quarter"
+        )
         rows.append(
             clean_record(
                 {
@@ -481,6 +604,9 @@ def preprocess_story_state_summary(
                     "flood_total_loss_2025_rm_million": total_loss / 1000,
                     "flood_loss_2025_rm_per_person": (total_loss * 1000 / pop) if pop else "",
                     "living_quarters_count_2025": flood.get("living_quarters_count", ""),
+                    "living_quarters_count_2025_estimated": estimated_living_quarters,
+                    "living_quarters_count_2025_for_chart": living_quarters_for_chart,
+                    "living_quarters_count_2025_source": living_quarters_source,
                 }
             )
         )
@@ -495,6 +621,9 @@ def preprocess_story_state_summary(
         "flood_total_loss_2025_rm_million",
         "flood_loss_2025_rm_per_person",
         "living_quarters_count_2025",
+        "living_quarters_count_2025_estimated",
+        "living_quarters_count_2025_for_chart",
+        "living_quarters_count_2025_source",
     ]
     write_csv(OUT_DIR / "story_state_summary.csv", rows, fieldnames)
     return rows
@@ -515,7 +644,8 @@ def main() -> None:
     population = preprocess_population()
     rainfall = preprocess_rainfall()
     preprocess_stations()
-    preprocess_geojson()
+    geo = preprocess_geojson()
+    preprocess_rainfall_cartogram(geo, rainfall)
     preprocess_story_state_summary(flood_state, population, rainfall)
     mirror_processed_for_vite()
     print(f"Processed data written to {OUT_DIR}")
