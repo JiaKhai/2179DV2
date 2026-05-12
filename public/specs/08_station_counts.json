@@ -2,10 +2,23 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
   "height": 360,
-  "data": { "sequence": { "start": 1, "stop": 101, "step": 1, "as": "cell" } },
+  "data": {
+    "sequence": {
+      "start": 1,
+      "stop": 101,
+      "step": 1,
+      "as": "cell"
+    }
+  },
   "transform": [
-    { "calculate": "(datum.cell - 1) % 10", "as": "column" },
-    { "calculate": "floor((datum.cell - 1) / 10)", "as": "row" },
+    {
+      "calculate": "(datum.cell - 1) % 10",
+      "as": "column"
+    },
+    {
+      "calculate": "floor((datum.cell - 1) / 10)",
+      "as": "row"
+    },
     {
       "calculate": "datum.cell <= 23 ? 'Borneo' : datum.cell <= 45 ? 'East Coast' : datum.cell <= 64 ? 'Northern Peninsula' : datum.cell <= 79 ? 'Southern Peninsula' : datum.cell <= 93 ? 'Central Peninsula' : datum.cell <= 97 ? 'Central/Southern Peninsula' : 'Federal Territories'",
       "as": "region"
@@ -14,11 +27,19 @@
       "calculate": "datum.region == 'Borneo' ? 411 : datum.region == 'East Coast' ? 368 : datum.region == 'Northern Peninsula' ? 326 : datum.region == 'Southern Peninsula' ? 247 : datum.region == 'Central Peninsula' ? 236 : datum.region == 'Central/Southern Peninsula' ? 65 : 46",
       "as": "stations"
     },
-    { "calculate": "datum.stations / 1699", "as": "share" }
+    {
+      "calculate": "datum.stations / 1699",
+      "as": "share"
+    }
   ],
   "layer": [
     {
-      "mark": { "type": "rect", "cornerRadius": 2, "stroke": "#f7fbf8", "strokeWidth": 2 },
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 2,
+        "stroke": "#f7fbf8",
+        "strokeWidth": 2
+      },
       "encoding": {
         "x": {
           "field": "column",
@@ -38,19 +59,75 @@
           "type": "nominal",
           "title": "Region",
           "scale": {
-            "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96", "#5f7f92", "#7a8a86"]
+            "domain": [
+              "Borneo",
+              "East Coast",
+              "Northern Peninsula",
+              "Southern Peninsula",
+              "Central Peninsula",
+              "Central/Southern Peninsula",
+              "Federal Territories"
+            ],
+            "range": [
+              "#005AB5",
+              "#DC7900",
+              "#AA4499",
+              "#F0E442",
+              "#40B0A6",
+              "#7A7A7A",
+              "#56B4E9"
+            ]
           }
         },
         "tooltip": [
-          { "field": "region", "type": "nominal", "title": "Region" },
-          { "field": "stations", "type": "quantitative", "title": "Mappable stations" },
-          { "field": "share", "type": "quantitative", "title": "Share of stations", "format": ".1%" }
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "field": "stations",
+            "type": "quantitative",
+            "title": "Mappable stations"
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "title": "Share of stations",
+            "format": ".1%"
+          }
         ]
       }
     }
   ],
   "config": {
-    "view": { "stroke": null },
-    "legend": { "orient": "bottom", "direction": "horizontal" }
+    "view": {
+      "stroke": null
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 2,
+      "labelLimit": 340,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320
+    }
+  },
+  "title": {
+    "text": "Rainfall Station Coverage by Region",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
   }
 }

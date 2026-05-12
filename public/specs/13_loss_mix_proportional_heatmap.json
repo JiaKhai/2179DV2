@@ -2,9 +2,13 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
   "height": 500,
-  "data": { "url": "data/processed/flood_losses_state.csv" },
+  "data": {
+    "url": "data/processed/flood_losses_state.csv"
+  },
   "transform": [
-    { "filter": "datum.state == 'Malaysia' && (datum.year == 2024 || datum.year == 2025)" },
+    {
+      "filter": "datum.state == 'Malaysia' && (datum.year == 2024 || datum.year == 2025)"
+    },
     {
       "fold": [
         "living_quarters_loss_rm000",
@@ -14,57 +18,178 @@
         "agriculture_loss_rm000",
         "infrastructure_loss_rm000"
       ],
-      "as": ["category", "loss_rm000"]
+      "as": [
+        "category",
+        "loss_rm000"
+      ]
     },
     {
       "calculate": "replace(replace(replace(replace(replace(replace(replace(datum.category, '_loss_rm000', ''), 'living_quarters', 'Homes'), 'business_premises', 'Business'), 'vehicles', 'Vehicles'), 'agriculture', 'Agriculture'), 'infrastructure', 'Infrastructure'), 'manufacturing', 'Manufacturing')",
       "as": "loss_category"
     },
-    { "calculate": "toNumber(datum.loss_rm000) / 1000", "as": "loss_rm_million" }
+    {
+      "calculate": "toNumber(datum.loss_rm000) / 1000",
+      "as": "loss_rm_million"
+    }
   ],
   "layer": [
     {
-      "mark": { "type": "line", "point": true, "strokeWidth": 2.4 },
+      "mark": {
+        "type": "line",
+        "point": true,
+        "strokeWidth": 2.4
+      },
       "encoding": {
         "x": {
           "field": "year",
           "type": "ordinal",
           "title": null,
-          "axis": { "labelAngle": 0 }
+          "axis": {
+            "labelAngle": 0
+          }
         },
         "y": {
           "field": "loss_rm_million",
           "type": "quantitative",
-          "title": "National flood loss by category (RM million)",
-          "scale": { "zero": true }
+          "title": "National flood loss by category (million Malaysian ringgit)",
+          "scale": {
+            "zero": true
+          }
         },
         "color": {
           "field": "loss_category",
           "type": "nominal",
           "title": "Loss category",
-          "scale": { "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96", "#5f7f92"] }
+          "scale": {
+            "range": [
+              "#0072B2",
+              "#E69F00",
+              "#CC79A7",
+              "#F0E442",
+              "#999999",
+              "#56B4E9"
+            ]
+          }
         },
-        "detail": { "field": "loss_category" },
+        "detail": {
+          "field": "loss_category"
+        },
         "tooltip": [
-          { "field": "year", "type": "ordinal", "title": "Year" },
-          { "field": "loss_category", "type": "nominal", "title": "Category" },
-          { "field": "loss_rm_million", "type": "quantitative", "title": "Loss (RM million)", "format": ",.1f" }
+          {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Year"
+          },
+          {
+            "field": "loss_category",
+            "type": "nominal",
+            "title": "Category"
+          },
+          {
+            "field": "loss_rm_million",
+            "type": "quantitative",
+            "title": "Loss (million Malaysian ringgit)",
+            "format": ",.1f"
+          }
         ]
       }
     },
     {
-      "transform": [{ "filter": "datum.year == 2025 && datum.loss_rm_million >= 40" }],
-      "mark": { "type": "text", "align": "left", "baseline": "middle", "dx": 10, "fontSize": 11, "fontWeight": "600", "fill": "#102321" },
+      "transform": [
+        {
+          "filter": "datum.year == 2025 && datum.loss_rm_million >= 40"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 10,
+        "fontSize": 11,
+        "fontWeight": "600",
+        "fill": "#102321"
+      },
       "encoding": {
-        "x": { "field": "year", "type": "ordinal" },
-        "y": { "field": "loss_rm_million", "type": "quantitative" },
-        "text": { "field": "loss_category", "type": "nominal" }
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "loss_rm_million",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "loss_category",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2025,
+            "y": 330,
+            "label": "Infrastructure rises while\nhomes and agriculture fall,\nshifting the national bill"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 18,
+        "fontSize": 11.5,
+        "fontWeight": "600",
+        "lineBreak": "\n",
+        "lineHeight": 13.5,
+        "fill": "#102321"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     }
   ],
   "config": {
-    "view": { "stroke": null },
-    "axis": { "gridColor": "#d8ded9" },
-    "legend": { "orient": "bottom" }
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320,
+      "gridColor": "#d8ded9"
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 3,
+      "labelLimit": 260,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  },
+  "title": {
+    "text": "National Flood Damage Category Shift, 2024-2025",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
   }
 }

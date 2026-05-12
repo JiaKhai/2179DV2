@@ -2,125 +2,165 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
   "height": 480,
-  "data": { "url": "data/processed/rainfall_state_annual.csv" },
+  "data": {
+    "url": "data/processed/rainfall_state_annual.csv"
+  },
   "transform": [
-    { "filter": "datum.year != '2013-2017 average'" },
-    { "filter": "indexof(['Terengganu','Kelantan','Sarawak','Johor','Selangor','Pahang'], datum.state) >= 0" }
+    {
+      "filter": "datum.year != '2013-2017 average'"
+    },
+    {
+      "filter": "indexof(['Terengganu','Kelantan','Sarawak','Johor','Selangor','Pahang'], datum.state) >= 0"
+    },
+    {
+      "calculate": "toNumber(datum.year)",
+      "as": "year_number"
+    }
   ],
   "layer": [
     {
-      "mark": { "type": "line", "point": true, "strokeWidth": 2.5 },
+      "mark": {
+        "type": "line",
+        "point": {
+          "filled": true,
+          "size": 54
+        },
+        "strokeWidth": 2.6
+      },
       "encoding": {
         "x": {
-          "field": "year",
+          "field": "year_number",
           "type": "quantitative",
           "title": "Year",
-          "scale": { "domain": [2013, 2018] },
-          "axis": { "format": "d", "tickMinStep": 1 }
+          "scale": {
+            "domain": [
+              2013,
+              2017.85
+            ]
+          },
+          "axis": {
+            "format": "d",
+            "tickMinStep": 1,
+            "values": [
+              2013,
+              2014,
+              2015,
+              2016,
+              2017
+            ]
+          }
         },
         "y": {
           "field": "annual_rainfall_mm",
           "type": "quantitative",
-          "title": "Annual rainfall (mm)",
-          "scale": { "zero": false }
+          "title": "Annual rainfall (millimetres)",
+          "scale": {
+            "domain": [
+              1500,
+              4600
+            ]
+          }
         },
         "color": {
           "field": "state",
           "type": "nominal",
           "title": "State",
           "scale": {
-            "range": ["#bd4a36", "#d87b3f", "#2f7ea8", "#6f8f56", "#8b6f96", "#5f7f92"]
-          }
+            "domain": [
+              "Terengganu",
+              "Sarawak",
+              "Kelantan",
+              "Pahang",
+              "Johor",
+              "Selangor"
+            ],
+            "range": [
+              "#0072B2",
+              "#E69F00",
+              "#CC79A7",
+              "#56B4E9",
+              "#F0E442",
+              "#6B7B87"
+            ]
+          },
+          "legend": null
+        },
+        "detail": {
+          "field": "state"
         },
         "tooltip": [
-          { "field": "state", "type": "nominal", "title": "State" },
-          { "field": "year", "type": "quantitative", "title": "Year", "format": "d" },
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "year_number",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
           {
             "field": "annual_rainfall_mm",
             "type": "quantitative",
-            "title": "Rainfall (mm)",
+            "title": "Rainfall (millimetres)",
             "format": ",.0f"
           }
-        ]
+        ],
+        "opacity": {
+          "condition": {
+            "test": "rainfallState == 'All states' || datum.state == rainfallState",
+            "value": 1
+          },
+          "value": 0.18
+        },
+        "strokeWidth": {
+          "condition": {
+            "test": "rainfallState == 'All states' || datum.state == rainfallState",
+            "value": 3
+          },
+          "value": 1.4
+        }
       }
     },
     {
       "data": {
         "values": [
           {
-            "year": 2017,
-            "annual_rainfall_mm": 4382.98,
-            "x2": 2016.78,
-            "y2": 4383,
-            "label_x": 2015.42,
-            "label_y": 4425,
-            "label": "Terengganu records\nthe highest rainfall here"
-          }
-        ]
-      },
-      "mark": { "type": "rule", "stroke": "#102321", "strokeWidth": 1, "opacity": 0.75 },
-      "encoding": {
-        "x": { "field": "year", "type": "quantitative", "scale": { "domain": [2013, 2018] } },
-        "y": { "field": "annual_rainfall_mm", "type": "quantitative" },
-        "x2": { "field": "x2" },
-        "y2": { "field": "y2" }
-      }
-    },
-    {
-      "data": {
-        "values": [
+            "state": "Terengganu",
+            "label_x": 2017.12,
+            "label_y": 4383,
+            "label": "Terengganu 4,383"
+          },
           {
-            "year": 2017,
-            "annual_rainfall_mm": 4382.98
-          }
-        ]
-      },
-      "mark": {
-        "type": "point",
-        "shape": "triangle-left",
-        "filled": true,
-        "size": 70,
-        "fill": "#102321",
-        "opacity": 0.85
-      },
-      "encoding": {
-        "x": { "field": "year", "type": "quantitative", "scale": { "domain": [2013, 2018] } },
-        "y": { "field": "annual_rainfall_mm", "type": "quantitative" }
-      }
-    },
-    {
-      "data": {
-        "values": [
+            "state": "Sarawak",
+            "label_x": 2017.12,
+            "label_y": 3810,
+            "label": "Sarawak 3,727"
+          },
           {
-            "box_x1": 2015.32,
-            "box_x2": 2016.78,
-            "box_y1": 4620,
-            "box_y2": 4230,
-            "label": "Terengganu records\nthe highest rainfall here"
-          }
-        ]
-      },
-      "mark": {
-        "type": "rect",
-        "fill": "#eef6f4",
-        "stroke": "#102321",
-        "strokeOpacity": 0.55,
-        "cornerRadius": 4
-      },
-      "encoding": {
-        "x": { "field": "box_x1", "type": "quantitative", "scale": { "domain": [2013, 2018] } },
-        "x2": { "field": "box_x2" },
-        "y": { "field": "box_y1", "type": "quantitative" },
-        "y2": { "field": "box_y2" }
-      }
-    },
-    {
-      "data": {
-        "values": [
+            "state": "Kelantan",
+            "label_x": 2017.12,
+            "label_y": 3615,
+            "label": "Kelantan 3,685"
+          },
           {
-            "label_x": 2015.42,
-            "label_y": 4425,
-            "label": "Terengganu records\nthe highest rainfall here"
+            "state": "Pahang",
+            "label_x": 2017.12,
+            "label_y": 2633,
+            "label": "Pahang 2,633"
+          },
+          {
+            "state": "Johor",
+            "label_x": 2017.12,
+            "label_y": 2280,
+            "label": "Johor 2,278"
+          },
+          {
+            "state": "Selangor",
+            "label_x": 2017.12,
+            "label_y": 2110,
+            "label": "Selangor 2,185"
           }
         ]
       },
@@ -128,22 +168,116 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "fontSize": 12,
-        "fontWeight": "600",
-        "lineBreak": "\n",
-        "lineHeight": 14,
-        "fill": "#102321"
+        "dx": 4,
+        "fontSize": 11.5,
+        "fontWeight": "600"
       },
       "encoding": {
-        "x": { "field": "label_x", "type": "quantitative", "scale": { "domain": [2013, 2018] } },
-        "y": { "field": "label_y", "type": "quantitative" },
-        "text": { "field": "label", "type": "nominal" }
+        "x": {
+          "field": "label_x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              2013,
+              2017.85
+            ]
+          }
+        },
+        "y": {
+          "field": "label_y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1500,
+              4600
+            ]
+          }
+        },
+        "color": {
+          "field": "state",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Terengganu",
+              "Sarawak",
+              "Kelantan",
+              "Pahang",
+              "Johor",
+              "Selangor"
+            ],
+            "range": [
+              "#0072B2",
+              "#E69F00",
+              "#CC79A7",
+              "#56B4E9",
+              "#F0E442",
+              "#6B7B87"
+            ]
+          },
+          "legend": null
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {
+            "test": "rainfallState == 'All states' || datum.state == rainfallState",
+            "value": 1
+          },
+          "value": 0.18
+        }
       }
     }
   ],
   "config": {
-    "view": { "stroke": null },
-    "axis": { "gridColor": "#d8ded9" },
-    "legend": { "orient": "bottom" }
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320,
+      "gridColor": "#d8ded9"
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 3,
+      "labelLimit": 260,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  },
+  "params": [
+    {
+      "name": "rainfallState",
+      "value": "All states",
+      "bind": {
+        "input": "select",
+        "name": "Highlight state: ",
+        "options": [
+          "All states",
+          "Terengganu",
+          "Sarawak",
+          "Kelantan",
+          "Pahang",
+          "Johor",
+          "Selangor"
+        ]
+      }
+    }
+  ],
+  "title": {
+    "text": "Annual Rainfall in Selected States, 2013-2017",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
   }
 }

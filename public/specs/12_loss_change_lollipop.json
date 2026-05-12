@@ -2,71 +2,393 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
   "height": 520,
-  "data": { "url": "data/processed/flood_losses_state.csv" },
+  "data": {
+    "url": "data/processed/flood_losses_state.csv"
+  },
   "transform": [
-    { "filter": "datum.state != 'Malaysia' && (datum.year == 2024 || datum.year == 2025)" },
-    { "calculate": "toNumber(datum.total_loss_rm_million)", "as": "loss" },
-    { "pivot": "year", "value": "loss", "groupby": ["state"] },
-    { "calculate": "datum['2025'] - datum['2024']", "as": "change" },
-    { "calculate": "abs(datum.change)", "as": "abs_change" },
-    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "abs_change", "order": "descending" }] },
-    { "filter": "datum.rank <= 10" }
+    {
+      "filter": "datum.state != 'Malaysia' && (datum.year == 2024 || datum.year == 2025)"
+    },
+    {
+      "calculate": "toNumber(datum.total_loss_rm_million)",
+      "as": "loss"
+    },
+    {
+      "pivot": "year",
+      "value": "loss",
+      "groupby": [
+        "state"
+      ]
+    },
+    {
+      "calculate": "datum['2025'] - datum['2024']",
+      "as": "change"
+    },
+    {
+      "calculate": "abs(datum.change)",
+      "as": "abs_change"
+    },
+    {
+      "filter": "changeDirection == 'All changes' || (changeDirection == 'Increased' && datum.change > 0) || (changeDirection == 'Decreased' && datum.change < 0)"
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "abs_change",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <= 10"
+    }
   ],
   "layer": [
     {
-      "mark": { "type": "rule", "strokeWidth": 2, "stroke": "#6f817d", "opacity": 0.75 },
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 2,
+        "stroke": "#6f817d",
+        "opacity": 0.75
+      },
       "encoding": {
         "y": {
           "field": "state",
           "type": "nominal",
-          "sort": { "field": "abs_change", "order": "descending" },
+          "sort": {
+            "op": "min",
+            "field": "rank",
+            "order": "ascending"
+          },
           "title": null,
-          "axis": { "labelLimit": 160 }
+          "axis": {
+            "labelLimit": 160
+          }
         },
         "x": {
           "field": "2024",
           "type": "quantitative",
-          "title": "Flood loss (RM million)",
-          "scale": { "zero": true }
+          "title": "Flood loss (million Malaysian ringgit)",
+          "scale": {
+            "zero": true
+          }
         },
-        "x2": { "field": "2025" },
+        "x2": {
+          "field": "2025"
+        },
         "tooltip": [
-          { "field": "state", "type": "nominal", "title": "State / territory" },
-          { "field": "2024", "type": "quantitative", "title": "2024 loss", "format": ",.1f" },
-          { "field": "2025", "type": "quantitative", "title": "2025 loss", "format": ",.1f" },
-          { "field": "change", "type": "quantitative", "title": "Change", "format": "+,.1f" }
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "2024",
+            "type": "quantitative",
+            "title": "2024 loss",
+            "format": ",.1f"
+          },
+          {
+            "field": "2025",
+            "type": "quantitative",
+            "title": "2025 loss",
+            "format": ",.1f"
+          },
+          {
+            "field": "change",
+            "type": "quantitative",
+            "title": "Change",
+            "format": "+,.1f"
+          }
         ]
       }
     },
     {
       "transform": [
-        { "fold": ["2024", "2025"], "as": ["year", "loss_value"] }
+        {
+          "fold": [
+            "2024",
+            "2025"
+          ],
+          "as": [
+            "year",
+            "loss_value"
+          ]
+        }
       ],
-      "mark": { "type": "circle", "filled": true, "size": 145, "stroke": "#102321", "strokeWidth": 0.8 },
+      "mark": {
+        "type": "circle",
+        "filled": true,
+        "size": 145,
+        "stroke": "#102321",
+        "strokeWidth": 0.8
+      },
       "encoding": {
         "y": {
           "field": "state",
           "type": "nominal",
-          "sort": { "field": "abs_change", "order": "descending" }
+          "sort": {
+            "op": "min",
+            "field": "rank",
+            "order": "ascending"
+          }
         },
-        "x": { "field": "loss_value", "type": "quantitative" },
+        "x": {
+          "field": "loss_value",
+          "type": "quantitative"
+        },
         "color": {
           "field": "year",
           "type": "nominal",
           "title": "Year",
-          "scale": { "range": ["#9aa8a5", "#bd4a36"] }
+          "scale": {
+            "domain": [
+              "2024",
+              "2025"
+            ],
+            "range": [
+              "#9AA8A5",
+              "#0072B2"
+            ]
+          }
         },
         "tooltip": [
-          { "field": "state", "type": "nominal", "title": "State / territory" },
-          { "field": "year", "type": "nominal", "title": "Year" },
-          { "field": "loss_value", "type": "quantitative", "title": "Loss (RM million)", "format": ",.1f" }
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "year",
+            "type": "nominal",
+            "title": "Year"
+          },
+          {
+            "field": "loss_value",
+            "type": "quantitative",
+            "title": "Loss (million Malaysian ringgit)",
+            "format": ",.1f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x1": 218,
+            "x2": 88.538,
+            "y1": "Sabah",
+            "y2": "Kelantan"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#102321",
+        "strokeWidth": 1,
+        "opacity": 0.75
+      },
+      "encoding": {
+        "x": {
+          "field": "x1",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "x2"
+        },
+        "y": {
+          "field": "y1",
+          "type": "nominal",
+          "sort": {
+            "op": "min",
+            "field": "rank",
+            "order": "ascending"
+          }
+        },
+        "y2": {
+          "field": "y2"
+        }
+      },
+      "transform": [
+        {
+          "filter": "changeDirection == 'All changes'"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 88.538,
+            "y": "Kelantan"
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-left",
+        "filled": true,
+        "size": 65,
+        "fill": "#102321",
+        "opacity": 0.85
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "nominal",
+          "sort": {
+            "op": "min",
+            "field": "rank",
+            "order": "ascending"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "changeDirection == 'All changes'"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "box_start": 218,
+            "box_end": 279,
+            "y_top": 275,
+            "y_bottom": 358
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "fill": "#eef6f4",
+        "stroke": "#102321",
+        "strokeOpacity": 0.55,
+        "cornerRadius": 4
+      },
+      "encoding": {
+        "x": {
+          "field": "box_start",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "box_end"
+        },
+        "y": {
+          "field": "y_top",
+          "type": "quantitative",
+          "axis": null,
+          "scale": null
+        },
+        "y2": {
+          "field": "y_bottom"
+        }
+      },
+      "transform": [
+        {
+          "filter": "changeDirection == 'All changes'"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "label_x": 222,
+            "y": 316,
+            "label": "Kelantan still ranks high\nafter the sharpest\nyear-on-year fall"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 10.8,
+        "fontWeight": "600",
+        "lineBreak": "\n",
+        "lineHeight": 12.5,
+        "fill": "#102321"
+      },
+      "encoding": {
+        "x": {
+          "field": "label_x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "axis": null,
+          "scale": null
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      },
+      "transform": [
+        {
+          "filter": "changeDirection == 'All changes'"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320,
+      "gridColor": "#d8ded9"
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 3,
+      "labelLimit": 260,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  },
+  "params": [
+    {
+      "name": "changeDirection",
+      "value": "All changes",
+      "bind": {
+        "input": "select",
+        "name": "Filter change: ",
+        "options": [
+          "All changes",
+          "Increased",
+          "Decreased"
         ]
       }
     }
   ],
-  "config": {
-    "view": { "stroke": null },
-    "axis": { "gridColor": "#d8ded9" },
-    "legend": { "orient": "bottom" }
+  "title": {
+    "text": "State Flood Loss Change from 2024 to 2025",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
   }
 }

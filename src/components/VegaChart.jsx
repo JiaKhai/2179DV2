@@ -42,6 +42,28 @@ export default function VegaChart({ specUrl, title, variant = "standard" }) {
           ...spec,
           width: chartWidth,
           autosize: { type: "fit", contains: "padding" },
+          config: {
+            ...(spec.config || {}),
+            axis: {
+              labelFont: "Manrope",
+              titleFont: "Manrope",
+              labelFontSize: 12,
+              titleFontSize: 13,
+              labelLimit: 220,
+              titleLimit: 360,
+              ...(spec.config?.axis || {}),
+            },
+            legend: {
+              labelFont: "Manrope",
+              titleFont: "Manrope",
+              labelFontSize: 12,
+              titleFontSize: 12,
+              labelLimit: 300,
+              titleLimit: 420,
+              columns: 3,
+              ...(spec.config?.legend || {}),
+            },
+          },
         };
         if (!containerRef.current || cancelled) return;
         if (viewRef.current) {
@@ -73,16 +95,9 @@ export default function VegaChart({ specUrl, title, variant = "standard" }) {
     };
   }, [specUrl, chartWidth]);
 
-  const shellSize =
-    variant === "map"
-      ? "min-h-[430px] md:min-h-[500px]"
-      : variant === "large"
-        ? "min-h-[560px] md:min-h-[640px]"
-        : "min-h-[500px] md:min-h-[580px]";
-
   return (
-    <figure className={`chart-shell ${shellSize} w-full rounded-sm bg-white/75 p-5 shadow-soft ring-1 ring-ink/10 md:p-7`}>
-      <div ref={containerRef} className="w-full overflow-hidden" aria-label={title} />
+    <figure className="chart-shell w-full rounded-sm bg-white/75 p-5 shadow-soft ring-1 ring-ink/10 md:p-7">
+      <div ref={containerRef} className="w-full overflow-x-auto overflow-y-visible pb-1" aria-label={title} />
       {error ? <p className="px-2 py-4 text-sm text-flood">{error}</p> : null}
     </figure>
   );

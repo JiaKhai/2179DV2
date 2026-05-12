@@ -1,0 +1,207 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "data": {
+    "url": "data/processed/population_state_overall.csv"
+  },
+  "transform": [
+    {
+      "lookup": "state",
+      "from": {
+        "data": {
+          "url": "data/processed/story_state_summary.csv"
+        },
+        "key": "state",
+        "fields": [
+          "region"
+        ]
+      }
+    },
+    {
+      "filter": "datum.region != null && datum.region != ''"
+    },
+    {
+      "calculate": "toNumber(datum.year)",
+      "as": "year_number"
+    },
+    {
+      "calculate": "toNumber(datum.population) / 1000000",
+      "as": "population_million"
+    }
+  ],
+  "vconcat": [
+    {
+      "width": "container",
+      "height": 360,
+      "mark": {
+        "type": "area",
+        "opacity": 0.88,
+        "line": {
+          "strokeWidth": 0.8
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year_number",
+          "type": "quantitative",
+          "title": "Selected year range",
+          "axis": {
+            "format": "d",
+            "tickMinStep": 1
+          },
+          "scale": {
+            "domain": {
+              "param": "populationYearBrush"
+            }
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "population_million",
+          "type": "quantitative",
+          "stack": "zero",
+          "title": "Population (millions)"
+        },
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "title": "Region",
+          "scale": {
+            "range": [
+              "#0072B2",
+              "#E69F00",
+              "#CC79A7",
+              "#F0E442",
+              "#56B4E9",
+              "#999999"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "year_number",
+            "type": "quantitative",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "aggregate": "sum",
+            "field": "population_million",
+            "type": "quantitative",
+            "title": "Population (millions)",
+            "format": ",.2f"
+          }
+        ]
+      }
+    },
+    {
+      "width": "container",
+      "height": 95,
+      "mark": {
+        "type": "area",
+        "opacity": 0.7
+      },
+      "params": [
+        {
+          "name": "populationYearBrush",
+          "select": {
+            "type": "interval",
+            "encodings": [
+              "x"
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "year_number",
+          "type": "quantitative",
+          "title": "Brush to zoom years",
+          "axis": {
+            "format": "d",
+            "tickMinStep": 5
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "population_million",
+          "type": "quantitative",
+          "stack": "zero",
+          "title": null,
+          "axis": {
+            "labels": false,
+            "ticks": false
+          }
+        },
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "range": [
+              "#0072B2",
+              "#E69F00",
+              "#CC79A7",
+              "#F0E442",
+              "#56B4E9",
+              "#999999"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "x": "independent",
+      "color": "shared"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320,
+      "gridColor": "#d8ded9"
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 3,
+      "labelLimit": 300,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "selection": {
+      "interval": {
+        "fill": "#0072B2",
+        "fillOpacity": 0.09,
+        "stroke": "#0072B2",
+        "strokeDash": [
+          4,
+          3
+        ],
+        "strokeWidth": 1.4
+      }
+    }
+  },
+  "title": {
+    "text": "Population Exposure by Region Over Time",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
+  }
+}

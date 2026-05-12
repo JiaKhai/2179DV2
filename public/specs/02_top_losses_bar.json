@@ -2,117 +2,438 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
   "height": 500,
-  "data": { "url": "data/processed/story_state_summary.csv" },
+  "data": {
+    "url": "data/processed/story_state_summary.csv"
+  },
   "transform": [
-    { "filter": "datum.flood_total_loss_2025_rm_million > 0" },
-    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "flood_total_loss_2025_rm_million", "order": "descending" }] },
-    { "filter": "datum.rank <= 10" }
+    {
+      "filter": "datum.flood_total_loss_2025_rm_million > 0"
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "flood_total_loss_2025_rm_million",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <= 10"
+    }
   ],
   "layer": [
     {
-      "mark": { "type": "bar", "cornerRadiusEnd": 3 },
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 3
+      },
       "encoding": {
         "y": {
           "field": "state",
           "type": "nominal",
-          "sort": ["Terengganu", "Kelantan", "Johor", "Sarawak", "Sabah", "Selangor", "Pahang", "Kedah", "Perak", "Perlis"],
+          "sort": [
+            "Terengganu",
+            "Kelantan",
+            "Johor",
+            "Sarawak",
+            "Sabah",
+            "Selangor",
+            "Pahang",
+            "Kedah",
+            "Perak",
+            "Perlis"
+          ],
           "title": null,
-          "axis": { "labelLimit": 160 }
+          "axis": {
+            "labelLimit": 160
+          }
         },
         "x": {
           "field": "flood_total_loss_2025_rm_million",
           "type": "quantitative",
-          "title": "2025 flood loss (RM million)",
-          "scale": { "domain": [0, 140] }
+          "title": "2025 flood loss (million Malaysian ringgit)",
+          "scale": {
+            "domain": [
+              0,
+              140
+            ]
+          }
         },
         "color": {
-          "field": "region",
-          "type": "nominal",
-          "title": "Region",
-          "scale": { "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96"] }
+          "condition": {
+            "test": "datum.state == 'Terengganu' || datum.state == 'Kelantan'",
+            "value": "#0072B2"
+          },
+          "value": "#B8C2C0",
+          "legend": null
         },
         "tooltip": [
-          { "field": "state", "type": "nominal", "title": "State / territory" },
-          { "field": "region", "type": "nominal", "title": "Region" },
-          { "field": "flood_total_loss_2025_rm_million", "type": "quantitative", "title": "Loss (RM million)", "format": ",.1f" }
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "field": "flood_total_loss_2025_rm_million",
+            "type": "quantitative",
+            "title": "Loss (million Malaysian ringgit)",
+            "format": ",.1f"
+          }
         ]
       }
     },
     {
       "data": {
         "values": [
-          { "state": "Terengganu", "x1": 89.172, "x2": 96 },
-          { "state": "Kelantan", "x1": 88.538, "x2": 96 }
+          {
+            "state": "Terengganu",
+            "x1": 89.172,
+            "x2": 96
+          },
+          {
+            "state": "Kelantan",
+            "x1": 88.538,
+            "x2": 96
+          }
         ]
       },
-      "mark": { "type": "rule", "stroke": "#102321", "strokeWidth": 1, "opacity": 0.7 },
+      "mark": {
+        "type": "rule",
+        "stroke": "#102321",
+        "strokeWidth": 1,
+        "opacity": 0.7
+      },
       "encoding": {
         "y": {
           "field": "state",
           "type": "nominal",
-          "sort": ["Terengganu", "Kelantan", "Johor", "Sarawak", "Sabah", "Selangor", "Pahang", "Kedah", "Perak", "Perlis"]
+          "sort": [
+            "Terengganu",
+            "Kelantan",
+            "Johor",
+            "Sarawak",
+            "Sabah",
+            "Selangor",
+            "Pahang",
+            "Kedah",
+            "Perak",
+            "Perlis"
+          ]
         },
-        "x": { "field": "x1", "type": "quantitative", "scale": { "domain": [0, 140] } },
-        "x2": { "field": "x2" }
+        "x": {
+          "field": "x1",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              140
+            ]
+          }
+        },
+        "x2": {
+          "field": "x2"
+        }
       }
     },
     {
       "data": {
         "values": [
-          { "state": "Terengganu", "x": 89.172 },
-          { "state": "Kelantan", "x": 88.538 }
+          {
+            "state": "Terengganu",
+            "x": 89.172
+          },
+          {
+            "state": "Kelantan",
+            "x": 88.538
+          }
         ]
       },
-      "mark": { "type": "point", "shape": "triangle-left", "filled": true, "size": 70, "fill": "#102321", "opacity": 0.85 },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-left",
+        "filled": true,
+        "size": 70,
+        "fill": "#102321",
+        "opacity": 0.85
+      },
       "encoding": {
         "y": {
           "field": "state",
           "type": "nominal",
-          "sort": ["Terengganu", "Kelantan", "Johor", "Sarawak", "Sabah", "Selangor", "Pahang", "Kedah", "Perak", "Perlis"]
+          "sort": [
+            "Terengganu",
+            "Kelantan",
+            "Johor",
+            "Sarawak",
+            "Sabah",
+            "Selangor",
+            "Pahang",
+            "Kedah",
+            "Perak",
+            "Perlis"
+          ]
         },
-        "x": { "field": "x", "type": "quantitative", "scale": { "domain": [0, 140] } }
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              140
+            ]
+          }
+        }
       }
     },
     {
       "data": {
         "values": [
-          { "state": "Terengganu", "box_start": 97, "box_end": 137 },
-          { "state": "Kelantan", "box_start": 97, "box_end": 137 }
+          {
+            "state": "Terengganu",
+            "box_start": 97,
+            "box_end": 126
+          }
         ]
       },
-      "mark": { "type": "rect", "height": 42, "fill": "#eef6f4", "stroke": "#102321", "strokeOpacity": 0.55, "cornerRadius": 4 },
+      "mark": {
+        "type": "rect",
+        "height": 64,
+        "fill": "#eef6f4",
+        "stroke": "#102321",
+        "strokeOpacity": 0.55,
+        "cornerRadius": 4
+      },
       "encoding": {
         "y": {
           "field": "state",
           "type": "nominal",
-          "sort": ["Terengganu", "Kelantan", "Johor", "Sarawak", "Sabah", "Selangor", "Pahang", "Kedah", "Perak", "Perlis"]
+          "sort": [
+            "Terengganu",
+            "Kelantan",
+            "Johor",
+            "Sarawak",
+            "Sabah",
+            "Selangor",
+            "Pahang",
+            "Kedah",
+            "Perak",
+            "Perlis"
+          ]
         },
-        "x": { "field": "box_start", "type": "quantitative", "scale": { "domain": [0, 140] } },
-        "x2": { "field": "box_end" }
+        "x": {
+          "field": "box_start",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              140
+            ]
+          }
+        },
+        "x2": {
+          "field": "box_end"
+        }
       }
     },
     {
       "data": {
         "values": [
-          { "state": "Terengganu", "label_x": 99, "label": "Highest 2025 loss\nnarrowly ahead of Kelantan" },
-          { "state": "Kelantan", "label_x": 99, "label": "Also near RM90m\nreinforces east-coast impact" }
+          {
+            "state": "Terengganu",
+            "label_x": 98.5,
+            "label": "Top two differ by\nless than 1 million\nringgit"
+          }
         ]
       },
-      "mark": { "type": "text", "align": "left", "baseline": "middle", "fontSize": 12, "fontWeight": "600", "lineBreak": "\n", "lineHeight": 14, "fill": "#102321" },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 10.8,
+        "fontWeight": "600",
+        "lineBreak": "\n",
+        "lineHeight": 12.4,
+        "fill": "#102321"
+      },
       "encoding": {
         "y": {
           "field": "state",
           "type": "nominal",
-          "sort": ["Terengganu", "Kelantan", "Johor", "Sarawak", "Sabah", "Selangor", "Pahang", "Kedah", "Perak", "Perlis"]
+          "sort": [
+            "Terengganu",
+            "Kelantan",
+            "Johor",
+            "Sarawak",
+            "Sabah",
+            "Selangor",
+            "Pahang",
+            "Kedah",
+            "Perak",
+            "Perlis"
+          ]
         },
-        "x": { "field": "label_x", "type": "quantitative", "scale": { "domain": [0, 140] } },
-        "text": { "field": "label", "type": "nominal" }
+        "x": {
+          "field": "label_x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              140
+            ]
+          }
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "state": "Kelantan",
+            "box_start": 97,
+            "box_end": 126
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "height": 64,
+        "yOffset": 18,
+        "fill": "#eef6f4",
+        "stroke": "#102321",
+        "strokeOpacity": 0.55,
+        "cornerRadius": 4
+      },
+      "encoding": {
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": [
+            "Terengganu",
+            "Kelantan",
+            "Johor",
+            "Sarawak",
+            "Sabah",
+            "Selangor",
+            "Pahang",
+            "Kedah",
+            "Perak",
+            "Perlis"
+          ]
+        },
+        "x": {
+          "field": "box_start",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              140
+            ]
+          }
+        },
+        "x2": {
+          "field": "box_end"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "state": "Kelantan",
+            "label_x": 98.5,
+            "label": "The lead is regional,\nnot one state\nstanding alone"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dy": 18,
+        "fontSize": 10.8,
+        "fontWeight": "600",
+        "lineBreak": "\n",
+        "lineHeight": 12.4,
+        "fill": "#102321"
+      },
+      "encoding": {
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": [
+            "Terengganu",
+            "Kelantan",
+            "Johor",
+            "Sarawak",
+            "Sabah",
+            "Selangor",
+            "Pahang",
+            "Kedah",
+            "Perak",
+            "Perlis"
+          ]
+        },
+        "x": {
+          "field": "label_x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              140
+            ]
+          }
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     }
   ],
   "config": {
-    "view": { "stroke": null },
-    "axis": { "grid": false },
-    "legend": { "orient": "bottom" }
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320,
+      "grid": false
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 3,
+      "labelLimit": 260,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  },
+  "title": {
+    "text": "Top State Flood Losses in 2025",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
   }
 }

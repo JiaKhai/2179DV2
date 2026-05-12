@@ -3,33 +3,91 @@
   "width": "container",
   "height": 430,
   "projection": {
-    "type": "mercator",
-    "center": [109.5, 4.1],
-    "scale": 3000
+    "type": "mercator"
   },
   "layer": [
     {
       "data": {
         "url": "data/processed/malaysia_adm1.geojson",
-        "format": { "type": "json", "property": "features" }
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
       },
-      "mark": { "type": "geoshape", "fill": "#dfe8e1", "stroke": "#f7f3ea", "strokeWidth": 1 }
+      "mark": {
+        "type": "geoshape",
+        "fill": "#dfe8e1",
+        "stroke": "#f7f3ea",
+        "strokeWidth": 1
+      }
     },
     {
-      "data": { "url": "data/processed/rainfall_stations_mappable.csv" },
-      "mark": { "type": "circle", "size": 9, "opacity": 0.48, "color": "#2f7ea8" },
+      "data": {
+        "url": "data/processed/rainfall_stations_mappable.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "size": 9,
+        "opacity": 0.48,
+        "color": "#2f7ea8"
+      },
       "encoding": {
-        "longitude": { "field": "longitude", "type": "quantitative" },
-        "latitude": { "field": "latitude", "type": "quantitative" },
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
         "tooltip": [
-          { "field": "station_name", "type": "nominal", "title": "Station" },
-          { "field": "state", "type": "nominal", "title": "State" },
-          { "field": "station_no", "type": "nominal", "title": "Station no." }
+          {
+            "field": "station_name",
+            "type": "nominal",
+            "title": "Station"
+          },
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "station_no",
+            "type": "nominal",
+            "title": "Station number"
+          }
         ]
       }
     }
   ],
   "config": {
-    "view": { "stroke": null }
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 3,
+      "labelLimit": 260,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  },
+  "title": {
+    "text": "Rainfall Station Network Across Malaysia",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
   }
 }

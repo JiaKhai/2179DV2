@@ -2,106 +2,417 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
   "height": 500,
-  "data": { "url": "data/processed/story_state_summary.csv" },
+  "data": {
+    "url": "data/processed/story_state_summary.csv"
+  },
   "transform": [
-    { "filter": "datum.annual_rainfall_avg_2013_2017_mm != null && datum.annual_rainfall_avg_2013_2017_mm != ''" }
+    {
+      "filter": "datum.annual_rainfall_avg_2013_2017_mm != null && datum.annual_rainfall_avg_2013_2017_mm != ''"
+    }
   ],
   "layer": [
     {
-      "mark": { "type": "circle", "opacity": 0.82, "stroke": "#17211f", "strokeWidth": 0.7 },
+      "mark": {
+        "type": "circle",
+        "opacity": 0.82,
+        "stroke": "#17211f",
+        "strokeWidth": 0.7
+      },
       "encoding": {
         "x": {
           "field": "annual_rainfall_avg_2013_2017_mm",
           "type": "quantitative",
-          "title": "Average annual rainfall, 2013-2017 (mm)",
-          "scale": { "domain": [1450, 5300] }
+          "title": "Average annual rainfall, 2013-2017 (millimetres)",
+          "scale": {
+            "domain": [
+              1450,
+              5300
+            ]
+          }
         },
         "y": {
           "field": "flood_total_loss_2025_rm_million",
           "type": "quantitative",
-          "title": "2025 flood loss (RM million)",
-          "scale": { "domain": [0, 110] }
+          "title": "2025 flood loss (million Malaysian ringgit)",
+          "scale": {
+            "domain": [
+              0,
+              110
+            ]
+          }
         },
         "size": {
           "field": "population_2025",
           "type": "quantitative",
           "title": "Population, 2025",
-          "scale": { "range": [80, 1100] }
+          "scale": {
+            "range": [
+              80,
+              1100
+            ]
+          }
         },
         "color": {
-          "field": "region",
-          "type": "nominal",
-          "title": "Region",
-          "scale": { "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96"] }
+          "condition": [
+            {
+              "param": "rainfallLossBrush",
+              "value": "#0072B2"
+            },
+            {
+              "test": "datum.state == 'Johor' || datum.state == 'Sarawak'",
+              "value": "#0072B2"
+            }
+          ],
+          "value": "#B8C2C0",
+          "legend": null
         },
         "tooltip": [
-          { "field": "state", "type": "nominal", "title": "State / territory" },
-          { "field": "annual_rainfall_avg_2013_2017_mm", "type": "quantitative", "title": "Avg rainfall (mm)", "format": ",.0f" },
-          { "field": "flood_total_loss_2025_rm_million", "type": "quantitative", "title": "Loss (RM million)", "format": ",.1f" },
-          { "field": "population_2025", "type": "quantitative", "title": "Population", "format": "," }
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "annual_rainfall_avg_2013_2017_mm",
+            "type": "quantitative",
+            "title": "Average rainfall (millimetres)",
+            "format": ",.0f"
+          },
+          {
+            "field": "flood_total_loss_2025_rm_million",
+            "type": "quantitative",
+            "title": "Loss (million Malaysian ringgit)",
+            "format": ",.1f"
+          },
+          {
+            "field": "population_2025",
+            "type": "quantitative",
+            "title": "Population",
+            "format": ","
+          }
+        ],
+        "opacity": {
+          "condition": [
+            {
+              "param": "rainfallLossBrush",
+              "value": 0.95
+            },
+            {
+              "test": "datum.state == 'Johor' || datum.state == 'Sarawak'",
+              "value": 0.9
+            }
+          ],
+          "value": 0.42
+        },
+        "strokeWidth": {
+          "condition": {
+            "param": "rainfallLossBrush",
+            "value": 1.4
+          },
+          "value": 0.7
+        }
+      },
+      "params": [
+        {
+          "name": "rainfallLossBrush",
+          "select": {
+            "type": "interval",
+            "encodings": [
+              "x",
+              "y"
+            ],
+            "empty": false
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x1": 1987.2,
+            "y1": 72.059,
+            "x2": 2160,
+            "y2": 88
+          },
+          {
+            "x1": 3406.3,
+            "y1": 61.234,
+            "x2": 3880,
+            "y2": 84
+          }
         ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#102321",
+        "strokeWidth": 1,
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "x1",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1450,
+              5300
+            ]
+          }
+        },
+        "y": {
+          "field": "y1",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              110
+            ]
+          }
+        },
+        "x2": {
+          "field": "x2"
+        },
+        "y2": {
+          "field": "y2"
+        }
       }
     },
     {
       "data": {
         "values": [
-          { "x1": 1987.2, "y1": 72.059, "x2": 2580, "y2": 98 },
-          { "x1": 3406.3, "y1": 61.234, "x2": 4320, "y2": 36 }
+          {
+            "x": 1987.2,
+            "y": 72.059
+          },
+          {
+            "x": 3406.3,
+            "y": 61.234
+          }
         ]
       },
-      "mark": { "type": "rule", "stroke": "#102321", "strokeWidth": 1, "opacity": 0.7 },
+      "mark": {
+        "type": "point",
+        "shape": "triangle-left",
+        "filled": true,
+        "size": 70,
+        "fill": "#102321",
+        "opacity": 0.85
+      },
       "encoding": {
-        "x": { "field": "x1", "type": "quantitative", "scale": { "domain": [1450, 5300] } },
-        "y": { "field": "y1", "type": "quantitative", "scale": { "domain": [0, 110] } },
-        "x2": { "field": "x2" },
-        "y2": { "field": "y2" }
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1450,
+              5300
+            ]
+          }
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              110
+            ]
+          }
+        }
       }
     },
     {
       "data": {
         "values": [
-          { "x": 1987.2, "y": 72.059 },
-          { "x": 3406.3, "y": 61.234 }
+          {
+            "box_x1": 1490,
+            "box_x2": 2185,
+            "box_y1": 108,
+            "box_y2": 85
+          },
+          {
+            "box_x1": 3880,
+            "box_x2": 4860,
+            "box_y1": 108,
+            "box_y2": 81
+          }
         ]
       },
-      "mark": { "type": "point", "shape": "triangle-left", "filled": true, "size": 70, "fill": "#102321", "opacity": 0.85 },
+      "mark": {
+        "type": "rect",
+        "fill": "#eef6f4",
+        "stroke": "#102321",
+        "strokeOpacity": 0.55,
+        "cornerRadius": 4
+      },
       "encoding": {
-        "x": { "field": "x", "type": "quantitative", "scale": { "domain": [1450, 5300] } },
-        "y": { "field": "y", "type": "quantitative", "scale": { "domain": [0, 110] } }
+        "x": {
+          "field": "box_x1",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1450,
+              5300
+            ]
+          }
+        },
+        "x2": {
+          "field": "box_x2"
+        },
+        "y": {
+          "field": "box_y2",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              110
+            ]
+          }
+        },
+        "y2": {
+          "field": "box_y1"
+        }
       }
     },
     {
       "data": {
         "values": [
-          { "box_x1": 2580, "box_x2": 4200, "box_y1": 84, "box_y2": 108 },
-          { "box_x1": 4180, "box_x2": 5260, "box_y1": 24, "box_y2": 51 }
+          {
+            "label_x": 1515,
+            "label_y": 98,
+            "label": "Johor sits outside the\nwettest cluster, yet\nlosses remain high"
+          },
+          {
+            "label_x": 3910,
+            "label_y": 96,
+            "label": "Sarawak is much wetter\nthan Johor, yet records\nlower flood loss"
+          }
         ]
       },
-      "mark": { "type": "rect", "fill": "#eef6f4", "stroke": "#102321", "strokeOpacity": 0.55, "cornerRadius": 4 },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 11.5,
+        "fontWeight": "bold",
+        "lineBreak": "\n",
+        "lineHeight": 13,
+        "fill": "#102321"
+      },
       "encoding": {
-        "x": { "field": "box_x1", "type": "quantitative", "scale": { "domain": [1450, 5300] } },
-        "x2": { "field": "box_x2" },
-        "y": { "field": "box_y2", "type": "quantitative", "scale": { "domain": [0, 110] } },
-        "y2": { "field": "box_y1" }
+        "x": {
+          "field": "label_x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1450,
+              5300
+            ]
+          }
+        },
+        "y": {
+          "field": "label_y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              110
+            ]
+          }
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     },
     {
-      "data": {
-        "values": [
-          { "label_x": 2640, "label_y": 96, "label": "Johor: high losses\neven with lower rainfall\nshow risk is not rain alone" },
-          { "label_x": 4240, "label_y": 37.5, "label": "Sarawak: very wet,\nwith sizeable losses\nshowing exposure matters too" }
-        ]
+      "transform": [
+        {
+          "filter": {
+            "param": "rainfallLossBrush"
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 10,
+        "dy": -8,
+        "fontSize": 11.5,
+        "fontWeight": "700",
+        "fill": "#102321"
       },
-      "mark": { "type": "text", "align": "left", "baseline": "middle", "fontSize": 11, "fontWeight": "bold", "lineBreak": "\n", "lineHeight": 12.5, "fill": "#102321" },
       "encoding": {
-        "x": { "field": "label_x", "type": "quantitative", "scale": { "domain": [1450, 5300] } },
-        "y": { "field": "label_y", "type": "quantitative", "scale": { "domain": [0, 110] } },
-        "text": { "field": "label", "type": "nominal" }
+        "x": {
+          "field": "annual_rainfall_avg_2013_2017_mm",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1450,
+              5300
+            ]
+          }
+        },
+        "y": {
+          "field": "flood_total_loss_2025_rm_million",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              110
+            ]
+          }
+        },
+        "text": {
+          "field": "state",
+          "type": "nominal"
+        }
       }
     }
   ],
   "config": {
-    "view": { "stroke": null },
-    "legend": { "orient": "bottom" }
+    "view": {
+      "stroke": null
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 3,
+      "labelLimit": 260,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320
+    },
+    "selection": {
+      "interval": {
+        "fill": "#0072B2",
+        "fillOpacity": 0.08,
+        "stroke": "#0072B2",
+        "strokeDash": [
+          4,
+          3
+        ],
+        "strokeWidth": 1.4
+      }
+    }
+  },
+  "title": {
+    "text": "Average Rainfall Compared with 2025 Flood Loss",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
   }
 }

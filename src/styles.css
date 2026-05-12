@@ -30,12 +30,80 @@ svg {
   max-width: 100%;
 }
 
+.chart-shell .vega-embed,
+.chart-shell svg {
+  overflow: visible;
+}
+
 .chart-shell details summary {
   cursor: pointer;
 }
 
 .vega-actions {
   display: none;
+}
+
+.risk-title-word {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  z-index: 0;
+  color: #102321;
+  animation: risk-word-alert 1200ms ease 220ms forwards;
+}
+
+.risk-title-bolt {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  width: 78%;
+  max-width: none;
+  transform: translate(-50%, -50%) scale(0.72) rotate(0deg);
+  opacity: 0;
+  filter: drop-shadow(0 0 18px rgba(255, 205, 30, 0.85));
+  animation: lightning-flash 1000ms ease-out 120ms forwards;
+}
+
+@keyframes lightning-flash {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.62) rotate(0deg);
+  }
+  13% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.08) rotate(0deg);
+  }
+  22% {
+    opacity: 0.22;
+  }
+  32% {
+    opacity: 1;
+  }
+  58% {
+    opacity: 0.72;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes risk-word-alert {
+  0%,
+  54% {
+    color: #102321;
+    text-shadow: none;
+  }
+  70% {
+    color: #b3261e;
+    text-shadow: 0 0 18px rgba(255, 196, 0, 0.72);
+  }
+  100% {
+    color: #b3261e;
+    text-shadow: none;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -52,5 +120,17 @@ svg {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .risk-title-word {
+    color: #b3261e;
+    animation: none;
+  }
+
+  .risk-title-bolt {
+    opacity: 0;
+    animation: none;
   }
 }

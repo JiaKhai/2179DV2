@@ -2,64 +2,203 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
   "height": 540,
-  "data": { "url": "data/processed/flood_losses_district.csv" },
+  "data": {
+    "url": "data/processed/flood_losses_district.csv"
+  },
   "transform": [
-    { "filter": "datum.year == 2025 && datum.place_type == 'district'" },
-    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "total_loss_rm_million", "order": "descending" }] },
-    { "filter": "datum.rank <= 12" }
+    {
+      "filter": "datum.year == 2025 && datum.place_type == 'district' && isValid(datum.total_loss_rm_million) && toNumber(datum.total_loss_rm_million) > 0 && isValid(datum.living_quarters_count) && toNumber(datum.living_quarters_count) > 0 && isValid(datum.place_name) && datum.place_name != '' && indexof(datum.place_name, 'Nota') < 0 && indexof(datum.place_name, 'Note') < 0 && indexof(datum.place_name, 'Bilangan') < 0 && indexof(datum.place_name, 'Number of') < 0 && indexof(datum.place_name, 'Not affected') < 0 && indexof(datum.place_name, 'Tidak') < 0 && indexof(datum.place_name, 'Negeri/Daerah') < 0 && indexof(datum.place_name, 'State/District') < 0"
+    },
+    {
+      "filter": "districtState == 'All states' || datum.state == districtState"
+    },
+    {
+      "calculate": "replace(replace(replace(datum.place_name, 'Beaufort3', 'Beaufort'), 'Serian5', 'Serian'), 'Hilir Perak3', 'Hilir Perak')",
+      "as": "display_place"
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "total_loss_rm_million",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <= 12"
+    }
   ],
   "layer": [
     {
-      "mark": { "type": "circle", "filled": true, "opacity": 0.86, "stroke": "#17211f", "strokeWidth": 0.7 },
+      "mark": {
+        "type": "circle",
+        "filled": true,
+        "opacity": 0.78,
+        "stroke": "#17211f",
+        "strokeWidth": 0.7
+      },
       "encoding": {
         "y": {
-          "field": "place_name",
+          "field": "display_place",
           "type": "nominal",
-          "sort": { "field": "total_loss_rm_million", "order": "descending" },
+          "sort": {
+            "op": "min",
+            "field": "rank",
+            "order": "ascending"
+          },
           "title": null,
-          "axis": { "labelLimit": 170 }
+          "axis": {
+            "labelLimit": 170
+          }
         },
         "x": {
           "field": "total_loss_rm_million",
           "type": "quantitative",
-          "title": "2025 flood loss (RM million)",
-          "scale": { "zero": true }
+          "title": "2025 flood loss (million Malaysian ringgit)",
+          "scale": {
+            "zero": true
+          }
         },
         "size": {
           "field": "total_loss_rm_million",
           "type": "quantitative",
           "legend": null,
-          "scale": { "range": [90, 900] }
+          "scale": {
+            "range": [
+              90,
+              900
+            ]
+          }
         },
         "color": {
           "field": "state",
           "type": "nominal",
           "title": "State",
-          "scale": { "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96", "#5f7f92", "#a06b54"] }
+          "scale": {
+            "range": [
+              "#0072B2",
+              "#E69F00",
+              "#CC79A7",
+              "#F0E442",
+              "#56B4E9",
+              "#999999",
+              "#6B7B87"
+            ]
+          }
         },
         "tooltip": [
-          { "field": "place_name", "type": "nominal", "title": "District" },
-          { "field": "state", "type": "nominal", "title": "State" },
-          { "field": "total_loss_rm_million", "type": "quantitative", "title": "Loss (RM million)", "format": ",.1f" }
+          {
+            "field": "display_place",
+            "type": "nominal",
+            "title": "District"
+          },
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "total_loss_rm_million",
+            "type": "quantitative",
+            "title": "Loss (million Malaysian ringgit)",
+            "format": ",.1f"
+          }
         ]
       }
     },
     {
-      "mark": { "type": "text", "align": "left", "baseline": "middle", "dx": 14, "fontSize": 11, "fontWeight": "600", "fill": "#102321" },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 14,
+        "fontSize": 11,
+        "fontWeight": "600",
+        "fill": "#102321"
+      },
       "encoding": {
         "y": {
-          "field": "place_name",
+          "field": "display_place",
           "type": "nominal",
-          "sort": { "field": "total_loss_rm_million", "order": "descending" }
+          "sort": {
+            "op": "min",
+            "field": "rank",
+            "order": "ascending"
+          }
         },
-        "x": { "field": "total_loss_rm_million", "type": "quantitative" },
-        "text": { "field": "total_loss_rm_million", "type": "quantitative", "format": ".1f" }
+        "x": {
+          "field": "total_loss_rm_million",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "total_loss_rm_million",
+          "type": "quantitative",
+          "format": ".1f"
+        }
       }
     }
   ],
   "config": {
-    "view": { "stroke": null },
-    "axis": { "gridColor": "#d8ded9" },
-    "legend": { "orient": "bottom" }
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320,
+      "gridColor": "#d8ded9"
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 3,
+      "labelLimit": 260,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  },
+  "params": [
+    {
+      "name": "districtState",
+      "value": "All states",
+      "bind": {
+        "input": "select",
+        "name": "Filter state: ",
+        "options": [
+          "All states",
+          "Johor",
+          "Kedah",
+          "Kelantan",
+          "Melaka",
+          "Negeri Sembilan",
+          "Pahang",
+          "Perak",
+          "Perlis",
+          "Pulau Pinang",
+          "Sabah",
+          "Sarawak",
+          "Selangor",
+          "Terengganu"
+        ]
+      }
+    }
+  ],
+  "title": {
+    "text": "Highest District Flood Losses in 2025",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
   }
 }

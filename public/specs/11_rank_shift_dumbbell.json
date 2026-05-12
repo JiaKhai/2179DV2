@@ -2,76 +2,180 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
   "height": 520,
-  "data": { "url": "data/processed/story_state_summary.csv" },
+  "data": {
+    "url": "data/processed/story_state_summary.csv"
+  },
   "transform": [
-    { "calculate": "toNumber(datum.living_quarters_count_2025_for_chart)", "as": "homes" },
-    { "calculate": "toNumber(datum.flood_total_loss_2025_rm_million)", "as": "loss" },
-    { "calculate": "toNumber(datum.flood_loss_2025_rm_per_person)", "as": "loss_per_person" },
-    { "filter": "isValid(datum.homes) && isValid(datum.loss) && isValid(datum.loss_per_person)" }
+    {
+      "calculate": "toNumber(datum.living_quarters_count_2025_for_chart)",
+      "as": "homes"
+    },
+    {
+      "calculate": "toNumber(datum.flood_total_loss_2025_rm_million)",
+      "as": "loss"
+    },
+    {
+      "calculate": "toNumber(datum.flood_loss_2025_rm_per_person)",
+      "as": "loss_per_person"
+    },
+    {
+      "filter": "isValid(datum.homes) && isValid(datum.loss) && isValid(datum.loss_per_person)"
+    }
   ],
   "layer": [
     {
-      "mark": { "type": "rule", "stroke": "#102321", "strokeDash": [5, 5], "opacity": 0.35 },
+      "transform": [
+        {
+          "regression": "loss",
+          "on": "homes",
+          "method": "linear",
+          "extent": [
+            0,
+            1900000
+          ]
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "stroke": "#102321",
+        "strokeWidth": 2,
+        "strokeDash": [
+          6,
+          4
+        ],
+        "opacity": 0.7
+      },
       "encoding": {
         "x": {
-          "aggregate": "mean",
           "field": "homes",
           "type": "quantitative",
-          "scale": { "type": "sqrt", "zero": true }
-        }
-      }
-    },
-    {
-      "mark": { "type": "rule", "stroke": "#102321", "strokeDash": [5, 5], "opacity": 0.35 },
-      "encoding": {
+          "scale": {
+            "type": "sqrt",
+            "zero": true
+          }
+        },
         "y": {
-          "aggregate": "mean",
           "field": "loss",
           "type": "quantitative",
-          "scale": { "zero": true }
+          "scale": {
+            "zero": true
+          }
         }
       }
     },
     {
-      "mark": { "type": "circle", "filled": true, "opacity": 0.82, "stroke": "#17211f", "strokeWidth": 0.7 },
+      "mark": {
+        "type": "circle",
+        "filled": true,
+        "opacity": 0.82,
+        "stroke": "#17211f",
+        "strokeWidth": 0.7
+      },
       "encoding": {
         "x": {
           "field": "homes",
           "type": "quantitative",
           "title": "Living quarters, observed or estimated",
-          "scale": { "type": "sqrt", "zero": true }
+          "scale": {
+            "type": "sqrt",
+            "zero": true
+          }
         },
         "y": {
           "field": "loss",
           "type": "quantitative",
-          "title": "2025 flood loss (RM million)",
-          "scale": { "zero": true }
+          "title": "2025 flood loss (million Malaysian ringgit)",
+          "scale": {
+            "zero": true
+          }
         },
         "size": {
           "field": "loss_per_person",
           "type": "quantitative",
-          "title": "Loss per person",
-          "scale": { "range": [70, 1000] }
+          "title": "Loss per person (Malaysian ringgit)",
+          "scale": {
+            "range": [
+              70,
+              1000
+            ]
+          }
         },
         "color": {
           "field": "region",
           "type": "nominal",
           "title": "Region",
-          "scale": { "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96"] }
+          "scale": {
+            "range": [
+              "#0072B2",
+              "#E69F00",
+              "#CC79A7",
+              "#F0E442",
+              "#56B4E9"
+            ]
+          }
         },
         "tooltip": [
-          { "field": "state", "type": "nominal", "title": "State / territory" },
-          { "field": "homes", "type": "quantitative", "title": "Living quarters", "format": "," },
-          { "field": "living_quarters_count_2025_source", "type": "nominal", "title": "Living-quarter value" },
-          { "field": "loss", "type": "quantitative", "title": "Loss (RM million)", "format": ",.1f" },
-          { "field": "loss_per_person", "type": "quantitative", "title": "Loss per person (RM)", "format": ",.2f" }
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "homes",
+            "type": "quantitative",
+            "title": "Living quarters",
+            "format": ","
+          },
+          {
+            "field": "living_quarters_count_2025_source",
+            "type": "nominal",
+            "title": "Living-quarter value"
+          },
+          {
+            "field": "loss",
+            "type": "quantitative",
+            "title": "Loss (million Malaysian ringgit)",
+            "format": ",.1f"
+          },
+          {
+            "field": "loss_per_person",
+            "type": "quantitative",
+            "title": "Loss per person (Malaysian ringgit)",
+            "format": ",.2f"
+          }
         ]
       }
     }
   ],
   "config": {
-    "view": { "stroke": null },
-    "axis": { "gridColor": "#d8ded9" },
-    "legend": { "orient": "bottom" }
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320,
+      "gridColor": "#d8ded9"
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 3,
+      "labelLimit": 300,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  },
+  "title": {
+    "text": "Living Quarters Compared with 2025 Flood Loss",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
   }
 }

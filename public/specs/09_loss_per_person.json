@@ -2,73 +2,248 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "width": "container",
   "height": 480,
-  "data": { "url": "data/processed/story_state_summary.csv" },
+  "data": {
+    "url": "data/processed/story_state_summary.csv"
+  },
   "transform": [
-    { "calculate": "toNumber(datum.flood_loss_2025_rm_per_person)", "as": "loss_per_person" },
-    { "filter": "isValid(datum.loss_per_person)" },
-    { "window": [{ "op": "rank", "as": "rank" }], "sort": [{ "field": "loss_per_person", "order": "descending" }] },
-    { "filter": "datum.rank <= 10" }
+    {
+      "calculate": "toNumber(datum.flood_loss_2025_rm_per_person)",
+      "as": "loss_per_person"
+    },
+    {
+      "calculate": "replace(datum.state, 'W.P.', 'Federal Territory')",
+      "as": "display_state"
+    },
+    {
+      "filter": "isValid(datum.loss_per_person)"
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "loss_per_person",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <= 10"
+    }
   ],
   "layer": [
     {
-      "mark": { "type": "bar", "cornerRadiusEnd": 3 },
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 3
+      },
       "encoding": {
         "y": {
-          "field": "state",
+          "field": "display_state",
           "type": "nominal",
-          "sort": ["Perlis", "Terengganu", "Kelantan", "Pahang", "Sarawak", "W.P. Labuan", "Johor", "Kedah", "Sabah", "Perak"],
+          "sort": [
+            "Perlis",
+            "Terengganu",
+            "Kelantan",
+            "Pahang",
+            "Sarawak",
+            "Federal Territory Labuan",
+            "Johor",
+            "Kedah",
+            "Sabah",
+            "Perak"
+          ],
           "title": null,
-          "axis": { "labelLimit": 160 }
+          "axis": {
+            "labelLimit": 160
+          }
         },
         "x": {
           "field": "loss_per_person",
           "type": "quantitative",
-          "title": "2025 flood loss per person (RM)",
-          "scale": { "domain": [0, 180] }
+          "title": "2025 flood loss per person (Malaysian ringgit)",
+          "scale": {
+            "domain": [
+              0,
+              180
+            ]
+          }
         },
         "color": {
           "field": "region",
           "type": "nominal",
           "title": "Region",
-          "scale": { "range": ["#2f7ea8", "#bd4a36", "#6f8f56", "#d8a448", "#8b6f96"] }
+          "scale": {
+            "range": [
+              "#0072B2",
+              "#E69F00",
+              "#CC79A7",
+              "#F0E442",
+              "#56B4E9"
+            ]
+          }
         },
         "tooltip": [
-          { "field": "state", "type": "nominal", "title": "State / territory" },
-          { "field": "loss_per_person", "type": "quantitative", "title": "Loss per person (RM)", "format": ",.2f" },
-          { "field": "flood_total_loss_2025_rm_million", "type": "quantitative", "title": "Total loss (RM million)", "format": ",.1f" }
+          {
+            "field": "display_state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "loss_per_person",
+            "type": "quantitative",
+            "title": "Loss per person (Malaysian ringgit)",
+            "format": ",.2f"
+          },
+          {
+            "field": "flood_total_loss_2025_rm_million",
+            "type": "quantitative",
+            "title": "Total loss (million Malaysian ringgit)",
+            "format": ",.1f"
+          }
         ]
       }
     },
     {
-      "data": { "values": [{ "state": "Perlis", "box_start": 122, "box_end": 176 }] },
-      "mark": { "type": "rect", "height": 42, "fill": "#eef6f4", "stroke": "#102321", "strokeOpacity": 0.55, "cornerRadius": 4 },
+      "data": {
+        "values": [
+          {
+            "state": "Perlis",
+            "box_start": 108,
+            "box_end": 154,
+            "display_state": "Perlis"
+          }
+        ]
+      },
+      "mark": {
+        "type": "rect",
+        "height": 66,
+        "fill": "#eef6f4",
+        "stroke": "#102321",
+        "strokeOpacity": 0.55,
+        "cornerRadius": 4
+      },
       "encoding": {
         "y": {
-          "field": "state",
+          "field": "display_state",
           "type": "nominal",
-          "sort": ["Perlis", "Terengganu", "Kelantan", "Pahang", "Sarawak", "W.P. Labuan", "Johor", "Kedah", "Sabah", "Perak"]
+          "sort": [
+            "Perlis",
+            "Terengganu",
+            "Kelantan",
+            "Pahang",
+            "Sarawak",
+            "Federal Territory Labuan",
+            "Johor",
+            "Kedah",
+            "Sabah",
+            "Perak"
+          ]
         },
-        "x": { "field": "box_start", "type": "quantitative", "scale": { "domain": [0, 180] } },
-        "x2": { "field": "box_end" }
+        "x": {
+          "field": "box_start",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              180
+            ]
+          }
+        },
+        "x2": {
+          "field": "box_end"
+        }
       }
     },
     {
-      "data": { "values": [{ "state": "Perlis", "label_x": 125, "label": "Small population\nraises per-person loss" }] },
-      "mark": { "type": "text", "align": "left", "baseline": "middle", "fontSize": 12, "fontWeight": "600", "lineBreak": "\n", "lineHeight": 14, "fill": "#102321" },
+      "data": {
+        "values": [
+          {
+            "state": "Perlis",
+            "label_x": 110,
+            "label": "Perlis ranks first\nper person despite\nmodest total loss",
+            "display_state": "Perlis"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 10.6,
+        "fontWeight": "600",
+        "lineBreak": "\n",
+        "lineHeight": 12.2,
+        "fill": "#102321",
+        "dy": -1
+      },
       "encoding": {
         "y": {
-          "field": "state",
+          "field": "display_state",
           "type": "nominal",
-          "sort": ["Perlis", "Terengganu", "Kelantan", "Pahang", "Sarawak", "W.P. Labuan", "Johor", "Kedah", "Sabah", "Perak"]
+          "sort": [
+            "Perlis",
+            "Terengganu",
+            "Kelantan",
+            "Pahang",
+            "Sarawak",
+            "Federal Territory Labuan",
+            "Johor",
+            "Kedah",
+            "Sabah",
+            "Perak"
+          ]
         },
-        "x": { "field": "label_x", "type": "quantitative", "scale": { "domain": [0, 180] } },
-        "text": { "field": "label", "type": "nominal" }
+        "x": {
+          "field": "label_x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              180
+            ]
+          }
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     }
   ],
   "config": {
-    "view": { "stroke": null },
-    "axis": { "grid": false },
-    "legend": { "orient": "bottom" }
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 180,
+      "titleLimit": 320,
+      "grid": false
+    },
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 3,
+      "labelLimit": 300,
+      "titleLimit": 360,
+      "labelFontSize": 12,
+      "titleFontSize": 12
+    }
+  },
+  "title": {
+    "text": "2025 Flood Loss Per Person by State",
+    "anchor": "start",
+    "align": "left",
+    "font": "Manrope",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "color": "#102321",
+    "offset": 12
   }
 }
