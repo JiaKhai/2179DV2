@@ -15,6 +15,10 @@
       "as": "display_state"
     },
     {
+      "calculate": "datum.region == 'Central/Southern Peninsula' ? 'Central Peninsula' : datum.region",
+      "as": "display_region"
+    },
+    {
       "filter": "isValid(datum.loss_per_person)"
     },
     {
@@ -74,15 +78,22 @@
           }
         },
         "color": {
-          "field": "region",
+          "field": "display_region",
           "type": "nominal",
           "title": "Region",
           "scale": {
+            "domain": [
+              "Borneo",
+              "East Coast",
+              "Northern Peninsula",
+              "Southern Peninsula",
+              "Central Peninsula"
+            ],
             "range": [
               "#0072B2",
               "#E69F00",
               "#CC79A7",
-              "#F0E442",
+              "#8A6F00",
               "#56B4E9"
             ]
           }
@@ -92,6 +103,11 @@
             "field": "display_state",
             "type": "nominal",
             "title": "State / territory"
+          },
+          {
+            "field": "display_region",
+            "type": "nominal",
+            "title": "Region"
           },
           {
             "field": "loss_per_person",

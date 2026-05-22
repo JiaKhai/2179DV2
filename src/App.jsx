@@ -27,10 +27,10 @@ const sections = [
     body: "The story begins with an uneven map. In 2025, flood losses gathered around a few places while much of the country recorded far smaller totals.",
     charts: [
       {
-        title: "The largest flood losses cluster on the east coast",
+        title: "Flood burden is uneven after population is considered",
         spec: "01_flood_loss_map",
         type: "choropleth map",
-        caption: "Recorded 2025 flood loss is mapped by state, making **geographic unevenness** the first message. The darker states identify where the national total is concentrated, while lighter states show that flood loss was not spread evenly across Malaysia."
+        caption: "Recorded 2025 flood loss is normalised by population, making **per-person burden** the first message. Darker states show where each resident carries a higher implied share of loss, while the tooltip keeps total RM loss available for context."
       },
       {
         title: "Two east-coast states almost share the top loss rank",
@@ -186,7 +186,7 @@ function Stat({ value, decimals, suffix, label }) {
       <p className="text-4xl font-semibold leading-none text-ink md:text-5xl">
         <CountUpNumber value={value} decimals={decimals} suffix={suffix} />
       </p>
-      <p className="mt-2 max-w-44 text-sm leading-snug text-muted">{label}</p>
+      <p className="mt-2 max-w-[26ch] text-[0.95rem] leading-snug text-muted">{label}</p>
     </div>
   );
 }
@@ -207,15 +207,15 @@ function Section({ section, index }) {
         <div className="lg:sticky lg:top-8 lg:h-[calc(100svh-4rem)] lg:self-start lg:border-r lg:border-ink/10 lg:pr-8">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-flood">{section.kicker}</p>
           <h2 className="mt-4 max-w-2xl font-serif text-3xl leading-tight text-ink md:text-5xl lg:text-4xl xl:text-5xl">{section.title}</h2>
-          <p className="mt-5 max-w-xl text-base leading-7 text-muted">{section.body}</p>
-          <p className="mt-8 text-sm text-muted">Section {index + 1} of {sections.length}</p>
+          <p className="mt-5 max-w-[54ch] text-[1.05rem] leading-8 text-muted">{section.body}</p>
+          <p className="mt-8 text-[0.95rem] text-muted">Section {index + 1} of {sections.length}</p>
         </div>
         <div className="grid min-w-0 gap-10">
           {section.charts.map((chart) => (
             <div key={chart.spec} className="min-w-0">
               <div className="mb-3 flex items-baseline justify-between gap-4 border-b border-ink/10 pb-2">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-ink">{chart.title}</h3>
-                <div className="shrink-0 text-right text-xs text-muted">
+                <h3 className="text-base font-bold uppercase tracking-[0.14em] text-ink">{chart.title}</h3>
+                <div className="shrink-0 text-right text-[0.72rem] text-muted">
                   <a className="text-rain underline-offset-4 hover:underline" href={`${base}specs/${chart.spec}.json`}>
                     JSON spec
                   </a>{" "}
@@ -223,7 +223,7 @@ function Section({ section, index }) {
                 </div>
               </div>
               <VegaChart specUrl={spec(chart.spec)} title={chart.title} variant={chartVariant(chart.spec)} />
-              <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
+              <p className="mt-4 max-w-[58ch] text-[0.98rem] leading-7 text-muted">
                 <EmphasizedText text={chart.caption} />
               </p>
             </div>
@@ -249,7 +249,7 @@ export default function App() {
                 <img className="risk-title-bolt" src={`${base}assets/hero-lightning-bolt.png`} alt="" aria-hidden="true" />
               </span>
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-muted md:text-xl">
+            <p className="mt-7 max-w-[54ch] text-xl leading-9 text-muted md:text-2xl">
               A scroll through where Malaysia’s 2025 flood losses gathered, how rainfall fits into the pattern, and why place changes the outcome.
             </p>
           </div>
@@ -272,16 +272,16 @@ export default function App() {
             <p className="text-2xl font-semibold leading-tight text-ink">
               Flood risk is uneven because Malaysia’s places are uneven.
             </p>
-            <p className="text-base leading-7 text-muted">
+            <p className="max-w-[54ch] text-[1.05rem] leading-8 text-muted">
               The 2025 losses were not spread evenly across the country. A few states and districts carried much of the cost, while per-person loss showed that smaller populations can still face a heavy burden.
             </p>
-            <p className="text-base leading-7 text-muted">
+            <p className="max-w-[54ch] text-[1.05rem] leading-8 text-muted">
               Rainfall is part of the story, but not the whole story. The charts point to exposure, infrastructure, local monitoring, and year-to-year change as the conditions that turn heavy rain into expensive damage.
             </p>
           </div>
           <div className="mt-10 border-t border-ink/10 pt-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">Sources</p>
-            <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm leading-6 text-muted">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-muted">Sources</p>
+            <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-[0.95rem] leading-7 text-muted">
               <a className="text-rain underline-offset-4 hover:underline" href="https://www.dosm.gov.my/portal-main/release-content/special-report-on-impact-of-floods-in-malaysia2025">
                 DOSM flood impact report 2025
               </a>
@@ -298,8 +298,8 @@ export default function App() {
                 geoBoundaries administrative boundaries
               </a>
             </div>
-            <p className="mt-4 text-sm leading-6 text-muted">FIT2179 Data Visualisation 2, 2026.</p>
-            <div className="mt-4 flex items-center justify-between text-sm leading-6 text-muted">
+            <p className="mt-4 max-w-[54ch] text-[0.95rem] leading-7 text-muted">FIT2179 Data Visualisation 2, 2026.</p>
+            <div className="mt-4 flex items-center justify-between text-[0.95rem] leading-7 text-muted">
               <p>Ng Jia Khai</p>
               <p>12 May 2026</p>
             </div>

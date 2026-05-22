@@ -6,7 +6,7 @@ export default {
       colors: {
         paper: "#edf5f4",
         ink: "#102321",
-        muted: "#5f7471",
+        muted: "#415a56",
         rain: "#1f7fa3",
         flood: "#b8523d",
         river: "#7fb9c8",

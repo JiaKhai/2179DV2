@@ -40,22 +40,35 @@
   },
   "encoding": {
     "color": {
-      "field": "flood_total_loss_2025_rm_million",
+      "field": "flood_loss_2025_rm_per_person",
       "type": "quantitative",
-      "title": "2025 flood loss (million Malaysian ringgit)",
+      "title": "2025 flood loss per person (RM)",
       "scale": {
+        "type": "threshold",
+        "domain": [
+          5,
+          10,
+          20,
+          40,
+          70
+        ],
         "range": [
-          "#EAF4FA",
-          "#CFE7F3",
-          "#A8D4EA",
-          "#73BCE0",
-          "#3E9DD0",
-          "#0072B2"
+          "#D7ECF7",
+          "#B9DAEC",
+          "#8DC3DE",
+          "#5BA8CF",
+          "#247CB8",
+          "#084594"
         ]
       },
       "legend": {
-        "gradientLength": 260,
-        "gradientThickness": 16
+        "orient": "bottom",
+        "direction": "horizontal",
+        "columns": 3,
+        "labelLimit": 220,
+        "titleLimit": 360,
+        "symbolType": "square",
+        "symbolSize": 110
       }
     },
     "tooltip": [
@@ -70,16 +83,16 @@
         "title": "Region"
       },
       {
-        "field": "flood_total_loss_2025_rm_million",
-        "type": "quantitative",
-        "title": "Loss (million Malaysian ringgit)",
-        "format": ",.1f"
-      },
-      {
         "field": "flood_loss_2025_rm_per_person",
         "type": "quantitative",
-        "title": "Loss per person (Malaysian ringgit)",
+        "title": "Loss per person (RM)",
         "format": ",.2f"
+      },
+      {
+        "field": "flood_total_loss_2025_rm_million",
+        "type": "quantitative",
+        "title": "Total loss (million RM)",
+        "format": ",.1f"
       },
       {
         "field": "annual_rainfall_avg_2013_2017_mm",
@@ -110,7 +123,7 @@
     }
   },
   "title": {
-    "text": "2025 Flood Loss by State",
+    "text": "2025 Flood Loss per Person by State",
     "anchor": "start",
     "align": "left",
     "font": "Manrope",

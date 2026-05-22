@@ -81,14 +81,29 @@
           "type": "nominal",
           "title": "State",
           "scale": {
+            "domain": [
+              "Terengganu",
+              "Kelantan",
+              "Johor",
+              "Sarawak",
+              "Pahang",
+              "Selangor",
+              "Perlis",
+              "Kedah",
+              "Perak",
+              "Sabah"
+            ],
             "range": [
               "#0072B2",
               "#E69F00",
               "#CC79A7",
-              "#F0E442",
               "#56B4E9",
-              "#999999",
-              "#6B7B87"
+              "#8A6F00",
+              "#6B7B87",
+              "#004488",
+              "#9467BD",
+              "#332288",
+              "#DDCC77"
             ]
           }
         },

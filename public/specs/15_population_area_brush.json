@@ -20,6 +20,10 @@
       "filter": "datum.region != null && datum.region != ''"
     },
     {
+      "calculate": "datum.region == 'Central/Southern Peninsula' ? 'Central Peninsula' : datum.region",
+      "as": "display_region"
+    },
+    {
       "calculate": "toNumber(datum.year)",
       "as": "year_number"
     },
@@ -62,17 +66,23 @@
           "title": "Population (millions)"
         },
         "color": {
-          "field": "region",
+          "field": "display_region",
           "type": "nominal",
           "title": "Region",
           "scale": {
+            "domain": [
+              "Borneo",
+              "East Coast",
+              "Northern Peninsula",
+              "Southern Peninsula",
+              "Central Peninsula"
+            ],
             "range": [
               "#0072B2",
               "#E69F00",
               "#CC79A7",
-              "#F0E442",
-              "#56B4E9",
-              "#999999"
+              "#8A6F00",
+              "#56B4E9"
             ]
           }
         },
@@ -84,7 +94,7 @@
             "format": "d"
           },
           {
-            "field": "region",
+            "field": "display_region",
             "type": "nominal",
             "title": "Region"
           },
@@ -138,17 +148,23 @@
           }
         },
         "color": {
-          "field": "region",
+          "field": "display_region",
           "type": "nominal",
           "legend": null,
           "scale": {
+            "domain": [
+              "Borneo",
+              "East Coast",
+              "Northern Peninsula",
+              "Southern Peninsula",
+              "Central Peninsula"
+            ],
             "range": [
               "#0072B2",
               "#E69F00",
               "#CC79A7",
-              "#F0E442",
-              "#56B4E9",
-              "#999999"
+              "#8A6F00",
+              "#56B4E9"
             ]
           }
         }

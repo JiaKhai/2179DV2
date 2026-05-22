@@ -25,6 +25,10 @@
     },
     {
       "filter": "datum.rank <= 10"
+    },
+    {
+      "calculate": "datum.state == 'Terengganu' ? 'Terengganu' : datum.state == 'Kelantan' ? 'Kelantan' : 'Other states'",
+      "as": "highlight_state"
     }
   ],
   "layer": [
@@ -66,11 +70,20 @@
           }
         },
         "color": {
-          "condition": {
-            "test": "datum.state == 'Terengganu' || datum.state == 'Kelantan'",
-            "value": "#0072B2"
+          "field": "highlight_state",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Terengganu",
+              "Kelantan",
+              "Other states"
+            ],
+            "range": [
+              "#0072B2",
+              "#E69F00",
+              "#B8C2C0"
+            ]
           },
-          "value": "#B8C2C0",
           "legend": null
         },
         "tooltip": [

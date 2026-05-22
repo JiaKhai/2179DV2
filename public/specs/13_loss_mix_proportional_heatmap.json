@@ -61,12 +61,20 @@
           "type": "nominal",
           "title": "Loss category",
           "scale": {
+            "domain": [
+              "Infrastructure",
+              "Homes",
+              "Agriculture",
+              "Business",
+              "Vehicles",
+              "Manufacturing"
+            ],
             "range": [
               "#0072B2",
               "#E69F00",
+              "#8A6F00",
               "#CC79A7",
-              "#F0E442",
-              "#999999",
+              "#6B7B87",
               "#56B4E9"
             ]
           }

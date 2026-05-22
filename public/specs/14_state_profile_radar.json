@@ -119,12 +119,19 @@
       "type": "nominal",
       "title": "State",
       "scale": {
+        "domain": [
+          "Terengganu",
+          "Kelantan",
+          "Johor",
+          "Sarawak",
+          "Perlis"
+        ],
         "range": [
           "#0072B2",
           "#E69F00",
           "#CC79A7",
-          "#F0E442",
-          "#56B4E9"
+          "#56B4E9",
+          "#004488"
         ]
       }
     },

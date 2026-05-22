@@ -58,6 +58,76 @@
           }
         ]
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "longitude": 98.8,
+            "latitude": 1.2,
+            "longitude2": 100.8,
+            "latitude2": 3.4
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#102321",
+        "strokeWidth": 1,
+        "opacity": 0.62
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "longitude2"
+        },
+        "latitude2": {
+          "field": "latitude2"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "longitude": 98.8,
+            "latitude": 1.2,
+            "label": "West coast cluster reflects\ndenser towns, roads, and\nflood-monitoring needs"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "font": "Manrope",
+        "fontSize": 12,
+        "fontWeight": 700,
+        "lineBreak": "\n",
+        "lineHeight": 14,
+        "fill": "#102321"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
+      }
     }
   ],
   "config": {

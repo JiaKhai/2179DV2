@@ -20,11 +20,11 @@
       "as": "row"
     },
     {
-      "calculate": "datum.cell <= 23 ? 'Borneo' : datum.cell <= 45 ? 'East Coast' : datum.cell <= 64 ? 'Northern Peninsula' : datum.cell <= 79 ? 'Southern Peninsula' : datum.cell <= 93 ? 'Central Peninsula' : datum.cell <= 97 ? 'Central/Southern Peninsula' : 'Federal Territories'",
+      "calculate": "datum.cell <= 23 ? 'Borneo' : datum.cell <= 45 ? 'East Coast' : datum.cell <= 64 ? 'Northern Peninsula' : datum.cell <= 79 ? 'Southern Peninsula' : datum.cell <= 97 ? 'Central Peninsula' : 'Federal Territories'",
       "as": "region"
     },
     {
-      "calculate": "datum.region == 'Borneo' ? 411 : datum.region == 'East Coast' ? 368 : datum.region == 'Northern Peninsula' ? 326 : datum.region == 'Southern Peninsula' ? 247 : datum.region == 'Central Peninsula' ? 236 : datum.region == 'Central/Southern Peninsula' ? 65 : 46",
+      "calculate": "datum.region == 'Borneo' ? 411 : datum.region == 'East Coast' ? 368 : datum.region == 'Northern Peninsula' ? 326 : datum.region == 'Southern Peninsula' ? 247 : datum.region == 'Central Peninsula' ? 301 : 46",
       "as": "stations"
     },
     {
@@ -65,17 +65,15 @@
               "Northern Peninsula",
               "Southern Peninsula",
               "Central Peninsula",
-              "Central/Southern Peninsula",
               "Federal Territories"
             ],
             "range": [
-              "#005AB5",
-              "#DC7900",
-              "#AA4499",
-              "#F0E442",
-              "#40B0A6",
-              "#7A7A7A",
-              "#56B4E9"
+              "#0072B2",
+              "#E69F00",
+              "#CC79A7",
+              "#8A6F00",
+              "#56B4E9",
+              "#6B7B87"
             ]
           }
         },
